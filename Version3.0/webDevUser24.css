@@ -7,20 +7,20 @@ img{
 
 body {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color:yellow;
+	color:#ed9339;
     text-align: center;
-    background-image: url("./images/webDevUser24b.jpg");
+    background-image: url("./images/webDevUser24.jpg");
     background-repeat: no-repeat;
     background-size:cover;
 }
 
 h1 {
-	font-size: 1.3em;
+	font-size: 2em;
 	text-align: center;
 }
 
 h2{
-        font-size: 1.1em;
+        font-size: 1.7em;
     text-align: center;
 }
 
