@@ -39,6 +39,10 @@ img{
   margin-right: auto;
   width: 50%;
 }
+.content{
+    color: magenta
+    
+}
 
 .button {
   background-color: #4CAF50; /* Green */
@@ -68,9 +72,13 @@ img{
 
 .button3 {
     color: darkmagenta;
-    border-radius: 35%
+    border-radius: 50%
 }
 .button4 {
     background-color: darkseagreen;
-        border-radius: 40%;
+        border-radius: 50%;
+}
+
+#morecontent {
+  background-color: yellow;
 }
