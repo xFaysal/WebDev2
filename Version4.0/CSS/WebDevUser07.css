@@ -75,3 +75,53 @@ th {
 .red { 
    background-color: #ff0000;
 }
+
+.button3 {
+    border-bottom-color: crimson
+}
+
+.button4 {
+    border-top-color: cornflowerblue
+}
+
+.button5 {
+    border-left-color: fuchsia
+}
+
+.button6 {
+    border-right-color: darkorange
+}
+
+.button7 {
+    font-size: 32px
+}
+
+.button8 {
+    border-width: medium
+}
+
+.button9 {
+    background-color: cornflowerblue
+}
+
+.button0 {
+    font-size: 24px
+}
+
+
+.content {
+    color: magenta;
+    text-align: right
+}
+
+#morecontent {
+  background-color: yellow;
+}
+
+
+
+
+
+
+
+
