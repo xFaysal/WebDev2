@@ -63,4 +63,14 @@ img{
 
 .red { 
    background-color: #ff0000;
+   border-radius: 30%;
+}
+
+.button3 {
+    color: darkmagenta;
+    border-radius: 35%
+}
+.button4 {
+    background-color: darkseagreen;
+        border-radius: 40%;
 }
