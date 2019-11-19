@@ -38,4 +38,47 @@ tr {
 	background-color:#9FB6CD; 
 }
 
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 
+.button1 {
+  border-radius: 8px;
+}
+
+.button2 {
+  border-radius: 50%;
+}
+
+.button3 {
+  padding: 14px 40px;
+}
+
+.button4 {
+  font-size: 20px;;
+}
+
+.red { 
+   background-color: #ff0000;
+}
+
+.blue { 
+   background-color: #0000ff;
+}
+
+.black {
+    background-color: #555555;
+}
+
+#morecontent {
+  background-color: yellow;
+}
