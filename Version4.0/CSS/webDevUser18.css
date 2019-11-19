@@ -25,6 +25,8 @@ tr {
 	border: 1px solid #ffffff;
 	text-align: center;
 	background-color:#d6809a; 
+ 
+}
 }
 
 img{
@@ -36,4 +38,34 @@ th {
 	text-align: center;
 	color: #ffffff;
 	background-color: #ff004d;
+}
+button {
+  background-color: #1feeff; /* Blue */
+  border: none;
+  color: white;
+  padding: 100px;
+  text-align: center;
+  text-decoration: underline;
+  display: inline-block;
+  font-size: 48px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {
+  border-radius: 8px;
+}
+
+.button2 {
+  border-radius: 50%;
+}
+
+.red { 
+   background-color: #e2ff00;
+}
+
+.content{
+    color: #ff00ff;
+    text-align: right
+    
 }
