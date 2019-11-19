@@ -4,7 +4,7 @@ body {
 }
 h1 {
 	font-size: 1.3em;
-	text-align: center;
+	text-align : center;
 }
 
 h2{
@@ -30,4 +30,4 @@ th {
 	text-align: center;
 	color: #ffffff;
 	background-color: #003366;
-}
+} 
