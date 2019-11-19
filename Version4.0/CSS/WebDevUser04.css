@@ -26,6 +26,11 @@ body {
   border-radius: 8px;
 }
 
+#morecontent {
+  background-color: yellow;
+  text-align: center;
+}
+
 .button2 {
   border-radius: 30%;
 }
@@ -34,6 +39,12 @@ body {
     color:chartreuse;
     background-color: chocolate;
     border-radius: 30%;
+    
+}
+
+.content{
+    color: magenta;
+    text-align: center;
     
 }
 .button4 {
