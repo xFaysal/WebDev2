@@ -46,7 +46,7 @@ tr {
 }
 
 .button {
-  background-color: #4CAF50; /* Green */
+  background-color: #4CAF50;
   border: none;
   color: white;
   padding: 20px;
@@ -59,11 +59,22 @@ tr {
 }
 
 .button1 {border-radius: 8px;}
-.button2 {border-radius: 30%;}
+
+.button2 {border-radius: 50%;}
 
 .blue {background-color: #0000ff;}
+
 .red {background-color: #ff0000;}
 
+.content{
+    text-align: right;
+    color: magenta;
+}
+
+#morecontent {
+  background-color: yellow;
+}
+/*
 p.center {
   text-align: center;
   color: red;
@@ -76,3 +87,4 @@ p.large {
 .large {
     font-size: 400%;
 }
+/*
