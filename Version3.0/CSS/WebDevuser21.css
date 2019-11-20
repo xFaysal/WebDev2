@@ -12,6 +12,8 @@ h1 {
 
 h2{
         font-size: 1.1em;
+        text-align: center;
+        color: aqua
 }
 
 table {
@@ -19,7 +21,9 @@ table {
 	margin-right: auto;
 	text-align: left;
 	border-collapse: collapse;
-	cellspacing: 0px;
+    cellspacing: 0px;
+    <td style="color:#00FF00; background-color:sienna;">
+    
 }
 
 tr {
@@ -29,7 +33,7 @@ tr {
 }
 
 img{
- .center 
+  .center  
   margin: auto;
   width: 15%;
   border: 3px solid green;
@@ -40,7 +44,8 @@ img{
 th {
 	text-align: center;
 	color: #ffffff;
-	background-color: #003366;
+	background-color: #003366 
+        
     
     
 }
