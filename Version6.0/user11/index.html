@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>User 11 Intro to jQuery</title>
+        <script src="JS/jquery-3.4.1.js"></script>
+        
+        <style>
+            ul li{
+                color:red;
+            }    
+            .grumpy{
+                color:blue;
+            }
+            .hippy{
+                color:cyan;
+            }
+        </style>
+        
+    </head>
+    <h1> something title something</h1>
+    <body>
+        <ul><li>grumpy</li>
+            <li>hippy</li>
+            <li>snoopy</li>
+            <li>bapkins</li></ul>
+        
+        <script>
+        var lis = jQuery('ul li');
+            console.log(lis);
+            $('ul li').addClass('grumpy');
+            $('h1').addClass('hippy');
+        </script>
+    </body>
+</html>
+            
