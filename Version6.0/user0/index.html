@@ -1,7 +1,36 @@
 <html>
     <head>
         <title>Mainhardt Intro to jQuery</title>
+        <script src="JS/jquery-3.4.1.js"></script>
+        
+        <style>
+            ol li{
+                color: red;
+            }
+            .packers{
+                color: green;
+            }
+            .vikings{
+                color: purple;
+            }
+            .bears{
+                color: navy;
+            }
+            .lions{
+                
+            }
+        </style>
+        
     </head>
+    <h1> NFC North Standings</h1>
     <body>
+        <ol><li>Packers</li><li>Vikings</li><li>bears</li><li>lions</li></ol>
+        
+        <script>
+        $('ol li').addClass('packers');
+        $('h1').addClass('bears');
+        
+        </script>
     </body>
+    
 </html>
