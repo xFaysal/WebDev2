@@ -1,4 +1,5 @@
 
+
 img{
   display: block;
   margin-left: auto;
@@ -14,6 +15,7 @@ body {
         background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
+    
 
 }
 
@@ -38,7 +40,9 @@ table {
 tr {
 	border: 1px solid #ffffff;
 	text-align: center;
-	background-color:#9FB6CD; 
+	background-color:#9FB6CD;
+    
+
 }
 
 th {
@@ -46,3 +50,4 @@ th {
 	color: #ffffff;
 	background-color: #003366;
 }
+
