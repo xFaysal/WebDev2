@@ -1,0 +1,35 @@
+<html>
+
+    <head>
+        <title> Em trying jQuery </title>
+        <script src="JS/jquery-3.4.1.js">
+        </script>
+
+        <style>
+            ul li {color: blueviolet;}
+            .packers{color: lawngreen}
+            .aqua{color:aqua}
+        </style>
+        
+    </head>
+
+    <body>
+        <h1>Football Dudes</h1>
+        <ul>
+            <li>Packers</li>
+            <li>Vikings</li>
+            <li>Lions</li>
+            <li>Bears</li>
+            <li>Seahawks</li>
+            <li>I don't know football</li>
+        </ul>
+        
+        <script>
+            var lis= jQuery("ul li");
+            $('ul li').addClass('packers');
+                $('h1').addClass('aqua');
+        </script>
+        
+    </body>
+    
+</html>
