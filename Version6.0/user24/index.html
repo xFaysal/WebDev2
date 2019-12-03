@@ -1,0 +1,46 @@
+<html>
+    
+    <head>
+        
+        <title>Dane Intro to jQuery</title>
+        
+        <script src="JS/jquery-3.4.1.js"></script>
+        
+        <style>
+            
+            ul li{
+                font-size: 24px;
+            }
+            .Barbarian{
+                color:darkorange;
+            }
+            .Monk{
+                color:deepskyblue;
+            }
+            .Paladin{
+                color:gold;
+            }
+            .Warlock{
+                color:darkmagenta;
+            }
+            
+        </style>
+        
+    </head>
+    
+    <h1>Favorite Dungeons and Dragons (5e) Classes</h1>
+    
+     <body>
+         
+         <ul><li class="Barbarian">Barbarian</li><li class="Monk">Monk</li><li class="Paladin">Paladin</li><li class="Warlock">Warlock</li></ul>
+         
+         <script>
+             
+         var lis = jQuery(ul li)
+        console.log(lis);
+             
+         </script>
+         
+    </body>
+    
+</html>
