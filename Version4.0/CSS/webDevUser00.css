@@ -66,9 +66,10 @@ tr {
 
 .red {background-color: #ff0000;}
 
-.content{
+#content{
     text-align: right;
     color: magenta;
+    background-color: #47abd5;
 }
 
 #morecontent {
