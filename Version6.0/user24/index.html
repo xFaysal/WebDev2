@@ -6,6 +6,9 @@
         
         <script src="JS/jquery-3.4.1.js"></script>
         
+        <link rel='stylesheet'
+              href="CSS/good.css">
+        
         <style>
             
             ul li{
@@ -23,8 +26,28 @@
             .Warlock{
                 color:darkmagenta;
             }
+            .emphasis{
+                font-weight:bold
+            }
             
         </style>
+        
+        <script>
+             
+        $(function(){
+                $('li:first-child').addClass('emphasis');
+            });
+             $(document).ready(function(){
+                 $('li:first-child').addClass('emphasis');
+             });
+            
+            (function() {
+                $('button').click(function() {
+                    $('link').attr('href','evil.css')
+                })
+            })
+            
+         </script>
         
     </head>
     
@@ -34,12 +57,9 @@
          
          <ul><li class="Barbarian">Barbarian</li><li class="Monk">Monk</li><li class="Paladin">Paladin</li><li class="Warlock">Warlock</li></ul>
          
-         <script>
-             
-         var lis = jQuery(ul li)
-        console.log(lis);
-             
-         </script>
+         <button data-file="good"> Good </button>
+         
+         <button data-file="evil"> Evil </button>
          
     </body>
     
