@@ -1,6 +1,6 @@
 <html>
 <head>
-
+<link href="CSS/Light.css" rel="stylesheet">
 <title> Web Development User #23 </title>
 <script src="JS/jquery-3.4.1.js"></script>
 <style>
@@ -13,14 +13,33 @@
     .Video_Games{
         color: blue;
     }
+    .emphasis { font-weight: bold;
+                font-style: italic;
+                font-size: 25;}
 </style>
+<script>
+$(document).ready(function() {
+$('li:first-child').addClass('emphasis');
+});
+
+</script>
+    
 </head>
+<Button data-file='Light'>Light</Button>
+<Button data-file='Dark'>Dark</Button>
 <h1>Video Games</h1>
 <body>
     <ul><li>Destiny</li>
         <li>Destiny2</li>
         <li class='Overwatch'>Overwatch</li></ul>
-
+<script>
+function() {
+$('button').click(function(){
+    
+}
+}
+</script>
+    
 <script>
 var lis = $('ul li');
    console.log(lis);
