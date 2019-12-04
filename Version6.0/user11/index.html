@@ -2,32 +2,47 @@
     <head>
         <title>User 11 Intro to jQuery</title>
         <script src="JS/jquery-3.4.1.js"></script>
+        <link rel="stylesheet" href="CSS/Day.css">
         
         <style>
             ul li{
                 color:red;
             }    
-            .grumpy{
+            .ocean{
                 color:blue;
             }
-            .hippy{
+            .sky{
                 color:cyan;
             }
+            .emphasis { font-weight: : bold;
+                
+            }
+            
         </style>
+        
+        <script>
+        $(document).ready(function() {
+            $('li:first-child').addClass('emphasis');
+        });
+        </script>
         
     </head>
     <h1> something title something</h1>
     <body>
-        <ul><li>grumpy</li>
-            <li>hippy</li>
-            <li>snoopy</li>
-            <li>bapkins</li></ul>
-        
+        <ul><li><h2>grumpy</h2></li>
+            <li><h3>hippy</h3></li>
+            <li><h4>snoopy</h4></li>
+            <li><h5>bapkins</h5></li></ul>
+        <button data-file="Day">Day</button>
+        <button data-file="Night">Night</button>
         <script>
         var lis = jQuery('ul li');
             console.log(lis);
-            $('ul li').addClass('grumpy');
-            $('h1').addClass('hippy');
+            $('ul li').addClass('ocean');
+            $('h1').addClass('sky');
+            $('h2').addClass('ocean');
+            $('h3').addClass('sky');
+            $('h5').addClass('sky');
         </script>
     </body>
 </html>
