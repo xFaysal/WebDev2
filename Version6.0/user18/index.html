@@ -4,7 +4,7 @@
         <script> src="JS/jquery-3.4.1.js"</script>
 
     <style>
-        ul li{
+        ol li{
             color: red;
         }
         .anger{
@@ -27,16 +27,16 @@
     </head>
     <h1>Inside Out Emotions</h1>
     <body>
-        <ul><li>Anger</li>
+        <ol><li>Anger</li>
             <li>Joy</li>
             <li>Sadness</li>
             <li>Disgust</li>
             <li>Fear</li>
-        </ul>
+        </ol>
 
         <script>
-        var lis = $('ul li');
-            console.log(lis);
+        $('ol li').addClass('joy');
+        $('h1').addClass('sadness');
         </script>
     </body>
 </html> 
