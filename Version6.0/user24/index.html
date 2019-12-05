@@ -7,7 +7,7 @@
         <script src="JS/jquery-3.4.1.js"></script>
         
         <link rel='stylesheet'
-              href="CSS/good.css">
+              href="good.css">
         
         <style>
             
@@ -16,6 +16,7 @@
             }
             .Barbarian{
                 color:darkorange;
+                font-family:'comic sans ms'
             }
             .Monk{
                 color:deepskyblue;
@@ -26,26 +27,17 @@
             .Warlock{
                 color:darkmagenta;
             }
-            .emphasis{
-                font-weight:bold
-            }
             
         </style>
         
         <script>
              
         $(function(){
-                $('li:first-child').addClass('emphasis');
+                $('li:first-child').addClass('Barbarian');
             });
              $(document).ready(function(){
-                 $('li:first-child').addClass('emphasis');
+                 $('li:first-child').addClass('Barbarian');
              });
-            
-            (function() {
-                $('button').click(function() {
-                    $('link').attr('href','evil.css')
-                })
-            })
             
          </script>
         
@@ -55,11 +47,21 @@
     
      <body>
          
-         <ul><li class="Barbarian">Barbarian</li><li class="Monk">Monk</li><li class="Paladin">Paladin</li><li class="Warlock">Warlock</li></ul>
+         <ul><li>Barbarian</li><li class="Monk">Monk</li><li class="Paladin">Paladin</li><li class="Warlock">Warlock</li></ul>
          
-         <button data-file="good"> Good </button>
+         <button data-file="good">Good</button>
          
-         <button data-file="evil"> Evil </button>
+         <button data-file="evil">Evil</button>
+         
+         <script>
+         (function() {
+                $('button').click(function() {
+                    var stylesheet = $(this).text().toLowerCase();
+                    console.log(stylesheet);
+                    $('link').attr('href', stylesheet + '.css');
+                });
+            })();
+         </script>
          
     </body>
     
