@@ -2,8 +2,9 @@
     <head>
         <title>Aryan Intro to jQuery </title>
         <script src="JS/jquery-3.4.1.js"> </script>
-        
+        <link rel="stylesheet" href="day.css"> 
         <style>
+
             ul li{
                 color: green;
             }
@@ -11,22 +12,52 @@
             h3{
                 color: purple;
             }
+            
+            .emphasis {font-variant-caps: all-petite-caps}
         </style>
+               
+        
+<script>
+        $(document).ready(function() {
+    $('h3').addClass('emphasis');
+    });
+        
+        
+        
+        </script>
     </head>
     
 <body>
     
+    
     <h3> Football standings NFC</h3>
     <ul> <li>Packers</li><li>Vikings</li>
          <li>Bears</li><li>Lions</li></ul>
+    <button data-file="day">Day</button>
+    <button data-file="night">Night</button>
     
     <script>
-    var lis = jQuery('ul li');
-        console.log(lis);
         
-     var h1= jQuery('h3');
-        console.log(h1);
+        $('ul li').addClass ('ul li');
+        $('h3').addClass ('h3');
+ 
+        
+   (function(){
+       var link = $('link');
+       $('button').click(function() {
+           var $this = $(this);
+      var stylesheet = $this.data('file');
+           $(this).siblings('button').removeAttr('disabled');
+           console.log(stylesheet);
+           $('link').attr('href', stylesheet +'.css');
+           $this.attr('disabled', 'disabled');
+           
+       });
+   })();
+    
     </script>
+    
+    
     
     
     
