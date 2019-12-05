@@ -2,14 +2,14 @@
     <head>
         <title>User 11 Intro to jQuery</title>
         <script src="JS/jquery-3.4.1.js"></script>
-        <link rel="stylesheet" href="CSS/Day.css">
+        <link rel="stylesheet" href="day.css">
         
         <style>
             ul li{
                 color:red;
             }    
             .ocean{
-                color:blue;
+                color:green;
             }
             .sky{
                 color:cyan;
@@ -33,8 +33,10 @@
             <li><h3>hippy</h3></li>
             <li><h4>snoopy</h4></li>
             <li><h5>bapkins</h5></li></ul>
-        <button data-file="Day">Day</button>
-        <button data-file="Night">Night</button>
+        <button data-file="day">Day</button>
+        <button data-file="night">Night</button>
+        <button data-file="Blue">Blue</button>
+        <button data-file="Red">Red</button>
         <script>
         var lis = jQuery('ul li');
             console.log(lis);
@@ -43,6 +45,27 @@
             $('h2').addClass('ocean');
             $('h3').addClass('sky');
             $('h5').addClass('sky');
+        </script>
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        
+        <script>
+        (function() {
+            var link = $('link');
+            $('button').on('click', function() {
+                var $this = $(this),
+                    stylesheet = $this.data('file');
+                
+                link.attr('href', stylesheet + '.css');
+                
+                $this
+                    .siblings('button')
+                        .removeAttr('disabled')
+                        .end()
+                .attr('disabled', 'dusabled');
+            });
+        })();
+
         </script>
     </body>
 </html>
