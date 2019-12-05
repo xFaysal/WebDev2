@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charsel=utf-8>
+    <title>jQuery Events 201</title>
+    <link rel="stylesheet" href="CSS/FAQ.css">
+</head>
+<body>
+  
+<dl>
+    <dt>What are your hours</dt>
+    <dd>We are open 24/7</dd>
+    <dt>What are your hours</dt>
+    <dd>We are open 24/7</dd>
+    <dt>What are your hours</dt>
+    <dd>We are open 24/7</dd>
+    <dt>What are your hours</dt>
+    <dd>We are open 24/7</dd>
+    <dt>What are your hours</dt>
+    <dd>We are open 24/7</dd>
+    </dl>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    
+    
+<script>
+(function() {
+    var dd = $('dd');
+    
+    dd.filter(':nth-child(n+4)').addClass('hide');
+ 
+})();
+</script>    
+    
+</body>
+</html>
