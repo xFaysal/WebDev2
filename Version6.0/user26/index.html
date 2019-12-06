@@ -2,22 +2,25 @@
     <head>
         <title>This Is Hard</title>
         <script src="Js/jquery-3.4.1.js"></script>
-        <link rel="stylesheet" href="Css/Day.css"> 
+        <link rel="stylesheet" href="Day.css"> 
         <style>
             ul li{
                 color: red;
             }
-            .green{
+            green{
                 color: green;
             }
-            .purple{
+            purple{
                 color: purple;
             }
-            .navy{
+            navy{
                 color: navy;
             }
-            .blue{
+            h1{
                 color: blue;
+            }
+            yellow{
+                color: yellow;
             }
             .emphasis{ 
                 font-weight: bold;
@@ -34,28 +37,30 @@
                 $('li:first-child').addClass('emphasis');
             });
             $ ('ul li').addClass('ul li');
-            $ ('h1').addClass('purple');
+            $ ('h1').addClass('h1');
         </script>
     </head>
-    <h1>6.0 Things</h1>
     <body>
+          <h1>6.0 Things</h1>
         <ul><li>This</li><li>Stuff</li><li>Is</li><li>Hard</li></ul>
         <button data-file="day">Day</button>
         <button data-file="night">Night</button>
         <script>
-            (function() {
-                var link =('link');
-                $('button').on('click', function() {
-                    var $this = $(this),
-                        stylesheet = $(this).data('file');
-                    link.attr('href', stylesheet + '.css');
-                    $this
-                    .siblings('button')
-                    .removeAttr('disabled')
-                    .end()
-                    .attr('disabled', 'disabled');
-                });
-            })();
+(function() {
+      var link = $('link');
+    $('button').on('click', function() {
+        var $this = $(this),
+            stylesheet = $this.data('file');
+        
+        link.attr('href', stylesheet + '.css');
+        
+        $this
+            .siblings('button')
+            .removeAttr('disabled')
+            .end()
+            .attr('disabled', 'disabled');
+    });
+})();
         </script>  
     </body>
 </html>
