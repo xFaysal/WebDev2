@@ -3,6 +3,7 @@
         <Title> Fung Intro to jQuery</Title>
         <script src="JS/jquery-3.4.1.js"></script>
         <link rel ="stylesheet" href="CSS/Day.css">
+        <link rel="stylesheet" href="CSS/Style.css">
         
         <style>
             ul li{ 
@@ -33,13 +34,38 @@
     </head>
 
     <body>
-            <h1> NFC North Standings </h1>    
-        <ul><li>Packers</li><li>Vikings</li><li>Bears</li><li>Lions</li></ul>
+        
+        <dl>
+	<dt>What are your hours?</dt>
+	<dd>We are open 24/7.</dd>
+	<dt>How long did it take to make the website?</dt>
+	<dd>About 2 weeks ago</dd>
+	<dt>How long did it take for you to come up with music list?</dt>
+	<dd>5 Minutes</dd>
+	<dt>Are you going to keep udpating this website?</dt>
+	<dd>If I need to.</dd>
+	<dt>What's your inspirtaion?</dt>
+	<dd>I like Music.</dd>
+</dl>
+            
         
         <button data-file="day">Day</button>
         <button data-file="night">Night</button>
         
         <script> 
+            
+            (function() {
+	
+	$('dd').filter(':nth-child(n+4)').addClass('hide');
+
+	$('dl').on('mouseenter', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200);
+	});
+})();
        
         (function() {
             var link = $('link');
