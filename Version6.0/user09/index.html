@@ -2,7 +2,7 @@
     <head>
         <Title> Fung Intro to jQuery</Title>
         <script src="JS/jquery-3.4.1.js"></script>
-        <link rel ="stylesheet" href="Day.css">
+        <link rel ="stylesheet" href="CSS/Day.css">
         
         <style>
             ul li{ 
@@ -36,11 +36,28 @@
             <h1> NFC North Standings </h1>    
         <ul><li>Packers</li><li>Vikings</li><li>Bears</li><li>Lions</li></ul>
         
-        <button data-file="Day"> Day </button>
-        <button data-file="Night"> Night </button>
+        <button data-file="day">Day</button>
+        <button data-file="night">Night</button>
         
         <script> 
-        $('ul li > a' )
+       
+        (function() {
+            var link = $('link');
+            $('button').click( function(){
+                var $this = $(this),
+                    stylesheet = $this.data('file');
+                
+                link.attr('href',"CSS/"  +  stylesheet + '.css');
+                
+                $this
+                .siblings('button')
+                .removeAttr('disabled')
+                .end()
+                .attr('disabled', 'disabled');
+            });
+        })();
+            
+            $('ul li > a' )
             
             $(function() {
         $('li:first-child').addClass('emphasis');
