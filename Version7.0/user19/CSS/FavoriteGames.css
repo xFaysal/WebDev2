@@ -1,14 +1,6 @@
-body{
-    background-image: url('http://i.stack.imgur.com/kx8MT.gif');
-    background-size: cover;
-    
-    
-    
-    height: 100vh;
-    padding:0;
-    margin:0;
+body {
+    background-image: url('images/download.jpg');
 }
-
 
 td {background-color: lightblue;
     font-family: fantasy;
@@ -25,4 +17,7 @@ tr {background-color: #406cff;
 }
 
 .top5 {text-align: center;
+}
+.hack {font-size: 5px;
+        text-align: center;
 }
