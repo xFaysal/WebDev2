@@ -6,7 +6,8 @@
 	<link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-
+<button data-file="good">Good</button>
+<button data-file="evil">Evil</button>
 <dl>
 	<dt>What college do you plan to attend?</dt>
 	<dd>I plan to attend Iowa State.</dd>
@@ -22,7 +23,6 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-
 <script>
 
 (function() {
@@ -37,8 +37,25 @@
 					.slideUp(200);
 	});
 })();
+(function() {
+                $('button').click(function() {
+                    var stylesheet = $(this).text().toLowerCase();
+                    console.log(stylesheet);
+                    $('link').attr('href', stylesheet + '.css');
+                });
+            })();
+$(document).ready(function() {
 
-
+    $(document).mousemove(function(e) {
+        pointer = $('<img>').attr({'src':'pointer.png'});
+        $(document.body).append(pointer);
+        pointer.css({
+                        'position':'absolute',
+                        top: e.pageY +2 ,
+                        left: e.pageX +2
+                    }).fadeOut(1500);   
+    });
+});
 </script>
 
 </body>
