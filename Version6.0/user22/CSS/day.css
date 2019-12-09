@@ -1,0 +1,24 @@
+body {
+	background-color:white;
+	color:black;
+}
+table {
+	margin-left: left;
+	margin-right: auto;
+	text-align: center;
+	border-collapse: collapse;
+	cellspacing: 0px;
+	margin:5px;
+}
+tr {
+	border: 2px solid black;
+	text-align: center;
+	background-color:gray; 
+}
+
+th {
+	text-align: center;
+	color: #ffffff;
+	background-color: black;
+	border: 1px solid black;
+}
