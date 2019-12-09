@@ -1,18 +1,45 @@
-<html lang="en">
-<!--Version 6.0
-	Name:
-	Date Completed:
- -->
+<!doctype html>
+<html>
 <head>
-
-<title> Web Development User #24 </title>
-
+	<meta charset=utf-8>
+	<title>FAQ</title>
+	<link rel="stylesheet" href="CSS/style.css">
 </head>
-
 <body>
 
-<center> My name is User #24</center>
+<dl>
+	<dt>What college do you plan to attend?</dt>
+	<dd>I plan to attend Iowa State.</dd>
+	<dt>Do you have any siblings?</dt>
+	<dd>Yes, I have one younger sister.</dd>
+	<dt>What's your favorite class?</dt>
+	<dd>I really enjoy playing in band with my friends.</dd>
+	<dt>What type of music do you like?</dt>
+	<dd>I'm a big fan of power metal.</dd>
+	<dt>Do you own any pets?</dt>
+	<dd>I am the proud owner of 2 very good dogs.</dd>
+</dl>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<script>
+
+(function() {
+	
+	$('dd').filter(':nth-child(n+4)').addClass('hide');
+
+	$('dl').on('mouseenter', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200);
+	});
+})();
+
+
+</script>
 
 </body>
-
 </html>
