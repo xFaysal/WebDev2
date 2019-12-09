@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title></title>
+	<link rel="stylesheet" href="CSS/FAQ.css">
+</head>
+<body>
+
+<dl>
+	<dt1>What are your hours?</dt1>
+	<dd>We are open 24/7.</dd>
+	<dt2>What are your orders?</dt2>
+	<dd>We are want to order cheese pizza.</dd>
+	<dt3>What are your foreigners?</dt3>
+	<dd>We are the conclave.</dd>
+	<dt4>What are your steps?</dt4>
+	<dd>We are stepping stone.</dd>
+	<dt5>What are your final wishes?</dt5>
+	<dd>We wish a good bye.</dd>
+</dl>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<script>
+
+(function() {
+	
+	$('dd').filter(':nth-child(n+4)').addClass('hide');
+
+	$('dl').on('mouseenter', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200);
+        
+	});
+})();
+
+</script>
+
+<script>
+    $('dt').hover(function() {
+        $('dt').fadeOut(1500);
+        $('dt').fadeIn(1000);
+    });
+    </script>   
+    
+
+
+</body>
+</html>
