@@ -19,11 +19,15 @@ cursor: pointer;
 font-weight: bold;    
 font-size : 1.5em;    
 line-height: 2em;    
-background: #e3e3e3;    
-border-bottom: 1px solid #c5c5c5;    
-border-top: 1px solid white;}
+background: #ffffff;    
+border-bottom: 1px solid #000000;    
+border-top: 1px solid black;}
 
 dt:first-child { border-top: none; }
 
 dt:nth-last-child(2) { border-bottom: none; }
 .hide { display: none;}
+
+p {
+ color: white;
+}
