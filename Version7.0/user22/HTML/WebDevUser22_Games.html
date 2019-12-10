@@ -108,6 +108,8 @@ function stopTest()
  alert("cheater! you pressed too early!");
  } 
  }
+window.location.reload();
+console.log('window reloaded')
 }
 
 var randMULTIPLIER=0x015a4e35;
@@ -142,13 +144,13 @@ Click on "Start" first, and wait until the background color changes. As soon as 
 <form name="response">
 Change background color in: 
 <select name="bgColorChange">
-<option selected>deeppink
-<option>aliceblue
-<option>crimson
-<option>darkkhaki
-<option>cadetblue
-<option>darkorchid
-<option>coral
+<option selected>red
+<option>blue
+<option>gray
+<option>yellow
+<option>green
+<option>purple
+<option>orange
 </select>
 <input type="button" value="start" onClick="startit()">
 <input type="button" value="stop" onClick="stopTest()">
