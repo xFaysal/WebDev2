@@ -1,6 +1,4 @@
-body {
-    background-image: url('images/download.jpg');
-}
+
 
 td {background-color: lightblue;
     font-family: fantasy;
@@ -20,4 +18,4 @@ tr {background-color: #406cff;
 }
 .hack {font-size: 5px;
         text-align: center;
-}
+} 
