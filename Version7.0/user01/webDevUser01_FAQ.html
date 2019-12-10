@@ -12,7 +12,6 @@
     <meta name="description" content="Test One Page Web Web ">
 
 	<title></title>
-	<link rel="stylesheet" href="CSS/webDevUser01.css">
      <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
@@ -67,6 +66,10 @@
 
     <br>
     
+    <br>
+    
+    <br>
+    
 <hl>Very Important FAQ (not really) {don't listen to this guy, this is very important, you can trust me becuase I'm curly unlike this lier}</hl>
 <dl>
 	<dt>Is this a bad Website?</dt>
@@ -89,13 +92,14 @@
 $(document).ready(function(){
     $("button").hover(function(){
         $("button").css("background-color", "green");
-  $("button").click(function(){
-    $("button").hide();
-    $("dt").hide();
-    $("dd").hide();
-    $("hl").hide();
-  });
-  });
+         $("button").click(function() { 
+                $('#image').css("background-image", "url(Images/explosion.png)");
+                $("button").hide();
+                $("dt").hide();
+                $("dd").hide();
+                $("hl").hide();
+});
+});
 });
 </script>
 
