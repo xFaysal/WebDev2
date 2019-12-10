@@ -1,13 +1,15 @@
+<!DOCTYPE html>
+
 <html lang="en">
 
-<!--Version 2.0
+<!--Version 3.0
 
-        Name: Jordan Tone
+        Name:
 
         Date Completed:
 
  -->
-<title>About Me</title>
+
   <head>
 
     <meta charset="utf-8">
@@ -20,7 +22,7 @@
 
     <!-- code obtained from https://frimmy.github.io/api-test/  -->
 
-
+    <title>FAQ</title>
 
 
     <!-- Bootstrap core CSS -->
@@ -35,7 +37,7 @@
 
           href="https://fonts.googleapis.com/css?family=Lobster">
 
-    <link href="style.css" rel="stylesheet">
+    <link href="CSS/FAQ.css" rel="stylesheet">
 
 
   </head>
@@ -62,7 +64,6 @@
 
           </button>
 
-
         </div>
 
         <div class="collapse navbar-collapse">
@@ -71,14 +72,15 @@
                
                <li><a href="Home.html">Home</a></li>
 
-            <li class="active"><a href="webDevUser26.html">About Me</a></li>
+            <li><a href="webDevUser26.html">About Me</a></li>
 
             <li><a href="Table.html">Table</a></li>
-               
-            <li><a href="Games.html">Games</a></li>
+
+<li><a href="Games.html">Games</a></li>
 
             <li><a href="Buttons.html">Buttons</a></li>
-               <li><a href="FAQ.html">FAQ</a></li>
+               
+               <li class="active"><a href="FAQ.html">FAQ</a></li>
 
           </ul>
 
@@ -95,16 +97,43 @@
 
     <br>
 
-                        <h2>About Me</h2>
-
-
-                        <p>
-                            
-                            I go to the Shakopee high school and take web development, this is a project that I am doing for fifty five points and have worked on this for way to many hours for it to not be done. And while I was supposed to be doing homework at home I instead played my second favorite video game Terraria.
-                            
-                        </p>    
+                        <h2>FAQ</h2>
     
+<dl>
+	<dt>What are your hours?</dt>
+	<dd>We are open 24/7.</dd>
+	<dt>What are your hours?</dt>
+	<dd>We are open 24/7.</dd>
+	<dt>What are your hours?</dt>
+	<dd>We are open 24/7.</dd>
+	<dt>What are your hours?</dt>
+	<dd>We are open 24/7.</dd>
+	<dt>What are your hours?</dt>
+	<dd>We are open 24/7.</dd>
+</dl>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<script>
+
+(function() {
+	
+	$('dd').filter(':nth-child(n+4)').addClass('hide');
+
+	$('dl').on('mouseenter', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200);
+	});
+})();
+
+</script>
+
+
+                    
                 </div>
 
 
@@ -141,3 +170,4 @@
 </body>
 
 </html>
+
