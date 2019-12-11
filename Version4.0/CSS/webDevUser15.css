@@ -13,8 +13,6 @@ body {
     
 }
 
-
-
 .button:hover {
   border-radius: 50%;
     background-color:red;
@@ -37,10 +35,7 @@ body {
     text-align: left
     
 }
-
-
-}  
-
+  
 
 h1 {
 	font-size: 1.3em;
