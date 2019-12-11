@@ -7,11 +7,11 @@ img{
 th {
 	text-align: center;
 	color: #ffffff;
-	background-color: #000000;
+	background-color: #003366;
 }
 body {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #000000;
+	color: #003366;
     background-image: url("../images/WebDevUser09.jpg");
 }
 
@@ -60,7 +60,7 @@ tr {
 }
 
 .button3 {
-  padding: 14px 40px;
+    padding: 14px 40px;
  display: block;
   width: 100%;
   border: none;
@@ -95,36 +95,7 @@ tr {
 .yellow{
     background-color: #FFFF00;
 }
+
 #morecontent {
   background-color: yellow;
 }
-
-body{
-width: 500px;
-	
-    margin: auto;
-    text-align: center;
-}
-
-dl{
-
-}
-
-dd{
-margin: 0;	    
-padding: 1em 0;
-}
-
-dt{
-cursor: pointer;    	    
-font-weight: bold;    
-font-size : 1.5em;    
-line-height: 2em;    
-background: #ffffff;    
-border-bottom: 1px solid #000000;    
-border-top: 1px solid black;}
-
-dt:first-child { border-top: none; }
-
-dt:nth-last-child(2) { border-bottom: none; }
-.hide { display: none;}
