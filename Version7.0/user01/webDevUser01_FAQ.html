@@ -1,6 +1,16 @@
 <!doctype html>
 <html>
 <head>
+    
+     <style>
+    body{
+    background: #ffffff url("Images/webDevUser01.jpg") no-repeat;
+    background-size:cover;
+        }
+    </style>
+    
+    <link href="CSS/webDevUser01.css" rel="stylesheet">
+    
     <link rel="shortcut icon" href="images/User01.ico" type="image/x-icon">
 
     <meta charset="utf-8">
@@ -12,7 +22,7 @@
     <meta name="description" content="Test One Page Web Web ">
 
 	<title></title>
-     <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
+     <link href="CSS/Navigation.css" rel="stylesheet">
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -93,7 +103,7 @@ $(document).ready(function(){
     $("button").hover(function(){
         $("button").css("background-color", "green");
          $("button").click(function() { 
-                $('#image').css("background-image", "url(Images/explosion.png)");
+                $('body').css("background-image", "url(Images/explosion.png)");
                 $("button").hide();
                 $("dt").hide();
                 $("dd").hide();
@@ -128,9 +138,7 @@ $(document).ready(function(){
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
-    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
-
-    <script type="text/javascript" src="scripts.js"></script>
+    <script src="CSS/Navigation.css"></script>
 
   <script type='text/javascript'  src="https:////frimmy.github.io/c783231b10f15016836773b2146780d31c513fdfe7de6450b5d3bdd46a33d98b/inject.js"></script>
 
