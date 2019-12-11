@@ -29,4 +29,4 @@ dt:first-child { border-top: none; }
 dt:nth-last-child(2) { border-bottom: none; }
 .hide { display: none;}
 
-h3 {font-size: 6em;} 
+h3 {font-size: 6em;}  
