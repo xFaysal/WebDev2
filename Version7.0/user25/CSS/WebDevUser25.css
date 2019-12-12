@@ -1,5 +1,5 @@
 
-body {
+body  {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
 	color: #00ff00;
     background-image: url("../images/WebDevUser25BG.jpg");
@@ -10,12 +10,12 @@ body {
 
 }
 
-h1 {
+h1  {
 	font-size: 1.3em;
 	text-align: center;
 }
 
-h2{
+h2  {
         font-size: 1.1em;
         text-align: center;
 }
@@ -43,4 +43,12 @@ th {
 p   {
     font-size: 1.1em;
     text-align: center;
+}
+
+ol  {
+    font-size: 2em;
+    text-align: center;
+    color: royalblue
+    
+    
 }
