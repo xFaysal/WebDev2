@@ -7,9 +7,7 @@ body{
     margin: auto;
     text-align: center;
 }
-.width{
-    width: 100%;
-}
+
 dl{
 
 }
@@ -31,6 +29,5 @@ border-top: 1px solid white;}
 dt:first-child { border-top: none; }
 
 dt:nth-last-child(2) { border-bottom: none; }
-
 .hide { display: none;
 }
