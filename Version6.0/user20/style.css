@@ -1,8 +1,4 @@
 body{
-    background: black;
-    color: white;
-    
-
 width: 500px;
 	
     margin: auto;
@@ -31,4 +27,3 @@ dt:first-child { border-top: none; }
 
 dt:nth-last-child(2) { border-bottom: none; }
 .hide { display: none;}
-}
