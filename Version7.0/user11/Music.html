@@ -27,7 +27,7 @@
 
     <!-- Bootstrap core CSS -->
 
-    <link href="CSS/bootstrap.css" rel="stylesheet">
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
 
  
 
@@ -43,7 +43,7 @@
   </head>
 
 
-  <body style='background: linear-gradient(blue, midnightblue);'>
+  <body style='background: black;' >
 
 
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -74,11 +74,11 @@
 
             <li><a href="index.html">About Me</a></li>
 
-            <li><a href="Music.html">Music</a></li>
+            <li class="active"><a href="Music.html">Music</a></li>
 
             <li><a href="List.html">List</a></li>
 
-            <li class="active"><a href="FAQ.html">FAQ</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
                
                <li><a href="Game.html">Games</a></li>
 
@@ -92,7 +92,22 @@
 
 
 <div id="content">
+    <br>
+    <br>
+    <br>
+ 
+    <font color='white' style="background: linear-gradient(blue, cyan, midnightblue);height:250px;width:250px;position:absolute;"><h1>Hover Over me to Hear Some Music!</h1></font>
+    
+   
+<center><font1 color='white' style="background: linear-gradient(blue, red, purple);height:250px;width:250px;position:absolute;"><h2>Hover Over me to bring something back!</h2></font1></center>
+                           
+                      
 
+
+                        
+
+
+                          
                 </div>
 
 
@@ -101,66 +116,32 @@
 
                 </div>
 
-    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
-</body>
-<!doctype html>
-<html>
-<head>
-	<meta charset=utf-8>
-	<title></title>
-	<link rel="stylesheet" href="CSS/FAQ.css">
-</head>
-<body>
-<br>
-<br>
-<dl>
-	<dt>When do you wake up?</dt>
-	<dd>I wake up at 7:20 AM</dd>
-	<dt>What is your favorite food?</dt>
-	<dd>Orange chicken with white rice</dd>
-	<dt>How do you spend your free time?</dt>
-	<dd>Playing video games or sleeping</dd>
-	<dt>Are you lazy?</dt>
-	<dd>yes... but also yes</dd>
-	<dt>Do you really do anything?</dt>
-	<dd>yes, but actually no</dd>
-</dl>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
 
+    <script type="text/javascript" src="scripts.js"></script>
+
+  <script type='text/javascript'  src="https:////frimmy.github.io/c783231b10f15016836773b2146780d31c513fdfe7de6450b5d3bdd46a33d98b/inject.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-
-<script>
-
-(function() {
-	
-	$('dd').filter(':nth-child(n+4)').addClass('hide');
-
-	$('dl').on('mouseenter', 'dt', function() {
-		$(this)
-			.next()
-				.slideDown(200)
-				.siblings('dd')
-					.slideUp(200); 
-	});
-})();
-
-</script>
-    
-<script>
-    $('dt').hover(function() {
-        $('dt').fadeOut(1500);
-        $('dt').fadeIn(1000);
+<script> 
+$(document).ready(function(){
+  $("h1").hover(function(){
+    $("font").animate({left: '2000px'});
+  });
+});
+</script> 
+      
+<script> 
+$(document).ready(function(){
+  $("h2").hover(function(){
+    $("font").animate({
+      left: '450px',
+      opacity: '0.5',
+      height: '250px',
+      width: '250px'
     });
-    </script>   
-    
-<script>
-    $('dd').hover(function() {
-       $('dd').fadeOut(1500);
-        $('dd').fadeIn(1000);
-    });
-    </script>
-
-
+  });
+});
+</script> 
 </body>
-</html>
