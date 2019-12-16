@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8>
+    <title>jQuery Accordion</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+<dl>
+    <dt>What is the problem?</dt>
+    <dd>OUR PLANET IS DYING!</dd>
+    <dt>How?</dt>
+    <dd>Global warming and climate change.</dd> 
+    <dt>What can I do to help?</dt>
+    <dd>You can start by showing people this website; if more people are aware of this issue, we will be able to overcome it faster. </dd> 
+    
+    
+</dl> 
+    
+ <img src="polarbear.jpg" width="500" height="500" alt="polar bear on melting ice">
+
+<script src ="JS/jquery-3.4.1.js"></script>
+    
+<script>
+
+(function() {
+    
+    var dd = $('dd');
+    
+    dd.filter(':nth-child(n+4)').addClass('hide');
+    
+    $('dt').on('mouseenter', function() {
+        $(this)
+            .next()
+                .slideDown(200)
+                .siblings('dd')
+                    .slideUp(200);
+    })
+})();
+    
+    
+</script>
+    
+</body>
+</html>
