@@ -8,18 +8,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description" content="Test One Page Web Web ">
-    
-    <link ref="file:///Users/228442/Documents/GitHub/WebDev2/Version7.0/user18/CSS/accordionstyle.css" type="text/css" rel="stylesheet">
 
     <!-- code obtained from https://frimmy.github.io/api-test/  -->
 
     <title>Title</title>
     
+    
+
+
     <!-- Bootstrap core CSS -->
 
     <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
-    
-    
 
  
 
@@ -35,7 +34,6 @@
 <body>
     
 <!--    <link rel="stylesheet" href="CSS/accordionstyle.css">-->
-    <div class="toggle-container">
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 
       <div class="container">
@@ -79,61 +77,84 @@
 
       </div>
     </div>
-        </div>
         
 <!------ New try -------->
         
-<div class="question-container"> </div>
+<dl class="accordion">
 
-<div class="accordion">
-	<div class="accordion-header">What is the problem?</div>
-	<div class="accordion-content">Our planet is dying!</div>
+<dt><a href="">Panel 1</a></dt>
+<dd>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</dd>
 
-	<div class="accordion-header">How?</div>
-	<div class="accordion-content">Global warming and climate change.</div>
+<dt><a href="">Panel 2</a></dt>
+<dd>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</dd>
 
-	<div class="accordion-header">What can I do to help?</div>
-	<div class="accordion-content">You can start by showing people this website; if more people are aware of this issue, we will be able to overcome it faster.</div>
-</div>
+<dt><a href="">Panel 3</a></dt>
+<dd>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</dd>
 
-<br/>
-<br/>
-
-<img src="polarbear.jpg" width="500" height="500" alt="polar bear on melting ice">
-    
-<!-- Placed at the end of the document so the pages load faster -->
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</dl>
         
 <!-- Script ----->
 <script>
-   $(".accordion").on("mouseenter", ".accordion-header", function() {
- 	$(this).toggleClass("active").next().slideToggle();
- });
-</script>
-
-<style>
-    .question-container {
-    margin-top: 112px;
-}
-
-.toggle-container {
-    margin-bottom: 110px;
-}
+  (function($) {
     
-.accordion-header {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 24px;
-    font-weight: bold;
-}
+  var allPanels = $('.accordion > dd').hide();
+    
+  $('.accordion > dt > a').click(function() {
+    allPanels.slideUp();
+    $(this).parent().next().slideDown();
+    return false;
+  });
 
-.accordion-content {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 18px;
-    font-weight: normal;
-    color: red;
-    }
-</style> 
+})(jQuery);  
+</script>
+        
+        
+        
+        
+        
+<!--------------------->
+
+<!--
+    </div>
+<dl>
+    <dt>What is the problem?</dt>
+    <dd>OUR PLANET IS DYING!</dd>
+    <dt>How?</dt>
+    <dd>Global warming and climate change.</dd> 
+    <dt>What can I do to help?</dt>
+    <dd>You can start by showing people this website; if more people are aware of this issue, we will be able to overcome it faster. </dd> 
+    
+    
+</dl> 
+    
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>    
+<script>
+
+(function() {
+    
+    var dd = $('dd');
+    
+    dd.filter(':nth-child(n+4)').addClass('hide');
+    
+    $('dt').on('mouseenter', function() {
+        $(this)
+            .next()
+                .slideDown(200)
+                .siblings('dd')
+                    .slideUp(200);
+    })
+})();
+    
+    
+</script>
+    
+ <img src="polarbear.jpg" width="500" height="500" alt="polar bear on melting ice">
+-->
+
 
 </body>
 </html>
