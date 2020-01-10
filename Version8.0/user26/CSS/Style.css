@@ -42,7 +42,7 @@
 body{
     width: 500px;
     margin: auto;
-    text-align: left;
+    text-align: center;
 }
 dl{
 }
@@ -63,7 +63,7 @@ dt:nth-last-child(2) { border-bottom: none; }
 .hide { display: none;}
 .column {
     float: left;
-    width: 20%;
+    width: 16.66%;
     padding: 5px;
 }
 .row::after {

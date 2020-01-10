@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!--Version 7.0
+    <!--Version 8.0
 Name: Jordan Tone
 Date Completed:
 -->
@@ -10,13 +10,13 @@ Date Completed:
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Test One Page Web Web ">
         <!-- code obtained from https://frimmy.github.io/api-test/  -->
-        <title>Home</title>
+        <title>Games</title>
         <!-- Bootstrap core CSS -->
         <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
         <!-- Custom styles for this template -->
         <link rel="stylesheet" type="text/css"
               href="https://fonts.googleapis.com/css?family=Lobster">
-        <link href="style.css" rel="stylesheet">
+        <link href="CSS/Style.css" rel="stylesheet">
     </head>
     <body>
         <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -31,10 +31,10 @@ Date Completed:
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="Home.html">Home</a></li>
-                        <li><a href="webDevUser26.html">About Me</a></li>
-                        <li><a href="Table.html">Table</a></li>
-                        <li><a href="Games.html">Games</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="webDevUser26.html">About Us</a></li>
+                        <li><a href="Table.html">Water Weight</a></li>
+                        <li class=active><a href="Games.html">Games</a></li>
                         <li><a href="Buttons.html">Buttons</a></li>
                         <li><a href="FAQ.html">FAQ</a></li>
                     </ul>
@@ -44,8 +44,18 @@ Date Completed:
         <div id="content">
             <br>
             <br>
-            <center><h2>Home</h2></center>
-            <center><p>Well it's the home page what did you expect somethings else.</p></center>
+            <center><h2>Games</h2></center>
+            <button type="button"
+style="background-color:yellow;margin-left:auto;margin-right:auto;display:block;margin-top:5%;margin-bottom:0%;" onClick="alert('GO Sabers!');" >
+Click Me!</button>
+            <script src="JS/JS.js"></script>
+            <br>
+            <center><button class='button button1 button2 button3 button4 blue'>
+                <li><a href="Gamesgames.html">Games</a></li>
+                </button></center>
+            <br>
+            <center><button type="button" onclick="changeText()">Click if you like</button></center>
+            <center><p id="textChange">Click the buttons</p></center>
         </div>
         <div id="footer">
             <p>
