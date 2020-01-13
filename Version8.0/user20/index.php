@@ -2,7 +2,7 @@
 
 <html lang="en">
 
-<!--Version 3.0
+<!--Version 8.0
 
         Name:
 
@@ -10,20 +10,10 @@
 
  -->
 
-  <head>
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
+  <head>    
       
       <link rel="icon" type="image/png" sizes="32x32" href="images/WebDevUser20.favicon.ico">
-<link href="CSS/index.css" rel="stylesheet" type="text/css">
+
     <meta charset="utf-8">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -32,7 +22,7 @@
 
     <meta name="description" content="Test One Page Web Web ">
       <meta charset="UTF-8">
-    <title>Dashboard</title>
+    <title>CRUD</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js"></script>
@@ -71,32 +61,28 @@
 
     <link href="style.css" rel="stylesheet">
 
-      
- 
-
-      
-      
-      
-
 <style>
     body{
-        background-color:tan;
-        font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
-    }
+            background-color:tan;
+            font-family: "Marker Felt", "Comic Sans MS", fantasy;
+	        color: #003366;
+            margin: 8px;/* must be used to normalize with other menu items */
+        }
     
-   ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
+    ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            border-radius: 4px;
+        }
 
-li {
-  float: left;
-  border-right:1px solid #bbb;
-}
+    li {
+            float: left;
+            border-right:1px solid #bbb;
+            font-size: 16px;
+        }
 
 li:last-child {
   border-right: none;
@@ -116,18 +102,10 @@ li a:hover:not(.active) {
 
 .active {
   background-color: #4CAF50;
-}
-      
-
-      
-      
-     
-    
+}   
     </style>
-    
-    
-    
-
+      
+<link href="CSS/index.css" rel="stylesheet" type="text/css">
 
   </head>
 
@@ -136,14 +114,15 @@ li a:hover:not(.active) {
 
 
    <ul class='navbar'>
-  <li><a  href="webDevUser20_home.html">Home</a></li>
+  <li><a class="active" href="webDevUser20_home.html">Home</a></li>
   <li><a href="webDevUser20.html">About Me</a></li>
-  <li><a  href="webDevUser20_list.html">List</a></li>
+  <li><a href="webDevUser20_list.html">List</a></li>
   <li><a href="webDevUser20_music.html">My Music</a></li>
   <li><a href="webDevUser20_FAQ.html">FAQ</a></li>
   <li><a href="webDevUser20_games.html">Games</a></li>
   <li><a href="mailto:sample@gmail.com?Subject=Hello">Contact</a></li>
-    <li><a class="active" href="index.php">Music Rater</a></li>
+  <li><a href="index.php">Music Rater</a></li>
+  <li><a href="movies/webDevUser20_movie.html">Movies</a></li>
 </ul>
       
       
