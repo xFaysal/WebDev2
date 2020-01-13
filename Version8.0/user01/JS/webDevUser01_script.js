@@ -3,7 +3,7 @@ function changeText() {
 }
 var space = " ";
 var pos = 0;
-var msg = "User 01";
+var msg = "Brandon's Website - Games";
 
 function Scroll() {
 document.title = msg.substring(pos, msg.length) + space +msg.substring(0,pos);
