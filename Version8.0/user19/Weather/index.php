@@ -25,15 +25,95 @@ $data = json_decode($response);
 $currentTime = time();
 ?>
 
-<!doctype html>
 <html>
 <head>
-<title>Forecast Weather using OpenWeatherMap with PHP</title>
+<title>Weather in Shakopee</title>
+<head>
+
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Test One Page Web Web ">
+
+    <!-- code obtained from https://frimmy.github.io/api-test/  -->
+
+    <title>Home</title> 
+      
+    <!-- CSS -->
+
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
+      
+    <link href="CSS/MainCSS.css" rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+
+    <link rel="stylesheet" type="text/css"
+
+          href="https://fonts.googleapis.com/css?family=Lobster">
+
+    <link href="style.css" rel="stylesheet">
+
+
+  </head>
+
+
+  <body>
+
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+      <div class="container">
+
+        <div class="navbar-header">
+
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+
+            <span class="sr-only">Toggle navigation</span>
+
+            <span class="icon-bar"></span>
+
+            <span class="icon-bar"></span>
+
+            <span class="icon-bar"></span>
+
+          </button>
+
+         
+
+        </div>
+
+        <div class="collapse navbar-collapse">
+
+           <ul class="nav navbar-nav">
+               <li><a href="../index.html">Index</a></li>
+               
+               <li><a href="../FAQ.html">Apps</a></li>
+               
+            <li><a href="../index.html">Home</a></li>
+               <li><a href="../favthings.html">Best and Worst Games of 2019</a></li>
+            <li><a href="../NewGames.html">Newest Games of 2020</a></li>
+                <li><a href="../JavascriptGame.html">Java Games</a></li>
+               <li class="active"><a href="../Weather/index.php">Weather</a></li>
+                <li><a href="index.php">Refresh</a></li>
+               
+
+            <li><a href="mailto:aidanmusil@gmail.com?Subject=Hello">Contact</a></li>
+
+          </ul>
+
+        </div><!--/.nav-collapse -->
+
+      </div>
+
+    </div>
 
 <style>
 body {
     font-family: Arial;
-    font-size: 0.95em;
     color: #929292;
 }
 
@@ -69,7 +149,8 @@ span.min-temperature {
 
 </head>
 <body>
-
+<br>
+<br>
     <div class="report-container">
         <h2><?php echo $data->name; ?> Weather Status</h2>
         <div class="time">
