@@ -51,8 +51,9 @@
         <div class="collapse navbar-collapse">
 
            <ul class="nav navbar-nav">
-
-            <li class="active"><a href="/index.html"> The art of catching
+<li><a href="index.php"> US Bank Stadium
+                </a></li>
+            <li><a href="OBJ.html"> The art of catching
                 </a></li>
 
             <li><a href="Theh.html">Test Your response time</a></li>
@@ -60,7 +61,7 @@
 <li><a href="Receivers.html">  Receivers </a></li>
 
             <li><a href="FAQ7.html"> Facts and Stats</a></li>
-            <li><a href="CRUD.php">  CRUD </a></li>
+            <li class="active"><a href="CRUD.php">  Salaries </a></li>
                </ul>
 
          
@@ -86,7 +87,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="page-header clearfix">
-                        <h2 class="pull-left">Receiver Details</h2>
+                        <h2 class="pull-left">Receivers and Their Salaries</h2>
                         <a href="create.php" class="btn btn-danger pull-right">Add New Receiver</a>
                     </div>
                     <?php
@@ -102,7 +103,7 @@
                                     echo "<tr>";
                                         echo "<th>#</th>";
                                         echo "<th>Name</th>";
-                                        echo "<th>Address</th>";
+                                        echo "<th>Team</th>";
                                         echo "<th>Salary</th>";
                                         echo "<th>Action</th>";
                                     echo "</tr>";
