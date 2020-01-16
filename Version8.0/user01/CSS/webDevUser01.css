@@ -5,23 +5,6 @@ img{
   width: 50%;
 }
 
-body {
-	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: green;
-}
-
-h1 {
-	font-size: 1.3em;
-	text-align: center;
-    color: saddlebrown;
-}
-
-h2{
-        font-size: 1.1em;
-    text-align: center;
-        color: saddlebrown;
-}
-
 table {
 	margin-left: auto;
 	margin-right: auto;
@@ -42,17 +25,6 @@ th {
 	background-color: darkgreen;
 }
 
-ul {
-    color: greenyellow;
-}
-
-li {
-    color: lawngreen;
-}
-
-ol {
-    color: darkseagreen;
-}
 
 .button {
     background-color: white;
@@ -71,3 +43,19 @@ ol {
   background-color: #0000FF; 
   color: white;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    
+}
+
+.dayglow:hover {
+    background-color: yellow; 
+  color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    
+}
+
+.nightglow:hover {
+    background-color: grey; 
+  color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    
+}
