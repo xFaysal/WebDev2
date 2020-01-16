@@ -29,8 +29,23 @@ $currentTime = time();
 <html>
 <head>
 <title>Forecast Weather using OpenWeatherMap with PHP</title>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js"></script>
+    <style type="text/css">
+        .wrapper{
+            width: 650px;
+            margin: 0 auto;
+        }
+        .page-header h2{
+            margin-top: 0;
+        }
+        table tr td:last-child a{
+            margin-right: 15px;
+        }
 
-<style>
 body {
     font-family: Arial;
     font-size: 0.95em;
@@ -70,6 +85,32 @@ span.min-temperature {
 </head>
 <body>
 
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+                <a href="games.html">Bored?</a>
+            </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.php"> US Bank Stadium</a></li>
+                <li><a href="OBJ.html"> The art of catching</a></li>
+                <li><a href="Theh.html">Test Your response time</a></li>
+                <li><a href="Receivers.html">  Receivers </a></li>
+                <li><a href="FAQ7.html"> Facts and Stats</a></li>
+                <li><a href="CRUD.php">  Salaries </a></li>
+            </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </div> 
+    <br>
+    <br>
     <div class="report-container">
         <h2><?php echo $data->name; ?> Weather Status</h2>
         <div class="time">
@@ -89,6 +130,11 @@ span.min-temperature {
         </div>
     </div>
 
-
+<img src="images/stadium-1.jpg"width height="300"alt="Weather" />  
+    <li> <a href="index.php"></a></li>
+    <style> td{ color: aqua} </style> 
+    <img src="images/stadium2-1.jpg" width height="500"alt="Weather" />  
+    <li> <a href="index.php"></a></li>
+    <style> td{ color: aqua} </style> 
 </body>
 </html>

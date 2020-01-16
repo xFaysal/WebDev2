@@ -25,62 +25,33 @@
     </script>
 </head>
 <body>
-    
-        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-
-      <div class="container">
-
-        <div class="navbar-header">
-
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-
-            <span class="sr-only">Toggle navigation</span>
-
-            <span class="icon-bar"></span>
-
-            <span class="icon-bar"></span>
-
-            <span class="icon-bar"></span>
-
-          </button>
-
-          <a href="games.html">Bored?</a>
-
-        </div>
-
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+                <a href="games.html">Bored?</a>
+            </div>
         <div class="collapse navbar-collapse">
-
-           <ul class="nav navbar-nav">
-<li><a href="index.php"> US Bank Stadium
-                </a></li>
-            <li><a href="OBJ.html"> The art of catching
-                </a></li>
-
-            <li><a href="Theh.html">Test Your response time</a></li>
-
-<li><a href="Receivers.html">  Receivers </a></li>
-
-            <li><a href="FAQ7.html"> Facts and Stats</a></li>
-            <li class="active"><a href="CRUD.php">  Salaries </a></li>
-               </ul>
-
-         
-
-        </div><!--/.nav-collapse -->
-
-      </div>
-
-    </div> <br>
+            <ul class="nav navbar-nav">
+                <li><a href="index.php"> US Bank Stadium</a></li>
+                <li><a href="OBJ.html"> The art of catching</a></li>
+                <li><a href="Theh.html">Test Your response time</a></li>
+                <li><a href="Receivers.html">  Receivers </a></li>
+                <li><a href="FAQ7.html"> Facts and Stats</a></li>
+                <li class="active"><a href="CRUD.php">  Salaries </a></li>
+            </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </div> 
+    <br>
     <br>
 
-
-
-
-
-    
-    
-    
-    
     
     <div class="wrapper">
         <div class="container-fluid">
