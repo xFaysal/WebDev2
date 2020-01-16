@@ -96,7 +96,6 @@ body {
 
          <!-- Custom styles for this template -->
 
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
     <link rel="stylesheet" type="text/css"
 
           href="https://fonts.googleapis.com/css?family=Lobster">
