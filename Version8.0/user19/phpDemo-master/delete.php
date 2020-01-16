@@ -94,73 +94,62 @@ body {
     </style>
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 
-      <div class="container">
+         <!-- Custom styles for this template -->
 
-        <div class="navbar-header">
+    <link rel="stylesheet" type="text/css"
 
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-
-            <span class="sr-only">Toggle navigation</span>
-
-            <span class="icon-bar"></span>
-
-            <span class="icon-bar"></span>
-
-            <span class="icon-bar"></span>
-
-          </button>
-
-        </div>
-
-        <div class="collapse navbar-collapse">
-
-           <ul class="nav navbar-nav">
-               
-                <li><a href="../index.html">Index</a></li>
-               
-            <li><a href="../FAQ.html">Apps</a></li>
-               
-            <li><a href="../index.html">Home</a></li>
-
-            <li><a href="../favthings.html">Best and Worst Games of 2019</a></li>
+          href="https://fonts.googleapis.com/css?family=Lobster">
+<!-- Bootstrap core JS -->
+        <!-- These are needed to get the responsive menu to work -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link href="CSS/MainCSS.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <style type="text/css">
+            .menu{
+                margin: 0px;
+            }
             
-               
-<li class="active"><a href="../NewGames.html">Newest Games of 2020</a></li>
-               
-                <li><a href="../JavascriptGame.html">Java Games</a></li>
-               <li><a href="../Weather/index.php">Weather</a></li>
-               <li><a href="delete.php">Refresh</a></li>
-            <li><a href="mailto:aidanmusil@gmail.com?Subject=Hello">Contact</a></li>
-
-          </ul>
-
-        </div><!--/.nav-collapse -->
-
-      </div>
-
-    </div>
-</head>
-<body>
-    <div class="wrapper">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="page-header">
-                        <h1>Delete Record</h1>
+            .wideMargin{
+                margin: 15px;
+            }
+            #footer{
+                font-size: 12px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="menu">
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+<!---------------------------------- Edit These Items in your Menu ------------->                        
+                        <a href="../index.html" class="nav-item nav-link">Home</a>
+                        <a href="../FAQ.html" class="nav-item nav-link">Apps</a>
+                        <a href="../favthings.html" class="nav-item nav-link">Best and Worst Games 2019</a>
+                        <a href="../NewGames.html" class="nav-item nav-link active">Newest Games of 2020</a>
+                        <a href="../JavascriptGame.html" class="nav-item nav-link">Java Games</a>
+                        <a href="../Weather/index.php" class="nav-item nav-link">Weather</a>
+                        <a href="mailto:aidanmusil@gmail.com?Subject=Hello" class="nav-item nav-link disabled" tabindex="-2">Contact</a>
+<!----------------------------------^ Edit These Items in your Menu ^ ------------->                        
                     </div>
-                    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-                        <div class="alert alert-danger fade in">
-                            <input type="hidden" name="id" value="<?php echo trim($_GET["id"]); ?>"/>
-                            <p>Are you sure you want to delete this record?</p><br>
-                            <p>
-                                <input type="submit" value="Yes" class="btn btn-danger">
-                                <a href="index.php" class="btn btn-default">No</a>
-                            </p>
-                        </div>
-                    </form>
+                    <div class="navbar-nav ml-auto">
+                        <a href="#" class="nav-item nav-link disabled">Login</a>
+                    </div>
                 </div>
-            </div>        
+            </nav>
         </div>
-    </div>
 </body>
 </html>

@@ -145,22 +145,13 @@ span {
   color: #FFF;
 }
 
-body {
-  background: #111;
-  position: relative;
-}
-
-body, html {
-   height: 100%;
-}
-
 .text {
   overflow: hidden;
   height: auto;
 }      
 /* Link Complete */
 .button1 {
-  background-color: #4CAF50; /* Green */
+  background-color: #4CAF50;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -169,6 +160,4 @@ body, html {
   display: inline-block;
   font-size: 16px;
 }
-body {
-  background-image: linear-gradient(red, yellow);
-}  
+
