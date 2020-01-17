@@ -53,6 +53,11 @@
 
 
   <body>
+      
+<strong>Hello, welcome to my website. Here you will learn about my favorite things, and get some answers to questions.</strong>
+      
+    
+   
 
 
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -85,10 +90,11 @@
 
             <li><a href="WebDevUser25_Music.html">Music</a></li>
             
-            <li class="active"><a href="WebDevUser25_Games.html">Games</a></li> 
+            <li><a href="WebDevUser25_Games.html">Games</a></li> 
 
             
-            <li class="active"><a href="WebDevUser25_NBA.html">NBA Players</a></li> 
+            <li><a href="WebDevUser25_NBA.html">NBA Players</a></li> 
+               
 
             <li><a href="WebDevUser25_NFL.html">NFL Players</a></li>
                
@@ -106,16 +112,52 @@
 
     </div>
       
- 
+
       
       
-      
-<div id="content">
+
 <br>
     
-    
 <br>
+
+
+<h2>Hello, welcome to my website. Here you will learn about my favorite things, and get some answers to questions.</h2>
+    <p>Below are some FAQ's</p>
       
+
+<dl>
+	<dt>What are your hours?</dt>
+	<dd>We are open 24/7.</dd>
+	<dt>What are your hours?</dt>
+	<dd>We are open 24/7.</dd>
+	<dt>What are your hours?</dt>
+	<dd>We are open 24/7.</dd>
+	<dt>What are your hours?</dt>
+	<dd>We are open 24/7.</dd>
+	<dt>What are your hours?</dt>
+	<dd>We are open 24/7.</dd>
+</dl>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<script>
+
+(function() {
+	
+	$('dd').filter(':nth-child(n+4)').addClass('hide');
+
+	$('dl').on('mouseenter', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200);
+	});
+})();
+    
+</script>
+
 
 
 
