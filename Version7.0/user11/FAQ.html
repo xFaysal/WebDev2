@@ -10,7 +10,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="SHS WebDev Menu Sample">
         
-        <title>About Me</title>
+        <title>FAQ</title>
         
         <!-- Bootstrap core JS -->
         <!-- These are needed to get the responsive menu to work -->
@@ -22,6 +22,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         
+        <link rel="stylesheet" href="CSS/CSS.css">
         <!-- Custom styles for this template -->
         <style type="text/css">
             .menu{
@@ -60,58 +61,54 @@
                 
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav">
-<!---------------------------------- Edit These Items in your Menu -------.------>                        
+<!---------------------------------- Edit These Items in your Menu ------------->                        
                         <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="webDevUser11.html" class="nav-item nav-link active">About Me</a>
+                        <a href="webDevUser11.html" class="nav-item nav-link">About Me</a>
                         <a href="Music.html" class="nav-item nav-link" tabindex="-1">Table</a>
                         <a href="List.html" class="nav-item nav-link" tabindex="-2">Lists</a>
-                        <a href="FAQ.html" class="nav-item nav-link" tabindex="-2">FAQ</a>
+                        <a href="FAQ.html" class="nav-item nav-link active" tabindex="-2">FAQ</a>
                         <a href="Game.html" class="nav-item nav-link" tabindex="-2">Animate</a>
-<!----------------------------------^ Edit These Items in your Menu ^ ------------->                        
+<!----------------------------------^ Edit These Items in your Menu ^ ------------->                       
                     </div>
                     <div class="navbar-nav ml-auto">
                         <a href="#" class="nav-item nav-link disabled">Login</a>
                     </div>
                 </div>
             </nav>
-        </div>
-        
-        <div class="wideMargin" id="content">
-          
-          <p>
-        <center><font color='white'><h1>I like blue and being quiet cause I have nothing to talk about.</h1></font></center>
-          </p>
             
-          <p>
-        <center><font color='white'><h2>My favorite season is winter because it kills the bugs but sometimes it also kills my wifi.</h2></font></center>
-          </p>
-            
-           <p>
-        <center><font color='white'><h3>My hobby is playing videos games or sometimes chill on my bed doing listening to music while doing homework.</h3></font></center>
-          </p> 
-            
-            <p>
-        <center><font color='white'><h4>I really need some sunlight or else i'm going to be dried rice but the bugs will come back when the snow is gone so that won't happen</h4></font></center>
-          </p> 
-            
-            <p>
-        <center><font color='white'><h5>You expect a longer sentence? no? ok.</h5></font></center>
-          </p> 
-            
-            <div class='container'><p>
-        <center><font color='white'>click me<h6>ᕕ( ͡° ͜ʖ ͡°)ᕗ</h6></font></center>
-                </p></div>
-            
-      </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>        
+            <dl>
+	<dt>When do you wake up?</dt>
+	<dd>I wake up at 7:20 AM</dd>
+	<dt>What is your favorite food?</dt>
+	<dd>Orange chicken with white rice</dd>
+	<dt>How do you spend your free time?</dt>
+	<dd>Playing video games or sleeping</dd>
+	<dt>Are you lazy?</dt>
+	<dd>yes... but also yes</dd>
+	<dt>Do you really do anything?</dt>
+	<dd>yes, but actually no</dd>
+            </dl>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
-    
-    (function() {
-       $('div.container').delegate('h6','click', function() {
-           console.log('clicked');
-           $(this).clone().appendTo('.container');
-       });
-    })();
-        </script>
+(function() {
+	$('dd').filter(':nth-child(n+4)').addClass('hide');
+	$('dl').on('mouseenter', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200); 
+	});
+})();
+</script>
+
+<script>
+    $('dt').hover(function() {
+        $('dt').fadeOut(1000);
+        $('dt').fadeIn(1000);
+    });
+    </script>   
+        </div>
     </body>
 </html>
+
