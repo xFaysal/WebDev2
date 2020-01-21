@@ -22,6 +22,12 @@ h2{
         color: saddlebrown;
 }
 
+h3{
+        font-size: 1.1em;
+    text-align: center;
+        color: saddlebrown;
+}
+
 table {
 	margin-left: auto;
 	margin-right: auto;
