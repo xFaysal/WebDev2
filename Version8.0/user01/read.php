@@ -54,7 +54,7 @@ if(isset($_GET["id"]) && !empty(trim($_GET["id"]))){
 <head>
     <meta charset="UTF-8">
     <title>Brandon's Server - Read Player Data</title>
-    <link rel="shortcut icon" href="../images/User01.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/User01.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
     <style type="text/css">
          body {
@@ -87,7 +87,7 @@ if(isset($_GET["id"]) && !empty(trim($_GET["id"]))){
                         <label>Diamond Count</label>
                         <p class="form-control-static"><?php echo $row["salary"]; ?></p>
                     </div>
-                    <p><a href="index.php" class="btn btn-primary">Back</a></p>
+                    <p><a href="index_crud.php" class="btn btn-primary">Back</a></p>
                 </div>
             </div>        
         </div>
