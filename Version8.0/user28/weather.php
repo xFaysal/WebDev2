@@ -1,42 +1,15 @@
 <html>
     <head>
-
+<link rel="stylesheet" href="CSS/Home28.css">
+<title>Weather</title>
+<script src="JS/jquery-3.4.1.js"></script>
+</head>
 <style>
-    ul {
-  list-style-type: none;
-  margin: 7.5px;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-family: serif;
- font-size: 16px;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #111;
-}    
-
     .xoxo {
         display: block;
         margin: 8px;
         font-size: 16px;
     }
-        </style>
-    </head>
     <body class="xoxo">
 <ul>
   <li><a href="http://127.0.0.1:8080/user28/index.html">Home</a></li>
@@ -45,8 +18,8 @@ li a:hover {
   <li><a href="http://127.0.0.1:8080/user28/Aboutme28.html">About Me</a></li>
   <li><a href="http://127.0.0.1:8080/user28/faq28.html">Poptart History</a></li>
   <li><a href="http://127.0.0.1:8080/user28/lists.html">Lists</a></li>
-  <li><a href="http://127.0.0.1:8080/user28/index.php">Merchandise</a></li>
-<li><a href="http://127.0.0.1:8080/user28/weather/index.php">Weather</a></li>
+  <li><a href="../user28/index1.php">Merchandise</a></li>
+<li><a href="weather.php">Weather</a></li>
 </ul>
     </body>
 <br>
