@@ -1,7 +1,5 @@
 body{
-    
-    font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: indianred;
+
    
 }
 
@@ -12,6 +10,9 @@ dl{
 dd{
 margin: 0;	    
 padding: 1em 0;
+}
+ul{
+    font-family: "Marker Felt", "Comic Sans MS", fantasy;
 }
 
 dt{

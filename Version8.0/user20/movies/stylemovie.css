@@ -1,5 +1,5 @@
 body {
-  padding-top: 50px;
+  padding-top: 0px;
   text-align: center;
 }
 .starter-template {
@@ -18,12 +18,13 @@ body {
 }
 
 p, span, div, li, a, input, button {
-	font-family: ARVO, serif;
+	font-family: "Marker Felt", "Comic Sans MS", fantasy;
+
 }
 
 h1, h2 {
 	color:white;
-	font-family: LOBSTER, cursive;
+	font-family: "Marker Felt", "Comic Sans MS", fantasy;
 }
 
 .container {

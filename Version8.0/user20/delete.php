@@ -5,7 +5,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
     require_once "config.php";
     
     // Prepare a delete statement
-    $sql = "DELETE FROM employees WHERE id = ?";
+    $sql = "DELETE FROM music WHERE id = ?";
     
     if($stmt = mysqli_prepare($link, $sql)){
         // Bind variables to the prepared statement as parameters
@@ -103,6 +103,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
         background-color:tan;
         font-family: "Marker Felt", "Comic Sans MS", fantasy;
 	color: #003366;
+    margin: 8px;/* must be used to normalize with other menu items */
     }
       
       ul {
@@ -111,11 +112,13 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
   padding: 0;
   overflow: hidden;
   background-color: #333;
+  border-radius: 4px;
 }
 
 li {
   float: left;
   border-right:1px solid #bbb;
+  font-size: 16px;
 }
 
 li:last-child {
@@ -154,6 +157,7 @@ li a:hover:not(.active) {
   <li><a href="webDevUser20_games.html">Games</a></li>
   <li><a href="mailto:sample@gmail.com?Subject=Hello">Contact</a></li>
     <li><a class="active" href="index.php">Music Rater</a></li>
+       <li><a href="movies/webDevUser20_movie.html">Movies</a></li>
 </ul>
       
       

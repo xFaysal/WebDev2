@@ -15,9 +15,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
     $input_name = trim($_POST["name"]);
     if(empty($input_name)){
         $name_err = "Please enter a name.";
-    } elseif(!filter_var($input_name, FILTER_VALIDATE_REGEXP, array("options"=>array("regexp"=>"/^[a-zA-Z\s]+$/")))){
-        $name_err = "Please enter a valid name.";
-    } else{
+    }  else{
         $name = $input_name;
     }
     
@@ -42,7 +40,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
     // Check input errors before inserting in database
     if(empty($name_err) && empty($address_err) && empty($salary_err)){
         // Prepare an update statement
-        $sql = "UPDATE employees SET name=?, address=?, salary=? WHERE id=?";
+        $sql = "UPDATE music SET name=?, address=?, salary=? WHERE id=?";
          
         if($stmt = mysqli_prepare($link, $sql)){
             // Bind variables to the prepared statement as parameters
@@ -77,7 +75,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
         $id =  trim($_GET["id"]);
         
         // Prepare a select statement
-        $sql = "SELECT * FROM employees WHERE id = ?";
+        $sql = "SELECT * FROM music WHERE id = ?";
         if($stmt = mysqli_prepare($link, $sql)){
             // Bind variables to the prepared statement as parameters
             mysqli_stmt_bind_param($stmt, "i", $param_id);
@@ -187,6 +185,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
         background-color:tan;
         font-family: "Marker Felt", "Comic Sans MS", fantasy;
 	color: #003366;
+    margin: 8px;/* must be used to normalize with other menu items */
     }
       
       ul {
@@ -195,11 +194,13 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
   padding: 0;
   overflow: hidden;
   background-color: #333;
+  border-radius: 4px;
 }
 
 li {
   float: left;
   border-right:1px solid #bbb;
+  font-size: 16px;
 }
 
 li:last-child {
@@ -238,6 +239,7 @@ li a:hover:not(.active) {
   <li><a href="webDevUser20_games.html">Games</a></li>
   <li><a href="mailto:sample@gmail.com?Subject=Hello">Contact</a></li>
     <li><a class="active" href="index.php">Music Rater</a></li>
+       <li><a href="movies/webDevUser20_movie.html">Movies</a></li>
 </ul>
       
       
@@ -257,17 +259,17 @@ li a:hover:not(.active) {
                     <p>Please edit the input values and submit to update the record.</p>
                     <form action="<?php echo htmlspecialchars(basename($_SERVER['REQUEST_URI'])); ?>" method="post">
                         <div class="form-group <?php echo (!empty($name_err)) ? 'has-error' : ''; ?>">
-                            <label>Name</label>
+                            <label>Song</label>
                             <input type="text" name="name" class="form-control" value="<?php echo $name; ?>">
                             <span class="help-block"><?php echo $name_err;?></span>
                         </div>
                         <div class="form-group <?php echo (!empty($address_err)) ? 'has-error' : ''; ?>">
                             <label>Artist</label>
-                            <textarea name="artist" class="form-control"><?php echo $address; ?></textarea>
+                            <textarea name="address" class="form-control"><?php echo $address; ?></textarea>
                             <span class="help-block"><?php echo $address_err;?></span>
                         </div>
                         <div class="form-group <?php echo (!empty($salary_err)) ? 'has-error' : ''; ?>">
-                            <label>Salary</label>
+                            <label>Percentage</label>
                             <input type="text" name="salary" class="form-control" value="<?php echo $salary; ?>">
                             <span class="help-block"><?php echo $salary_err;?></span>
                         </div>
