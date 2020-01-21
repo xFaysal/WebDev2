@@ -74,8 +74,8 @@ li a:hover {
   <li class="menu"><a href="Aboutme28.html">About Me</a></li>
   <li class="menu"><a href="faq28.html">Poptart History</a></li>
   <li class="menu"><a href="lists.html">Lists</a></li>
-  <li class="menu"><a href="http://127.0.0.1:8080/user28/index.php">Merchandise</a></li>
-<li class="menu"><a href="weather/index.php">Weather</a></li>
+  <li class="menu"><a href="index1.php">Merchandise</a></li>
+<li class="menu"><a href="weather/weather.php">Weather</a></li>
 </ul>
          
     <div class="wrapper">
