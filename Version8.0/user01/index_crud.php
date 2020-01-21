@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Brandon's Server - Minecraft Form</title>
-     <link rel="shortcut icon" href="../images/User01.ico" type="image/x-icon">
+     <link rel="shortcut icon" href="images/User01.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -44,14 +44,14 @@
 </div>
 <div class="collapse navbar-collapse">
 <ul class="nav navbar-nav">
-<li><a href="../index.html">Home</a></li> 
-<li><a href="../webDevUser01_AboutMe.html">About Me</a></li>
-<li><a href="../webDevUser01_List.html">Epic Minecraft Lists</a></li>
-<li><a href="../webDevUser01_Table.html">Best Minecraft Blocks</a></li>
-<li><a href="../webDevUser01_Games.html">Gamer Time</a></li>
-<li><a href="http://127.0.0.1:8080/User01/weather/index.php">/Weather</a></li>
-<li class="active"><a href="http://127.0.0.1:8080/user01/phpDemo-master/index.php">Minecraft Form</a></li>
-<li><a href="../webDevUser01_FAQ.html">FAQ</a></li> 
+<li><a href="index.html">Home</a></li> 
+<li><a href="webDevUser01_AboutMe.html">About Me</a></li>
+<li><a href="webDevUser01_List.html">Epic Minecraft Lists</a></li>
+<li><a href="webDevUser01_Table.html">Best Minecraft Blocks</a></li>
+<li><a href="webDevUser01_Games.html">Gamer Time</a></li>
+<li><a href="index_weather.php">/Weather</a></li>
+<li class="active"><a href="index_crud.php">Minecraft Form</a></li>
+<li><a href="webDevUser01_FAQ.html">FAQ</a></li> 
 </ul>
 
         </div><!--/.nav-collapse -->
