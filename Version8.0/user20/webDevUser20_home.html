@@ -9,11 +9,8 @@ delete database to reset id numberings and then sql inject another database into
 <html lang="en">
 
 <!--Version 3.0
-
         Name:
-
         Date Completed:
-
  -->
 
   <head>
@@ -44,15 +41,17 @@ delete database to reset id numberings and then sql inject another database into
           href="https://fonts.googleapis.com/css?family=Lobster">
 
     <link href="style.css" rel="stylesheet">
-<style>
+      <style>
       
       ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+          border-radius: 4px;
+ 
+    }
 
 li {
   float: left;
@@ -78,43 +77,60 @@ li a:hover:not(.active) {
 .active {
   background-color: #4CAF50;
 }
+          
+.button{
+    background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
       </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("button").click(function(){
+    $("div").animate({left: '250px'});
+  });
+});
+</script> 
 
   </head>
 
 
   <body>
 
+      
 
    <ul>
   <li><a class="active" href="webDevUser20_home.html">Home</a></li>
   <li><a href="webDevUser20.html">About Me</a></li>
-  <li><a  href="webDevUser20_list.html">List</a></li>
+  <li><a href="webDevUser20_list.html">List</a></li>
   <li><a href="webDevUser20_music.html">My Music</a></li>
   <li><a href="webDevUser20_FAQ.html">FAQ</a></li>
   <li><a href="webDevUser20_games.html">Games</a></li>
   <li><a href="mailto:sample@gmail.com?Subject=Hello">Contact</a></li>
-     <li><a href="index.php">Music Rater</a></li>
- <li><a href="movies/webDevUser20_movie.html">Movies</a></li>
-       
+  <li><a href="index.php">Music Rater</a></li>
+  <li><a href="movies/webDevUser20_movie.html">Movies</a></li>
 </ul>
-
 <div id="content">
+    
 
     <br>
-
     <br>
+                        <h1>Home</h1>
 
-                        <h2>Home</h2>
 
-
-                        <p>
+<h2>
 
 
                               My Name is Aryan Padmanabhan
 
 
-                        </p>
+                        </h2>
 
 
                         <p>
@@ -139,14 +155,13 @@ li a:hover:not(.active) {
 
 
                         </p>
-
+<button class='button'>Start Animation</button>
 
                 </div>
-
+      <div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
 
 
     <!-- Bootstrap core JavaScript
-
     ================================================== -->
 
     <!-- Placed at the end of the document so the pages load faster -->

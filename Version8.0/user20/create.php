@@ -12,9 +12,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $input_name = trim($_POST["name"]);
     if(empty($input_name)){
         $name_err = "Please enter the song name.";
-    } elseif(!filter_var($input_name, FILTER_VALIDATE_REGEXP, array("options"=>array("regexp"=>"/^[a-zA-Z\s]+$/")))){
-        $name_err = "Please enter a song.";
-    } else{
+    }  else{
         $name = $input_name;
     }
     
@@ -39,7 +37,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Check input errors before inserting in database
     if(empty($name_err) && empty($address_err) && empty($salary_err)){
         // Prepare an insert statement
-        $sql = "INSERT INTO employees (name, address, salary) VALUES (?, ?, ?)";
+        $sql = "INSERT INTO music (name, address, salary) VALUES (?, ?, ?)";
          
         if($stmt = mysqli_prepare($link, $sql)){
             // Bind variables to the prepared statement as parameters
@@ -137,6 +135,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         background-color:tan;
         font-family: "Marker Felt", "Comic Sans MS", fantasy;
 	color: #003366;
+        margin: 8px;/* must be used to normalize with other menu items */
     }
       
       ul {
@@ -145,11 +144,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
   padding: 0;
   overflow: hidden;
   background-color: #333;
+  border-radius: 4px;
+
 }
 
 li {
   float: left;
   border-right:1px solid #bbb;
+  font-size: 16px;
 }
 
 li:last-child {
@@ -227,6 +229,7 @@ li a:hover:not(.active) {
   <li><a href="webDevUser20_games.html">Games</a></li>
   <li><a href="mailto:sample@gmail.com?Subject=Hello">Contact</a></li>
     <li><a class="active" href="index.php">Music Rater</a></li>
+    <li><a href="movies/webDevUser20_movie.html">Movies</a></li>
 </ul>
       
       
