@@ -24,7 +24,7 @@ Version 3.0 Text
 
     <!-- code obtained from https://frimmy.github.io/api-test/  -->
 
-    <title>Title</title>
+    <title>FORD</title>
 
 
     <!-- Bootstrap core CSS -->
@@ -39,8 +39,7 @@ Version 3.0 Text
 
           href="https://fonts.googleapis.com/css?family=Lobster">
 
-    <link href="style.css" rel="stylesheet">
-
+    <link href="CSS/WebDevUser06.css" rel="stylesheet">
 
   </head>
 
@@ -66,8 +65,7 @@ Version 3.0 Text
 
           </button>
 
-          <a class="navbar-brand" href="file:///Users/223121/Documents/GitHub/WebDev2/Version7.0/user06/webDevUser06_Index.html">Home</a>
-             <li><a href="notindex.php">Friends</a></li>
+          <a class="navbar-brand" href="webDevUser06_list.html"></a>
 
         </div>
 
@@ -75,13 +73,26 @@ Version 3.0 Text
 
            <ul class="nav navbar-nav">
 
-            <li class="active"><a href="file:///Users/223121/Documents/GitHub/WebDev2/Version7.0/user06/webDevUser06_AboutMe.html">About Me</a></li>
+    
+               
+          <li><a href="index.html">Home</a></li>
+               <li class="active"><a href="webDevUser06_AboutMe.html">About Me</a></li>
+
+
 
             <li><a href="webDevUser06_list.html">List</a></li>
+               
+                             <li><a href="table.html">Table</a></li>
 
-<li><a href="webDevUser06_music.html">Top 5 Most Powerful Ford Vehicles</a></li>
 
-            <li><a href="mailto:sample@gmail.com?Subject=Hello">Contact</a></li>
+<li><a href="webDevUser06_music.html">FAQ</a></li>
+
+            <li><a href="WebDevUser06_Games.html">Games</a></li>
+               
+                              <li><a href="notindex.php">Popular Ford Vehicles</a></li>
+                              <li><a href="weather.php">Weather</a></li>
+
+
 
           </ul>
 
@@ -104,7 +115,7 @@ Version 3.0 Text
                         <p>
 
 
-                                This is one of my first webpages! I was able to code all the HTML and CSS in order to make it. Watch out world of web design here I come!
+                                My name is Jaden Estrem and I am a student at Shakopee High School. I am interested in Web Development so I decided to take the Web Dev class!
 
 
                         </p>
@@ -113,7 +124,7 @@ Version 3.0 Text
                         <p>
 
 
-                                I can use my skills here to create websites for my business, my friends and family, my C.V, blog or articles. As well as any games or more experiment stuff (which is what the web is really all about).
+                                I have learned many things along the way and home to be able to make a cool looking website!
 
 
                         </p>
@@ -130,6 +141,59 @@ Version 3.0 Text
 
                                 Webpage made by <a href="/" target="_blank">[Jaden Estrem]</a>
 
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").fadeToggle();
+    $("#div2").fadeToggle("slow");
+    $("#div3").fadeToggle(3000);
+  });
+});
+</script>
+</head>
+<body>
+
+<p></p>
+
+<button>Click to fade in/out boxes</button><br><br>
+
+<div id="div1" style="width:80px;height:80px;background-color:red;"></div>
+<br>
+<div id="div2" style="width:80px;height:80px;background-color:green;"></div>
+<br>
+<div id="div3" style="width:80px;height:80px;background-color:blue;"></div>
+    
+    
+    
+    
+    <!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("p").dblclick(function(){
+    $(this).hide();
+  });
+});
+</script>
+</head>
+<body>
+
+<h1><p>If you double-click on any text on this page it will go away to make more space!</p></h1>
+<p>Ford is one of the largest automakers in the world.[double click]</p>
+<p>Their best selling vehicle is the Ford f150 [double click]</p>
+
+</body>
+</html>
+
+
+</body>
+</html>
 
                         </p>
 
@@ -157,11 +221,3 @@ Version 3.0 Text
 </html>
 
 
-
-Published by Google Drive–Report Abuse–Updated automatically every 5 minutes
-Welcome to the Grammarly beta
-for Google Docs!
-Sign up to turn on Grammarly
-suggestions in your Google Docs.
-Sign up
-Already have an account? Log in
