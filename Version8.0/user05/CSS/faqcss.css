@@ -5,8 +5,8 @@ width: 500px;
 	
     margin: auto;
     text-align: center;
-font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #9a63b0;
+font-family: "Courier New", Courier, monospace;
+	color: #8658c7;
 }
 
 dl{
@@ -16,7 +16,7 @@ dl{
 dd{
 margin: 0;	    
 padding: 1em 0;
-color:purple;
+color:#6b32ba;
 }
 
 dt{
