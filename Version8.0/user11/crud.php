@@ -10,7 +10,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="SHS WebDev Menu Sample">
         
-        <title>Home</title>
+        <title>Earning</title>
         
         <!-- Bootstrap core JS -->
         <!-- These are needed to get the responsive menu to work -->
@@ -82,14 +82,14 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav">
 <!---------------------------------- Edit These Items in your Menu ------------->                        
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="index.html" class="nav-item nav-link">Home</a>
                         <a href="webDevUser11.html" class="nav-item nav-link">About Me</a>
                         <a href="Music.html" class="nav-item nav-link" tabindex="-1">Table</a>
                         <a href="List.html" class="nav-item nav-link" tabindex="-2">Lists</a>
                         <a href="FAQ.html" class="nav-item nav-link" tabindex="-2">FAQ</a>
                         <a href="Game.html" class="nav-item nav-link" tabindex="-2">Animate</a>
-                         <a href="../weather/index.php" class="nav-item nav-link" tabindex="-2">Weather</a>
-                        <a href="../phpDemo-master/index.php" class="nav-item nav-link" tabindex="-2">Earning</a>
+                         <a href="weather.php" class="nav-item nav-link" tabindex="-2">Weather</a>
+                        <a href="crud.php" class="nav-item nav-link active" tabindex="-2">Earning</a>
 <!----------------------------------^ Edit These Items in your Menu ^ ------------->                        
                     </div>
                     <div class="navbar-nav ml-auto">

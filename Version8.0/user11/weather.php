@@ -135,8 +135,8 @@ span.min-temperature {
                         <a href="List.html" class="nav-item nav-link" tabindex="-2">Lists</a>
                         <a href="FAQ.html" class="nav-item nav-link" tabindex="-2">FAQ</a>
                         <a href="Game.html" class="nav-item nav-link" tabindex="-2">Animate</a>
-                         <a href="../weather/index.php" class="nav-item nav-link active" tabindex="-2">Weather</a>
-                        <a href="../phpDemo-master/index.php" class="nav-item nav-link" tabindex="-2">Earning</a>
+                         <a href="weather.php" class="nav-item nav-link active" tabindex="-2">Weather</a>
+                        <a href="crud.php" class="nav-item nav-link" tabindex="-2">Earning</a>
                         
 <!----------------------------------^ Edit These Items in your Menu ^ ------------->                        
                     </div>
