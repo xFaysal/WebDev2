@@ -124,7 +124,7 @@ function rotate() {
         $(heart).rotateLeft(angle);
 		console.log("rotated hidden");
 		var img = document.getElementById("heart");
-    	img.style.visibility = 'hidden';
+    img.style.visibility = 'hidden';
    	} else {
 		var heart = document.getElementById("heart");
 		  $(heart).rotateLeft(angle);
