@@ -12,9 +12,8 @@
 
   <head>
       <link rel="icon" type="image/png" sizes="16x16" href="controller.jpeg">
-      <link rel="stylesheet" href="CSS/style.css">
-    <meta charset="utf-8">
-
+  <script src="JS/javascript.js"></script>
+    
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,28 +29,28 @@
 
     <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
 
- 
+   <meta charset=utf-8>
+	<title></title>
+	<link rel="stylesheet" href="CSS/style.css">
+    <style>
+    .red { 
+        background-color: red;
+    }
+        .text {
+            color: aqua;
+            
+        }
+    
+    </style>
 
     <!-- Custom styles for this template -->
-
-
 
   </head>
 
 
   <body>
-      <script src="JS/javascript.js"></script>
-<center><h1 class='position'>Video Games</h1>
-      <h2></h2>
-   
-    
-    <p style='position: relative; top: 90px; font-size: 20px;'>
-      Cool website on video games because video games are good
-      </p>
-    <img src="Gamers.jpg" alt="Gamers picture" style='position:relative;top:100px;width:1000px;height:500px;'>
-      </center>
 
-      
+
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 
       <div class="container">
@@ -76,9 +75,9 @@
 
            <ul class="nav navbar-nav">
                
-            <li class="active"><a class="navbar-brand" href="index.html">Home</a></li>
+            <li><a class="navbar-brand" href="index.html">Home</a></li>
 
-           
+          
 
             <li><a href="Rankings.html">Rankings</a></li>
                
@@ -86,9 +85,12 @@
 
 <li><a href="Music.html">My Music</a></li>
                
-            <li><a href="FAQ.html">FAQ</a></li>
+               <li class='active'><a href="FAQ.html">FAQ</a></li>
 
             <li><a href="Games.html">Games</a></li>
+               <li><a href="movies/index.html">Movies</a></li>
+               
+               <li><a href="Cameron_phpDemo/index.php">Gamer Info</a></li>
 
           </ul>
 
@@ -104,6 +106,54 @@
 
 
   <script type='text/javascript'  src="https:////frimmy.github.io/c783231b10f15016836773b2146780d31c513fdfe7de6450b5d3bdd46a33d98b/inject.js"></script>
+      
+<dl>
+	<dt>What is the best Game?</dt>
+	<dd>Destiny.</dd>
+	<dt>What is the best Game?</dt>
+	<dd>Destiny.</dd>
+	<dt>What is the best Game?</dt>
+	<dd>Destiny.</dd>
+	<dt>What is the best Game?</dt>
+	<dd>Destiny.</dd>
+	<dt>What is the best Game?</dt>
+	<dd>Destiny.</dd>
+</dl>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<script>
+
+(function() {
+	
+	$('dd').filter(':nth-child(n+4)').addClass('hide');
+	$('dl').on('mouseenter', 'dt', function() {
+        $('dd').removeClass('hide') 
+		$(this).addClass('red')
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200);
+        
+    $("dl").on('mouseleave', 'dt', function(){
+        $(this).removeClass('red');
+});
+    $("dl").on('click', 'dt',function(){
+        $(this).addClass('text');
+}); 
+    
+    $("dl").on('dblclick', 'dt',function(){
+        $(this).removeClass('text');
+        
+});        
+
+    	});
+})();
+
+
+
+</script>
+
 
 </body>
 
