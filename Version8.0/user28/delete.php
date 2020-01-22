@@ -17,7 +17,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
         // Attempt to execute the prepared statement
         if(mysqli_stmt_execute($stmt)){
             // Records deleted successfully. Redirect to landing page
-            header("location: index.php");
+            header("location: index1.php");
             exit();
         } else{
             echo "Oops! Something went wrong. Please try again later.";
@@ -65,7 +65,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
                             <p>Are you sure you want to delete this record?</p><br>
                             <p>
                                 <input type="submit" value="Yes" class="btn btn-danger">
-                                <a href="index.php" class="btn btn-default">No</a>
+                                <a href="index1.php" class="btn btn-default">No</a>
                             </p>
                         </div>
                     </form>
