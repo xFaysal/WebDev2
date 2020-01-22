@@ -80,7 +80,7 @@ if(isset($_GET["id"]) && !empty(trim($_GET["id"]))){
                         <label>Year Item was Bought</label>
                         <p class="form-control-static"><?php echo $row["year"]; ?></p>
                     </div>
-                    <p><a href="index.php" class="btn btn-primary">Back</a></p>
+                    <p><a href="index1.php" class="btn btn-primary">Back</a></p>
                 </div>
             </div>        
         </div>
