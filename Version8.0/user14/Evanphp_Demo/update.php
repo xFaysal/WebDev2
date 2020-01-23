@@ -13,7 +13,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
     
     // Validate name
     $input_flavor = trim($_POST["Ramen Flavor"]);
-    if(empty($input_name)){
+    if(empty($input_flavor)){
         $flavor_err = "Please enter a Created Ramen Flavor.";
     } elseif(!filter_var($input_flavor, FILTER_VALIDATE_REGEXP, array("options"=>array("regexp"=>"/^[a-zA-Z\s]+$/")))){
         $flavor_err = "Please enter a valid Ramen Flavor.";
