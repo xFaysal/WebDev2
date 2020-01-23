@@ -76,3 +76,7 @@ dt:nth-last-child(2) { border-bottom: none; }
         width: 100%;
     }
 }
+ul{
+    display: inline-block;
+    text-align:left;
+}
