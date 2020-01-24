@@ -31,8 +31,8 @@
         });
     </script>
 </head>
-<body>
-    
+<body style="background-color:#ffdd00">
+   
     <br>
     <br>
     
@@ -62,7 +62,7 @@
 
            <ul class="nav navbar-nav">
 
-            <li><a href="../index.html">Home</a></li>
+            <li style="text-size:1.2em;"><a href="../index.html">Home</a></li>
 
             <li><a href="../WebDevUser25_Music.html">Music</a></li>
             
