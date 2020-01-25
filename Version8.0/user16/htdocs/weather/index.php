@@ -69,7 +69,33 @@ span.min-temperature {
 
 </head>
 <body>
+<div class="navbar-header">
 
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+
+            <span class="icon-bar"></span>
+
+            <span class="icon-bar"></span>
+
+            <span class="icon-bar"></span>
+
+          </button>
+ 
+       
+         <li class="active"><a href="index.html">Home</a></li>
+             
+               <li class="active"><a href="webDevUser16.html">Top Offensive positions</a></li>
+        
+         <li class="active"><a href="Def.html">Top Defensive positions</a></li>
+               
+               <li class="active"><a href="webDev16.html">Top 4 Teams/Coaches</a></li>
+        
+        
+        
+         <li class="active"><a href="html.html">Overview</a></li>
+    
+        <li class="active"><a href="last.html">last</a></li>
+     </div>
     <div class="report-container">
         <h2><?php echo $data->name; ?> Weather Status</h2>
         <div class="time">
