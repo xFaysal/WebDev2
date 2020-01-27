@@ -1,69 +1,18 @@
-<html>
-<head>
-<link href="CSS/Light.css" rel="stylesheet">
-<title> Web Development User #23 </title>
-<script src="JS/jquery-3.4.1.js"></script>
-<style>
-    ul li { 
-        color: red;
-    }
-    .Overwatch {
-        color: orange;
-    }
-    .Video_Games{
-        color: blue;
-        background-color: aqua;
-    }
-    .emphasis { font-weight: bold;
-                font-style: italic;
-                font-size: 25;}
-</style>
-<script>
-$(document).ready(function() {
-$('li:first-child').addClass('emphasis');
-});
-
-</script>
-    
-</head>
-<Button data-file='Light'>Light</Button>
-<Button data-file='Dark'>Dark</Button>
-<h1>Video Games</h1>
-<body>
-    <ul><li>Destiny</li>
-        <li>Destiny2</li>
-        <li class='Overwatch'>Overwatch</li></ul>
-<script>
-(function() {
-    var link = $('link');
-    $('button').on('click', function(){
-        var $this = $(this),
-            stylesheet = $this.data('file');
+<html lang="en">
+    <!--Version 6.0 
+	Name:
+	Date Completed:
+    -->
+    <head>
         
-        link.attr('href','CSS/' + stylesheet + '.css');
+        <title>Web Development User #23</title>
+    
+    </head>
+    
+    <body>
         
-        $this
-            .siblings('button')
-            .removeAttr('disabled')
-            .end()
-            .attr('disabled','disabled');
-});
-})();
-</script>
+        <center>My name is User #23</center>
     
-<script>
-var lis = $('ul li');
-   console.log(lis);
-    $('h1').addClass('Video_Games');
-</script>
-<table>
-    <thead><tr><th>Games</th></tr></thead>
-<tr><td>Destiny</td></tr>
-<tr><td>Destiny2</td></tr>
-<tr><td>Overwatch</td></tr>
-    
-    
-</table>
-</body>
+    </body>
 
 </html>
