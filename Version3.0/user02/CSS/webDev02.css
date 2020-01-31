@@ -2,8 +2,9 @@ body {
     background-image: url(../images/background.jpg);
     background-repeat: repeat-y;
     background-size: cover;
-    font-family: "Marker Felt", "Comic Sans MS", fantasy;
+    font-family: fantasy;
     color: #000000;
+    transform:rotate(3deg);
 }
 
 h1 {
@@ -14,6 +15,10 @@ h1 {
 
 h2 {
     font-size: 1.6em;
+}
+
+h3{
+    font-size: 1.8em;
 }
 
 p {
