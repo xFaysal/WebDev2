@@ -1,61 +1,63 @@
 body {
-    background-image:url(../images/background.jpg);
+    background-image: url(../images/background.jpg);
     background-repeat: repeat-y;
     background-size: cover;
-	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #000000;
-}
-
-h1 {
-	font-size: 2em;
-	text-align: center;
+    font-family: "Marker Felt", "Comic Sans MS", fantasy;
     color: #000000;
 }
 
-h2{
+h1 {
+    font-size: 2em;
+    text-align: center;
+    color: #000000;
+}
+
+h2 {
     font-size: 1.6em;
 }
 
-p{
+p {
     font-size: 1.2em;
 }
 
-a{
-    color:#cc0000;
+a {
+    color: #cc0000;
 }
 
 table {
-	margin-left: auto;
-	margin-right: auto;
-	text-align: left;
-	border-collapse: collapse;
-	cellpadding: 10px;
-}
-ol{
     margin-left: auto;
-	margin-right: auto;
-	text-align: left;
-	border-collapse: collapse;
-	cellpadding: 10px;
-    font-size:1.3em;
+    margin-right: auto;
+    text-align: left;
+    border-collapse: collapse;
+    cellpadding: 10px;
 }
-ul{
+
+ol {
     margin-left: auto;
-	margin-right: auto;
-	text-align: left;
-	border-collapse: collapse;
-	cellpadding: 10px;
-    font-size:1.3em;
+    margin-right: auto;
+    text-align: left;
+    border-collapse: collapse;
+    cellpadding: 10px;
+    font-size: 1.3em;
+}
+
+ul {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    border-collapse: collapse;
+    cellpadding: 10px;
+    font-size: 1.3em;
 }
 
 tr {
-	border: 1px solid #ffffff;
-	text-align: center;
-	background-color:#9FB6CD; 
+    border: 1px solid #ffffff;
+    text-align: center;
+    background-color: #9FB6CD;
 }
 
 th {
-	text-align: center;
-	color: #ffffff;
-	background-color: #003366;
+    text-align: center;
+    color: #ffffff;
+    background-color: #003366;
 }
