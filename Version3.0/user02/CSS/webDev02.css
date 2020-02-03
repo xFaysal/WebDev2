@@ -4,7 +4,7 @@ body {
     background-size: cover;
     font-family: fantasy;
     color: #000000;
-    transform:rotate(3deg);
+    transform:rotate(0deg);
 }
 
 h1 {
@@ -26,7 +26,7 @@ p {
 }
 
 a {
-    color: #cc0000;
+    color: #cc0000; /*Color of the hyperlink text*/
 }
 
 table {
