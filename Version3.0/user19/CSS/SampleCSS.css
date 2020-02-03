@@ -1,33 +1,37 @@
 body {
-	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
-}
+    background-image: url(../images/note-web.jpeg);
 
-h1 {
-	font-size: 1.3em;
-	text-align: center;
-}
 
-h2{
-        font-size: 1.1em;
-}
+            font-family: "Marker Felt", "Comic Sans MS", fantasy;
+            color: #003366;
+    }
 
-table {
-	margin-left: auto;
-	margin-right: auto;
-	text-align: left;
-	border-collapse: collapse;
-	cellspacing: 0px;
-}
+    h1 {
+        font-size: 1.3em;
+        text-align: center;
+    }
 
-tr {
-	border: 1px solid #ffffff;
-	text-align: center;
-	background-color:#9FB6CD; 
-}
+    h2 {
+        font-size: 1.4em;
+        text-align: center;
+    }
 
-th {
-	text-align: center;
-	color: #ffffff;
-	background-color: #003366;
-}
+    table {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        border-collapse: collapse;
+        cellspacing: 0px;
+    }
+
+    tr {
+        border: 1px solid #ffffff;
+        text-align: center;
+        background-color:#6FB6CD;
+    }
+
+    th {
+        text-align: center;
+        color: #ffffff;
+        background-color: #002366;
+    }
