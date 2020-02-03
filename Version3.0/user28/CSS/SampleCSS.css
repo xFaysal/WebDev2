@@ -1,6 +1,7 @@
 body {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
 	color: #003366;
+    background-image: url(https://images2.minutemediacdn.com/image/upload/c_crop,h_1192,w_2121,x_0,y_111/f_auto,q_auto,w_1100/v1554702738/shape/mentalfloss/49786-istock_0.jpg)
 }
 
 h1 {
@@ -10,6 +11,7 @@ h1 {
 
 h2{
         font-size: 1.1em;
+    text-align: center;
 }
 
 table {
