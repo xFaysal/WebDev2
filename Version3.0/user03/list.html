@@ -39,6 +39,20 @@
             text-align: center;
         }
 
+        h3 {
+            padding: 50px;
+            border-bottom: 8px solid #5D6063;
+            border-right: 8px solid #DD0000;
+            border-left: 32px solid #552222;
+        }
+
+        p {
+            padding: 20px 0 20px 10px;
+            margin-bottom: 50px;
+            margin-left: 75px;
+            margin-top: 25px;
+        }
+
     </style>
     <link href="CSS/SampleCSS.css" rel="stylesheet" type="text/css">
 </head>
@@ -54,9 +68,9 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!---------------------------------- Edit These Items in your Menu ------------->
-                    <a href="#" class="nav-item nav-link">Home</a>
+                    <a href="index.html" class="nav-item nav-link">Home</a>
                     <a href="#" class="nav-item nav-link">About Me</a>
-                    <a href="Bowlers.html" class="nav-item nav-link" tabindex="-1">Bowlers</a>
+                    <a href="music.html" class="nav-item nav-link" tabindex="-1">Music</a>
                     <a href="#" class="nav-item nav-link active" tabindex="-2">Lists</a>
                     <a href="Contact.html" class="nav-item nav-link" tabindex="-2">Contact</a>
                     <!----------------------------------^ Edit These Items in your Menu ^ ------------->
@@ -67,18 +81,27 @@
             </div>
         </nav>
     </div>
-
+    <h3>CSS Box Model Demonstration</h3>
+    <p>
+        Paragraphs are blocks too. <em>However</em> things like &lt;em&gt; and &lt;strong&gt; elements are not.
+        They are <strong>inline</strong> elements.
+    </p>
+    <p>Block elements define the flow of the HTML document, while inline elements
+        do not.
+    </p>
     <div class="wideMargin" id="content">
 
-        <h1 class="text-left my-3"><font color="red">Lists</font></h1>
-        <h2 class="text-left my-3">List 1</h2>
+        <h1 class="text-left my-3">
+            <font color="red">Lists</font>
+        </h1>
+        <h3 class="text-left my-3">List 1</h3>
         <ol>
             <li>Intro to Sport Performance</li>
             <li>Biology</li>
             <li>Modern World History/Concert Band</li>
             <li>Web Development</li>
         </ol>
-        <h2 class="text-left my-3">List 2</h2>
+        <h3 class="text-left my-3">List 2</h3>
         <ul>
             <li>11th Grade</li>
             <li>12th Grade</li>
