@@ -1,50 +1,73 @@
 body {
     background-image: url(../images/tech_background.jpg);
     background-repeat: repeat-y;
-    background-size:cover;
-	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
+    background-size: cover;
+    font-family: "Marker Felt", "Comic Sans MS", fantasy;
+    color: #003366;
 }
 
 h1 {
-	font-size: 1.3em;
-	text-align: center;
+    font-size: 1.3em;
+    text-align: center;
 }
 
-h2{
-        font-size: 1.1em;
-        text-align: center;
+h2 {
+    font-size: 1.1em;
+    text-align: center;
 }
 
 table {
-	margin-left: auto;
-	margin-right: auto;
-	text-align: left;
-	border-collapse: collapse;
-	cellspacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    border-collapse: collapse;
+    cellspacing: 0px;
 }
 
 tr {
-	border: 1px solid #ffffff;
-	text-align: center;
-	background-color:#9FB6CD; 
+    border: 1px solid #ffffff;
+    text-align: center;
+    background-color: #9FB6CD;
 }
 
 th {
-	text-align: center;
-	color: #ffffff;
-	background-color: #003366;
+    text-align: center;
+    color: #ffffff;
+    background-color: #003366;
 }
+
 ol {
-	margin-left: auto;
-	margin-right: auto;
-	text-align: left;
-	border-collapse: collapse;
-	cellspacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    border-collapse: collapse;
+    cellspacing: 0px;
 }
 
 li {
-	border: 1px solid #ffffff;
-	text-align: center;
-	background-color:#9FB6CD; 
+    border: 1px solid #ffffff;
+    text-align: center;
+    background-color: #9FB6CD;
+}
+
+h3 {
+    padding: 25px;
+    border-bottom: 1px solid red;
+    text-align: center;
+    color: red
+}
+
+p {
+    padding: 20px 0 20px 10px;
+
+    margin-top: 25px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: red
+}
+
+strong {
+    padding-right: 50px;
+    padding-left: 50px;
+    background-color: aqua
 }
