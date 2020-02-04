@@ -1,0 +1,47 @@
+body {
+	font-family: "bold" "Times", fantasy;
+	color: #FFFFFFFF;
+}
+
+h1 {
+	font-size: 1.3em;
+	text-align: center;
+}
+
+h2{
+        font-size: 1.1em;
+    text-align: center;
+}
+
+table {
+	margin-left:  auto;
+	margin-right: auto;
+	text-align: left;
+	border-collapse: collapse;
+	cellspacing: 0px;
+}
+
+tr {
+	border: 1px solid #ffffff;
+	text-align: center;
+	background-color:#9FB6CD; 
+}
+
+th {
+	text-align: center;
+	color: #ffffff;
+	background-color: #003366;
+}
+
+p {
+    text-align: center;    
+}
+
+style {
+    background-image: url("images/background.jpeg")
+}
+
+body {
+ background-image: url("https://lh3.googleusercontent.com/proxy/z_fCh1hh7q1xVJapEy7aMBYaGJ_pMlJYqWQAmF4XJ4H8yvsBfk5ucLiU29XSj7Vaovy8gWjaBjXSGTEonSV_a9xF_TuM396zPG5a_0d0K1EL31S-1OOgg53eFxIH");
+ background-color: #cccccc;
+}
