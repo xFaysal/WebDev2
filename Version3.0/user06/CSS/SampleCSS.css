@@ -1,6 +1,8 @@
 body {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
+    text-align: center;
 	color: #003366;
+    background-image: url("https://www.abc.net.au/news/image/11769268-3x2-940x627.png")
 }
 
 h1 {
