@@ -1,6 +1,25 @@
+strong {
+  padding: 50px;
+    background-color:darkorchid
+}
+p {
+  padding: 20px 0 20px 10px;
+  margin-bottom: 50px;          /* Add this */
+    margin-top:25px
+}
+
+h3 {
+  padding: 50px;
+  border-bottom: 8px solid white;
+     border-right: 16px solid black;
+     border-left: 16px solid black;
+    border-top: 8px solid white;
+}
+
 body {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
+	color: white;
+    background-image: url(../images/40659346233_c001795b2c_z.jpg); background-size: cover
 }
 
 h1 {
@@ -10,6 +29,7 @@ h1 {
 
 h2{
         font-size: 1.1em;
+    text-align: center;
 }
 
 table {
