@@ -1,6 +1,11 @@
+strong {
+  margin: 0px;
+}
 body {
 	font-family: "bold" "Times", fantasy;
 	color: #FFFFFFFF;
+     background-image: url("https://images.unsplash.com/photo-1533134486753-c833f0ed4866?ixlib=rb-1.2.1&w=1000&q=80");
+ background-color: #cccccc;
 }
 
 h1 {
@@ -32,16 +37,17 @@ th {
 	color: #ffffff;
 	background-color: #003366;
 }
-
+}
 p {
-    text-align: center;    
+  padding: 20px 0 20px 10px;
+  margin-bottom: 50px;          /* Add this */
+    margin-top: 25px;
+}
+h3 {
+  padding: 30px;
+  border: 3px double #000000;
+    border-bottom: 3px double #339966;
+    border-top: 3px double #339966;
+    margin-bottom: 50px;          /* Add this */
 }
 
-style {
-    background-image: url("images/background.jpeg")
-}
-
-body {
- background-image: url("https://lh3.googleusercontent.com/proxy/z_fCh1hh7q1xVJapEy7aMBYaGJ_pMlJYqWQAmF4XJ4H8yvsBfk5ucLiU29XSj7Vaovy8gWjaBjXSGTEonSV_a9xF_TuM396zPG5a_0d0K1EL31S-1OOgg53eFxIH");
- background-color: #cccccc;
-}
