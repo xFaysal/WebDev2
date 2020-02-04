@@ -1,33 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   
-<title>My Favorite Music</title>
+     
+    <title>My Favorite Music</title>
     <style>
-        img{height: 180px; width: 180px}
+        img {
+            height: 300px;
+            width: 300px
+        }
+
     </style>
-    
+    <link href="CSS/SampleCSS.css" rel="stylesheet" type="text/css">
+    <style>
+        td {
+            color: #003366;
+        }
+
+    </style>
 </head>
+
 <body>
-<h2>My Top 5 Favorite Songs</h2>
- <table>
- <thead><tr><th>Rank</th><th>Artist</th><th><th>Song</th></tr></thead>
- <tr><td>1</td><td>Park Won</td><td><td>All Of My Life</td></tr>
- <tr><td>2</td><td>Billie Marten</td><td><td>Bird</td></tr>
- <tr><td>3</td><td>BTS</td><td><td>Black Swan</td></tr>
- <tr><td>4</td><td>Zion.T</td><td><td>Eat</td></tr>
- <tr><td>5</td><td>MoonMoon</td><td><td>Contrail</td></tr>
- </table>
-    <img src="image.jpeg"alt="Picture of JK">
-    <img  src="https://images.genius.com/8199506641ae46a87e5d2fb41553da70.1000x1000x1.jpg">
-    
-    
-                                                      
-         
-<div id="footer">
-<p>
-Music can be found here <a href="https://music.amazon.com"> Amazon Music</a>
-</p>
-</div>
+    <div class="menu">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <!---------------------------------- Edit These Items in your Menu ------------->
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="#" class="nav-item nav-link">About Me</a>
+                    <a href="music.html" class="nav-item nav-link" tabindex="-1">Music</a>
+                    <a href="list.html" class="nav-item nav-link" tabindex="-2">Lists</a>
+                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled" tabindex="-2">Contact</a>
+                    <!----------------------------------^ Edit These Items in your Menu ^ ------------->
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <a href="#" class="nav-item nav-link disabled">Login</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <h2>My Top 5 Favorite Songs</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Artist</th>
+                <th>
+                <th>Song</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>1</td>
+            <td>Park Won</td>
+            <td>
+            <td>All Of My Life</td>
+        </tr>
+        <tr>
+            <td style="color:#003366; background-color:light blue;">2</td>
+            <td>Billie Marten</td>
+            <td>
+            <td>Bird</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>BTS</td>
+            <td>
+            <td>Black Swan</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Zion.T</td>
+            <td>
+            <td>Eat</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>MoonMoon</td>
+            <td>
+            <td>Contrail</td>
+        </tr>
+    </table>
+    <center> <img src="image.jpeg" alt="Picture of JK"></center>
+    <center> <img src="https://images.genius.com/8199506641ae46a87e5d2fb41553da70.1000x1000x1.jpg"></center>
+
+
+
+    <div id="footer">
+        <p>
+            Music can be found here <a href="https://music.amazon.com"> Amazon Music</a>
+        </p>
+    </div>
 </body>
+
 </html>
