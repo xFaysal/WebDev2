@@ -30,80 +30,11 @@ th {
 	text-align: center;
 	color: #ffffff;
 	background-color: #003366;
-} 
-<!DOCTYPE html>
+}
 
-<html lang="en">
-
-<!--Version 4.0
-
-        Name:
-
-        Date Completed:
-
- -->
-
-<head>
-
-
-<link href="CSS/SampleCSS.css" rel="stylesheet" type="text/css">
-
-
-</head>
-
-<body>
-
-
-
-    <h1>I am Web Dev User ##</h1>
-
-   
-
-    <style>
-
-        h3{
-
-            font-size: 2em;
-
-        }
-
-    </style>
-
-    <h3>And I'm a Web Developer</h3>
-
-   
-
-    <button>Hire me</button>
-
-    <button class='button'>Hire me</button>
-
-    <button class='button button1'>Hire me</button>
-
-    <button class='button button2'>Hire me</button>
-
-    <button class='button button2 red'>Hire me</button>
-
-
-    <div class='content'>
-
-        <p>Page content..</p>
-
-        <p>Some more page content..</p>
-
-    </div>
-
-   
-
-    <p id="morecontent">Even more content</p>
-
-   
-
-</body>
-
-</html>
 .button {
-  background-color: #4CAF50; /* Green */
-  border: none;
+  background-color: orange; /* Green*/
+  border: circle;
   color: white;
   padding: 20px;
   text-align: center;
@@ -114,7 +45,7 @@ th {
   cursor: pointer;
 }
 
-.button1 {
+.button2 {
   border-radius: 8px;
 }
 
@@ -122,6 +53,13 @@ th {
   border-radius: 30%;
 }
 
-.red { 
-   background-color: #ff0000;
+
+
+.content  {
+    color: red;
+}
+
+
+#morecontent {
+  background-color: yellow;
 }
