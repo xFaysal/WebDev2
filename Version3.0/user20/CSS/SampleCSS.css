@@ -3,7 +3,7 @@ strong {
 }
 h3 {
   padding: 50px;
-  border: 5px solid white;
+  border: 5px solid white; 
 }
 p {
   padding-top: 20px;
@@ -22,7 +22,7 @@ h1 {
     text-align: center;
 }
 
-h2 {
+h4 {
     text-align: center;
     font-size: 1.1em;
 }
@@ -36,7 +36,7 @@ table {
 }
 
 tr {
-    border: 1px solid #ffffff;
+    border: 1px white;
     text-align: center;
     background-color: #9FB6CD;
 }
