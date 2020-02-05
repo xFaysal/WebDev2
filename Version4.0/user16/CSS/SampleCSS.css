@@ -1,33 +1,94 @@
+.button {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button1 {
+    border-radius: 8px;
+}
+
+.button2 {
+    border-radius: 30%;
+}
+
+.red {
+    background-color: #ff0000;
+}
+
 body {
-	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
+    font-family: "Marker Felt", "Comic Sans MS", fantasy;
+    color: #003366;
 }
 
 h1 {
-	font-size: 1.3em;
-	text-align: center;
+    font-size: 1.3em;
+    text-align: center;
 }
 
-h2{
-        font-size: 1.1em;
+h2 {
+    font-size: 1.1em;
 }
 
 table {
-	margin-left: auto;
-	margin-right: auto;
-	text-align: left;
-	border-collapse: collapse;
-	cellspacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    border-collapse: collapse;
+    cellspacing: 0px;
 }
 
 tr {
-	border: 1px solid #ffffff;
-	text-align: center;
-	background-color:#9FB6CD; 
+    border: 1px solid #ffffff;
+    text-align: center;
+    background-color: #9FB6CD;
 }
 
+
+
+.mcnee {
+    background-color: #204953;
+    padding: 20px;
+    cursor: pointer;
+    
+        }
+
+.content{
+    
+    background-color: forestgreen;
+}
+#morecontent {
+  background-color: yellow;
+}
+.mcnee {
+    border-radius: 16px;
+}
 th {
-	text-align: center;
-	color: #ffffff;
-	background-color: #003366;
+    text-align: center;
+    color: #ffffff;
+    background-color: #003366;
+}
+
+
+body {
+    background: url(http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/wild_oliva.png);
+}
+
+.centered {
+    margin: 50px auto;
+    text-align: center;
+}
+.gavin {
+    
+    background-color: fuchsia;
+    border-radius: 30%;
+    
 }
