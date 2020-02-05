@@ -1,33 +1,102 @@
 body {
-	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
+    font-family: "Marker Felt", "Comic Sans MS", fantasy;
+    color: #003366;
 }
 
 h1 {
-	font-size: 1.3em;
-	text-align: center;
+    font-size: 1.3em;
+    text-align: center;
 }
 
-h2{
-        font-size: 1.1em;
+h2 {
+    font-size: 1.1em;
 }
 
 table {
-	margin-left: auto;
-	margin-right: auto;
-	text-align: left;
-	border-collapse: collapse;
-	cellspacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: right;
+    border-collapse: collapse;
+    cellspacing: 0px;
 }
 
 tr {
-	border: 1px solid #ffffff;
-	text-align: center;
-	background-color:#9FB6CD; 
+    border: 1px solid #ffffff;
+    text-align: center;
+    background-color: #9FB6CD;
 }
 
 th {
-	text-align: center;
-	color: #ffffff;
-	background-color: #003366;
+    text-align: center;
+    color: #ffffff;
+    background-color: #003366;
+}
+
+.button {
+    background-color: blue;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 1px 1px;
+    cursor: pointer;
+}
+
+.button1 {
+    border-radius: 30px;
+}
+
+.button2 {
+    border-radius: 30%;
+}
+
+.red {
+    background-color: black;
+}
+
+.Quinn {
+    background-image: url(../images/favicon.ico);
+    /* Green */
+    border: none;
+    color: yellowgreen;
+    padding: 30px;
+    text-align: center;
+    text-decoration: underline overline;
+    display: inline-block;
+    font-size: 30px;
+    margin: 1px 1px;
+    cursor: grabbing;
+    text-shadow: 2px 2px red;
+    background: url(../images/)
+
+}
+
+.Cool {
+    background-color: green;
+    /* Green */
+    border: none;
+    color: purple;
+    padding: 30px;
+    text-align: center;
+    text-decoration: underline overline;
+    display: inline-block;
+    font-size: 30px;
+    margin: 1px 1px;
+    cursor: grabbing;
+    text-shadow: 2px 2px darkgreen;
+
+
+}
+
+.content {
+    color: forestgreen;
+}
+
+#morecontent {
+    background-color: orangered;
+    color: forestgreen;
 }
