@@ -59,7 +59,6 @@ th {
 }
 
 .Quinn {
-    background-image: url(../images/favicon.ico);
     /* Green */
     border: none;
     color: yellowgreen;
@@ -71,7 +70,7 @@ th {
     margin: 1px 1px;
     cursor: grabbing;
     text-shadow: 2px 2px red;
-    background: url(../images/)
+    background: url(../images/Iron%20Man.jpg)
 
 }
 
@@ -88,6 +87,8 @@ th {
     margin: 1px 1px;
     cursor: grabbing;
     text-shadow: 2px 2px darkgreen;
+    background: url(../images/Captian.jpeg)
+
 
 
 }
