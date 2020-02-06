@@ -31,3 +31,35 @@ th {
 	color: #ffffff;
 	background-color: #003366;
 }
+
+.button {
+  background-color: orange; /* Green*/
+  border: circle;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button2 {
+  border-radius: 8px;
+}
+
+.button2 {
+  border-radius: 30%;
+}
+
+
+
+.content  {
+    color: red;
+}
+
+
+#morecontent {
+  background-color: yellow;
+}
