@@ -1,3 +1,17 @@
+
+}
+
+.button1 {
+  border-radius: 8px;
+}
+
+.button2 {
+  border-radius: 30%;
+}
+
+.red { 
+   background-color: #ff0000;
+}
 strong {
   padding: 50px;
     background-color:darkorchid
