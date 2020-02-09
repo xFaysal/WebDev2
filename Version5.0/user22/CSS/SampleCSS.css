@@ -31,3 +31,11 @@ th {
 	color: #ffffff;
 	background-color: #003366;
 }
+
+.button1 {
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    margin-top:22%;
+    margin-bottom:0%;
+}
