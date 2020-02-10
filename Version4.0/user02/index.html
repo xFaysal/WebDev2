@@ -52,11 +52,16 @@
 </head>
 
 <body>
-    <div class='dropleft bg-white'>
-        <div class='dropdown-toggle'>Drop down!</div>
-        <div class='dropdown-item'>Item 1</div>
-        <div class='dropdown-item'>Item 2</div>
-        <div class='dropdown-divider'></div>
+    <div class='dropright bg-white'>
+        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Menu
+        </button>
+        <div class='dropdown-menu' aria-labelledby="dropdownMenuButton">
+            <a href='index.html' class='dropdown-item'>Home</a>
+            <div class='dropdown-item'>Nothing</div>
+            <div class='dropdown-divider'></div>
+            <a class="dropdown-item" href="shrekt.mp4">Video!</a>
+        </div>
     </div>
     <br>
     <!--<center><embed src='shrekt.mp4' style='width:40%; height:20%;'></center>-->
@@ -82,7 +87,7 @@
         </div>
     </center>
 
-    <div id='clicks'>
+    <div id='clicks' style='margin-bottom:50px;'>
         <a href='images/edited.png'><button class='button'>DONT CLICK ME</button></a>
 
         <a href='images/edited.png'><button class='button'>Hire me</button></a>
@@ -96,6 +101,28 @@
         <a href='images/edited.png'><button class='button button3 orange'>Dont Hire Me</button></a>
 
         <a href='images/edited.png'><button class='button button2 green'>Fire Me</button></a>
+    </div>
+
+    <div class="container mb-3">
+        <div class="row">
+            <div class="col-md-3">
+                <a href="form.html" class="btn btn-primary btn-lg" role="button" aria-pressed="true">
+                    <p class='fa fa-list-ul'></p> Form Page
+                </a>
+            </div>
+
+            <div class="col-md-3">
+                <a href="fire.html" class="btn btn-primary btn-lg" role="button" aria-pressed="true">Fire Page</a>
+            </div>
+
+            <div class="col-md-3">
+                <a href="hunt.html" class="btn btn-primary btn-lg" role="button" aria-pressed="true">Hunt Page</a>
+            </div>
+
+            <div class="col-md-3">
+                <a href="shrekt.mp4" class="btn btn-primary btn-lg" role="button" aria-pressed="true"><i class='fa fa-file-movie-o'> Funny Youtube Video</i></a>
+            </div>
+        </div>
     </div>
 
     <div class='content'>
@@ -113,41 +140,21 @@
         <p class="lead"> Let's look at the man different examples of how we can use bootstrap and what bootstrap can do! </p>
     </div>
 
-    <div class="container mb-3">
-        <div class="row">
-            <div class="col-md-3">
-                <a href="form.html" class="btn btn-primary btn-lg" role="button" aria-pressed="true">Form Page</a>
-            </div>
-            
-            <div class="col-md-3">
-                <a href="fire.html" class="btn btn-primary btn-lg" role="button" aria-pressed="true">Fire Page</a>
-            </div>
-            
-            <div class="col-md-3">
-                <a href="hunt.html" class="btn btn-primary btn-lg" role="button" aria-pressed="true">Hunt Page</a>
-            </div>
-            
-            <div class="col-md-3">
-                <a href="shrekt.mp4" class="btn btn-primary btn-lg" role="button" aria-pressed="true">Funny Youtube Video</a>
-            </div>
-        </div>
-    </div>
-
     <div class="list-group">
         <a href="#" class="list-group-item list-group-item-action active">
             <i class="fa fa-home"></i> Home
         </a>
-        
+
         <a href="#" class="list-group-item list-group-item-action">
-            <i class="fa fa-camera"></i> Pictures <span class="badge badge-pill badge-primary pull-right">22</span>
+            <i class="fa fa-male"></i> About Me <span class="badge badge-pill badge-primary pull-right">22</span>
         </a>
-        
-        <a href="#" class="list-group-item list-group-item-action">
-            <i class="fa fa-music"></i> Music <span class="badge badge-pill badge-primary pull-right">69</span>
+
+        <a href="form.html" class="list-group-item list-group-item-action">
+            <i class="fa fa-list-ul"></i> Form
         </a>
-        
+
         <a href="#" class="list-group-item list-group-item-action">
-            <i class="fa fa-film"></i> Videos <span class="badge badge-pill badge-primary pull-right">420</span>
+            <i class="fa fa-cc"></i> Copyright <span class="badge badge-pill badge-primary pull-right">420</span>
         </a>
     </div>
 

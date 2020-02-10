@@ -21,6 +21,10 @@ h3 {
     text-align: center;
 }
 
+p{
+    margin-bottom: 0px;
+}
+
 #morecontent {
     background-color: yellow;
     margin: 40px;

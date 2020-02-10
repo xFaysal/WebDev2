@@ -54,7 +54,7 @@
                 <div class="navbar-nav">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
                     <a href="index.html" class="nav-item nav-link">Home</a>
-                    <a href="#" class="nav-item nav-link">About Me</a>
+                    <a href="#" class="nav-item nav-link disabled">About Me</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Music</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
                     <a href="games.html" class="nav-item nav-link active" tabindex="-1">Games</a>
@@ -215,6 +215,7 @@
                             if (randominteger <= 3) answer = "Did you really think so? Hahaha, I'm laughing now at your pitiful chances."
                             if ((randominteger >= 4) && (randominteger <= 6)) answer = "Yeah, it it's got a 65% chance of happening."
                             if ((randominteger >= 7) && (randominteger <= 9)) answer = "Oh come on! No way!"
+                            
                             if ((randominteger >= 10) && (randominteger <= 12)) answer = "As sure as I'm made of glass, this is likely to happen."
                             if ((randominteger >= 13) && (randominteger <= 15)) answer = "Why are you asking A CRYSTAL BALL? Do you really believe the answers?"
                             if ((randominteger >= 16) && (randominteger <= 18)) answer = "Give me a break, give me a break, break me off a piece of that NO!"
@@ -242,9 +243,7 @@
                             newWindow.document.write("<P align='center'>" + answer + "</P>")
                             newWindow.document.write("<P></P><P></P><P align='center'><A HREF='javascript:window.close()'>Close Me</A></P>")
                         }
-
                     </script>
-
                 </td>
             </tr>
         </table>
