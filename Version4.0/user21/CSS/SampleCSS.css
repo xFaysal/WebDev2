@@ -1,7 +1,7 @@
 body {
     font-family: "Marker Felt", "Comic Sans MS", fantasy;
-    color: white;
-    background-image: url(https://wallpaperaccess.com/full/711906.jpg)
+    color:darkblue;
+    background-image: url(https://s3.amazonaws.com/tinycards/image/58ee5c90856781014df21fb23868e014)
 }
 
 h1 {
@@ -34,7 +34,7 @@ th {
 }
 
 .button {
-    background-color: darkslateblue;
+    background-color:cornflowerblue;
     border: none;
     color: white;
     padding: 20px;
@@ -55,11 +55,11 @@ th {
 }
 
 .redd {
-    background-color: darkslateblue;
+    background-color: cornflowerblue;
 }
 
 .an {
-    background-color: darkslateblue;
+    background-color: cornflowerblue;
     border: none;
     color: white;
     padding: 20px;
@@ -76,7 +76,7 @@ th {
 }
 
 .jungkook {
-    background-color: darkslateblue;
+    background-color: cornflowerblue;
     border: none;
     color: white;
     padding: 20px;
@@ -89,9 +89,10 @@ th {
 }
 
 .content {
-    color: floralwhite
+    color:floralwhite
 }
 
 #morecontent {
-    background-color: yellow;
+    background-color:cornflowerblue
+        ;
 }
