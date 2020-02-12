@@ -1,5 +1,5 @@
 body {
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSARK7blAlItzxFLfgjpu1pQAqMuZaQtjl1c-NHrwY2ZdkfN4jV)
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQw7JoRq2iP0RLzB-b9YIkiM5PcXdGQ9EeOVw7M2KPhuEWEQG0N)
 }
 
 .button {
@@ -50,9 +50,13 @@ body {
 }
 
 #morecontent {
-    color:white;
+    color: white;
     text-align: top;
     background-color: yellow;
-    padding:50px;
-    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR3_mcIZDhIMA0Hn07xRlMUscRCdHFunKy_hE4-C53Qip6oX2dQ)
+    padding: 50px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR3_mcIZDhIMA0Hn07xRlMUscRCdHFunKy_hE4-C53Qip6oX2dQ)
+}
+
+.table-striped {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAD1BMVEX+/v7////Z2dnc3Ny6urpCvU+4AAABU0lEQVR4nO3QQQHEIBAAMWDxr/nu2XYsJBKy7hye5q7ZvM06e/G0j5MvJ+WknJSTclJOykk5KSflpJyUk3JSTspJOSkn5aSclJNyUk7KSTkpJ+WknJSTclJOykk5KSflpJyUk3JSTspJOSkn5aSclJNyUk7KSTkpJ+WknJSTclJOykk5KSflpJyUk3JSTspJOSkn5aSclJNyUk7KSTkpJ+WknJSTclJOykk5KSflpJyUk3JSTspJOSkn5aSclJNyUk7KSTkpJ+WknJSTclJOykk5KSflpJyUk3JSTspJOSkn5aSclJNyUk7KSTkpJ+WknJSTclJOykk5KSflpJyUk3JSTspJOSkn5aSclJNyUk7KSTkpJ+WknJSTclJOykk5KSflpJyUk3JSTspJOSkn5aSclJNyUk7KSTkpJ+WknJSTclJOykk5KSf1P5nN26w7h6e5P2aaCrlKyIulAAAAAElFTkSuQmCC);
 }
