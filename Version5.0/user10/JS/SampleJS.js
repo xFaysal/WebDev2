@@ -7,7 +7,11 @@ var pos = 0;
 var msg = "User 10";
 
 function changeText2() {
-    document.getElementById("textChange").innerHTML = window.open("https://web.njit.edu/~cm395/theBeeMovieScript/", "_blank");
+    document.body.style.backgroundColor= "red"
+}
+
+function changeBack() { 
+    document.body.style.backgroundColor= "white"
 }
 
 function Scroll() {
@@ -51,5 +55,5 @@ function rofl() {
     alert("You thought I really left it as hello world");
     alert("im not basic");
     alert("so dont mess with web dev bruh");
-    window.open("https://www.youtube.com/watch?v=4lZhL_rBwlU");
+    window.open("https://www.youtube.com/watch?v=SEy_7dAFlqk");
 }
