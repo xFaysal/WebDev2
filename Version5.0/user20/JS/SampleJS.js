@@ -17,6 +17,7 @@ Scroll();
 function displayDate() {
     document.getElementById("demo").innerHTML = Date();
 }
-    function myFunction() {
-                document.getElementById("demo").innerHTML = "Good Job Double Clicking";
-            }
+
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Good Job Double Clicking";
+}
