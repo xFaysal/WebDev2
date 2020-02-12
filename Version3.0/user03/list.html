@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--Version 3.0
+        Name:Mitchell Berg
+        Date Completed:1/30/20
+    -->
 
 <head>
     <link rel="shortcut icon" href="images/favicon.ico">
-    <title>Contact</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="SHS WebDev Menu Sample">
 
+    <title>One Singular Website</title>
+
+    <!-- Bootstrap core JS -->
     <!-- These are needed to get the responsive menu to work -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -29,7 +39,22 @@
             text-align: center;
         }
 
+        h3 {
+            padding: 50px;
+            border-bottom: 8px solid #5D6063;
+            border-right: 8px solid #DD0000;
+            border-left: 32px solid #552222;
+        }
+
+        p {
+            padding: 20px 0 20px 10px;
+            margin-bottom: 50px;
+            margin-left: 75px;
+            margin-top: 25px;
+        }
+
     </style>
+    <link href="CSS/SampleCSS.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -46,8 +71,8 @@
                     <a href="index.html" class="nav-item nav-link">Home</a>
                     <a href="#" class="nav-item nav-link">About Me</a>
                     <a href="music.html" class="nav-item nav-link" tabindex="-1">Music</a>
-                    <a href="list.html" class="nav-item nav-link disabled" tabindex="-2">Lists</a>
-                    <a href="Contact.html" class="nav-item nav-link active" tabindex="-2">Contact</a>
+                    <a href="#" class="nav-item nav-link active" tabindex="-2">Lists</a>
+                    <a href="Contact.html" class="nav-item nav-link" tabindex="-2">Contact</a>
                     <!----------------------------------^ Edit These Items in your Menu ^ ------------->
                 </div>
                 <div class="navbar-nav ml-auto">
@@ -56,12 +81,40 @@
             </div>
         </nav>
     </div>
-    <h1>Contacts</h1>
+    <h3>CSS Box Model Demonstration</h3>
+    <p>
+        Paragraphs are blocks too. <em>However</em> things like &lt;em&gt; and &lt;strong&gt; elements are not.
+        They are <strong>inline</strong> elements.
+    </p>
+    <p>Block elements define the flow of the HTML document, while inline elements
+        do not.
+    </p>
+    <div class="wideMargin" id="content">
 
-    <hr>
-    <h2>Emails</h2>
-    <p>School:<a href="mailto:223131@shakopeeschools.org?Subject=Bowling">Contact</a></p>
-    <p>Personal:<a href="mailto:mitchy246@gmail.com?Subject=Bowling">Contact</a></p>
+        <h1 class="text-left my-3">
+            <font color="red">Lists</font>
+        </h1>
+        <h3 class="text-left my-3">List 1</h3>
+        <ol>
+            <li>Intro to Sport Performance</li>
+            <li>Biology</li>
+            <li>Modern World History/Concert Band</li>
+            <li>Web Development</li>
+        </ol>
+        <h3 class="text-left my-3">List 2</h3>
+        <ul>
+            <li>11th Grade</li>
+            <li>12th Grade</li>
+            <li>10th Grade</li>
+            <li>9th Grade</li>
+        </ul>
+    </div>
+    <div class="wideMargin" id="footer">
+        <p>
+
+
+        </p>
+    </div>
 </body>
 
 </html>
