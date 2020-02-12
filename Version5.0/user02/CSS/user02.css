@@ -1,0 +1,14 @@
+body {
+	font-family: "Fantasy", "TimesNewRoman", fantasy;
+	color: #000000;
+}
+
+.header{
+    text-align: center;
+}
+
+.center{
+    text-align: center;
+    align-content: center;
+    align-self: center;
+}
