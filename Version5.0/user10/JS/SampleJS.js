@@ -51,6 +51,5 @@ function rofl() {
     alert("You thought I really left it as hello world");
     alert("im not basic");
     alert("so dont mess with web dev bruh");
-    alert("you know what, im not playing anymore");
     window.open("https://www.youtube.com/watch?v=4lZhL_rBwlU");
 }
