@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--Version 3.0
-        Name:Christian Lachica
-        Date Completed:1/31/2020
-    -->
 
 <head>
     <link rel="icon" type="image/png" href="images/favicon.ico">
     <link href="CSS/SampleCSS.css" rel="stylesheet" type="text/css">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="SHS WebDev Menu Sample">
+    <style>
+        td {
+            color: #FF0000;
+        }
 
-    <title>Number One Website</title>
+        h2 {
+            color: red
+        }
 
+    </style>
+    <title>My Favorite Music</title>
     <!-- Bootstrap core JS -->
     <!-- These are needed to get the responsive menu to work -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -38,14 +38,6 @@
         #footer {
             font-size: 12px;
             text-align: center;
-        }
-
-        p {
-            color: red
-        }
-
-        h2 {
-            color: red
         }
 
     </style>
@@ -75,24 +67,48 @@
             </div>
         </nav>
     </div>
+    <h2>My Top 5 Favorite Songs</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Artist</th>
+                <th>Song</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>1</td>
+            <td>Marshmello</td>
+            <td>Stars</td>
+        </tr>
+        <tr>
+            <td style="color:#ffff1a; background-color:palevioletred;">2</td>
+            <td style="color:#ffff1a; background-color:palevioletred;">Dominic Fike</td>
+            <td style="color:#ffff1a; background-color:palevioletred;">3 Nights</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Green Day</td>
+            <td>Boulevard of Broken Dreams</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Sub Urban</td>
+            <td>Cradles</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Oasis</td>
+            <td>Wonderwall</td>
+        </tr>
+    </table>
 
-    <div class="wideMargin" id="content">
+    <center><img src="images/stars_marshmello.jpg" alt="Image of Marshmello's Joytime 2 Album" width=250 height=250>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtbqRkQ_OvKEs8dtZDxspv186MUsys5owZBNgIORBI8qISmxAx:https://metro.co.uk/wp-content/uploads/2017/10/marshmallo.jpg%3Fquality%3D90%26strip%3Dall&s" alt="Image of DJ Marshmello" height=250></center>
 
-        <h2 class="text-left my-3">Home</h2>
+    <div id="footer" style="color:red">
         <p>
-
-            This is my first webpage! I was able to code all the HTML and CSS in order to make it. Watch out world of web design here I come!
-        </p>
-        <p>
-
-
-            I can use my skills here to create websites for my business, my friends and family, my C.V, blog or articles. As well as any games or more experiment stuff (which is what the web is really all about).
-        </p>
-    </div>
-    <div class="wideMargin" id="footer">
-        <p>
-
-            Webpage made by <a href="index.html" target="_blank">[Christian Lachica]</a>
+            Music can be found here <a href="https://music.amazon.com"> Amazon Music</a>
         </p>
     </div>
 </body>

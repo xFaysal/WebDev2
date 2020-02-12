@@ -6,7 +6,24 @@
     -->
 
 <head>
-    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <style>
+        ul {
+            font-size: 2em;
+            text-align: center;
+        }
+
+        ol {
+            font-size: 2em;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2em;
+            text-align: center;
+            color: red
+        }
+
+    </style>
     <link href="CSS/SampleCSS.css" rel="stylesheet" type="text/css">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -40,16 +57,10 @@
             text-align: center;
         }
 
-        p {
-            color: red
-        }
-
-        h2 {
-            color: red
-        }
-
     </style>
 </head>
+
+<link rel="icon" type="image/png" href="images/favicon.ico">
 
 <body>
     <div class="menu">
@@ -76,25 +87,30 @@
         </nav>
     </div>
 
-    <div class="wideMargin" id="content">
+    <h2>Lists</h2>
 
-        <h2 class="text-left my-3">Home</h2>
-        <p>
+    <h3>CSS Box Model Demonstration</h3>
+    <p>
+        Paragraphs are blocks too. <em>However</em> things like &lt;em&gt; and &lt;strong&gt; elements are not.
+        They are <strong>inline</strong> elements.
+    </p>
+    <p>Block elements define the flow of the HTML document, while inline elements
+        do not.
+    </p>
 
-            This is my first webpage! I was able to code all the HTML and CSS in order to make it. Watch out world of web design here I come!
-        </p>
-        <p>
-
-
-            I can use my skills here to create websites for my business, my friends and family, my C.V, blog or articles. As well as any games or more experiment stuff (which is what the web is really all about).
-        </p>
-    </div>
-    <div class="wideMargin" id="footer">
-        <p>
-
-            Webpage made by <a href="index.html" target="_blank">[Christian Lachica]</a>
-        </p>
-    </div>
+    <h2>Sports I have played</h2>
+    <ol>
+        <li style="color:#ff3300;">Soccer</li>
+        <li style="color:#ff3300;">Basketball</li>
+        <li style="color:#ff3300;">Baseball</li>
+    </ol>
+    <h2>Classes I have this quarter</h2>
+    <ul>
+        <li style="color:#ffff1a; background-color:palevioletred;">AP Human Geography</li>
+        <li style="color:#ffff1a; background-color:palevioletred;">Accelerated English</li>
+        <li style="color:#ffff1a; background-color:palevioletred;">Geometry</li>
+        <li style="color:#ffff1a; background-color:palevioletred;">Web Development</li>
+    </ul>
 </body>
 
 </html>

@@ -1,33 +1,91 @@
 body {
-	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
+    font-family: "Marker Felt", "Comic Sans MS", fantasy;
+    color: #003366;
 }
 
 h1 {
-	font-size: 1.3em;
-	text-align: center;
+    font-size: 1.3em;
+    text-align: center;
 }
 
-h2{
-        font-size: 1.1em;
+h2 {
+    font-size: 1.1em;
 }
 
 table {
-	margin-left: auto;
-	margin-right: auto;
-	text-align: left;
-	border-collapse: collapse;
-	cellspacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    border-collapse: collapse;
+    cellspacing: 0px;
 }
 
 tr {
-	border: 1px solid #ffffff;
-	text-align: center;
-	background-color:#9FB6CD; 
+    border: 1px solid #ffffff;
+    text-align: center;
+    background-color: #9FB6CD;
 }
 
 th {
-	text-align: center;
-	color: #ffffff;
-	background-color: #003366;
+    text-align: center;
+    color: #ffffff;
+    background-color: #003366;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: 5px;
+    color: brown;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 8px;
+    cursor: pointer;
+}
+
+.button1 {
+    border-radius: 100px;
+}
+
+.button2 {
+    border-radius: 300%;
+}
+
+.red {
+    background-color: #ff0ff0;
+}
+
+.spongebob {
+    background-color: #cccc00;
+    border: 12px;
+    color: black;
+    padding: 15px 32px;
+    text-align: none;
+    text-decoration: underline overline;
+    display: inline-block;
+    font-size: 24px;
+    border-radius: 50px;
+}
+
+.inator {
+    background-color: aqua;
+    border: 12px;
+    color: black;
+    padding: 15px 32px;
+    text-align: none;
+    text-decoration: underline;
+    display: inline-block;
+    font-size: 24px;
+    border-radius: 10px;
+}
+
+.content {
+    background-color: purple;
+    color: red
+}
+
+#morecontent {
+    background-color: olive;
 }
