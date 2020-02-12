@@ -48,3 +48,18 @@ function whichButton(event) {
 function coordinates(event) {
   document.getElementById("demo").innerHTML = "X = " + event.screenX + "<br>Y = " + event.screenY;
 }
+
+function whichElement(e) {
+  var targ;
+  if (!e) {
+    var e = window.event;
+  }
+  if (e.target) {
+    targ=e.target;
+  } else if (e.srcElement) {
+    targ=e.srcElement;
+  }
+  var tname;
+  tname = targ.tagName;
+  alert("You clicked on a " + tname + " element.");
+}
