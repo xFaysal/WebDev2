@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Version 5.0
+        Name: Chrsitian Lachica
+        Date Completed: 2/11/2020
+    -->
+
+<head>
+    <title>JavaScript</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="SHS WebDev Menu Sample">
+
+    <!-- Bootstrap core JS -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src="JS/SampleJS.js"></script>
+    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Put your .js files here ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        .menu {
+            margin: 0px;
+        }
+
+        .wideMargin {
+            margin: 15px;
+        }
+
+        #footer {
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .food {
+            font-size: 30px;
+            color: green;
+            border-bottom: 3px;
+            font-family: cursive;
+        }
+
+        h6 {
+            color: red;
+        }
+
+        .alert {
+            background-color: yellow;
+            color: black;
+            padding-top: 6px;
+            margin-top: 6px;
+        }
+
+        .focus {
+            color: red;
+            font-family: fantasy;
+
+        }
+
+    </style>
+</head>
+
+<body onload="popup ()" onmouseup="whichElement(event)">
+    <!---------------------------------- Begin the nav-bar ------------->
+    <div class="menu">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="#" class="nav-item nav-link disabled">About Me</a>
+                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Music</a>
+                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
+                    <a href="games.html" class="nav-item nav-link active" tabindex="-1">Games</a>
+                    <a href="script.html" class="nav-item nav-link active" tabindex="-1">JavaScript</a>
+                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled" tabindex="-1">Contact</a>
+                    <img src="smiley.gif" onload="loadImage()" width="40" height="40">
+
+                    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <a href="#" class="nav-item nav-link disabled">Login</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!---------------------------------- End the nav-bar ------------->
+
+    <div class="wideMargin" id="content">
+
+        <h1 class="text-left my-3">My JavaScript Examples</h1><!-- Edit this line for the title of your page -->
+
+        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+
+        <h2>
+            <p>Click somewhere in the document. An alert box will alert the name of the element you clicked on.</p>
+        </h2>
+
+        <center>
+            <h1 onmouseover="style.color='blue'" onmouseout="style.color='black'">Refresh this page.</h1>
+            <h6>↑↑↑hover over this text↑↑↑</h6>
+        </center>
+
+        <center>
+            <p id="textChange"> My name is Christian Lachica</p>
+        </center>
+        <center><button type="button" onclick="changeText()">Click if you like</button></center>
+
+
+        <center><button class="alert" onclick="button()">CLICK ME</button></center>
+        <center>
+            <p id="demo"></p>
+        </center>
+
+        <center>
+            <p onmouseover="show_coords(event)">
+                Click this paragraph to display the x and y coordinates of the mouse pointer.</p>
+
+            <p id="demo"></p>
+        </center>
+
+        <center>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p onmousedown="clicker(this,'red')" onmouseup="clicker(this,'green')">
+                        Click the text to change the color.</p>
+                </div>
+            </div>
+        </center>
+
+        <center><div class="row">
+            <div class="col-lg-12"><h3>This is a heading</h3>
+            <p>This is a paragraph.</p>
+        </div>
+        </div>
+
+        <center><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="smiley.gif" alt="Smiley" width="32" height="32">
+
+            <p>Bring your cursor over the smiley face.</p>
+            <p>Come on try it! It's really cool!</p>
+        </center>
+
+    </div>
+    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+
+
+    <!---------------------------------- Begin the footer ------------->
+    <div class="wideMargin" id="footer">
+        <h5>
+            <p>Credit for these features and functions goes to <a href=" https://www.w3schools.com/js/js_events_examples.asp"> [w3schools]</a></p>
+        </h5>
+        <p>
+            Webpage made by <a href="index.html" target="_blank">[Christian Lachica]</a>
+        </p>
+    </div>
+    <!---------------------------------- End the footer ------------->
+</body>
+
+</html>
