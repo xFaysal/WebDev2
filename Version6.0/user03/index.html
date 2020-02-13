@@ -1,18 +1,46 @@
 <html lang="en">
-    <!--Version 6.0 
+<!--Version 6.0 
 	Name:
 	Date Completed:
     -->
-    <head>
+
+<head>
+
+    <title>Web Development User #03</title>
+    <script src="jquery-3.4.1.js"></script>
+    <script>
+        $(function() {
+            $('li:first-child').addClass('emphasis_2 different_font');
+            
+            $('h1').addClass('emphasis_1'); 
+        });
+
+    </script>
+    <style>
+        .emphasis_1 {
+            color: red;
+        }
+
+        .emphasis_2 {
+            font-weight: bold;
+        }
         
-        <title>Web Development User #03</title>
-    
-    </head>
-    
-    <body>
-        
-        <center>My name is User #03</center>
-    
-    </body>
+        .different_font {
+            font-family: "Comic Sans MS", "Marker Felt", fantasy;
+        }
+    </style>
+</head>
+
+<body>
+
+    <center>My name is User #03</center>
+    <h1>I wanna go home now.</h1>
+    <ul>
+        <li>Hello</li>
+        <li class="different_font">Hello 2</li>
+        <li>Hello 3</li>
+    </ul>
+
+</body>
 
 </html>
