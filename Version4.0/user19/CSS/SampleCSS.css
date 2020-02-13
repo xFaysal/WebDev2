@@ -60,13 +60,47 @@ th {
 .red {
     background-color: #ff0000;
 }
-.red2{border-radius: 25px; border-color: red;padding: 25px; font-size: 2.9em; transition-delay: (.5)}
-.red2:hover{background-color: red}
 
-.blue{border-radius: 25px; border-color: blue;padding: 25px; font-size: 2.9em; transition-delay: (.5)}
-.blue:hover{background-color: blue}
-.green{border-radius: 25px; border-color: green;padding: 25px; font-size: 2.9em; transition-delay: (.5)}
-.green:hover{background-color: green}
-div {background-color: #ff0000; }
-#morecontent {background-color: #ff00ff; }
+.red2 {
+    border-radius: 25px;
+    border-color: red;
+    padding: 25px;
+    font-size: 2.9em;
+    transition-delay: (.5)
+}
 
+.red2:hover {
+    background-color: red
+}
+
+.blue {
+    border-radius: 25px;
+    border-color: blue;
+    padding: 25px;
+    font-size: 2.9em;
+    transition-delay: (.5)
+}
+
+.blue:hover {
+    background-color: blue
+}
+
+.green {
+    border-radius: 25px;
+    border-color: green;
+    padding: 25px;
+    font-size: 2.9em;
+    transition-delay: (.5)
+}
+
+.green:hover {
+    background-color: green
+}
+
+div {
+    background-color: #ff0000;
+}
+
+#morecontent {
+    background-color: #ff00ff;
+}
