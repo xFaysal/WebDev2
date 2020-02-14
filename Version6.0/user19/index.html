@@ -1,18 +1,80 @@
 <html lang="en">
-    <!--Version 6.0 
+<!--Version 6.0 
 	Name:
 	Date Completed:
     -->
-    <head>
-        
-        <title>Web Development User #19</title>
-    
-    </head>
-    
-    <body>
-        
-        <center>My name is User #19</center>
-    
-    </body>
+
+<head>
+    <meta charset=utf-8>
+    <link rel="stylesheet" href="day.css">
+    <title>Web Development User #19</title>
+    <script src="jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('li:first-child').addClass('edfn'), $('h1').addClass('fn')
+        });
+
+    </script>
+
+    <style>
+        .edfn {
+            color: chocolate;
+            font-weight: 200;
+            background-color: aquamarine;
+        }
+
+        .fn {
+            color: ghostwhite;
+            font-weight: 200;
+            background-color: black;
+        }
+
+        .b {
+            color: ghostwhite;
+            font-weight: 200;
+            background-color: black;
+            padding: 100px;
+            font-size: 20px;
+        }
+
+        .w {
+            color: darkslategrey;
+            font-weight: 200;
+            background-color: white;
+            padding: 100px;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>lololololololololololol</h1>
+
+    <ul>
+        <li> lol</li>
+        <li> lol</li>
+        <li> lol</li>
+    </ul>
+    <center>My name is User #19</center>
+    <button data-file="black" class='b' type="button">black</button>
+    <button data-file="white" class='w' type="button">white</button>
+    <script>
+        var link = $('link');
+        (function() {
+
+            $('button').hover(function() {
+                var thi = $(this),
+                    sile = thi.data('file');
+                link.attr('href', sile + '.css');
+                thi.siblings('button').removeAttr('disabled').end().attr('disabled', 'true');
+                console.log(sile);
+                
+            });
+
+        })();
+
+    </script>
+</body>
 
 </html>
