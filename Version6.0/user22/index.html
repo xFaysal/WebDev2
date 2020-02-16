@@ -6,25 +6,28 @@
 
 <head>
     <title>Jessica Nigbur</title>
+    <script src="jquery-3.4.1.js"></script>
     <style>
+/*
         ul li {
             color: darkblue;
         }
+*/
 
-        .emphais {
-            color: red;
+        .emphasis {
+            /*            color: red;*/
             font-weight: bold;
         }
 
+
+        /*
         h1 {
             color: deepskyblue;
         }
+*/
 
     </style>
-    <script>
-        $('li:first-child').addClass('emphasis')
 
-    </script>
 </head>
 
 <body>
@@ -34,10 +37,24 @@
         <li>Soccer 2</li>
         <li>Soccer 3</li>
     </ul>
+    
+    <script>
+        $('li:first-child').addClass('emphasis');
+
+    </script>
 
     <center>
         <h1>My name is Jessica Nigbur</h1>
     </center>
+
+    <!--    <script src="jquery-3.4.1.js"></script>-->
+
+    <!--
+    <script>
+        jQuery('ul li').addClass('emphasis');
+        $('ul li').addClass('emphais')
+    </script>
+-->
 
 </body>
 
