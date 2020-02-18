@@ -1,17 +1,30 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<script>
-function myFun() {
-  document.getElementById("de").innerHTML = "Hello World";
-}
-</script>
+    <script>
+        var y=
+        function bigImg(x) {
+            y= y+10;
+            x.style.height = 64+y+"px";
+            x.style.width = 64+y+"px";
+        }
+
+        function normalImg(x) {
+            y= y-10;
+            x.style.height = 64+y+"px";
+            x.style.width = 64+y+"px";
+        }
+
+    </script>
 </head>
+
 <body>
 
-<p ondblclick="myFun()">Doubleclick this paragraph to trigger a function.</p>
+    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="https://static.thenounproject.com/png/65988-200.png" alt="Smiley" width="32" height="32">
 
-<p id="de"></p>
-
+    <p>The function bigImg() is triggered when the user moves the mouse pointer over the image.</p>
+    <p>The function normalImg() is triggered when the mouse pointer is moved out of the image.</p>
 </body>
+
 </html>
