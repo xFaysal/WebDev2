@@ -1,9 +1,6 @@
 function changeText() {
     document.getElementById("textChange").innerHTML = "<div class='kavya'> Thanks for liking my Webpage</div>";
 }
-var space = " ";
-var pos = 0;
-var msg = "User 20";
 
 function Scroll() {
     document.title = msg.substring(pos, msg.length) + space + msg.substring(0, pos);
@@ -20,4 +17,8 @@ function displayDate() {
 
 function myFunction() {
     document.getElementById("demo").innerHTML = "Good Job Double Clicking";
+}
+function allCaps() {
+  var x = document.getElementById("fname");
+  x.value = x.value.toUpperCase();
 }
