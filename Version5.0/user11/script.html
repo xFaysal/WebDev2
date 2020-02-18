@@ -114,22 +114,29 @@
         </center>
 
         <center>
-            <p id="textChange"> My name is Christian Lachica</p>
+            <div class="row">
+                <div class="col-lg-6">
+                    <p id="textChange"> My name is Christian Lachica</p>
+                    <button type="button" onclick="changeText()">Click if you like</button>
+                </div>
+                <div class="col-lg-6"><button class="alert" onclick="button()">CLICK ME</button></div>
+            </div>
         </center>
-        <center><button type="button" onclick="changeText()">Click if you like</button></center>
+
+        <p id="demo"></p>
 
 
-        <center><button class="alert" onclick="button()">CLICK ME</button></center>
-        <center>
-            <p id="demo"></p>
-        </center>
 
-        <center>
-            <p onmouseover="show_coords(event)">
-                Click this paragraph to display the x and y coordinates of the mouse pointer.</p>
+        <div class="row">
+            <div class="col-lg-12">
+                <center>
+                    <p onmouseover="show_coords(event)">
+                        Click this paragraph to display the x and y coordinates of the mouse pointer.</p>
 
-            <p id="demo"></p>
-        </center>
+                    <p id="demo"></p>
+                </center>
+            </div>
+        </div>
 
         <center>
             <div class="row">
@@ -140,11 +147,14 @@
             </div>
         </center>
 
-        <center><div class="row">
-            <div class="col-lg-12"><h3>This is a heading</h3>
-            <p>This is a paragraph.</p>
-        </div>
-        </div>
+        <center>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>This is a heading</h3>
+                    <p>This is a paragraph.</p>
+                </div>
+            </div>
+        </center>
 
         <center><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="smiley.gif" alt="Smiley" width="32" height="32">
 
