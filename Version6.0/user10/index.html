@@ -1,18 +1,112 @@
 <html lang="en">
-    <!--Version 6.0 
-	Name:
+<!--Version 6.0 
+	Name:Emmet H.
 	Date Completed:
     -->
-    <head>
-        
-        <title>Web Development User #10</title>
-    
-    </head>
-    
-    <body>
-        
-        <center>My name is User #10</center>
-    
-    </body>
+
+<head>
+    <meta charset=utf-8>
+    <title>Web Development User #10</title>
+
+    <script>
+        $('ul li > a')
+
+        $(function() {
+                    $('li:first-child').addclass('emphasis')
+                })
+
+                $(document).ready(function() {
+                  $('li:first-child').addclass('emphasis')  
+                 });
+
+    </script>
+    <link rel="stylesheet" href="CSS/day.css">
+    <script src="CSS/night.css"></script>
+</head>
+
+<body>
+
+    <center>My name is User #10</center>
+    <h1>GOOD MORNING LAD</h1>
+
+    <button data-file="day">Day</button>
+    <button data-file="night">Night</button>
+    <ul>
+        <li>
+            I AM VECTOR
+        </li>
+        <li>
+            NEVERMIND IM NOT
+        </li>
+        <li>
+            WELCOME TO MY WEBPAGE
+        </li>
+    </ul>
+    <script src="jquery-3.4.1.js"></script>
+    <script>
+        $('li:first-child').addclass('emphasis')
+        $('th').addclass('emphasis')
+
+    </script>
+    <script>
+        $('ul li').addclass('emphasis')
+        $('h1').addclass('rare')
+
+    </script>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>number of animals</th>
+                    <th>% of animals</th>
+                    <th>number of people</th>
+                    <th>% of people</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>20</td>
+                    <td>56%</td>
+                    <td>79</td>
+                    <td>eh</td>
+                </tr>
+                <tr>
+                    <td>40</td>
+                    <td>3823%</td>
+                    <td>8</td>
+                    <td>%92389988328989898988989898</td>
+                </tr>
+                <tr>
+                    <td>100</td>
+                    <td>234234%</td>
+                    <td>7839479378</td>
+                    <td>%sdkcjsndckjsndckjsn</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        (function() {
+            var link = $('link');
+
+            $('button').on('click', function() {
+                var $this = $(this),
+                    stylesheet = $this.data('file');
+
+                link.attr('href', 'CSS/' + stylesheet + '.css');
+
+                $this
+                    .siblings('button')
+                        .removeAttr('disabled')
+                        .end()
+                        .attr('disabled', 'disabled');
+            });
+        })();
+
+    </script>
+
+</body>
 
 </html>

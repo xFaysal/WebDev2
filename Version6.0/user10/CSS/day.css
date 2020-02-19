@@ -1,0 +1,18 @@
+body {
+    background-color: yellow;
+}
+
+ul li {
+    color: red;
+}
+
+.emphasis {
+    font-family: cursive;
+    color: red;
+    font-weight: bold;
+}
+
+.rare {
+    font-size: 39px;
+    padding: 20px;
+}
