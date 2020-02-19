@@ -1,9 +1,24 @@
 body {
-    background-color: white;
+    background-color: yellow;
     color: green; 
     width: 500px;
     margin: auto;
     text-align: center;
+}
+
+ul li {
+    color: red;
+}
+
+.emphasis {
+    font-family: cursive;
+    color: red;
+    font-weight: bold;
+}
+
+.rare {
+    font-size: 39px;
+    padding: 20px;
 }
 
 h2 {
@@ -30,13 +45,9 @@ dd {
     padding-top: 1em;
     padding-bottom: 1em;
 }
-
 .hide {
     display: none;
 }
 
-
-
-
  dt:first-child { border-top: none; }
-dt:nth-last-child(2) { border-bottom: none; }  
+        dt:nth-last-child(2) { border-bottom: none; }  
