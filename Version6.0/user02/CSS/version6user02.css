@@ -1,0 +1,69 @@
+.basicColumn {
+    color: brown;
+    font-size: 2em;
+}
+
+td {
+    padding: 15px;
+    border: 2px dotted #ff0000;
+    background-color: azure;
+}
+
+.classCOOL {
+    font-family: "timesnewroman";
+    color: #3344ff;
+    font-size: 4em;
+}
+
+.anotherClass {
+    color: blueviolet;
+    font-family: "arial";
+    font-size: 2em;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.margin {
+    padding-right: 20px;
+}
+
+.menu {
+    font-family: 'arial';
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+
+dl {
+    text-align: center;
+    margin: 0px;
+}
+
+dt {
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 2em;
+    background: #e3e3e3;
+    border-bottom: 1px solid #c5c5c5;
+    border-top: 1px solid white;
+}
+
+dd{
+    font-size: 20px;
+}
+
+dt:first-child {
+    border-top: none;
+}
+
+dt:nth-last-child(2) {
+    border-bottom: none;
+}
+
+.hide {
+    display: none;
+}
