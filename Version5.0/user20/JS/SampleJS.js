@@ -15,17 +15,23 @@ function displayDate() {
     document.getElementById("demo").innerHTML = Date();
 }
 
-function myFunction() {
+function doubleClick() {
     document.getElementById("demo").innerHTML = "Good Job Double Clicking";
 }
+
 function allCaps() {
-  var x = document.getElementById("fname");
-  x.value = x.value.toUpperCase();
+    var x = document.getElementById("fname");
+    x.value = x.value.toUpperCase();
 }
+
 function preferedBrowser() {
-  prefer = document.forms[0].browsers.value;
-  alert("You prefer browsing internet with " + prefer);
+    prefer = document.forms[0].browsers.value;
+    alert("You prefer browsing internet with " + prefer);
 }
+
 function message() {
-  alert("This alert box was triggered by the onreset event handler");
+    alert("This alert box was triggered by the onreset event handler");
+}
+function color(color) {
+  document.forms[0].myInput.style.background = color;
 }
