@@ -42,8 +42,8 @@ dl {
 dt {
     cursor: pointer;
     margin-top: 10px;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 5%;
+    margin-right: 5%;
     font-weight: bold;
     font-size: 1.5em;
     line-height: 2em;
@@ -52,7 +52,7 @@ dt {
     border-top: 1px solid white;
 }
 
-dd{
+dd {
     font-size: 20px;
 }
 
@@ -66,4 +66,80 @@ dt:nth-last-child(2) {
 
 .hide {
     display: none;
+}
+
+.dropDown {
+    text-align: center;
+}
+
+.topBar {
+    border: 2px solid #999999;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: gray;
+    width: 95%;
+    margin: 20px;
+    margin-bottom: 0px;
+    padding: 8px;
+    padding-bottom: 2px;
+}
+
+.row {
+    display: inline-block;
+}
+
+.col-md-10 {
+    margin-top: 20px;
+    margin-left: 0px;
+}
+
+.LordLohman {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.dropBar {
+    border: 1px solid #DDDDDD;
+    border-top: 0px;
+    padding 8px;
+    padding-top: 8px;
+    padding-bottom: 2px;
+    margin-left: 20px;
+    width: 95%;
+    vertical-align: middle;
+}
+
+.fa {
+    width: 15px;
+    height: 15px;
+}
+
+.title {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 25%;
+    color: forestgreen;
+    font-family: fantasy;
+    border: solid black 2px;
+    border-radius: 10px;
+}
+
+input[type="button"] {
+    background-color: #fdfdfd;
+    color: #000000;
+    border: solid black 2px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+td{
+    border: 1px solid black;
+    background-color: #dedede;
+}
+
+input[type="text"] {
+    background-color: white;
+    border: solid black 2px;
+    width: 100%
 }
