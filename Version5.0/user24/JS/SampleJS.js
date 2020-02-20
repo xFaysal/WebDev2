@@ -15,9 +15,7 @@ window.setTimeout("Scroll()", 0);
 }
 Scroll();
 
-function holaFunction() {
-  document.getElementById("demo").innerHTML = "You selected some text";
-}
+
 
 function worldFunction() {
   document.getElementById("demo").innerHTML = "Hello World";
@@ -31,7 +29,7 @@ function loadImage() {
   alert("Image is loaded");
 }
 
-function myFunction() {
+function allCaps() {
   var x = document.getElementById("fname");
   x.value = x.value.toUpperCase();
 }
@@ -45,4 +43,8 @@ function myFunction() {
 
 function message() {
   alert("This alert box was triggered by the onreset event handler");
+}
+
+function writeMessage() {
+  document.forms[0].mySecondInput.value = document.forms[0].myInput.value;
 }
