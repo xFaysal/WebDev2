@@ -5,36 +5,91 @@
     -->
 
 <head>
+    <meta charset=utf-8>
+    <title>jQuery Events</title>
+    <link rel="stylesheet" href="day.css">
 
     <title>Kavya's Website</title>
-    <center><h1>My name is Kavya Nair</h1></center>
-    
+
+    <center>
+        <h1>My name is Kavya Nair</h1>
+    </center>
+
+    <button>day</button>
+    <button>night</button>
+    <script src="jquery-3.4.1.js">
+    </script>
     <style>
-        
+        body {
+            background-color: #c2d1f0;
+        }
+
         ul li {
-            color: green;
+            color: white;
+            font-family: inherit
         }
 
         .emphasis {
-            color: red;
+            color: white;
+        }
+
+        . h1 {
+            color: white;
+            font-family: cursive
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid white;
+            font-family: fantasy
+        }
+
+        th {
+            color: white
+        }
+
+        td {
+            color: white
+        }
+
+        h2 {
+            color: white;
+            font-family: monospace
         }
 
     </style>
+    <script>
+        $(document).ready(function() {
+            $('ul li').addClass('emphasis');
+            $(id = "hi").addClass('emphasis');
+        });
+
+    </script>
 </head>
 
 <body>
     <ul>
-        <li>kavya</li>
+        <li id="hi">kavya</li>
         <li>kavya 2</li>
         <li>kavya 3</li>
     </ul>
-    <script> src = "jquery-3.4.1.js"></script>
-    <script>
-        jQuery('ul li').addClass('.emphasis');
-        $('ul li').addClass('.emphasis');
 
-    </script>
-
+    <h2>Music:</h2>
+    <table>
+        <tr>
+            <th>Song</th>
+            <th>Singer</th>
+        </tr>
+        <tr>
+            <td>Golden</td>
+            <td>Nice To Meet You</td>
+        </tr>
+        <tr>
+            <td>Harry Styles</td>
+            <td>Niall Horan</td>
+        </tr>
+    </table>
 </body>
 
 </html>
