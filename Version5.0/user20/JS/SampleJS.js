@@ -35,3 +35,6 @@ function message() {
 function color(color) {
   document.forms[0].myInput.style.background = color;
 }
+function coordinates(event) {
+  document.getElementById("demo").innerHTML = "X = " + event.screenX + "<br>Y = " + event.screenY;
+}
