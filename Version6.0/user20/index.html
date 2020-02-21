@@ -7,22 +7,36 @@
 <head>
     <meta charset=utf-8>
     <title>jQuery Events</title>
-    <link rel="stylesheet" href="day.css">
+    <link rel="stylesheet" href="Light.css">
 
     <title>Kavya's Website</title>
+    <link rel="stylesheet" href="Light.css">
 
     <center>
-        <h1>My name is Kavya Nair</h1>
+        <h1>Kavya's Website</h1>
     </center>
 
-    <button>day</button>
-    <button>night</button>
+
+    <button data-file="light">Light</button>
+    <button data-file="dark">Dark</button>
+
+
+
     <script src="jquery-3.4.1.js">
     </script>
+
+    <script>
+        (function() {
+            $('button').click(function() {
+                var stylesheet = $(this).text().toLowerCase();
+                console.log(stylesheet);
+                $('link').attr('href', stylesheet + '.css');
+            });
+        })();
+
+    </script>
     <style>
-        body {
-            background-color: #c2d1f0;
-        }
+        body {}
 
         ul li {
             color: white;
@@ -33,7 +47,7 @@
             color: white;
         }
 
-        . h1 {
+        h1 {
             color: white;
             font-family: cursive
         }
