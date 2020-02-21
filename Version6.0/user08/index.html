@@ -1,18 +1,121 @@
 <html lang="en">
-    <!--Version 6.0 
-	Name:
+<!--Version 6.0 
+	Name: Joshua Heitz
 	Date Completed:
     -->
-    <head>
-        
-        <title>Web Development User #08</title>
-    
-    </head>
-    
-    <body>
-        
-        <center>My name is User #08</center>
-    
-    </body>
+
+<head>
+
+    <script src="jquery-1.7.1.js"></script>
+    <script>
+        jQuery('ul li h1').addClass('emphasis');
+        $('ul li').addClass('emphasis');
+
+    </script>>
+    <script src="https://ajax.googleliapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+
+
+    <title>Joshua Heitz Web Page</title>
+    <style src="CSS/SampleCSS.css">
+        ul li {
+            color: red;
+        }
+
+        .emphasis {
+            color: green
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1> HELLO IS IT ME YOUE LOOKING FOR I CAN SEE IT IN YOUR EYES</h1>
+
+    <center>My name is User #08</center>
+    <ul>
+        <li>ZAY</li>
+        <li>QAY</li>
+        <li>UAY</li>
+    </ul>
+
+    <dl>
+        <dt>What are your hours?</dt>
+        <dd>We are open 24/7.</dd>
+        <dt>What are your hours?</dt>
+        <dd>We are open 24/7.</dd>
+        <dt>What are your hours?</dt>
+        <dd>We are open 24/7.</dd>
+        <dt>What are your hours?</dt>
+        <dd>We are open 24/7.</dd>
+        <dt>What are your hours?</dt>
+        <dd>We are open 24/7.</dd>
+    </dl>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+    <script>
+        (function() {
+
+            $('dd').filter(':nth-child(n+4)').addClass('hide');
+
+            $('dl').on('mouseenter', 'dt', function() {
+                $(this)
+                    .next()
+                    .slideDown(200)
+                    .siblings('dd')
+                    .slideUp(200);
+            });
+        })();
+
+    </script>
+
+    <div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("button").click(function() {
+                    $("p").hide("slow", function() {
+                        alert("The paragraph is now hidden");
+                    });
+                });
+            });
+
+        </script>
+
+        <button>Hide</button>
+
+        <p>Click The Button To Hide This Paragraph.</p>
+
+    </div>
+
+
+    <div style="background:#98bf21;height:100px;width:100px;position:absolute;">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("button").click(function() {
+                    $("div").animate({
+                        left: '250px',
+                        height: '+=150px',
+                        width: '+=150px'
+                    });
+                });
+            });
+
+        </script>
+
+        <button>Start Animation</button>
+
+        <p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
+
+
+
+    </div>
+
+
+</body>
 
 </html>
