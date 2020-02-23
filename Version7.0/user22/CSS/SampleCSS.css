@@ -9,8 +9,14 @@
 .menu {
     margin: 0px;
 }
+
 .bold {
     font-weight: bold;
+}
+
+.an {
+    font-weight: bold;
+    background-color: green;
 }
 
 /*----------HOME PAGE BELOW---------*/
@@ -95,8 +101,23 @@ button:hover {
         width: 100%;
     }
 }
+
 /*----------ALYSSA NAEHER PAGE BELOW----------*/
-.an {
-    font-weight: bold;
-    background-color: green;
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+    width: 50%
+}
+
+tr{
+    background-color: #dddddd;
+    opacity: 0.9;
 }
