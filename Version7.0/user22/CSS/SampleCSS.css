@@ -121,3 +121,30 @@ tr{
     background-color: #dddddd;
     opacity: 0.9;
 }
+
+hr {
+  border: 2px solid black;
+} 
+
+/*----------ADRIANA FRANCH PAGE BELOW----------*/
+
+div.gallery {
+  margin: 5px;
+  border: 2px solid black;
+  float: left;
+  width: 250px;
+  height: 750px;
+}
+
+div.gallery img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width:70%;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+}
