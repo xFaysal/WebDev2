@@ -149,5 +149,35 @@ div.desc {
   font-weight: bold;
 }
 
-/*----------TYLER MILLER PAGE BELOW----------*/
+/*----------VITO MANNONE PAGE BELOW----------*/
+dl {}
 
+dd {
+    margin: 0;
+    padding: 1em 0;
+    font-weight: bold;
+    background: #f2f2f2;
+}
+
+dt {
+    color:black;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 2em;
+    background: #e3e3e3;
+    border-bottom: 1px solid #c5c5c5;
+    border-top: 1px solid white;
+}
+
+dt:first-child {
+    border-top: none;
+}
+
+dt:nth-last-child(2) {
+    border-bottom: none;
+}
+
+.hide {
+    display: none;
+}

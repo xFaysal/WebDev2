@@ -12,8 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="CSS/SampleCSS.css">
     <link rel="stylesheet" href="JS/SampleJS.js">
-
-
+    <link rel="stylesheet" href="jquery-3.4.1.js">
 
 </head>
 
@@ -21,7 +20,36 @@
     <center>
         <h1 class="an">ABOUT VITO MANNONE</h1>
     </center>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+    <dl>
+        <dt>Where is he From?</dt>
+        <dd>He was born in Desio, Italy on March 2, 1988</dd>
+        <dt>What Teams has he Play for?</dt>
+        <dd>Arsenal, Barnsley, Hull City, Sunderland, Minnesota United FC, and Esbjerg fB</dd>
+        <dt>What Awards has he Won?</dt>
+        <dd>He was the MLS Goalkeeper of the Year along with MLS Best XI in 2019 and Sunderland Supporters' Player of the Year anlong with Official Player of the Year in 2013–14</dd>
+        <dt>How Many Games has he Appeared In?</dt>
+        <dd>WTHrough his whole career so far he has appeared in 185 games</dd>
+        <dt>What Leagues Have he Played in?</dt>
+        <dd>He has played in Champions League, Premier League, and the MLS</dd>
+    </dl>
+
+    <script>
+        (function() {
+
+            $('dd').filter(':nth-child(n+4)').addClass('hide');
+
+            $('dl').on('mouseenter', 'dt', function() {
+                $(this)
+                    .next()
+                    .slideDown(200)
+                    .siblings('dd')
+                    .slideUp(200);
+            });
+        })();
+
+    </script>
 </body>
 
 </html>
