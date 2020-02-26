@@ -1,18 +1,143 @@
 <html lang="en">
-    <!--Version 6.0 
+<!--Version 6.0 
 	Name:
 	Date Completed:
     -->
-    <head>
-        
-        <title>Web Development User #03</title>
-    
-    </head>
-    
-    <body>
-        
-        <center>My name is User #03</center>
-    
-    </body>
+
+<head>
+
+    <title>Web Development User #03</title>
+    <script src="jquery-3.4.1.js"></script>
+    <script>
+        $(function() {
+            $('li:first-child').addClass('emphasis_2 different_font');
+            $('h1:even').addClass('emphasis_1');
+            $('li:nth-child(2)').addClass('different_font emphasis_1');
+            $('body').addClass('background');
+            $('table').addClass('tableborder');
+            $('th').addClass('tableborder tablewidth tabletext')
+        });
+
+    </script>
+    <style>
+        .emphasis_1 {
+            color: chocolate;
+        }
+
+        .emphasis_2 {
+            font-weight: bold;
+        }
+
+        .tabletextcolor {
+            color: white;
+        }
+
+        .different_font {
+            font-family: "Comic Sans MS", "Marker Felt", fantasy;
+        }
+
+        .background {
+            background-color: darkkhaki;
+        }
+
+        .tableborder {
+            border: 1px solid white;
+        }
+
+        .tablewidth {
+            width: 200px;
+        }
+
+        .aligntablecategory {
+            text-align: center;
+        }
+
+        .aligntableleftelement {
+            text-align: left;
+        }
+
+        .tablebackground {
+            background-color: black;
+        }
+
+        .tabletext {
+            font-weight: 100;
+        }
+
+    </style>
+    <script src="JS/SampleJS.js"></script>
+</head>
+
+<body>
+    <h1>I wanna go home now.</h1>
+    <ul>
+        <li>Hello</li>
+        <li>Hello 2</li>
+        <li>Hello 3</li>
+    </ul>
+    <h1>This is an odd h1.</h1>
+    <h1>This is an even h1.</h1>
+    <center>
+        <table>
+            <thead>The Best Months Ranked</thead>
+            <tr onload="changeText()">
+                <th>
+                    <center><strong>Month</strong></center>
+                </th>
+                <th>
+                    <center><strong>Rank</strong></center>
+                </th>
+            </tr>
+            <tr>
+                <th>January</th>
+                <th>5</th>
+            </tr>
+            <tr>
+                <th>February</th>
+                <th>6</th>
+            </tr>
+            <tr>
+                <th>March</th>
+                <th>4</th>
+            </tr>
+            <tr>
+                <th>April</th>
+                <th>10</th>
+            </tr>
+            <tr>
+                <th>May</th>
+                <th>3</th>
+            </tr>
+            <tr>
+                <th>June</th>
+                <th>7</th>
+            </tr>
+            <tr>
+                <th>July</th>
+                <th>2</th>
+            </tr>
+            <tr>
+                <th>August</th>
+                <th>1</th>
+            </tr>
+            <tr>
+                <th>September</th>
+                <th>12</th>
+            </tr>
+            <tr>
+                <th>October</th>
+                <th>8</th>
+            </tr>
+            <tr>
+                <th>November</th>
+                <th>9</th>
+            </tr>
+            <tr>
+                <th>December</th>
+                <th>11</th>
+            </tr>
+        </table>
+    </center>
+</body>
 
 </html>

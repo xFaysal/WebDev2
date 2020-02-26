@@ -31,3 +31,12 @@ th {
 	color: #ffffff;
 	background-color: #003366;
 }
+a {
+  color: #EE0000;
+}
+a:visited {
+  color: #00EE00;
+}
+a:hover, a:active, a:focus {
+  color: yellow;
+}
