@@ -40,9 +40,58 @@
         }
 
     </style>
+
+
+
+    <script>
+        function preferedBrowser() {
+            prefer = document.forms[0].browsers.value;
+            alert("You prefer the movie " + prefer);
+        }
+
+        function myFunction8() {
+            var w = window.outerWidth;
+            var h = window.outerHeight;
+            var txt = "Window size: width=" + w + ", height=" + h;
+            document.getElementById("demo").innerHTML = txt;
+        }
+
+        function myFunction7() {
+            alert("You pressed a key inside the input field");
+        }
+
+        function myFunction() {
+            var x = document.getElementById("fname");
+            x.value = x.value.toUpperCase();
+        }
+
+        function myFunction() {
+            alert("Page has been loaded");
+        }
+
+
+        function confirmInput() {
+            fname = document.forms[0].fname.value;
+            alert("Hello " + fname + "!" + " Enjoy this cat video!");
+        }
+
+        function confirmInput2() {
+            fname = document.forms[0].fname.value;
+            alert("Say....");
+        }
+
+
+        function myFunction3() {
+            var w = window.outerWidth;
+            var h = window.outerHeight;
+            var txt = "Window size: width=" + w + ", height=" + h;
+            document.getElementById("demo").innerHTML = txt;
+        }
+
+    </script>
 </head>
 
-<body>
+<body onload="myFunction()" onresize="myFunction8()">
     <!---------------------------------- Begin the nav-bar ------------->
     <div class="menu">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
@@ -58,7 +107,7 @@
                     <a href="#" class="nav-item nav-link">About Me</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Music</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
-                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
+                    <a href="games.html" class="nav-item nav-link active" tabindex="-1">Games</a>
                     <a href="script.html" class="nav-item nav-link active" tabindex="-1">JavaScript</a>
                     <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled" tabindex="-1">Contact</a>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
@@ -78,24 +127,131 @@
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
         <p>
 
+            <center>
+                <h1>
+                    <center>
+                        <h4 onmouseover="style.color='yellow'" onmouseout="style.color='black'">Press a key in this box and it will start a function</h4>
+                    </center>
+                </h1>
+            </center>
+
 
             <center>
-                <p id="textChange"> My name is Radwan</p>
+                <p>Press a key in this box will start a function.</p>
             </center>
-            <button type="button" onclick="changeText()">Hello There</button>
+            <center><input type="text" onkeydown="myFunction7()"></center>
+            <center>
+                <h3>
+                    <p id="textChange">Radwan</p>
+                </h3>
 
-
+                <button type="button" onclick="changeText()">Hello There</button>
+            </center>
         </p>
 
+
+        <p>
+            <center>
+                <form onsubmit="confirmInput()" action="https://bit.ly/37NiLxK">
+                    Enter your name: <input id="fname" type="text" size="20">
+                    <input type="submit">
+                </form>
+            </center>
+        </p>
+
+        <center>
+            <h4 onmouseover="style.color='yellow'" onmouseout="style.color='black'">Black and Yellow</h4>
+        </center>
+        <center>
+            <h4 onmouseover="style.color='yellow'" onmouseout="style.color='black'">Black and Yellow</h4>
+        </center>
+        <center>
+            <h4 onmouseover="style.color='yellow'" onmouseout="style.color='black'">Black and Yellow</h4>
+        </center>
+        <center>
+            <h4 onmouseover="style.color='yellow'" onmouseout="style.color='black'">Black and Yellow</h4>
+        </center>
+        <center>
+            <h4 onmouseover="style.color='yellow'" onmouseout="style.color='black'">Black and Yellow</h4>
+        </center>
+
+        <p>
+            <center>
+                <form onsubmit="confirmInput2()" action="https://bit.ly/2uf2S5p">
+                    Say Hi: <input id="fname" type="text" size="20">
+                    <input type="submit">
+                </form>
+            </center>
+        </p>
+
+
+
     </div>
+
+
+    <div class="jumbotron text-center">
+        <h1>Top 3 Movies (Series)</h1>
+    </div>
+
+
+    <style>
+        img {
+            height: 550px;
+        }
+
+    </style>
+
+    <center>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3>Best Action</h3>
+                    <h5>
+                        <p>The Matrix Trilogy</p>
+                    </h5>
+                    <img src="images/The_Matrix_Reloaded.jpg" alt="The Matrix Reloaded Movie Poster">
+                </div>
+                <div class="col-sm-4">
+                    <h3>Best Storytelling</h3>
+                    <h5>
+                        <p>Joker</p>
+                        <img src="images/Joker(Movie).jpg" alt="Joker Movie Poster">
+                    </h5>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Best Superhero Movie</h3>
+                    <h5>
+                        <p>Avengers: Infinity War</p>
+                        <img src="images/Avengers_Inginity_War.jpg" alt="Avengers Infinity War Movie Poster">
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </center>
+
+
+    <p>
+        <center>
+            <form>
+                <h2>Choose which movie (series):</h2>
+                <select id="browsers" onchange="preferedBrowser()">
+                    <option value="The Matrix Trilogy">The Matrix Trilogy</option>
+                    <option value="Joker">Joker</option>
+                    <option value="Avengers: Infinity War">Avengers: Infinity War</option>
+                </select>
+            </form>
+        </center>
+    </p>
     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
 
 
     <!---------------------------------- Begin the footer ------------->
     <div class="wideMargin" id="footer">
         <p>
-            Webpage made by <a href="index.html" target="_blank">[Radwan]</a>
+            Webpage made by <a href="games.html" target="_blank">[Radwan]</a>
         </p>
+
+        <p id="demo"> </p>
     </div>
     <!---------------------------------- End the footer ------------->
 </body>
