@@ -1,0 +1,76 @@
+<html lang="en">
+
+<head>
+    <title>Vito Mannone</title>
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/SampleCSS.css">
+    <link rel="stylesheet" href="JS/SampleJS.js">
+    <link rel="stylesheet" href="jquery-3.4.1.js">
+
+</head>
+
+<body class="main">
+   <div class="menu">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <!---------------------------------- Edit These Items in your Menu ------------->
+                    <a href="index.html" class="nav-item nav-link" tabindex="-1">Home</a>
+                    <a href="alyssa.html" class="nav-item nav-link" tabindex="-1">Alyssa Naeher</a>
+                    <a href="franch.html" class="nav-item nav-link" tabindex="-1">Adriana Franch</a>
+                    <a href="harris.html" class="nav-item nav-link" tabindex="-1">Ashlyn Harris</a>
+                    <a href="tyler.html" class="nav-item nav-link" tabindex="-1">Tyler Miller</a>
+                    <a href="vito.html" class="nav-item nav-link active">Vito Mannone</a>
+                    <!----------------------------------^ Edit These Items in your Menu ^ ------------->
+                </div>
+            </div>
+        </nav>
+    </div>
+    <center>
+        <h1 class="an">ABOUT VITO MANNONE</h1>
+    </center>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <dl>
+        <dt>Where is he From?</dt>
+        <dd>He was born in Desio, Italy on March 2, 1988</dd>
+        <dt>What Teams has he Play for?</dt>
+        <dd>Arsenal, Barnsley, Hull City, Sunderland, Minnesota United FC, and Esbjerg fB</dd>
+        <dt>What Awards has he Won?</dt>
+        <dd>He was the MLS Goalkeeper of the Year along with MLS Best XI in 2019 and Sunderland Supporters' Player of the Year anlong with Official Player of the Year in 2013–14</dd>
+        <dt>How Many Games has he Appeared In?</dt>
+        <dd>WTHrough his whole career so far he has appeared in 185 games</dd>
+        <dt>What Leagues Have he Played in?</dt>
+        <dd>He has played in Champions League, Premier League, and the MLS</dd>
+    </dl>
+
+    <script>
+        (function() {
+
+            $('dd').filter(':nth-child(n+4)').addClass('hide');
+
+            $('dl').on('mouseenter', 'dt', function() {
+                $(this)
+                    .next()
+                    .slideDown(200)
+                    .siblings('dd')
+                    .slideUp(200);
+            });
+        })();
+
+    </script>
+</body>
+
+</html>
