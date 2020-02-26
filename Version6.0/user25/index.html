@@ -1,18 +1,116 @@
 <html lang="en">
-    <!--Version 6.0 
+<!--Version 6.0 
 	Name:
 	Date Completed:
     -->
-    <head>
-        
-        <title>Web Development User #25</title>
-    
-    </head>
-    
-    <body>
-        
-        <center>My name is User #25</center>
-    
-    </body>
+
+<head>
+
+    <title>Web Development User #25</title>
+
+    <title></title>
+    <style>
+        ul li {
+            color: gold;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <ul>
+        <li>Player 1</li>
+        <li>Player 2</li>
+        <li>Player 3</li>
+    </ul>
+
+    <script src="https://ajax.googlepis.com/ajax/libs.jquery/1.7.1/jquery.js"></script>
+    <style>
+        .emphasis {
+            font-weight: bold;
+        }
+
+    </style>
+
+    <script>
+        jQuery('ul li').addClass('emphasis');
+        $('ul li').addClass('emphasis');
+
+    </script>
+
+
+    <script>
+        $('ul li > a')
+        $(function() {
+            $('li:first-child').addClass('emphasis');
+        });
+
+        $(document).ready(function() {
+
+
+            $('li:first-child').addClass('emphasis');
+        });
+
+    </script>
+
+    <script>
+        $('li:first-child').addClass('emphasis');
+
+    </script>
+
+    <meta charset="utf-8">
+    <title>jQuery Events</title>
+    <link rel="stylesheet" href="day.css">
+
+    <button data-file="day">Rushmoore</button>
+    <button data-file="night">Liberty</button>
+
+    <script src="https://ajax.googlepis.com/ajax/libs.jquery/1.7.1/jquery.js"></script>
+
+
+    <script>
+        (function() {
+            var link = $('link');
+            $('button').click(function() {
+                var $this = $(this),
+                    stylesheet = $this.data('file');
+
+                link.attr('href', stylesheet + '.css');
+
+                $(this)
+                .siblings('button')
+                .removeAttr('disabled')
+                .end()
+                .attr('disabled', 'disabled');
+        })();
+
+
+
+        uls.click();
+
+        $('ul');
+
+
+        $('ul');
+
+
+        $('ul')
+        $(this).text('changed');
+        $(this).text('changed');
+
+        $(this).text('changed');
+        console.log($(this));
+        });
+        })();
+
+    </script>
+
+
+
+
+
+</body>
 
 </html>
