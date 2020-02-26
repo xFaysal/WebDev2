@@ -12,3 +12,16 @@ body {
     align-content: center;
     align-self: center;
 }
+
+.fontNew{
+    font-family: "Arial";
+}
+
+.bord{
+    border: 2px solid #000000;
+    margin: 20px;
+}
+
+.btn{
+    width: 100%;
+}
