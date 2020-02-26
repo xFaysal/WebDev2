@@ -6,13 +6,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
+    <script src="JS/SampleJS.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="CSS/SampleCSS.css">
     <link rel="stylesheet" href="JS/SampleJS.js">
-    <link rel="stylesheet" href="jquery-3.4.1.js">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/color.png">
 
 </head>
 
@@ -44,15 +44,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <dl>
-        <dt>Where is he From?</dt>
+        <dt onmouseover="style.color='red'" onmouseout="style.color='black'" id="p1">Where is he From?</dt>
         <dd>He was born in Desio, Italy on March 2, 1988</dd>
-        <dt>What Teams has he Play for?</dt>
+        <dt onmouseover="style.color='red'" onmouseout="style.color='black'">What Teams has he Play for?</dt>
         <dd>Arsenal, Barnsley, Hull City, Sunderland, Minnesota United FC, and Esbjerg fB</dd>
-        <dt>What Awards has he Won?</dt>
+        <dt onmouseover="style.color='red'" onmouseout="style.color='black'">What Awards has he Won?</dt>
         <dd>He was the MLS Goalkeeper of the Year along with MLS Best XI in 2019 and Sunderland Supporters' Player of the Year anlong with Official Player of the Year in 2013–14</dd>
-        <dt>How Many Games has he Appeared In?</dt>
+        <dt onmouseover="style.color='red'" onmouseout="style.color='black'">How Many Games has he Appeared In?</dt>
         <dd>WTHrough his whole career so far he has appeared in 185 games</dd>
-        <dt>What Leagues Have he Played in?</dt>
+        <dt onmouseover="style.color='red'" onmouseout="style.color='black'">What Leagues Have he Played in?</dt>
         <dd>He has played in Champions League, Premier League, and the MLS</dd>
     </dl>
 
@@ -69,6 +69,14 @@
                     .slideUp(200);
             });
         })();
+
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#p1").mouseenter(function() {
+                alert("He is 31 YEARS OLD!");
+            });
+        });
 
     </script>
 
