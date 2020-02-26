@@ -18,6 +18,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="JS/snake.js"></script>
+    <script src="JS/SampleJS.js"></script>
 
 
     <!-- Latest compiled and minified CSS -->
@@ -80,15 +81,36 @@
             Come and checkout these awesome JavaScript Games!!!!
         </p>
         <div class="row">
+            <div class="col-lg-6 col-md-4 col-sm-10">
+                Enter your name: <input type="text" id="fname" onblur="allCaps()">
+
+                <p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+            </div>
+            <div class="col-lg-6 col-md-8 col-sm-2">
+                
+                Info here
+            </div>
+            
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-10">
                 <canvas id="c" width="1000" height="1000" style="height: 500px; width: 500px;"></canvas>
                 <script src="JS/snake.js"></script>
             </div>
-            
+
             <div class="col-lg-1 col-md-1 col-sm-2">
                 <input type="button" onClick="alert('Game Paused');" value="Pause Game">
             </div>
-            
+
             <div class="col-lg-7 col-md-7">
                 <script language="JavaScript">
                     var startTime = new Date();
