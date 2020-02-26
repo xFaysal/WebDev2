@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 5.0
-        Name:Rodgers
-        Date Completed:02/11/2020
+        Name:
+        Date Completed:
     -->
 
 <head>
+    <script src="JS/SampleJS.js"></script>
     <title>JavaScript</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="SHS WebDev Menu Sample">
+    <meta name="description" content="SHS WebDev JavaScript Practice">
 
     <!-- Bootstrap core JS -->
     <!-- These are needed to get the responsive menu to work -->
@@ -38,18 +39,15 @@
             font-size: 12px;
             text-align: center;
         }
-        
-        .isiah{}
 
     </style>
 </head>
-<script src="JS/SampleJS.js"></script>
 
 <body>
     <!---------------------------------- Begin the nav-bar ------------->
     <div class="menu">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+            <a href="http://shakonet.isd720.com/WebDev" class="navbar-brand">WebDev</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -57,12 +55,12 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-                    <a href="#" class="nav-item nav-link active">Home</a>
+                    <a href="index.html" class="nav-item nav-link">Home</a>
                     <a href="#" class="nav-item nav-link">About Me</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Music</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
-                    <a href="script.html" class="nav-item nav-link" tabindex="-1">JaveScript</a>
+                    <a href="script.html" class="nav-item nav-link active" tabindex="-1">JavaScript</a>
                     <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled" tabindex="-1">Contact</a>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </div>
@@ -72,26 +70,77 @@
             </div>
         </nav>
     </div>
-    <center>
-    </center>
     <!---------------------------------- End the nav-bar ------------->
 
     <div class="wideMargin" id="content">
-
         <h1 class="text-left my-3">My JavaScript Examples</h1><!-- Edit this line for the title of your page -->
+        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4" style="background-color:yellow;">
+                    <p id="textChange"> My name is User ##</p>
+                </div>
+                <div class="col-sm-4" style="background-color:orange;">
+                    <center>
+                    </center>
+                    <center><button type="button" onclick="changeText()">Click if you like</button></center>
+                </div>
+                <div class="col-sm-4" style="background-color:yellow;">
+                    <!DOCTYPE html>
+                    <html>
 
-        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-        <p>
+                    <head>
+                        <script>
+                            function isKeyPressed(event) {
+                                var text = "The shift key was NOT pressed!";
+                                if (event.shiftKey == 1) {
+                                    text = "The shift key was pressed!";
+                                }
+                                document.getElementById("demo").innerHTML = text;
+                            }
 
+                        </script>
+                    </head>
 
-        </p>
-        <center>
-            <p id="textChange"> My name is User ##</p>
-        </center>
-        <button type="button" onclick="changeText()">Click if you like</button>
+                    <body onmousedown="isKeyPressed(event)">
 
+                        <p>Click on this paragraph. An alert box will tell you if you pressed the shift key or not.</p>
+
+                        <p id="demo"></p>
+
+                    </body>
+
+                    </html>
+                </div>
+                <div class="col-sm-4" style="background-color:yellow;">
+                    <!DOCTYPE html>
+                    <html>
+
+                    <head>
+                        <script>
+                            function myFunction() {
+                                alert("Page is loaded");
+                            }
+
+                        </script>
+                    </head>
+
+                    <body onload="myFunction()">
+                        <h2>Hello World!</h2>
+                    </body>
+
+                    </html>
+                </div>
+                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR CODE HERE</div>
+                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR CODE HERE</div>
+                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR CODE HERE</div>
+                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR CODE HERE</div>
+                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR CODE HERE</div>
+                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR CODE HERE</div>
+            </div>
+        </div>
     </div>
-    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+    <!--↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑-->
 
 
     <!---------------------------------- Begin the footer ------------->
