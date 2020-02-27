@@ -39,8 +39,8 @@
 
 
     <div>
-        <button id= "day" data-file="day">day</button>
-        <button id= "night" data-file="night">night</button>
+        <button id="day" data-file="day">day</button>
+        <button id="night" data-file="night">night</button>
     </div>
 
 
@@ -60,7 +60,10 @@
 
     </dl>
 
-    <button id="fadeButton">Click to fade in boxes</button><br><br>
+    <button id="fadeoutButton">Click to fade out</button>
+    <button id="fadeinButton">Click to fade in</button>
+    <br><br>
+
     <script>
         (function() {
 
@@ -89,7 +92,7 @@
             });
         })();
         $(document).ready(function() {
-            $("#fadeButton").click(function() {
+            $("#fadeoutButton").click(function() {
                 $("#dl1").fadeOut(3000);
                 $("#dl2").fadeOut(3000);
                 $("#dl3").fadeOut(3000);
@@ -100,6 +103,19 @@
                 $("#dl8").fadeOut(3000);
                 $("#dl9").fadeOut(3000);
                 $("#dl10").fadeOut(3000);
+
+            });
+            $("#fadeinButton").click(function() {
+                $("#dl1").fadeIn(3000);
+                $("#dl2").fadeIn(3000);
+                $("#dl3").fadeIn(3000);
+                $("#dl4").fadeIn(3000);
+                $("#dl5").fadeIn(3000);
+                $("#dl6").fadeIn(3000);
+                $("#dl7").fadeIn(3000);
+                $("#dl8").fadeIn(3000);
+                $("#dl9").fadeIn(3000);
+                $("#dl10").fadeIn(3000);
 
             });
         });

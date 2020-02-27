@@ -12,8 +12,9 @@
     <meta name="description" content="SHS WebDev Menu Sample">
 
     <link rel="shortcut icon" href=images/applefavicon.png />
+    <script src="jquery-3.4.1%20copy.js"></script>
 
-    <title>Apples</title>
+    <title>FAQs</title>
 
     <!-- Bootstrap core JS -->
     <!-- These are needed to get the responsive menu to work -->
@@ -24,9 +25,27 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="JS/SampleJS.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- Custom styles for this template -->
+    <script>
+         $(document).ready(function() {
+
+            $('dd').filter(':nth-child(n+4)').addClass('hide');
+
+            $('dl').on('mouseenter', 'dt', function() {
+                $(this)
+                    .next()
+                    .slideDown(200)
+                    .siblings('dd')
+                    .slideUp(200);
+            });
+        })
+
+    </script>
+
+
+
 </head>
 
 <body>
@@ -40,7 +59,7 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!---------------------------------- Edit These Items in your Menu ------------->
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                       <a href="index.html" class="nav-item nav-link active">Home</a>
 
                     <a href="types.html" class="nav-item nav-link active" tabindex="-1">Types</a>
                     <a href="ranking.html" class="nav-item nav-link active" tabindex="-2">Ranking</a>
@@ -53,47 +72,25 @@
             </div>
         </nav>
     </div>
-
     <div>
+        <dl>
+            <dt id="dl1">What is an apple?</dt>
+            <dd id="dl2">A red fruit.</dd>
+            <dt id="dl3">Where do apples grow?</dt>
+            <dd id="dl4">Trees.</dd>
+            <dt id="dl5">Are apples fruits?</dt>
+            <dd id="dl6">Yes.</dd>
+            <dt id="dl7">Why are some apples green?</dt>
+            <dd id="dl8">Don't know.</dd>
 
-        <div >
-            <style>
-                img {
-                    height: 200px;
-                    width: 278.3px;
+        </dl>
 
-                }
 
-            </style>
-            
-        
-            <img src="https://i0.wp.com/www.wfla.com/wp-content/uploads/sites/71/2019/10/apples.jpg?resize=2560%2C1440&ssl=1" alt="Apples">
-            <img src="https://cdn.aarp.net/content/dam/aarp/health/healthy-living/2017/09/1140-3-reasons-apples-good-for-you.imgcache.revb759b8143e7e61eac34a2605992c048f.jpg" alt="Apples">
-            <img src="https://www.dw.com/image/47425871_401.jpg" alt="Apples">
-            <img src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2019/09/apples-still-life-fruit-1296x728-header-1296x728.jpg?w=1155&h=1528" alt="Apples">
-            <img src="https://i2.wp.com/hellofreshus.wpengine.com/wp-content/uploads/2016/10/HF160920_Global_Blog_All_About_Apples_15_low.jpg" alt="Apples">
-        </div>
-        
-        <div style="padding: 200px">
-            <center>
-                <h1 id= "textChange" style= "font-family: Courier New" onmouseover="changeText()" >
-                    Apples!
-                </h1>
-            </center>
-        </div>
 
-        
-        
-        
-        <div><img src="https://i0.wp.com/www.wfla.com/wp-content/uploads/sites/71/2019/10/apples.jpg?resize=2560%2C1440&ssl=1" alt="Apples">
-            <img src="https://cdn.aarp.net/content/dam/aarp/health/healthy-living/2017/09/1140-3-reasons-apples-good-for-you.imgcache.revb759b8143e7e61eac34a2605992c048f.jpg" alt="Apples">
-            <img src="https://www.dw.com/image/47425871_401.jpg" alt="Apples">
-            <img src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2019/09/apples-still-life-fruit-1296x728-header-1296x728.jpg?w=1155&h=1528" alt="Apples">
-            <img src="https://i2.wp.com/hellofreshus.wpengine.com/wp-content/uploads/2016/10/HF160920_Global_Blog_All_About_Apples_15_low.jpg" alt="Apples">
-        </div>
+
+
 
     </div>
-
     <link href="CSS/SampleCSS.css" rel="stylesheet" type="text/css">
 </body>
 
