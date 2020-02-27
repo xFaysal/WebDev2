@@ -59,8 +59,7 @@ function dis(val) {
 
 //function that evaluates the digit and return result 
 function solve() {
-    let x = document.getElementById("result").value
-    let y = eval(x)
+    let y = eval(document.getElementById("result").value)
     document.getElementById("result").value = y
 }
 
