@@ -1,18 +1,157 @@
 <html lang="en">
-    <!--Version 7.0 
+<!--Version 7.0 
 	Name:
 	Date Completed:
     -->
-    <head>
-        
-        <title>Web Development User #03</title>
-    
-    </head>
-    
-    <body>
-        
-        <center>My name is User #03</center>
-    
-    </body>
+
+<head>
+
+    <title>Minnesota Nice</title>
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSMgZJOU6m518_A443vctOUHCbiSFtcAJMJ8i4sVyZ8dW4-IvR6">
+
+    <!-- Navbar Menu -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="CSS/SampleCSS.css">
+    <script src="JS/SampleJS.js"></script>
+    <script>
+        $(function() {
+            $('table').addClass('tablebackground alignbootstrapcenter');
+            $('th').addClass('tablecolumnwidth tablebackground');
+            $('tr').addClass('tablebackground');
+        });
+
+    </script>
+
+</head>
+
+<body class="backgroundindexpage">
+    <div class="menu">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a class="navbar-brand"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSMgZJOU6m518_A443vctOUHCbiSFtcAJMJ8i4sVyZ8dW4-IvR6' height=50px width=50px></a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <!---------------------------------- Edit These Items in your Menu ------------->
+                    <!-- tabindex equaling zero makes the outside of the clickable area outlines with the highlight color of the computer. -->
+                    <!-- tabindex equaling negative one gets rid of that highlight -->
+                    <a class="nav-item nav-link active">Home</a>
+                    <a href="MinnehahaFalls.html" class="nav-item nav-link" tabindex="-1">Minnehaha Falls</a>
+                    <a href="MNSculptureGarden.html" class="nav-item nav-link" tabindex="-1">Minneapolis Sculpture Garden</a>
+                    <a href="USBankStadium.html" class="nav-item nav-link" tabindex="-1">US Bank Stadium</a>
+                    <a href="MNChildrensMuseum.html" class="nav-item nav-link" tabindex="-1">Minnesota Childrens Museum</a>
+                    <a href="WeismanArtMuseum.html" class="nav-item nav-link" tabindex="-1">Weisman Art Museum</a>
+                    <!----------------------------------^ Edit These Items in your Menu ^ ------------->
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="wideMargin">
+        <h1><span>Minneapolis</span></h1>
+        <div class="row">
+            <p class="col-sm-7"><span>There are many things to see and do in the city of Minneapolis. The city itself attracts tourists from all over the US and the planet.</span></p>
+
+            <table class="col-sm-3 alignbootstrapcenter">
+                <tr>
+                    <th>Minneapolis</th>
+                    <th> </th>
+                </tr>
+                <tr>
+                    <th>Population</th>
+                    <th>422,331</th>
+                </tr>
+                <tr>
+                    <th>Average Income</th>
+                    <th>$60,789/year</th>
+                </tr>
+            </table>
+        </div>
+        <!-- accordion start below -->
+        <h2><span>Tourist Attractions</span></h2>
+
+        <button class="accordion">Minnehaha Falls</button>
+        <div class="panel">
+            <div class="row">
+                <div class="col-sm-4 accordionpadding"><img src="images/MinnehahaFalls.jpeg" alt="Image of Minnehaha Falls Waterfall"></div>
+                <div class="col-sm-6 accordionpadding">Minnehaha Falls is one of Minneapolis' oldest and most popular parks features a majestic 53-foot waterfall, limestone bluffs, and river overlooks, attracting more than 850,000 visitors annually. <a href="MinnehahaFalls.html" link="red">Learn More.</a></div>
+            </div>
+        </div>
+
+        <button class="accordion">Minneapolis Sculpture Garden</button>
+        <div class="panel">
+            <div class="row">
+                <div class="col-sm-8 accordionpadding">
+                    Since opening in 1988, the Garden has welcomed millions of visitors, showcasing works from the Walker Art Center’s renowned collections of modern and contemporary art in the setting of an urban park. The Garden is a partnership between the Walker and the Minneapolis Park &amp; Recreation Board, a national award-winning park system. <a href="MNSculptureGarden.html" link="red">Learn More.</a>
+                </div>
+                <div class="col-sm-2 accordionpadding">
+                    <center><img src="images/CherrySpoon2.jpeg" width=auto></center>
+                </div>
+            </div>
+        </div>
+
+        <button class="accordion">US Bank Stadium</button>
+        <div class="panel">
+            <div class="row">
+                <div class="col-sm-8 accordionpadding">
+                    <p>U.S. Bank Stadium is not just a location, but an epicenter of excitement, opportunity, and Minnesota pride. The Vikings are an important part of our proud heritage and the relationship between the Vikings and the citizens of Minnesota runs deep. But the stadium is not just the home of the Minnesota Vikings, it’s a facility that hosts major national and international events that create economic, fiscal and social benefits to the region. <a href="USBankStadium.html">Learn More.</a></p>
+                </div>
+                <div class="col-sm-2 accordionpadding">
+                    <center><img src="images/USBankStadium.jpeg" width=auto></center>
+                </div>
+            </div>
+        </div>
+
+        <button class="accordion">Minnesota Childrens Museum</button>
+        <div class="panel">
+            <div class="row">
+                <div class="col-sm-8 accordionpadding">
+                        <p>Minnesota Children’s Museum sparks children’s learning through play. The museum, a nonprofit organization, serves more than 550,000 visitors each year at locations in St. Paul and Rochester. <a href="MNChildrensMuseum.html">Learn More.</a></p>
+                </div>
+                <div class="col-sm-2 accordionpadding">
+                    <center><img src="images/ChildrensMuseum.jpeg"></center>
+                </div>
+            </div>
+        </div>
+
+        <button class="accordion">Weisman Art Museum</button>
+        <div class="panel">
+            <div class="row">
+                <div class="col-sm-8 accordionpadding">
+                    <p>Major milestones in the museum’s history include significant contributions from Frederick R. Weisman and Frank O. Gehry. Frederick R. Weisman, a Minneapolis native, entrepreneur, and noted philanthropist, provided generous financial gifts and other support to the museum. Internationally acclaimed architect Frank O. Gehry designed the museum’s glimmering residence along the Mississippi River. Home to the museum since 1993, this important architectural achievement has become a landmark for the University of Minnesota and the Twin Cities. <a href="WeismanArtMuseum.html">Learn More.</a></p>
+                </div>
+                <div class="col-sm-2 accordionpadding">
+                    <center><img src="images/WeismanNight.jpeg"></center>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("activeaccordion");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+
+    </script>
+    <div id="footer">
+        <button type="button" onclick="likeClick()">Click if you like this webpage.</button>
+    </div>
+</body>
 
 </html>
