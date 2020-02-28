@@ -2,7 +2,7 @@
 <html lang="en">
 <!--Version 3.0
         Name:Emmet Hoversten
-        Date Completed:2/4/20
+        Date Completed:1/30/20
     -->
 
 <head>
@@ -22,9 +22,10 @@
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="CSS/SampleCSS.css">
+    <script src="JS/SampleJS.js"></script>
+    <link rel="stylesheet" href="CSS/SampleCSS.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <!-- Custom styles for this template -->
     <style type="text/css">
         .menu {
@@ -40,16 +41,12 @@
             text-align: center;
         }
 
-        h1 {
+        p {
             color: green;
         }
 
-        #buttonthing {
-            background-color: red;
-            color: black;
-        }
-
     </style>
+    <link href="CSS/WebDevUser10.css" rel="stylesheet" type="text/css">
 
     <style>
         td {
@@ -58,7 +55,7 @@
         }
 
     </style>
-    <script src="JS/SampleJS.js"></script>
+    <link rel="favicon" type="image/png" href="images/FaviconE.png">
 </head>
 
 <body>
@@ -72,10 +69,10 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!---------------------------------- Edit These Items in your Menu ------------->
-                    <a href="index.html" class="nav-item nav-link active" tabindex="1">Who</a>
+                    <a href="index.html" class="nav-item nav-link" tabindex="1">Who</a>
                     <a href="what.html" class="nav-item nav-link">What</a>
                     <a href="movies.html" class="nav-item nav-link" tabindex="-1">Movies</a>
-                    <a href="index_list.html" class="nav-item nav-link" tabindex="-2">Favorites</a>
+                    <a href="index_list.html" class="nav-item nav-link active" tabindex="-2">Favorites</a>
                     <a href="talents.html" class="nav-item nav-link " tabindex="-2">Talents</a>
                     <a href="javagames.html" class="nav-item nav-link " tabindex="-2">TicTacToe</a>
                     <button data-file="day" onClick="lightmode()" class="col-lg-5">Light Mode</button>
@@ -89,28 +86,48 @@
         </nav>
     </div>
 
+
     <div class="wideMargin" id="content">
 
-        <h1 text-align=left id="front-title">Who is Emmet?</h1>
+        <h2 class="text-left my-3" style="color:green;">Lists</h2>
+
+        <h3 style="color:#248f8f
+;">Some of My Favorite Things</h3>
         <p>
-            I am Emmet Hoversten, born in Minneapolis, Mn on August 7th 2004 delivered by my own father.
+            I've been told I have a very unique opinion on things and a good mix of different type of everything.
         </p>
+        <div style='padding-top: 1px'></div>
+        <p>Block elements define the flow of the HTML document, while inline elements
+            do not.
+        </p>
+
+        <h3 style="color:#339966;">Favorite TV Shows</h3>
+        <ol>
+            <strong>
+                <li style="color:#964B00;">The Office</li>
+                <li style="color:#f00000;">Psych</li>
+                <li style="color:#6a0dad;">Parks and Recreation</li>
+        </ol>
+
+        <h3 style="color:#339966;">Best Rap Artists (in no particular order)</h3>
+        <ul>
+            <li style="color:#0000f0;">JID</li>
+            <li style="color:#964B00;">Joyner Lucas</li>
+            <li style="color:#6a0dad;">Drake</li>
+            <li style="color:#f00000;">Tokyo's Revenge</li>
+            <li style="color:#00ff00;">Childish Gambino</li>
+            <li style="color:#0000f0;">Logic</li>
+            </strong>
+
+        </ul>
+
+
         <p>
-            I was basically born into technology and have been accidently learning it about it from using it all my life after building my first pc. I have been with tech my whole life and grew up in this lifestyle. I want to learn coding, I learned some of the languages partly like python and playing around in linux terminals but am learing new ones in this class.
+
+
+
         </p>
-        <button class="col-lg-12" id="buttonthing" onClick="editwebsite()">Click to Change My Story</button>
     </div>
-    <script>
-        var lol = $('p');
-        setInterval(function() {
-            lol.toggleClass('blinking');
-        }, 100);
-
-    </script>
-    <script>
-
-
-    </script>
     <div class="wideMargin" id="footer">
         <p>
 
