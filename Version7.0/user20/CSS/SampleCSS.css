@@ -1,12 +1,12 @@
  .main {
-     background-image: url(https://lh3.googleusercontent.com/proxy/LIqChCZQfteamamk27qPJKzK3rREzy-wtr93oF9NEO6XpqGqnNy09Fd0wc6ib1B9SC9-ykurYyCZ6Dyvluo3EKOVi5BfwnkGYVJT93YZFDplQkzkH5sYHInIS9efHvz214bOc2m-ClnlsfQ);
+     background-image: url(https://cdn5.vectorstock.com/i/1000x1000/62/99/white-cosmos-flower-on-pink-background-vector-21426299.jpg);
      background-repeat: no-repeat;
      background-size: cover;
      font-family: sans-serif;
  }
 
  .menu {
-     background-color: black;
+     background-color: white;
  }
 
  .wideMargin {
@@ -20,7 +20,7 @@
 
  .accordion {
      background-color: lightpink;
-     color: #444;
+     color: white;
      cursor: pointer;
      padding: 18px;
      width: 100%;
@@ -39,7 +39,7 @@
 
  .accordion:after {
      content: '\002B';
-     color: gray;
+     color: white;
      font-weight: bold;
      float: right;
      margin-left: 5px;
@@ -51,7 +51,7 @@
 
  .panel {
      padding: 0 18px;
-     background-color: gray;
+     background-color: white;
      max-height: 0;
      overflow: hidden;
      transition: max-height 0.2s ease-out;
@@ -59,7 +59,7 @@
 
  body {
      background: black;
-     color: dimgray;
+     color: black;
  }
 
  .textChange {}
