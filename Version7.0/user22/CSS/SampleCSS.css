@@ -111,16 +111,13 @@ table {
 
 td,
 th {
-    border: 1px solid black;
+    border: 5px solid black;
     text-align: left;
     padding: 8px;
     width: 50%
+    
 }
 
-tr{
-    background-color: #dddddd;
-    opacity: 0.9;
-}
 
 hr {
   border: 2px solid black;
@@ -181,3 +178,16 @@ dt:nth-last-child(2) {
 .hide {
     display: none;
 }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+    .error{
+        color: red;
+    }
+
+

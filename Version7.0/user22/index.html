@@ -11,16 +11,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
+    <script src="JS/SampleJS.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="CSS/SampleCSS.css">
-    <link rel="stylesheet" href="JS/SampleJS.js">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="images/color.png">
 
 </head>
 
-<body class="main">
+<body class="main" onload="myAlert()" onresize="reSize()">
     <div class="menu">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
@@ -46,7 +47,7 @@
     <center>
         <h1>Favorite Goalkeepers</h1>
     </center>
-
+    <p id="demo"></p>
     <div class="container">
         <div class="row">
             <div class="col-sm-4">
@@ -73,8 +74,23 @@
 
     <!--    Sign Up Page Below      -->
 
+    <script>
+        $(document).ready(function() {
+            $("form").submit(function(event) {
+                var regex = /^[a-zA-Z]+$/;
+                var currentValue = $("#firstName").val();
+                if (regex.test(currentValue) == false) {
+                    $("#result").html('<p class="error">Not valid!</p>').show().fadeOut(1000);
+                    // Preventing form submission
+                    event.preventDefault();
+                }
+            });
+        });
 
-    <form action="/action_page.php" style="border:1px solid #ccc">
+    </script>
+
+
+    <form action="correct.html" style="border:1px solid #ccc">
         <div class="container">
             <h1>Sign Up!</h1>
             <p>Please fill in this form to sign up for more info about the goalies.</p>
@@ -93,6 +109,13 @@
                 <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
             </label>
 
+            <form action="correct.html" method="post" id="users">
+                <label for="firstName">First Name:</label>
+                <input type="text" name="first-name" id="firstName">
+                <input type="submit" value="Submit">
+                <div id="result"></div>
+            </form>
+
             <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
 
             <div class="clearfix">
@@ -101,6 +124,10 @@
             </div>
         </div>
     </form>
+    <p id="demo"> </p>
+
+
+
 
 </body>
 
