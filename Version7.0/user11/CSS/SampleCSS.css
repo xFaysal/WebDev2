@@ -1,33 +1,176 @@
 body {
-	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
+    background-image: url(../images/field.jpeg);
+    background-repeat: repeat-y;
+    background-size: cover;
+    
 }
 
-h1 {
-	font-size: 1.3em;
-	text-align: center;
+h1,
+h2 {
+    color: white;
 }
 
-h2{
-        font-size: 1.1em;
+img {
+    background-color: aqua;
 }
 
-table {
-	margin-left: auto;
-	margin-right: auto;
-	text-align: left;
-	border-collapse: collapse;
-	cellspacing: 0px;
+.row,
+col-lg-4 {
+    color: white;
 }
 
-tr {
-	border: 1px solid #ffffff;
-	text-align: center;
-	background-color:#9FB6CD; 
+p {
+    color: white;
+    background-color: orange;
+}
+
+.tab {
+    background-color: black;
+}
+
+center {
+    color: white;
+}
+
+.ball {
+    background-color: cornflowerblue;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
 }
 
 th {
-	text-align: center;
-	color: #ffffff;
-	background-color: #003366;
+    text-align: left;
+}
+
+table {
+    width: 100%;
+}
+
+.mnufc:nth-child(even) {
+    background-color: #6CADDF;
+    color: white;
+}
+
+.mnufc:nth-child(odd) {
+    background-color: #CFD4D8;
+}
+
+.liverpool:nth-child(even) {
+    background-color: #C8102E;
+    color: white;
+}
+
+.liverpool:nth-child(odd) {
+    background-color: #00B2A9;
+}
+
+.bayern:nth-child(even) {
+    background-color: #0066B2;
+    color: white;
+}
+
+.bayern:nth-child(odd) {
+    background-color: #DC052D;
+}
+
+.cap {
+    background-color: #DC052D;
+}
+
+.cap1 {
+    background-color: #C8102E;
+}
+
+.cap2 {
+    background-color: #6CADDF;
+}
+
+form {
+    width: 300px;
+    border: 1px solid black;
+    padding: 50px;
+    margin: 20px;
+    background-color: white;
+    color: black;
+}
+
+.button1 {
+    background-color: #DC052D;
+    border-radius: 200px;
+    color: white;
+    border: black;
+}
+
+.button2 {
+    background-color: #C8102E;
+    border-radius: 200px;
+    color: white;
+    border: black;
+}
+
+.button3 {
+    background-color: #6CADDF;
+    border-radius: 200px;
+    color: white;
+    border: black;
+}
+
+.light {
+    color: white;
+    background-color: black
+}
+
+.back{
+    background-color: white;
+}
+
+.bright{
+    background-color: lawngreen;
+    border: black;
+    color: black;
+}
+
+dl {}
+
+dd {
+    margin: 0;
+    padding: 1em 0;
+    background-color: lightgray;
+}
+
+dt {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 2em;
+    background: #e3e3e3;
+    border-bottom: 1px solid #c5c5c5;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    background-color: darkslateblue;
+    
+}
+
+dt:first-child {
+    border-top: none;
+}
+
+dt:nth-last-child(2) {
+    border-bottom: none;
+}
+
+.see{
+    color: black;
 }
