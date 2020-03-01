@@ -1,0 +1,39 @@
+<html lang="en">
+<!--Version 6.0 
+	Name:
+	Date Completed:
+    -->
+
+<head>
+    <meta charset=utf-8>
+    <link rel="stylesheet" href="../CSS/JQ-M.css">
+    <title>History</title>
+    <script src="../JS/jquery-3.4.1.js"></script>
+    <script src="../JS/JS-M.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="../images/ms-icon-310x310.png" />
+</head>
+
+<body class="back">
+ <div id="who">
+    <p class="pbsspace" id="texs">Put your name on a website</p>
+    <b class="bbsspace" id="textChange">Your name</b>
+    <p>Enter your name: </p>
+    <div><input type="text" id="li" onchange="tex()"></div>
+     </div>
+    <button onclick="ff" class="be">+10</button>
+    <button onclick="fn" class="be">-10</button>
+</body>
+<script>
+    $(document).ready(function(){
+  $("#who").click(function(){
+   window.location.href = "../html/camp.html";
+  });
+});
+    var font=75
+    function ff(){
+        font = font+10
+        document.getElementById("p2").style.color="blue";
+    };
+</script>
+    

@@ -3,6 +3,10 @@
 	Name:
 	Date Completed:
     -->
+<style>
+
+
+</style>
 
 <head>
     <meta charset=utf-8>
@@ -16,16 +20,19 @@
 
 
     <div class="row">
-       
+
     </div>
+    <p style="background-color: aqua">yhuyutdrgui</p>
+    <button data-file="blue" class="b3">blue</button>
+    <button data-file="green" class=b2>green</button>
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                var backgroundColor = $(this).data('file');
+                $("body").css("background-color", backgroundColor);
+                
+            });
+        });
 
-
-
-
-
-
-
-
-
-
+    </script>
 </body>

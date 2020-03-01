@@ -7,17 +7,41 @@
 <head>
     <meta charset=utf-8>
     <link rel="stylesheet" href="../CSS/JQ-M.css">
-    <title>Web Development User #19</title>
+    <title>History</title>
     <script src="../JS/jquery-3.4.1.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="../images/ms-icon-310x310.png" />
 </head>
 
 <body>
+    <div class="menu">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a class="navbar-brand">The landing</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <!---------------------------------- Edit These Items in your Menu ------------->
+                    <a href="../html/index.html" class="nav-item nav-link active">Home</a>
+                    <a href="../html/Camp.html" class="nav-item nav-link active">Camps</a>
+                    <a href="../html/history.html" class="nav-item nav-link active" tabindex="-1">History</a>
+                    <a href="../html/segwal.html" class="nav-item nav-link active" tabindex="-2">Events</a>
+                    <a href="../html/Ticket.html" class="nav-item nav-link active" tabindex="-2">Tickets</a>
+                    <a href="#" class="nav-item nav-link active" tabindex="-2">Pictures</a>
+                    <a href="../html/Cool%20code.html" class="nav-item nav-link active" tabindex="-2">Code fun</a>
+                    <!----------------------------------^ Edit These Items in your Menu ^ ------------->
+                </div>
+                <div class="navbar-nav ml-auto">
+                </div>
+            </div>
+        </nav>
+    </div>
     <b>History</b>
-    <div class="row">
+    <div class="row" id='events'>
         <div class="col-1"></div>
-        <div class="col-6">
+        <div class="col-md-6 col-sm-12">
             <b>1940s fur post.</b>
             <p>
                 This historic fur trader cabin was where in the 1840s a french family traded furs with native americans in a small one room cabin with pelts on display for visitors to feel and see trade items that hunters would trade for.
@@ -25,45 +49,63 @@
             </p>
         </div>
         <div class="col-5"> <img src="../images/Faribault%20S%20Elevaion.JPG" height="350" width="350"></div>
+
         <div class="col-1"></div>
-        <div class="col-6">
+        <div class="col-md-6 col-sm-12">
             <b>1857 farm.</b>
             <p>
                 This was a german subsistence farm made by a hopeful german family trying to settle the land and being a subsistence farm it would contain enough food to get them threw the winter without needing to buy anything.
             </p>
         </div>
-        <div class="col-5"> <img src="../images/1857%20Farm%20Berger%20Residence%20S%20Elevation.JPG" height="350" width="350"></div>
+        <div class="col-md-5 col-sm-12"> <img src="../images/1857%20Farm%20Berger%20Residence%20S%20Elevation.JPG" height="350" width="350"></div>
+
         <div class="col-1"></div>
-        <div class="col-6">
+        <div class="col-md-6 col-sm-12">
             <b>One room school:</b>
             <p>
                 A 1887 school where your child can experience a school day from the 18 hundreds area school day do chores and learn about Minnesota history.
             </p>
         </div>
-        <div class="col-5"> <img src="../images/one.JPG" height="350" width="350"></div>
+        <div class="col-md-5 col-sm-12"> <img src="../images/one.JPG" height="350" width="350"></div>
+
         <div class="col-1"></div>
-        <div class="col-6">
+        <div class="col-md-6 col-sm-12">
             <b>1889 Market Farm.</b>
             <p>
-                This for the time was a modern farm that was part of the transition between subsistence farming and commercial farming choosing to have higher value high profit crops like wheat  or on this farm high value animals for profit and buying what they need from a store or catalog.
+                This for the time was a modern farm that was part of the transition between subsistence farming and commercial farming choosing to have higher value high profit crops like wheat or on this farm high value animals for profit and buying what they need from a store or catalog.
 
             </p>
         </div>
-        <div class="col-5"> <img src="../images/Red%20Barn%2009%202010%20B.JPG" height="350" width="350"></div>
+        <div class="col-md-5 col-sm-12"> <img src="../images/Red%20Barn%2009%202010%20B.JPG" height="350" width="350"></div>
         <div class="col-1"></div>
-        <div class="col-6">
+        <div class="col-md-6 col-sm-12">
             <b>1880s-Village.</b>
             <p>
                 This village offers a variety of homes and businesses from a Victorian style home to a black smith shop. Some of the highlights included the dress shop, general store, cobbler and the woodcutter.
             </p>
         </div>
-        <div class="col-5"> <img src="../images/vill.JPG" height="350" width="350"></div>
+        <div class="col-md-5 col-sm-12"> <img src="../images/vill.JPG" height="350" width="350"></div>
+
     </div>
 
 
+    <button data-file="blue" class="b3">blue</button>
+    <button data-file="green" class=b2>green</button>
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                var backgroundColor = $(this).data('file');
+                $("body").css("background-color", backgroundColor);
 
+            });
+        });
+        $(document).ready(function() {
+            $("#events").click(function() {
+                window.location.href = "../html/segwal.html";
+            });
+        });
 
-
+    </script>
 
 
 
