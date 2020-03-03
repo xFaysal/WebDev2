@@ -39,19 +39,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="jquery-1.7.1.js"></script>
-    <script>
-        jQuery('ul li h1').addClass('emphasis');
-        $('ul li').addClass('emphasis');
-
-    </script>
-    <script src="https://ajax.googleliapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
-
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="CSS/SampleCSS.css" rel="stylesheet" type="text/css">
+    <link href="JS/SampleJS.js">
 
 
 
@@ -92,9 +85,8 @@
     </style>
 </head>
 
-<body style="background-image: url(https://www.nationalgeographic.com/content/dam/environment/photos/Urban-Expeditions/London/02_london_i53138_18_06_28_10749-1-.adapt.1900.1.jpg)">
+<body style="background-image: url(https://s19623.pcdn.co/wp-content/uploads/2012/06/london-food-tours-macarons.jpg)">
     <div class="menu">
-
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <a href="http://shakonet.isd720.com" class="navbar-brand">London</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -104,9 +96,9 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!---------------------------------- Edit These Items in your Menu ------------->
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="index.html" class="nav-item nav-link">Home</a>
                     <a href="History.html" class="nav-item nav-link">History</a>
-                    <a href="food.html" class="nav-item nav-link " tabindex="-1">Food</a>
+                    <a href="food.html" class="nav-item nav-link active" tabindex="-1">Food</a>
                     <a href="Things.html" class="nav-item nav-link " tabindex="-2">Things To Do</a>
                     <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled" tabindex="-2">Contact</a>
                     <!----------------------------------^ Edit These Items in your Menu ^ ------------->
@@ -120,30 +112,90 @@
 
     <div class="wideMargin" id="content">
 
-        <h2> All about London</h2>
+        <h2> Places To Eat</h2>
 
     </div>
 
     <div>
-        <p> Click The Button to send you to the Plcaes to Eat In London </p>
+        <br>
+        <br>
+        <br>
+        <p> Some Of the Most Equisit Places to Eat In London Are As Followed </p>
+        <br>
+        <br>
 
-
-
-        <a href='food.html'><button class="buttonimg">Click Here To Find Places to Eat</button></a>
+        <h4> Listed In order On Best for Your Wallet </h4>
     </div>
 
     <div>
-        <p style="background-color: lightgray">Click Here To Find Attrections In London</p>
+        <br>
+        <br>
 
-        <a href='Things.html'><button class="buttonimg">Click Here To Find Things To Do</button></a>
-    </div>
-    <div>
-        <p style="background-color: lightgray"> Click The Button To Learn About The History Of London</p>
+        <dl>
+            <dt>Arancini Brothers Factory Café</dt>
+            <dd>
+                <ol>
+
+                    <li>Italian Resturant</li>
+                    <li>Very Cheap Food Arancini balls from £5.50 for five</li>
+                </ol>
 
 
 
-        <a href='History.html'><button class="buttonimg">Click Here To Learn About The History</button></a>
-    </div>
+
+            </dd>
+            <dt>Bleecker</dt>
+            <dd>
+                <ol>
+
+                    <li>Good Old Amrican Burgers</li>
+                    <li>Very Cheap Food American food if your cravying some your time there £6.50 for a Cheseseburger</li>
+                </ol>
+            </dd>
+            <dt>Bun House</dt>
+            <dd>
+                <ol>
+
+                    <li>Good Old Amrican Style Burgers With A Asian Zing</li>
+                    <li>A Very Delisiios Burger For a Cheep Price chu hou beef brisket rice pot £6.80.</li>
+                </ol>
+            </dd>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+            <script>
+                (function() {
+
+                    $('dd').filter(':nth-child(n+4)').addClass('hide');
+
+                    $('dl').on('mouseenter', 'dt', function() {
+                        $(this)
+                            .next()
+                            .slideDown(200)
+                            .siblings('dd')
+                            .slideUp(200);
+                    });
+                })();
+
+            </script>
+
+            <div>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+            </div>
+
+            <div>
+                <br>
+                <br>
+                <br>
+
+                <h6 class="center2">Sources</h6>
+
+                <a href="https://www.timeout.com/london/food-drink/londons-best-cheap-eats">
+                    <h6>https://www.timeout.com/london/food-drink/londons-best-cheap-eats</h6>
+                </a>
+
 
 
 </body>
