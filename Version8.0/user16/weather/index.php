@@ -24,6 +24,9 @@ curl_close($ch);
 $data = json_decode($response);
 $currentTime = time();
 ?>
+ 
+
+
 
 <!doctype html>
 <html>
@@ -34,7 +37,8 @@ $currentTime = time();
 body {
     font-family: Arial;
     font-size: 0.95em;
-    color: #929292;
+    color: #822292;
+    background-color: deeppink
 }
 
 .report-container {
