@@ -49,11 +49,12 @@ else {
         body {
             font-family: Arial;
             font-size: 0.95em;
-            color: #929292;
+            color: black;
+            background-color: aquamarine;
         }
 
         .report-container {
-            border: #E0E0E0 1px solid;
+            border: black 3px dashed;
             padding: 20px 40px 40px 40px;
             border-radius: 2px;
             width: 550px;
