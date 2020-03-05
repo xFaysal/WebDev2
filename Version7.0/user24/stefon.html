@@ -20,6 +20,10 @@
     <link rel="stylesheet" href="CSS/SampleCSS.css">
     <script src="JS/SampleJS.js"></script>
     <link rel="icon" type="image/png" sizes="32x32" href="images/footballfire.png">
+    
+    <style>
+        p {margin-top: 0;}
+    </style>
 
 
 
@@ -47,13 +51,37 @@
             </div>
         </div>
     </div>
-    <p style="font-size:50px ;color: white">My favorite wide reicver of all time is Stefon Diggs. Also I met him in real life and got his autograph. Another thing about him is that he seems like a great guy. Also I would really like to play some football with him and also play it with my brother to.</p>
+    
+    
+    <h1>More Info</h1>
+    <div class=content>
+    <p style="font-size:50px ;color: white">My favorite wide reicver of all time is Stefon Diggs. Also I met him in real life and got his autograph. Another thing about him is that he seems like a great guy. Also I would really like to go to a Vikings games next year and watch him score a touchdown.</p>
+   
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script>
+
+(function() {
+	var content = $('div.content').hide();
+
+	jQuery.fn.flash = function( speed, easing, callback ) {
+		var $this = $(this);
+
+		return $this.slideDown(500, function() {
+	 		$this.delay(2000).slideUp(500);
+		});
+	};
+
+	$('h1').on('click', function() {
+		content.flash();
+	});	
+})();
 
 
 
-
-
-
+</script>
 
 
 
