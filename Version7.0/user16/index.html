@@ -5,6 +5,8 @@
     -->
 
 <head>
+    
+    <script src="SampleJS.js">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -38,13 +40,44 @@
         }
 
     </style>
-</head>
 
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .accordion {
+                background-color: #eee;
+                color: #444;
+                cursor: pointer;
+                padding: 18px;
+                width: 100%;
+                border: none;
+                text-align: left;
+                outline: none;
+                font-size: 15px;
+                transition: 0.4s;
+            }
 
+            .active,
+            .accordion:hover {
+                background-color: #ccc;
+            }
+
+            .panel {
+                padding: 0 18px;
+                display: none;
+                background-color: white;
+                overflow: hidden;
+            }
+
+        </style>
+   
+    </head>
+
+    
 <body style="background-color:powderblue;">
     <div class="menu">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            
+
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -52,11 +85,12 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!---------------------------------- Edit These Items in your Menu ------------->
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="index.html" class="nav-item nav-link ">Home</a>
                     <a href="history.html" class="nav-item nav-link">key history</a>
                     <a href="franchise.html" class="nav-item nav-link" tabindex="-1">top franchises</a>
-                    <a href="nbachamps.html" class="nav-item nav-link" tabindex="-1">nba highest champs</a>
+                    <a href="nbachamps.html" class="nav-item nav-link" tabindex="-1">nba champs</a>
                     <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link" tabindex="-2">Contact</a>
+                    <a href="topshooters.html" class="nav-item nav-link">best shooters</a>
                     <!----------------------------------^ Edit These Items in your Menu ^ ------------->
                 </div>
                 <div class="navbar-nav ml-auto">
@@ -65,15 +99,75 @@
             </div>
         </nav>
     </div>
+    
+         
+        
+            <h1>nba facts</h1>
+            <p>here on this website you can find things like.top franchise in history and the palyers that make that true. and key history about the game</p>
+
+
+
+
+            <body>
+
+                <h2>Accordion</h2>
+
+                <button class="accordion">Section 1</button>
+                <div class="panel">
+                    <p>here on this website you can find things like.top franchise in history and the palyers that make that true. and key history about the game</p>
+                </div>
+
+                <button class="accordion">Section 2</button>
+                <div class="panel">
+                    <p>the nba consist of 30 teams this</p>
+                </div>
+
+                <button class="accordion">Section 3</button>
+                <div class="panel">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+
+                <script>
+                    var acc = document.getElementsByClassName("accordion");
+                    var i;
+
+                    for (i = 0; i < acc.length; i++) {
+                        acc[i].addEventListener("click", function() {
+                            this.classList.toggle("active");
+                            var panel = this.nextElementSibling;
+                            if (panel.style.display === "block") {
+                                panel.style.display = "none";
+                            } else {
+                                panel.style.display = "block";
+                            }
+                        });
+                    }
+
+                </script>
+
+
+                <script language="javascript" type="text/javascript">
+                    alert("Welcome to my site")
+
+                </script>
+
+</html>
+<font face="Tahoma">
+    </body>
+
+    </head>
+
+
+
 
     <h1>nba facts</h1>
     <p>here on this website you can find things like.top franchise in history and the palyers that make that true. and key history about the game</p>
 
-</body>
-<center>the nba consist of 30 teams this</center>
-<img src="images/download.png">
+    </body>
+
+    <img src="images/download.png">
 
 
-</body>
+    </body>
 
-</html>
+    </html>
