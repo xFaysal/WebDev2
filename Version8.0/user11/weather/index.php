@@ -9,6 +9,7 @@ else {
     $temp = "F";
 }
 
+
 $googleApiUrl = "http://api.openweathermap.org/data/2.5/weather?id=" . $cityId . "&lang=en&units=" . $units . "&APPID=" .  $apiKey;
 
 
@@ -25,6 +26,15 @@ $response = curl_exec($ch);
 curl_close($ch);
 $data = json_decode($response);
 $currentTime = time();
+
+
+if(($data->main->temp_max) < 40){
+    $color= 'blue';
+    $text= 'white';
+}else{
+    $color= 'red';
+    $text= 'black';
+}
 
 ?>
 
@@ -71,27 +81,27 @@ span.min-temperature {
 </style>
 
 </head>
-<body>
-
-    <div class="report-container">
+<body style="background-color:<?php echo $color ?>;">
+    <div class="report-container" style='color:<?php echo $text ?>'>
         <h2><?php echo $data->name; ?> Weather Status</h2>
         <div class="time">
             <div><?php echo date("l g:i a", $currentTime); ?></div>
             <div><?php echo date("jS F, Y",$currentTime); ?></div>
             <div><?php echo ucwords($data->weather[0]->description); ?></div>
         </div>
-        <div class="weather-forecast">
+        <div class="weather-forecast" style='color:<?php echo $text ?>;'>
             <img
                 src="http://openweathermap.org/img/w/<?php echo $data->weather[0]->icon; ?>.png"
-                class="weather-icon" /> <?php echo $data->main->temp_max; ?>&deg;<?php echo $temp; ?><span
+                 class="weather-icon" /> <?php echo $data->main->temp_max; ?>&deg;<?php echo $temp; ?><span
                 class="min-temperature"><?php echo $data->main->temp_min; ?>&deg;<?php echo $temp; ?></span>
         </div>
-        <div class="time">
+        <div class="time" style='color:<?php echo $text ?>'>
             <div>Humidity: <?php echo $data->main->humidity; ?> %</div>
             <div>Wind: <?php echo $data->wind->speed; ?> km/h</div>
         </div>
     </div>
 
-
+    
+    
 </body>
 </html>
