@@ -24,14 +24,14 @@ curl_close($ch);
 $data = json_decode($response);
 $currentTime = time();
 
-if(($data->main->temp_min) >= 34){
+if(($data->main->temp_min) >= 32){
     $low='red';
 }
 else {
     $low='blue';
 }
 
-if (($data->main->temp_max) >= 34){
+if (($data->main->temp_max) >= 32){
     $high='red';
 }
 else {
