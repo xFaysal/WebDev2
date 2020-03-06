@@ -47,7 +47,7 @@ body {
 }
 
 .report-container {
-    border: #E0E0E0 1px solid;
+    border: white 3px solid;
     padding: 20px 40px 40px 40px;
     border-radius: 2px;
     width: 550px;
