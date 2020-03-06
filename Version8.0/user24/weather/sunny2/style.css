@@ -1,14 +1,14 @@
 *{
-    font-family: "Rimouski";
+    font-family: "Times New Roman";
 }
 
 body{
-    background-color: #293251;
+    background-color: orange;
 }
 
 .container{
     width: 300px;    
-    background-color: #FFF;
+    background-color: dodgerblue;
     
     display: block;
     margin: 0 auto;
@@ -47,7 +47,7 @@ body{
 .weather-container{
     width: 300px;
     height: 260px;
-    background-color: #F4F9FF;
+    background-color: lightskyblue;
 }
 
 .weather-icon{
