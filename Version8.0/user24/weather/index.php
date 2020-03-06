@@ -44,7 +44,7 @@ else {
         body {
             font-family: Arial;
             font-size: 0.95em;
-            color: purple;
+            color: black;
             background-color: cornflowerblue;
         }
 
