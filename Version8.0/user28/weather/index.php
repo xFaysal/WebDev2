@@ -75,10 +75,10 @@ $currentTime = time();
 
     <?php
 if ($temp < 30){
-$color = 'blue';
+    $color = 'blue';
 }
 else {
-$color = 'red';
+    $color = 'red';
 }
 ?>
 </head>
