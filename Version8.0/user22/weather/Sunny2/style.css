@@ -1,14 +1,14 @@
 *{
-    font-family: "Rimouski";
+    font-family:"Comic Sans MS";
 }
 
 body{
-    background-color: #293251;
+    background-color:aquamarine;
 }
 
 .container{
     width: 300px;    
-    background-color: #FFF;
+    background-color: darkgray;
     
     display: block;
     margin: 0 auto;
@@ -28,7 +28,7 @@ body{
     padding: 15px;
     margin: 0 auto;
     font-size: 1.2em;
-    color: #293251;
+    color: black;
 }
 
 .notification{
@@ -47,7 +47,7 @@ body{
 .weather-container{
     width: 300px;
     height: 260px;
-    background-color: #F4F9FF;
+    background-color: lightseagreen;
 }
 
 .weather-icon{
@@ -68,7 +68,7 @@ body{
 .temperature-value p{
     padding: 0;
     margin: 0;
-    color: #293251;
+    color: black;
     font-size: 4em;
     text-align: center;
     cursor: pointer;
@@ -79,7 +79,7 @@ body{
 }
 
 .temperature-value span{
-    color: #293251;
+    color: black;
     font-size: 0.5em;
 }
 
