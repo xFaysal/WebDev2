@@ -14,7 +14,7 @@ $filterarray =
   array(
     array(
     'name' => 'MaxPrice',
-    'value' => '25',
+    'value' => '200',
     'paramName' => 'Currency',
     'paramValue' => 'USD'),
     array(
@@ -79,7 +79,7 @@ if ($resp->ack == "Success") {
     $title = $item->title;
 /////////////////////////EDIT THIS LINE/////////////////////////////////////////////////////
     // For each SearchResultItem node, build a link and append it to $results
-    $results .= "<tr><td><img src=\"$pic\"></td><td><a href=\"$link\">$title</a></td></tr>";
+    $results .= "<div class='col-sm-3 borderstyle'><img src=\"$pic\"></div><div class='col-sm-3 bordercolor'><a href=\"$link\">$title</a></div>";
 ////////////////////////EDIT THIS LINE//////////////////////////////////////////////////////      
   }
 }
@@ -94,9 +94,30 @@ else {
 
 <head>
     <title>eBay Search Results for <?php echo $query; ?></title>
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="JS/SampleJS.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <style type="text/css">
         body {
             font-family: arial, sans-serif;
+            background-color: azure;
+        }
+
+        .bordercolor {
+            border: double;
+            color: blue;
+            background-color: #3fdbe0;
+        }
+
+        .borderstyle {
+            border: double;
+            color: blue;
+            background-color: aquamarine;
         }
 
     </style>
@@ -106,13 +127,11 @@ else {
 
     <h1>eBay Search Results for <?php echo $query; ?></h1>
 
-    <table>
-        <tr>
-            <td>
-                <?php echo $results;?>
-            </td>
-        </tr>
-    </table>
+    <div class="container-fluid">
+        <div class="row">
+            <?php echo $results;?>
+        </div>
+    </div>
 
 </body>
 
