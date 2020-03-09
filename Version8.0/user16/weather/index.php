@@ -32,7 +32,18 @@ $currentTime = time();
 <html>
 <head>
 <title>Forecast Weather using OpenWeatherMap with PHP</title>
-
+    
+    
+if (($data->main->temp_max) >= 32){
+    $color="yellow"
+    
+    }
+    else {
+     $color='purple'
+    
+    }
+    ?>
+    
 <style>
 body {
     font-family: Arial;
@@ -82,8 +93,7 @@ span.min-temperature {
             <div><?php echo ucwords($data->weather[0]->description); ?></div>
         </div>
         <div class="weather-forecast">
-            <img
-                src="http://openweathermap.org/img/w/<?php echo $data->weather[0]->icon; ?>.png"
+            <img   src="http://openweathermap.org/img/w/<?php echo $data->weather[0]->icon; ?>.png"
                 class="weather-icon" /> <?php echo $data->main->temp_max; ?>&deg;<?php echo $temp; ?><span
                 class="min-temperature"><?php echo $data->main->temp_min; ?>&deg;<?php echo $temp; ?></span>
         </div>
