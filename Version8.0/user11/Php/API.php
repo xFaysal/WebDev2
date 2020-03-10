@@ -56,7 +56,6 @@ function buildURLArray ($filterarray) {
 // Build the indexed item filter URL snippet
 buildURLArray($filterarray);
 
-
 // Construct the findItemsByKeywords HTTP GET call
 $apicall = "$endpoint?";
 $apicall .= "OPERATION-NAME=findItemsByKeywords";
@@ -64,10 +63,10 @@ $apicall .= "&SERVICE-VERSION=$version";
 $apicall .= "&SECURITY-APPNAME=$appid";
 $apicall .= "&GLOBAL-ID=$globalid";
 $apicall .= "&keywords=$safequery";
-$apicall .= "&paginationInput.entriesPerPage=50";
-$apicall .= "$urlfilter";
+$apicall .= "&paginationInput.entriesPerPage=10";
 // Load the call and capture the document returned by eBay API
 $resp = simplexml_load_file($apicall);
+
 
 // Check to see if the request was successful, else print an error
 if ($resp->ack == "Success") {
@@ -77,18 +76,40 @@ if ($resp->ack == "Success") {
     $pic   = $item->galleryURL;
     $link  = $item->viewItemURL;
     $title = $item->title;
-/////////////////////////EDIT THIS LINE/////////////////////////////////////////////////////
+    $price=  $item->sellingStatus->currentPrice;
+    $shippingprice= $item->shippingInfo->shippingServiceCost;
+
+$price= (float)$price;
+
+$shippingprice= (float)$shippingprice;
+
+$shippingprice= number_format($shippingprice, 2);
+
+
+$totalprice= $price +$shippingprice;
+
+$totalprice= (float)$totalprice;
+
+$totalprice= number_format($totalprice, 2);
+
+
     // For each SearchResultItem node, build a link and append it to $results
-    $results .= "<tr><td><img src=\"$pic\"></td><td><a href=\"$link\">$title</a></td></tr>";
-////////////////////////EDIT THIS LINE//////////////////////////////////////////////////////      
+    $results .= "<tr>
+<td><img src=\"$pic\"></td>
+<td><a href=\"$link\">$title</a></td>
+<td>Price: $$price</td>
+<td>Shipping Cost: $$shippingprice</td>
+<td>Total Cost: $$totalprice</td>
+</tr>";
   }
 }
 // If the response does not indicate 'Success,' print an error
 else {
-  $results  = "<h3>Oops! The request was not successful. Make sure you are using a valid ";
-  $results .= "AppID for the Production environment.</h3>";
+  $results  = "<h3>The request was not successful.</h3>";
 }
+
 ?>
+
 <!-- Build the HTML page with values from the call response -->
 <html>
 
@@ -98,12 +119,18 @@ else {
         body {
             font-family: arial, sans-serif;
         }
-
     </style>
 </head>
 
 <body>
-
+    
+<div>
+    <form action="Ebay-search-by-keywords.php" method="POST">
+Search for Items on Ebay 
+<input type="text" name="search_entered"/><br>
+<input type="submit" name="submit" value="Submit"/><br>
+    </form></div>
+    
     <h1>eBay Search Results for <?php echo $query; ?></h1>
 
     <table>
@@ -115,5 +142,5 @@ else {
     </table>
 
 </body>
-
-</html>
+   
+    <script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'}),_trfd.push({'ap':'cpsh'},{'server':'p3plcpnl0769'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script><script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'}),_trfd.push({'ap':'cpsh'},{'server':'p3plcpnl0769'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script></html>
