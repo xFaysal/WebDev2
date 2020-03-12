@@ -31,10 +31,12 @@ php?>
                     <!---------------------------------- Edit These Items in your Menu ------------->
                     <a href="index.php" class="nav-item nav-link active">Home</a>
                     <a href="#" class="nav-item nav-link" tabindex="-1">FC Barcelona</a>
-                    <a href="#" class="nav-item nav-link" tabindex="-1"></a>
-                    <a href="#" class="nav-item nav-link" tabindex="-1"></a>
-                    <a href="#" class="nav-item nav-link" tabindex="-1"></a>
-                    <a href="#" class="nav-item nav-link" tabindex="-1"></a>
+                    <a href="#" class="nav-item nav-link" tabindex="-1">Los Angeles FC</a>
+                    <a href="#" class="nav-item nav-link" tabindex="-1">FC Dallas</a>
+                    <a href="#" class="nav-item nav-link" tabindex="-1">Real Madrid C.F.</a>
+                    <a href="#" class="nav-item nav-link" tabindex="-1">Liverpool F.C.</a>
+                    <a href="#" class="nav-item nav-link" tabindex="-1">Minnesota United FC</a>
+                    <a href="#" class="nav-item nav-link" tabindex="-1">Manchester City F.C.</a>
                     <!----------------------------------^ Edit These Items in your Menu ^ ------------->
                 </div>
             </div>
