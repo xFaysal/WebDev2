@@ -25,7 +25,6 @@ php?>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!---------------------------------- Edit These Items in your Menu ------------->
@@ -42,7 +41,7 @@ php?>
             </div>
         </nav>
     </div>
-
+<h1>ALL ABOUT THE TOP SOCCER TEAMS!</h1>
 
 </body>
 

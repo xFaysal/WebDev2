@@ -4,12 +4,14 @@ body {
 }
 
 h1 {
-	font-size: 1.3em;
+	font-size: 3em;
 	text-align: center;
+    font-family: monospace;
+    color: black;
 }
 
 h2{
-        font-size: 1.1em;
+    font-size: 1.1em;
 }
 
 table {
