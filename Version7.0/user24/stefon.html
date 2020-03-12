@@ -13,16 +13,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="JS/SampleJS.js">
+    </script>
+    <!--Latest compiled and minified CSS-->
 
-    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="CSS/SampleCSS.css">
-    <script src="JS/SampleJS.js"></script>
     <link rel="icon" type="image/png" sizes="32x32" href="images/footballfire.png">
-    
+
     <style>
-        p {margin-top: 0;}
+        p {
+            margin-top: 0;
+        }
+
     </style>
 
 
@@ -33,14 +37,14 @@
 
 <body class="main">
     <div class="topnav">
-  <a href="index.html">Home</a>
-  <a class="active" href="stefon.html">Stefon Diggs</a>
-  <a href="thielen.html">Adam Thielen</a>
-  <a href="dalvin.html">Dalvin Cook</a>
-  <a href="jamal.html">Jamaln Adams</a>
-  <a href="taylor.html">Sean Taylor</a>
-      
-</div>
+        <a href="index.html">Home</a>
+        <a class="active" href="stefon.html">Stefon Diggs</a>
+        <a href="thielen.html">Adam Thielen</a>
+        <a href="dalvin.html">Dalvin Cook</a>
+        <a href="jamal.html">Jamaln Adams</a>
+        <a href="taylor.html">Sean Taylor</a>
+
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
@@ -51,37 +55,34 @@
             </div>
         </div>
     </div>
-    
-    
+
+
     <h1>More Info</h1>
     <div class=content>
-    <p style="font-size:50px ;color: white">My favorite wide reicver of all time is Stefon Diggs. Also I met him in real life and got his autograph. Another thing about him is that he seems like a great guy. Also I would really like to go to a Vikings games next year and watch him score a touchdown.</p>
-   
+        <p style="font-size:50px ;color: white">My favorite wide reicver of all time is Stefon Diggs. Also I met him in real life and got his autograph. Another thing about him is that he seems like a great guy. Also I would really like to go to a Vikings games next year and watch him score a touchdown.</p>
+
     </div>
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
-<script>
+    <script>
+        (function() {
+            var content = $('div.content').hide();
 
-(function() {
-	var content = $('div.content').hide();
+            jQuery.fn.flash = function(speed, easing, callback) {
+                var $this = $(this);
 
-	jQuery.fn.flash = function( speed, easing, callback ) {
-		var $this = $(this);
+                return $this.slideDown(500, function() {
+                    $this.delay(2000).slideUp(500);
+                });
+            };
 
-		return $this.slideDown(500, function() {
-	 		$this.delay(2000).slideUp(500);
-		});
-	};
+            $('h1').on('click', function() {
+                content.flash();
+            });
+        })();
 
-	$('h1').on('click', function() {
-		content.flash();
-	});	
-})();
-
-
-
-</script>
+    </script>
 
 
 

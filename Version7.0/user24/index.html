@@ -60,6 +60,41 @@
             </div>
         </div>
     </div>
+    
+    
+<dl class='accordion'>
+	<dt>I love to play Football?</dt>
+	<dd>I love football because it is a fun sport to play.</dd>
+	<dt>My favorite wide reciever is Stefon Diggs?</dt>
+	<dd>Because he made the winning catch on the Sants .</dd>
+	<dt>My favorite running back is Dalvin Cook?</dt>
+	<dd>Because he is from the Vikings and also he has goo juke moves.</dd>
+	<dt>My favorite seftey is Sean Taylor?</dt>
+	<dd>Because he hit sticks people a lot each game.</dd>
+	<dt>My favorite team in the Nfl is the Vikings ?</dt>
+	<dd>Because I loved them since I started watching them.</dd>
+</dl>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<script>
+
+(function() {
+	
+	$('dd').filter(':nth-child(n+4)').addClass('hide');
+
+	$('dl').on('mouseenter', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200);
+	});
+})();
+
+
+</script>
 
 </body>
 

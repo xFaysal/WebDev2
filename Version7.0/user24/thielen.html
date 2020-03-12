@@ -20,7 +20,20 @@
     <link rel="stylesheet" href="CSS/SampleCSS.css">
     <script src="JS/SampleJS.js"></script>
     <link rel="icon" type="image/png" sizes="32x32" href="images/footballfire.png">
-
+    
+    <script>
+$(document).ready(function(){
+    // Fading out displayed paragraphs
+    $(".out-btn").click(function(){
+        $("p").fadeOut();
+    });
+    
+    // Fading in hidden paragraphs
+    $(".in-btn").click(function(){
+        $("p").fadeIn();
+    });
+});
+</script>
 
 
 
@@ -48,7 +61,11 @@
             </div>
         </div>
     </div>
-    <p style="font-size:45px ;color: white">Another wide reicver that is one of my favorites is Adam Thielen. I also met him in really life and I got his autograph when I met him. Another thing that I did is that I went to his summer football camp and I also got a picture with him got a adidas bag with a picture in there that was also signed by him.  </p>
+    <p style="font-size:40px ;color: white">Another wide reicver that is one of my favorites is Adam Thielen. I also met him in really life and I got his autograph when I met him. Another thing that I did is that I went to his summer football camp and I also got a picture with him got a adidas bag with a picture in there that was also signed by him.  </p>
+    
+    
+     <button type="button" class="out-btn">Fade Out Paragraphs</button>
+    <button type="button" class="in-btn">Fade In Paragraphs</button>
 
 
 
