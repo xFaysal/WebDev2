@@ -12,6 +12,6 @@ window.setTimeout("Scroll()", 0);
 Scroll();
 
 function changeText() {
- document.getElementById("textChange").innerHTML="Thanks for liking my Webpage";
+ document.getElementById("textchange").innerHTML="Thanks for liking my Webpage";
 }
 
