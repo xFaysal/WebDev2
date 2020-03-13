@@ -14,4 +14,4 @@ exit;
 ?>
 © 2020 GitHub, Inc.
 Terms
-Pri
+Pri 
