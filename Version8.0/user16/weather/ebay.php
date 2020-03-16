@@ -4,9 +4,9 @@ error_reporting(E_ALL);  // Turn on all errors, warnings and notices for easier 
 // API request variables
 $endpoint = 'http://svcs.ebay.com/services/search/FindingService/v1';  // URL to call
 $version = '1.0.0';  // API version supported by your application
-$appid = 'PRD-169ec6b8e-bb30ba02';  // Replace with your own AppID
+$appid = 'RobertMa-Shakopee-PRD-169ec6b8e-bb30ba02';  // Replace with your own AppID
 $globalid = 'EBAY-US';  // Global ID of the eBay site you want to search (e.g., EBAY-DE)
-$query = 'screwdrivers';  // You may want to supply your own query
+$query = 'jordan';  // You may want to supply your own query
 $safequery = urlencode($query);  // Make the query URL-friendly
 $i = '0';  // Initialize the item filter index to 0
 // Create a PHP array of the item filters you want to use in your request
@@ -79,7 +79,7 @@ if ($resp->ack == "Success") {
     $title = $item->title;
 /////////////////////////EDIT THIS LINE/////////////////////////////////////////////////////
     // For each SearchResultItem node, build a link and append it to $results
-    $results .= "<tr><td><img src=\"$pic\"></td><td><a href=\"$link\">$title</a></td></tr>";
+    $results .= "<div class='col-md-3'><img src=\"$pic\"></td><div class='col-md-3'><a href=\"$link\">$title</a></td></tr>";
 ////////////////////////EDIT THIS LINE//////////////////////////////////////////////////////      
   }
 }
@@ -97,6 +97,7 @@ else {
     <style type="text/css">
         body {
             font-family: arial, sans-serif;
+            border-style:  dotted;
         }
 
     </style>
