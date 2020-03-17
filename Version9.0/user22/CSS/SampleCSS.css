@@ -1,9 +1,33 @@
+/*Background Below*/
 .main {
     background-image: url(../images/field.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     font-family: "Comic Sans MS";
 }
+
+.barcelona {
+    background-image: url(../images/bstadium.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Comic Sans MS"
+}
+
+.lafc {
+    background-image: url(../images/lastadium.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Comic Sans MS"
+}
+
+.dallas {
+    background-image: url(../images/dallasstadium.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Comic Sans MS"
+}
+
+/*Text Styles*/
 h1 {
     text-align: center;
 }
