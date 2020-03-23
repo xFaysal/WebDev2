@@ -47,6 +47,17 @@
         </nav>
     </div>
     
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="images/bteam.jpg" width="100%">
+            </div>
+            <div class="col-sm-6">
+                <h3><strong>Back Left to Right:</strong> Ter Stegen, Semedo, Piqué, Umtiti, Alba. <strong>Front Left to Right:</strong> Sergio Busquets, Arthur, De Jong, Arturo Vidal, Messi, Griezmann.</h3>
+            </div>
+        </div>
+    </div>
+    
     
     
     </body>

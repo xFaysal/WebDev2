@@ -37,7 +37,7 @@
                     <a href="#" class="nav-item nav-link" tabindex="-1">Liverpool F.C.</a>
                     <a href="#" class="nav-item nav-link" tabindex="-1">Manchester City F.C.</a>
                     <a href="movies.php" class="nav-item nav-link" tabindex="-1">Soccer Movies</a>
-                    
+
                     <!----------------------------------^ Edit These Items in your Menu ^ ------------->
                 </div>
                 <div class="navbar-nav ml-auto">
@@ -47,20 +47,27 @@
         </nav>
     </div>
     <h1>ALL ABOUT THE TOP SOCCER TEAMS!</h1>
-    
+
     <div class="container">
         <div class="row">
             <div class="col-sm-4">
+                <a href="https://www.laliga.com/en-GB" alt="LaLiga Website">
                 <img src="images/liga.png" alt="La Liga League" width="100%">
+                </a>
             </div>
             <div class="col-sm-4">
-                <img src="images/mls.png" alt="MLS League" width="100%">
+                <a href="https://www.mlssoccer.com/" alt="MLS Website">
+                    <img src="images/mls.png" alt="MLS League" width="100%">
+                </a>
             </div>
             <div class="col-sm-4">
+                <a href="https://www.premierleague.com/" alt="Premier League Website">
                 <img src="images/premier.png" alt="Premier League" width="100%">
+                </a>
             </div>
         </div>
     </div>
+    <h2>Click the picture to visit their website!</h2>
 </body>
 
 </html>

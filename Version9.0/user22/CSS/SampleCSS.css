@@ -31,3 +31,14 @@
 h1 {
     text-align: center;
 }
+h3 {
+    color:aliceblue;
+    text-align: center;
+}
+
+li {
+    font-size: 20px;
+}
+ul {
+    border: dashed 7px;
+}
