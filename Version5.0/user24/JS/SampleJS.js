@@ -4,7 +4,7 @@ function changeText() {
 
 var space = " ";
 var pos = 0;
-var msg = "User 19";
+var msg = "Football";
 
 function Scroll(){
 document.title = msg.substring(pos, msg.length) + space +msg.substring(0,pos);
