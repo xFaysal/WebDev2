@@ -55,7 +55,7 @@ else {
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="CSS/SampleCSS.css">
     <style>
-    .report-container {
+        .report-container {
             border: black 3px dashed;
             padding: 20px 40px 40px 40px;
             border-radius: 2px;
@@ -85,7 +85,8 @@ else {
         .time {
             line-height: 25px;
         }
-    </style> 
+
+    </style>
 </head>
 
 <body class="barcelona">
@@ -105,7 +106,6 @@ else {
                     <a href="#" class="nav-item nav-link" tabindex="-1">Real Madrid C.F.</a>
                     <a href="#" class="nav-item nav-link" tabindex="-1">Liverpool F.C.</a>
                     <a href="#" class="nav-item nav-link" tabindex="-1">Manchester City F.C.</a>
-                    <a href="movies.php" class="nav-item nav-link" tabindex="-1">Soccer Movies</a>
 
                     <!----------------------------------^ Edit These Items in your Menu ^ ------------->
                 </div>
@@ -122,17 +122,56 @@ else {
                 <img src="images/bteam.jpg" width="100%">
             </div>
             <div class="col-sm-6">
-                <h3><strong>Back Left to Right:</strong> Ter Stegen, Semedo, Piqué, Umtiti, Alba. <strong>Front Left to Right:</strong> Sergio Busquets, Arthur, De Jong, Arturo Vidal, Messi, Griezmann.</h3>
+                <p class="team">Standings for Top 5</p>
+                <p class="standings">as of 3-26-2020</p>
+                <table>
+                    <tr>
+                        <th>Position</th>
+                        <th>Team</th>
+                        <th>Wins</th>
+                        <th>Loses</th>
+                    </tr>
+                    <tr>
+                        <th>1</th>
+                        <th>FC Barcelona</th>
+                        <th>18</th>
+                        <th>4</th>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <th>R Madrid</th>
+                        <th>16</th>
+                        <th>3</th>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <th>Sevilla</th>
+                        <th>13</th>
+                        <th>8</th>
+                    </tr>
+                    <tr>
+                        <th>4</th>
+                        <th>Real Soociedad</th>
+                        <th>14</th>
+                        <th>9</th>
+                    </tr>
+                    <tr>
+                        <th>5</th>
+                        <th>Gatafe</th>
+                        <th>13</th>
+                        <th>7</th>
+                    </tr>
+                </table>
             </div>
         </div>
     </div>
-    <h3>SOCCER WEATHER?</h3>
+    <p class="team">SOCCER WEATHER IN BARCELONA?</p>
     <div class="report-container">
         <h2><?php echo $data->name; ?> Weather Status</h2>
         <div class="time">
-            <div><?php echo date("l g:i a", $currentTime); ?></div>
-            <div><?php echo date("jS F, Y",$currentTime); ?></div>
-            <div><?php echo ucwords($data->weather[0]->description); ?></div>
+            <div>
+                <h3><?php echo ucwords($data->weather[0]->description); ?></h3>
+            </div>
         </div>
         <div class="weather-forecast">
             <img src="http://openweathermap.org/img/w/<?php echo $data->weather[0]->icon; ?>.png" class="weather-icon" /> <span style="color: <?php echo $high ?>;"><?php echo $data->main->temp_max; ?>&deg;<?php echo $temp; ?></span>
@@ -143,7 +182,7 @@ else {
             <div>Wind: <?php echo $data->wind->speed; ?> km/h</div>
         </div>
     </div>
-    
+<p class="sponsor">They are Sponsored by RAKUTEN</p>
 
 </body>
 

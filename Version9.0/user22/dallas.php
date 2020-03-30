@@ -1,5 +1,42 @@
 <?php
+$apiKey = "e492046fa637c4996e0e5903864807f0"; //You will need to add in the 
+$cityId = "4058076"; //5046997 Shakopee City Id
+$units = "imperial";//metric-Celcius  imperial-Farhenheit
+if ($units == 'metric'){//Changes the $temp varaible to match 
+    $temp = "C";
+}
+else {
+    $temp = "F";
+}
+$googleApiUrl = "http://api.openweathermap.org/data/2.5/weather?id=" . $cityId . "&lang=en&units=" . $units . "&APPID=" . $apiKey;
 
+$ch = curl_init();
+
+curl_setopt($ch, CURLOPT_HEADER, 0);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_URL, $googleApiUrl);
+curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+curl_setopt($ch, CURLOPT_VERBOSE, 0);
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+$response = curl_exec($ch);
+
+curl_close($ch);
+$data = json_decode($response);
+$currentTime = time();
+
+if(($data->main->temp_min) >= 45){
+    $low='red';
+}
+else {
+    $low='blue';
+}
+
+if (($data->main->temp_max) >= 45){
+    $high='red';
+}
+else {
+    $high='blue';
+}
 ?>
 
 

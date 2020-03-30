@@ -36,7 +36,6 @@
                     <a href="#" class="nav-item nav-link" tabindex="-1">Real Madrid C.F.</a>
                     <a href="#" class="nav-item nav-link" tabindex="-1">Liverpool F.C.</a>
                     <a href="#" class="nav-item nav-link" tabindex="-1">Manchester City F.C.</a>
-                    <a href="movies.php" class="nav-item nav-link" tabindex="-1">Soccer Movies</a>
 
                     <!----------------------------------^ Edit These Items in your Menu ^ ------------->
                 </div>
@@ -67,7 +66,7 @@
             </div>
         </div>
     </div>
-    <h2>Click the picture to visit their website!</h2>
+    <h2>Click the a picture to visit the website!</h2>
 </body>
 
 </html>

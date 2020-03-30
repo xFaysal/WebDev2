@@ -1,5 +1,42 @@
 <?php
+$apiKey = "e492046fa637c4996e0e5903864807f0"; //You will need to add in the 
+$cityId = "5368381"; //5046997 Shakopee City Id
+$units = "imperial";//metric-Celcius  imperial-Farhenheit
+if ($units == 'metric'){//Changes the $temp varaible to match 
+    $temp = "C";
+}
+else {
+    $temp = "F";
+}
+$googleApiUrl = "http://api.openweathermap.org/data/2.5/weather?id=" . $cityId . "&lang=en&units=" . $units . "&APPID=" . $apiKey;
 
+$ch = curl_init();
+
+curl_setopt($ch, CURLOPT_HEADER, 0);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_URL, $googleApiUrl);
+curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+curl_setopt($ch, CURLOPT_VERBOSE, 0);
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+$response = curl_exec($ch);
+
+curl_close($ch);
+$data = json_decode($response);
+$currentTime = time();
+
+if(($data->main->temp_min) >= 45){
+    $low='red';
+}
+else {
+    $low='blue';
+}
+
+if (($data->main->temp_max) >= 45){
+    $high='red';
+}
+else {
+    $high='blue';
+}
 ?>
 
 
@@ -17,6 +54,39 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="CSS/SampleCSS.css">
+    <style>
+        .report-container {
+            border: black 3px dashed;
+            padding: 20px 40px 40px 40px;
+            border-radius: 2px;
+            width: 550px;
+            margin: 0 auto;
+            color: black;
+            background-color: aquamarine;
+        }
+
+        .weather-icon {
+            vertical-align: middle;
+            margin-right: 20px;
+        }
+
+        .weather-forecast {
+            color: #212121;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin: 20px 0px;
+        }
+
+        span.min-temperature {
+            margin-left: 15px;
+            color: #929292;
+        }
+
+        .time {
+            line-height: 25px;
+        }
+
+    </style>
 </head>
 
 <body class="lafc">
@@ -36,8 +106,7 @@
                     <a href="#" class="nav-item nav-link" tabindex="-1">Real Madrid C.F.</a>
                     <a href="#" class="nav-item nav-link" tabindex="-1">Liverpool F.C.</a>
                     <a href="#" class="nav-item nav-link" tabindex="-1">Manchester City F.C.</a>
-                    <a href="movies.php" class="nav-item nav-link" tabindex="-1">Soccer Movies</a>
-                    
+
                     <!----------------------------------^ Edit These Items in your Menu ^ ------------->
                 </div>
                 <div class="navbar-nav ml-auto">
@@ -46,8 +115,29 @@
             </div>
         </nav>
     </div>
-    
-    
-    
-    </body>
+
+
+
+
+    <p class="team">SOCCER WEATHER IN Los Angeles?</p>
+    <div class="report-container">
+        <h2><?php echo $data->name; ?> Weather Status</h2>
+        <div class="time">
+            <div>
+                <h3><?php echo ucwords($data->weather[0]->description); ?></h3>
+            </div>
+        </div>
+        <div class="weather-forecast">
+            <img src="http://openweathermap.org/img/w/<?php echo $data->weather[0]->icon; ?>.png" class="weather-icon" /> <span style="color: <?php echo $high ?>;"><?php echo $data->main->temp_max; ?>&deg;<?php echo $temp; ?></span>
+            <span class="min-temperature" style="color:<?php echo $low ?>;"><?php echo $data->main->temp_min; ?>&deg;<?php echo $temp; ?></span>
+        </div>
+        <div class="time">
+            <div>Humidity: <?php echo $data->main->humidity; ?> %</div>
+            <div>Wind: <?php echo $data->wind->speed; ?> km/h</div>
+        </div>
+    </div>
+
+
+</body>
+
 </html>
