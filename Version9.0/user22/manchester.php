@@ -1,6 +1,6 @@
 <?php
 $apiKey = "e492046fa637c4996e0e5903864807f0"; //You will need to add in the 
-$cityId = "2644210"; //5046997 Shakopee City Id
+$cityId = ""; //5046997 Shakopee City Id
 $units = "imperial";//metric-Celcius  imperial-Farhenheit
 if ($units == 'metric'){//Changes the $temp varaible to match 
     $temp = "C";
