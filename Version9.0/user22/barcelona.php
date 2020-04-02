@@ -62,7 +62,7 @@ else {
             width: 550px;
             margin: 0 auto;
             color: black;
-            background-color: aquamarine;
+            background-color: skyblue;
         }
 
         .weather-icon {
@@ -103,8 +103,8 @@ else {
                     <a href="barcelona.php" class="nav-item nav-link active">FC Barcelona</a>
                     <a href="lafc.php" class="nav-item nav-link" tabindex="-1">Los Angeles FC</a>
                     <a href="dallas.php" class="nav-item nav-link" tabindex="-1">FC Dallas</a>
-                    <a href="#" class="nav-item nav-link" tabindex="-1">Real Madrid C.F.</a>
-                    <a href="#" class="nav-item nav-link" tabindex="-1">Liverpool F.C.</a>
+                    <a href="madrid.php" class="nav-item nav-link" tabindex="-1">Real Madrid C.F.</a>
+                    <a href="liverpool.php" class="nav-item nav-link" tabindex="-1">Liverpool F.C.</a>
                     <a href="#" class="nav-item nav-link" tabindex="-1">Manchester City F.C.</a>
 
                     <!----------------------------------^ Edit These Items in your Menu ^ ------------->
@@ -170,7 +170,7 @@ else {
         <h2><?php echo $data->name; ?> Weather Status</h2>
         <div class="time">
             <div>
-                <h3><?php echo ucwords($data->weather[0]->description); ?></h3>
+                <h3 style="color:grey"><?php echo ucwords($data->weather[0]->description); ?></h3>
             </div>
         </div>
         <div class="weather-forecast">
@@ -182,7 +182,7 @@ else {
             <div>Wind: <?php echo $data->wind->speed; ?> km/h</div>
         </div>
     </div>
-<p class="sponsor">They are Sponsored by RAKUTEN</p>
+<p class="barcelonas">They are Sponsored by RAKUTEN</p>
 
 </body>
 

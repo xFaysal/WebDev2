@@ -62,7 +62,7 @@ else {
             width: 550px;
             margin: 0 auto;
             color: black;
-            background-color: aquamarine;
+            background-color: #EEE8AA;
         }
 
         .weather-icon {
@@ -103,8 +103,8 @@ else {
                     <a href="barcelona.php" class="nav-item nav-link" tabindex="-1">FC Barcelona</a>
                     <a href="lafc.php" class="nav-item nav-link active">Los Angeles FC</a>
                     <a href="dallas.php" class="nav-item nav-link" tabindex="-1">FC Dallas</a>
-                    <a href="#" class="nav-item nav-link" tabindex="-1">Real Madrid C.F.</a>
-                    <a href="#" class="nav-item nav-link" tabindex="-1">Liverpool F.C.</a>
+                    <a href="madrid.php" class="nav-item nav-link" tabindex="-1">Real Madrid C.F.</a>
+                    <a href="liverpool.php" class="nav-item nav-link" tabindex="-1">Liverpool F.C.</a>
                     <a href="#" class="nav-item nav-link" tabindex="-1">Manchester City F.C.</a>
 
                     <!----------------------------------^ Edit These Items in your Menu ^ ------------->
@@ -115,16 +115,64 @@ else {
             </div>
         </nav>
     </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="images/lateam.jpg" width="100%">
+            </div>
+            <div class="col-sm-6">
+                <p style="color:black; text-align:center;">Standings for Top 5</p>
+                <p style="color:black; text-align:center;">as of 3-26-2020</p>
+                <table>
+                    <tr style="color:black;">
+                        <th>Position</th>
+                        <th>Team</th>
+                        <th>Wins</th>
+                        <th>Loses</th>
+                    </tr>
+                    <tr style="color:#D4AF37;">
+                        <th>1</th>
+                        <th>Sporting KC</th>
+                        <th>2</th>
+                        <th>0</th>
+                    </tr>
+                    <tr style="color:black;">
+                        <th>2</th>
+                        <th>Minnesota</th>
+                        <th>2</th>
+                        <th>0</th>
+                    </tr>
+                    <tr style="color:#D4AF37;">
+                        <th>3</th>
+                        <th>Colorado</th>
+                        <th>2</th>
+                        <th>0</th>
+                    </tr>
+                    <tr style="color:black;">
+                        <th>4</th>
+                        <th>FC Dallas</th>
+                        <th>1</th>
+                        <th>0</th>
+                    </tr>
+                    <tr style="color:#D4AF37;">
+                        <th>5</th>
+                        <th>LAFC</th>
+                        <th>1</th>
+                        <th>0</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
 
 
 
-
-    <p class="team">SOCCER WEATHER IN Los Angeles?</p>
+    <p class="team">SOCCER WEATHER IN LOS ANGELES?</p>
     <div class="report-container">
         <h2><?php echo $data->name; ?> Weather Status</h2>
         <div class="time">
             <div>
-                <h3><?php echo ucwords($data->weather[0]->description); ?></h3>
+                <h3 style="color:grey;"><?php echo ucwords($data->weather[0]->description); ?></h3>
             </div>
         </div>
         <div class="weather-forecast">
@@ -136,7 +184,7 @@ else {
             <div>Wind: <?php echo $data->wind->speed; ?> km/h</div>
         </div>
     </div>
-
+<p class="lafcs">They are Sponsored by YouTubeTV</p>
 
 </body>
 

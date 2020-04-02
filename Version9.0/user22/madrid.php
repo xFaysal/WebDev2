@@ -1,6 +1,6 @@
 <?php
 $apiKey = "e492046fa637c4996e0e5903864807f0"; //You will need to add in the 
-$cityId = "4058076"; //5046997 Shakopee City Id
+$cityId = "3117735"; //5046997 Shakopee City Id
 $units = "imperial";//metric-Celcius  imperial-Farhenheit
 if ($units == 'metric'){//Changes the $temp varaible to match 
     $temp = "C";
@@ -54,7 +54,6 @@ else {
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="CSS/SampleCSS.css">
-    
     <style>
         .report-container {
             border: black 3px dashed;
@@ -90,7 +89,7 @@ else {
     </style>
 </head>
 
-<body class="dallas">
+<body class="madrid">
     <div class="menu">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
@@ -103,11 +102,11 @@ else {
                     <a href="index.php" class="nav-item nav-link" tabindex="-1">Home</a>
                     <a href="barcelona.php" class="nav-item nav-link" tabindex="-1">FC Barcelona</a>
                     <a href="lafc.php" class="nav-item nav-link" tabindex="-1">Los Angeles FC</a>
-                    <a href="dallas.php" class="nav-item nav-link active">FC Dallas</a>
-                    <a href="madrid.php" class="nav-item nav-link" tabindex="-1">Real Madrid C.F.</a>
+                    <a href="dallas.php" class="nav-item nav-link" tabindex="-1">FC Dallas</a>
+                    <a href="madrid.php" class="nav-item nav-link active">Real Madrid C.F.</a>
                     <a href="liverpool.php" class="nav-item nav-link" tabindex="-1">Liverpool F.C.</a>
                     <a href="#" class="nav-item nav-link" tabindex="-1">Manchester City F.C.</a>
-                    
+
                     <!----------------------------------^ Edit These Items in your Menu ^ ------------->
                 </div>
                 <div class="navbar-nav ml-auto">
@@ -115,63 +114,58 @@ else {
                 </div>
             </div>
         </nav>
-    </div>  
-    
-    
+    </div>
+
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
-                <img src="images/dteam.jpg" width="100%">
+                <img src="images/realteam.jpg" width="100%">
             </div>
             <div class="col-sm-6">
-                <p style="color:black; text-align:center;">Standings for Top 5</p>
-                <p style="color:black; text-align:center;">as of 3-26-2020</p>
+                <p class="team">Standings for Top 5</p>
+                <p class="standings">as of 3-26-2020</p>
                 <table>
-                    <tr style="color:black;">
+                    <tr>
                         <th>Position</th>
                         <th>Team</th>
                         <th>Wins</th>
                         <th>Loses</th>
                     </tr>
-                    <tr style="color:lightcoral;">
+                    <tr>
                         <th>1</th>
-                        <th>Sporting KC</th>
-                        <th>2</th>
-                        <th>0</th>
-                    </tr>
-                    <tr style="color:black;">
-                        <th>2</th>
-                        <th>Minnesota</th>
-                        <th>2</th>
-                        <th>0</th>
-                    </tr>
-                    <tr style="color:lightcoral;">
-                        <th>3</th>
-                        <th>Colorado</th>
-                        <th>2</th>
-                        <th>0</th>
-                    </tr>
-                    <tr style="color:black;">
+                        <th>FC Barcelona</th>
+                        <th>18</th>
                         <th>4</th>
-                        <th>FC Dallas</th>
-                        <th>1</th>
-                        <th>0</th>
                     </tr>
-                    <tr style="color:lightcoral;">
+                    <tr>
+                        <th>2</th>
+                        <th>R Madrid</th>
+                        <th>16</th>
+                        <th>3</th>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <th>Sevilla</th>
+                        <th>13</th>
+                        <th>8</th>
+                    </tr>
+                    <tr>
+                        <th>4</th>
+                        <th>Real Soociedad</th>
+                        <th>14</th>
+                        <th>9</th>
+                    </tr>
+                    <tr>
                         <th>5</th>
-                        <th>LAFC</th>
-                        <th>1</th>
-                        <th>0</th>
+                        <th>Gatafe</th>
+                        <th>13</th>
+                        <th>7</th>
                     </tr>
                 </table>
             </div>
         </div>
     </div>
-    
-    
-    
-    
-    <p class="team">SOCCER WEATHER IN DALLAS?</p>
+    <p class="team">SOCCER WEATHER IN MADRID?</p>
     <div class="report-container">
         <h2><?php echo $data->name; ?> Weather Status</h2>
         <div class="time">
@@ -188,7 +182,8 @@ else {
             <div>Wind: <?php echo $data->wind->speed; ?> km/h</div>
         </div>
     </div>
-    
-    <p class="dallass">They are Sponsored by AdvoCare</p>
-    </body>
+<p class="barcelonas">They are Sponsored by Emirates</p>
+
+</body>
+
 </html>

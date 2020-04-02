@@ -33,8 +33,8 @@
                     <a href="barcelona.php" class="nav-item nav-link" tabindex="-1">FC Barcelona</a>
                     <a href="lafc.php" class="nav-item nav-link" tabindex="-1">Los Angeles FC</a>
                     <a href="dallas.php" class="nav-item nav-link" tabindex="-1">FC Dallas</a>
-                    <a href="#" class="nav-item nav-link" tabindex="-1">Real Madrid C.F.</a>
-                    <a href="#" class="nav-item nav-link" tabindex="-1">Liverpool F.C.</a>
+                    <a href="madrid.php" class="nav-item nav-link" tabindex="-1">Real Madrid C.F.</a>
+                    <a href="liverpool.php" class="nav-item nav-link" tabindex="-1">Liverpool F.C.</a>
                     <a href="#" class="nav-item nav-link" tabindex="-1">Manchester City F.C.</a>
 
                     <!----------------------------------^ Edit These Items in your Menu ^ ------------->

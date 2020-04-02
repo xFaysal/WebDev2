@@ -27,6 +27,19 @@
     font-family: "Comic Sans MS"
 }
 
+.madrid {
+    background-image: url(../images/realstadium.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Comic Sans MS"
+}
+
+.liverpool {
+    background-image: url(../images/liverpoolstadium.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Comic Sans MS"
+}
 /*Text Styles*/
 h1 {
     text-align: center;
@@ -54,9 +67,23 @@ p {
     margin-bottom: 0;
 }
 
-.sponsor {
+.barcelonas {
     font-weight: bold;
     background-color: deepskyblue;
+    font-size: 45px;
+    text-align: center;
+}
+
+.lafcs {
+    font-weight: bold;
+    background-color: #D4AF37;
+    font-size: 45px;
+    text-align: center;
+}
+
+.dallass {
+    font-weight: bold;
+    background-color: dodgerblue;
     font-size: 45px;
     text-align: center;
 }

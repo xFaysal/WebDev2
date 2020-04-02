@@ -50,14 +50,13 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!---------------------------------- Edit These Items in your Menu ------------->
-                    <a href="index.php" class="nav-item nav-link active">Home</a>
-                    <a href="#" class="nav-item nav-link" tabindex="-1">FC Barcelona</a>
-                    <a href="#" class="nav-item nav-link" tabindex="-1">Los Angeles FC</a>
-                    <a href="#" class="nav-item nav-link" tabindex="-1">FC Dallas</a>
+                    <a href="index.php" class="nav-item nav-link" tabindex="-1">Home</a>
+                    <a href="barcelona.php" class="nav-item nav-link" tabindex="-1">FC Barcelona</a>
+                    <a href="lafc.php" class="nav-item nav-link" tabindex="-1">Los Angeles FC</a>
+                    <a href="dallas.php" class="nav-item nav-link" tabindex="-1">FC Dallas</a>
                     <a href="#" class="nav-item nav-link" tabindex="-1">Real Madrid C.F.</a>
                     <a href="#" class="nav-item nav-link" tabindex="-1">Liverpool F.C.</a>
                     <a href="#" class="nav-item nav-link" tabindex="-1">Manchester City F.C.</a>
-                    <a href="#" class="nav-item nav-link" tabindex="-1">Other Teams</a>
                     <!----------------------------------^ Edit These Items in your Menu ^ ------------->
                 </div>
                                 <div class="navbar-nav ml-auto">
@@ -71,7 +70,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         </nav>
     </div>
     <div class="page-header">
-        <h1>Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to our site.</h1>
+        <h1>Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Learn More About Some Soccer Teams Through In This Website.</h1>
+        <h4>When ready to log out just press login in then the log out in the top right corner!</h4>
     </div>
     
 
