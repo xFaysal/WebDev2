@@ -1,3 +1,9 @@
+<?php
+// Initialize the session
+session_start();
+ 
+
+?>
 <html lang="en">
 <!--Version 7.0 
 	Name: Jacob Poolos
@@ -25,13 +31,19 @@
 
 <body class="main">
     <div class="topnav">
-        <a class="active" href="index.html">Home</a>
-        <a href="stefon.html">Stefon Diggs</a>
-        <a href="thielen.html">Adam Thielen</a>
-        <a href="dalvin.html">Dalvin Cook</a>
-        <a href="jamal.html">Jamal Adams</a>
-        <a href="taylor.html">Sean Taylor</a>
-        <a href="USbank.html">US Bank Stadium</a>
+        <a class="active" href="index.php">Home</a>
+        <a href="stefon.php">Stefon Diggs</a>
+        <a href="thielen.php">Adam Thielen</a>
+        <a href="dalvin.php">Dalvin Cook</a>
+        <a href="jamal.php">Jamal Adams</a>
+        <a href="taylor.php">Sean Taylor</a>
+        <a href="USbank.php">USBank Stadium</a>
+        <a href="MyFottballLife.php">My Football Life</a>
+        <div class="mr-auto">
+        <?php if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
+echo "<a href='logout.php' class='btn-danger' onclick='return confirm(\"Are you sure?\");'> Logout </a>";
+} else { echo "<a href='login.php'> Login </a>";} ?>
+        </div>
 
     </div>
 
@@ -75,6 +87,10 @@
         <dt>My favorite team in the Nfl is the Vikings ?</dt>
         <dd>Because I loved them since I started watching them.</dd>
     </dl>
+    
+    <div class="page-header">
+        <h1 style="color: white">Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b></h1>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -94,6 +110,22 @@
         })();
 
     </script>
+    
+    <div id="footer">
+        <footer class="page-footer font-small white">
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                <a href="https://shakonet.isd720.com/WebDev2/Version9.0/user24/index.php/"> Jacob Poolos</a>
+            </div>
+            <!-- Copyright -->
+
+        </footer>
+    </div>
+    
+    
+    
+    
 
 </body>
 
