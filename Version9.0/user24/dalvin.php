@@ -80,6 +80,10 @@
 echo "<a href='logout.php' class='btn-danger' onclick='return confirm(\"Are you sure?\");'> Logout </a>";
 } else { echo "<a href='login.php'> Login </a>";} ?>
         </div>
+        
+        <div class="page-header">
+        <h1 style="color: white">Hi, 238737 <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b></h1>
+    </div>
 
     </div>
     <div>

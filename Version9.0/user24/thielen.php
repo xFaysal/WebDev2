@@ -70,6 +70,10 @@ echo "<a href='logout.php' class='btn-danger' onclick='return confirm(\"Are you 
         </div>
     </div>
     <p style="font-size:40px ;color: white">Another wide reicver that is one of my favorites is Adam Thielen. I also met him in really life and I got his autograph when I met him. Another thing that I did is that I went to his summer football camp and I also got a picture with him got a adidas bag with a picture in there that was also signed by him. </p>
+    
+    <div class="page-header">
+        <h1 style="color: white">Hi, 238737 <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b></h1>
+    </div>
 
 
     <button type="button" class="out-btn">Fade Out Paragraphs</button>

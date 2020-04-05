@@ -69,6 +69,9 @@ echo "<a href='logout.php' class='btn-danger' onclick='return confirm(\"Are you 
         <p style="font-size:50px ;color: white">My favorite wide reicver of all time is Stefon Diggs. Also I met him in real life and got his autograph. Another thing about him is that he seems like a great guy. Also I would really like to go to a Vikings games next year and watch him score a touchdown.</p>
 
     </div>
+    <div class="page-header">
+        <h1 style="color: white">Hi, 238737 <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b></h1>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
