@@ -54,9 +54,9 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                     <a href="barcelona.php" class="nav-item nav-link" tabindex="-1">FC Barcelona</a>
                     <a href="lafc.php" class="nav-item nav-link" tabindex="-1">Los Angeles FC</a>
                     <a href="dallas.php" class="nav-item nav-link" tabindex="-1">FC Dallas</a>
-                    <a href="#" class="nav-item nav-link" tabindex="-1">Real Madrid C.F.</a>
-                    <a href="#" class="nav-item nav-link" tabindex="-1">Liverpool F.C.</a>
-                    <a href="#" class="nav-item nav-link" tabindex="-1">Manchester City F.C.</a>
+                    <a href="madrid.php" class="nav-item nav-link" tabindex="-1">Real Madrid C.F.</a>
+                    <a href="liverpool.php" class="nav-item nav-link" tabindex="-1">Liverpool F.C.</a>
+                    <a href="manchester.php" class="nav-item nav-link active">Manchester City F.C.</a>
                     <!----------------------------------^ Edit These Items in your Menu ^ ------------->
                 </div>
                                 <div class="navbar-nav ml-auto">
@@ -73,7 +73,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         <h1>Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Learn More About Some Soccer Teams Through In This Website.</h1>
         <h4>When ready to log out just press login in then the log out in the top right corner!</h4>
     </div>
-    
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQLYLsUobkev4ChFvLxYA2EmIXtZMbuH7qf_mJaFU0sYwXEo2Y%3Ahttps%3A%2F%2Fmedia.istockphoto.com%2Fphotos%2Fsoccer-balls-panorama-picture-id847617266&usqp=CAU" alt="Soccer Ball Panoramic" width="100%">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQLYLsUobkev4ChFvLxYA2EmIXtZMbuH7qf_mJaFU0sYwXEo2Y%3Ahttps%3A%2F%2Fmedia.istockphoto.com%2Fphotos%2Fsoccer-balls-panorama-picture-id847617266&usqp=CAU" alt="Soccer Ball Panoramic" width="100%">
 
 </body>
 

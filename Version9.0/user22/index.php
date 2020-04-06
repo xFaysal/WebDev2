@@ -73,6 +73,56 @@
     <h2>Click the a picture to visit the website!</h2>
     
     
+    
+     <center>
+        <div id="oScroll">
+            <div id="scroll"><img src="images/color.png" border="0px" width="400px" height="235px" </div>
+            </div>
+    </center>
+    </br>
+    </br>
+    <center>
+        <form method='post' action='processStudentLogin.php'>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <input type="text" class="form-control" placeholder="First Name" name='firstName'>
+                    </div>
+                    <div class="col-xs-6">
+                        <input type="text" class="form-control" placeholder="Last Name" name='lastName'>
+                    </div>
+                    </br>
+                    </br>
+                    </br>
+                    </br>
+                    <div class="col-xs-12">
+                        <input type="text" class="form-control" placeholder="Position" name='Position'>
+                    </div>
+                    </br>
+                    </br>
+                    </br>
+                    </br>
+                    <div class="col-xs-12">
+                        <input type="text" class="form-control" placeholder="Club" name='Club'>
+                    </div>
+                    </br>
+                    </br>
+                    </br>
+                    </br>
+                    <p><label for='Authentication Code'>Authentication Code</label></p>
+                    <input type='password' name='password' placeholder="Club Code">
+                    </br>
+                    </br>
+                    <p><input type='submit' value="Give Pass">
+                        <!-- <input name = 'edit2' type='submit' value = 'Edit'>
+               <input name = 'find2' type='submit' value = 'Find Student'>
+               <input name = 'del2' type='submit' value = 'Remove Record'>-->
+                    </p>
+                    </br>
+                    </br>
+                    </br>
+        </form>
+    </center>
         
         <footer class="footer-bs">
             <div class="row">
