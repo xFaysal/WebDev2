@@ -75,9 +75,9 @@
     
     
      <center>
-        <div id="oScroll">
-            <div id="scroll"><img src="images/color.png" border="0px" width="400px" height="235px" </div>
-            </div>
+        
+        <img src="images/color.png" border="0px" width="400px" height="235px" 
+          
     </center>
     </br>
     </br>
