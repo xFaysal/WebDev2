@@ -31,3 +31,16 @@ th {
 	color: #ffffff;
 	background-color: #003366;
 }
+
+li  {
+  display: block;
+  width: 60px;
+}
+ul {
+  list-style-type: none;
+  margin: 5;
+  padding: 5;
+} 
+li {
+  display: inline;
+}

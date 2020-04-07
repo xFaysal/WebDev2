@@ -31,3 +31,12 @@ th {
 	color: #ffffff;
 	background-color: #003366;
 }
+ul {
+  display: inline;
+}
+ul {
+  list-style-type: none;
+  margin: 5;
+  padding: 5;
+}
+
