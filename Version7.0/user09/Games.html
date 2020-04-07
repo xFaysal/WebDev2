@@ -18,8 +18,53 @@
         
         <center>California!</center>
     <p>
+      <!doctype html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title></title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-                            This is my fifth webpage! This webpage will talk about the most popular resturant in all of California. Benu!!! Benu is the best in California. I will talk about what Benu will offer, what it has, how many people go there a day and some food examples(a menu). 
+<dl>
+	<dt>The Benu Hours.</dt>
+	<dd>Open seven times a week.</dd>
+	<dt>Hours open.</dt>
+	<dd>Monday 7:00 A.M to 3:00 P.M.</dd>
+	<dt>Tuesday 6:00 A.M to 4:00 P.M.</dt>
+	<dd>Wednesday 7:30 A.M to 6:00 P.M.</dd>
+	<dt>Thursday 8:00 A.M to 7:30 P.M.</dt>
+	<dd>Friday 9:00 A.M to 10:00 P.M.</dd>
+	<dt>Saturday 8:45 A.M to 9:15 P.M.</dt>
+	<dd>sunday 8:30 A.M to 7:00 P.M.</dd>
+</dl>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<script>
+
+(function() {
+	
+	$('dd').filter(':nth-child(n+4)').addClass('hide');
+
+	$('dl').on('mouseenter', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200);
+	});
+})();
+
+
+</script>
+
+</body>
+</html>
+        
+        This is my fifth webpage! This webpage will talk about the most popular resturant in all of California. Benu!!! Benu is the best in California. I will talk about what Benu will offer, what it has, how many people go there a day and some food examples(a menu). 
  
                         </p>
 
