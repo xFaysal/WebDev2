@@ -9,7 +9,7 @@
     <title>Professional Soccer Teams</title>
     <meta charset="UTF-8">
     <!-- These are needed to get the responsive menu to work -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="JS/SampleJS.js"></script>
@@ -17,7 +17,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="CSS/SampleCSS.css">
-    
+
+
     <link rel="icon" type="image/png" sizes="32x32" href="images/color.png">
 </head>
 
@@ -38,7 +39,7 @@
                     <a href="madrid.php" class="nav-item nav-link" tabindex="-1">Real Madrid C.F.</a>
                     <a href="liverpool.php" class="nav-item nav-link" tabindex="-1">Liverpool F.C.</a>
                     <a href="manchester.php" class="nav-item nav-link" tabindex="-1">Manchester City F.C.</a>
-                    
+
                     <link rel="icon" type="image/png" sizes="32x32" href="images/color.png">
 
                     <!----------------------------------^ Edit These Items in your Menu ^ ------------->
@@ -55,75 +56,80 @@
         <div class="row">
             <div class="col-sm-4">
                 <a href="https://www.laliga.com/en-GB" alt="LaLiga Website">
-                <img src="images/liga.png" alt="La Liga League" width="100%">
+                    <img id="div1" src="images/liga.png" alt="La Liga League" style="width:100%;display:none">
                 </a>
             </div>
             <div class="col-sm-4">
                 <a href="https://www.mlssoccer.com/" alt="MLS Website">
-                    <img src="images/mls.png" alt="MLS League" width="100%">
+                    <img id="div2" src="images/mls.png" alt="MLS League" style="width:100%; display:none">
                 </a>
             </div>
             <div class="col-sm-4">
                 <a href="https://www.premierleague.com/" alt="Premier League Website">
-                <img src="images/premier.png" alt="Premier League" width="100%">
+                    <img id="div3" src="images/premier.png" alt="Premier League" style="width:100%; display:none">
                 </a>
             </div>
         </div>
     </div>
     <h2>Click the a picture to visit the website!</h2>
-    
-    
-    
-     <center>
-        
-        <img src="images/color.png" border="0px" width="400px" height="235px" 
-          
-    </center>
-    </br>
-    </br>
+
+
+
     <center>
-        <form method='post' action='processStudentLogin.php'>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xs-6">
-                        <input type="text" class="form-control" placeholder="First Name" name='firstName'>
-                    </div>
-                    <div class="col-xs-6">
-                        <input type="text" class="form-control" placeholder="Last Name" name='lastName'>
-                    </div>
-                    </br>
-                    </br>
-                    </br>
-                    </br>
-                    <div class="col-xs-12">
-                        <input type="text" class="form-control" placeholder="Position" name='Position'>
-                    </div>
-                    </br>
-                    </br>
-                    </br>
-                    </br>
-                    <div class="col-xs-12">
-                        <input type="text" class="form-control" placeholder="Club" name='Club'>
-                    </div>
-                    </br>
-                    </br>
-                    </br>
-                    </br>
-                    <p><label for='Authentication Code'>Authentication Code</label></p>
-                    <input type='password' name='password' placeholder="Club Code">
-                    </br>
-                    </br>
-                    <p><input type='submit' value="Give Pass">
-                        <!-- <input name = 'edit2' type='submit' value = 'Edit'>
+
+        <h3><strong>Wondering how long you practiced for? Put your info in to learn more.</strong></h3>
+
+        </br>
+        </br>
+        <center>
+            <form method='post' action='processStudentLogin.php'>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <input type="text" class="form-control" placeholder="First Name" name='firstName'>
+                        </div>
+                        <div class="col-xs-6">
+                            <input type="text" class="form-control" placeholder="Last Name" name='lastName'>
+                        </div>
+                        </br>
+                        </br>
+                        </br>
+                        </br>
+                        <div class="col-xs-12">
+                            <input type="text" class="form-control" placeholder="Position" name='Position'>
+                        </div>
+                        </br>
+                        </br>
+                        </br>
+                        </br>
+                        <div class="col-xs-12">
+                            <input type="text" class="form-control" placeholder="Club" name='Club'>
+                        </div>
+                        </br>
+                        </br>
+                        </br>
+                        </br>
+                        <p><label for='Authentication Code'>Authentication Code</label></p>
+                        <div class="col-xs-12">
+                            <input type='password' name='password' placeholder="Club Code">
+                        </div>
+                        </br>
+                        </br>
+                        <p><input type='submit' value="Give Pass">
+                            <!-- <input name = 'edit2' type='submit' value = 'Edit'>
                <input name = 'find2' type='submit' value = 'Find Student'>
                <input name = 'del2' type='submit' value = 'Remove Record'>-->
-                    </p>
-                    </br>
-                    </br>
-                    </br>
-        </form>
-    </center>
-        
+                        </p>
+                        </br>
+                        </br>
+                        </br>
+                        <!-- jQuery library -->
+                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+                        <!-- Bootstrap JS -->
+                        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+            </form>
+        </center>
+
         <footer class="footer-bs">
             <div class="row">
                 <div class="col-md-3 footer-brand animated fadeInLeft">
