@@ -17,14 +17,14 @@ $(document).ready(function () {
 
 
 $(document).ready(function(){
-  $("button").click(function(){
-    $("#hide").hide();
+  $("#button1").click(function(){
+    $("#test").hide();
   });
 });
 
 
 $(document).ready(function(){
-    $("button").click(function(){
-        $("#show").show();
+    $("#button2").click(function(){
+        $("#test").show();
     })
 })

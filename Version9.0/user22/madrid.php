@@ -129,7 +129,7 @@ else {
             <div class="col-sm-6">
                 <p class="team">Standings for Top 5</p>
                 <p class="standings">as of 3-26-2020</p>
-                <table>
+                <table id="test">
                     <tr>
                         <th>Position</th>
                         <th>Team</th>
@@ -167,6 +167,8 @@ else {
                         <th>7</th>
                     </tr>
                 </table>
+                <button id="button1">hide</button>
+                <button id="button2">show</button>
             </div>
         </div>
     </div>
