@@ -1,5 +1,42 @@
 <?php
+$apiKey = "e492046fa637c4996e0e5903864807f0"; //You will need to add in the 
+$cityId = "5368381"; //5046997 Shakopee City Id
+$units = "imperial";//metric-Celcius  imperial-Farhenheit
+if ($units == 'metric'){//Changes the $temp varaible to match 
+    $temp = "C";
+}
+else {
+    $temp = "F";
+}
+$googleApiUrl = "http://api.openweathermap.org/data/2.5/weather?id=" . $cityId . "&lang=en&units=" . $units . "&APPID=" . $apiKey;
 
+$ch = curl_init();
+
+curl_setopt($ch, CURLOPT_HEADER, 0);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_URL, $googleApiUrl);
+curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+curl_setopt($ch, CURLOPT_VERBOSE, 0);
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+$response = curl_exec($ch);
+
+curl_close($ch);
+$data = json_decode($response);
+$currentTime = time();
+
+if(($data->main->temp_min) >= 45){
+    $low='red';
+}
+else {
+    $low='blue';
+}
+
+if (($data->main->temp_max) >= 45){
+    $high='red';
+}
+else {
+    $high='blue';
+}
 ?>
 
 
@@ -17,6 +54,44 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="CSS/SampleCSS.css">
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="images/color.png">
+    
+    
+    
+    <style>
+        .report-container {
+            border: black 3px dashed;
+            padding: 20px 40px 40px 40px;
+            border-radius: 2px;
+            width: 550px;
+            margin: 0 auto;
+            color: black;
+            background-color: #EEE8AA;
+        }
+
+        .weather-icon {
+            vertical-align: middle;
+            margin-right: 20px;
+        }
+
+        .weather-forecast {
+            color: #212121;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin: 20px 0px;
+        }
+
+        span.min-temperature {
+            margin-left: 15px;
+            color: #929292;
+        }
+
+        .time {
+            line-height: 25px;
+        }
+
+    </style>
 </head>
 
 <body class="lafc">
@@ -33,11 +108,10 @@
                     <a href="barcelona.php" class="nav-item nav-link" tabindex="-1">FC Barcelona</a>
                     <a href="lafc.php" class="nav-item nav-link active">Los Angeles FC</a>
                     <a href="dallas.php" class="nav-item nav-link" tabindex="-1">FC Dallas</a>
-                    <a href="#" class="nav-item nav-link" tabindex="-1">Real Madrid C.F.</a>
-                    <a href="#" class="nav-item nav-link" tabindex="-1">Liverpool F.C.</a>
-                    <a href="#" class="nav-item nav-link" tabindex="-1">Manchester City F.C.</a>
-                    <a href="movies.php" class="nav-item nav-link" tabindex="-1">Soccer Movies</a>
-                    
+                    <a href="madrid.php" class="nav-item nav-link" tabindex="-1">Real Madrid C.F.</a>
+                    <a href="liverpool.php" class="nav-item nav-link" tabindex="-1">Liverpool F.C.</a>
+                    <a href="manchester.php" class="nav-item nav-link" tabindex="-1">Manchester City F.C.</a>
+
                     <!----------------------------------^ Edit These Items in your Menu ^ ------------->
                 </div>
                 <div class="navbar-nav ml-auto">
@@ -46,8 +120,132 @@
             </div>
         </nav>
     </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="images/lateam.jpg" width="100%">
+            </div>
+            <div class="col-sm-6">
+                <p style="color:black; text-align:center;">Standings for Top 5</p>
+                <p style="color:black; text-align:center;">as of 3-26-2020</p>
+                <table id="test">
+                    <tr style="color:black;">
+                        <th>Position</th>
+                        <th>Team</th>
+                        <th>Wins</th>
+                        <th>Loses</th>
+                    </tr>
+                    <tr style="color:#D4AF37;">
+                        <th>1</th>
+                        <th>Sporting KC</th>
+                        <th>2</th>
+                        <th>0</th>
+                    </tr>
+                    <tr style="color:black;">
+                        <th>2</th>
+                        <th>Minnesota</th>
+                        <th>2</th>
+                        <th>0</th>
+                    </tr>
+                    <tr style="color:#D4AF37;">
+                        <th>3</th>
+                        <th>Colorado</th>
+                        <th>2</th>
+                        <th>0</th>
+                    </tr>
+                    <tr style="color:black;">
+                        <th>4</th>
+                        <th>FC Dallas</th>
+                        <th>1</th>
+                        <th>0</th>
+                    </tr>
+                    <tr style="color:#D4AF37;">
+                        <th>5</th>
+                        <th>LAFC</th>
+                        <th>1</th>
+                        <th>0</th>
+                    </tr>
+                </table>
+                <button id="button1">hide</button>
+                <button id="button2">show</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <p class="team">SOCCER WEATHER IN LOS ANGELES?</p>
+    <div class="report-container">
+        <h2><?php echo $data->name; ?> Weather Status</h2>
+        <div class="time">
+            <div>
+                <h3 style="color:grey;"><?php echo ucwords($data->weather[0]->description); ?></h3>
+            </div>
+        </div>
+        <div class="weather-forecast">
+            <img src="http://openweathermap.org/img/w/<?php echo $data->weather[0]->icon; ?>.png" class="weather-icon" /> <span style="color: <?php echo $high ?>;"><?php echo $data->main->temp_max; ?>&deg;<?php echo $temp; ?></span>
+            <span class="min-temperature" style="color:<?php echo $low ?>;"><?php echo $data->main->temp_min; ?>&deg;<?php echo $temp; ?></span>
+        </div>
+        <div class="time">
+            <div>Humidity: <?php echo $data->main->humidity; ?> %</div>
+            <div>Wind: <?php echo $data->wind->speed; ?> km/h</div>
+        </div>
+    </div>
+<p class="lafcs">They are Sponsored by YouTubeTV</p>
     
     
-    
-    </body>
+    <footer class="footer-bs">
+            <div class="row">
+                <div class="col-md-3 footer-brand animated fadeInLeft">
+                    <p>Suspendisse hendrerit tellus laoreet luctus pharetra. Aliquam porttitor vitae orci nec ultricies. Curabitur vehicula, libero eget faucibus faucibus, purus erat eleifend enim, porta pellentesque ex mi ut sem.</p>
+                    <p>© 2014 BS3 UI Kit, All rights reserved</p>
+                </div>
+                <div class="col-md-4 footer-nav animated fadeInUp">
+                    <h4>Menu —</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="pages">
+                                <li><a href="https://www.google.com/search?q=soccer+teams&surl=1&safe=active&ssui=on">Teams</a></li>
+                                <li><a href="https://www.google.com/search?ei=NT6HXr2CGOOD9PwP9N2p2Ag&q=soccer+leagues&oq=soccer+lea&gs_lcp=CgZwc3ktYWIQAxgAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADoECAAQR1DA3gFYxOEBYI3xAWgAcAN4AIABhAGIAfMCkgEDMC4zmAEAoAEBqgEHZ3dzLXdpeg&sclient=psy-ab&surl=1&safe=active&ssui=on">Leagues</a></li>
+                                <li><a href="https://www.espn.com/soccer/schedule">Schedules</a></li>
+                                <li><a href="https://www.google.com/search?q=soccer+stadiums&surl=1&safe=active&ssui=on">Stadiums</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contacts</a></li>
+                                <li><a href="#">Terms & Condition</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 footer-social animated fadeInDown">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">RSS</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-ns animated fadeInRight">
+                    <h4>Sign Up for Weekly Newsletter!</h4>
+
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Email Here">
+                        <span class="input-group-btn">
+                            <button onclick="EAlert()"><i class="fa fa-envelope-o" aria-hidden="true"></i></button>
+                        </span>
+                    </div><!-- /input-group -->
+                </div>
+            </div>
+        </footer>
+        <section style="text-align:center; margin:10px auto;">
+            <p>Designed by <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/">Bootstrap</a></p>
+        </section>
+
+</body>
+
 </html>
