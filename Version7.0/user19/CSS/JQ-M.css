@@ -1,3 +1,4 @@
+
 .b1 {
     border-radius: 40px;
     border-color: goldenrod;
@@ -73,3 +74,56 @@ dt {
 }
 #wjd {background-color: aqua}
 .lol{background-color: azure}
+ table,
+        th,
+        td {
+            border: 5px solid forestgreen;
+            background-color: midnightblue;
+            color: ghostwhite;
+            text-align: center;
+            font-size: 30px;
+
+        }
+
+        table {
+            margin: 10%;
+            width: 80%;
+        }
+
+        .table_B {
+            font-size: 50px;
+        }
+
+        b {
+            margin-left: 10%;
+            font-size: 45px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 10%;
+            font-size: 25px;
+        }
+
+        button {
+            margin-left: 10%;
+            width: 80%;
+            background-color: forestgreen;
+            border-radius: 55px;
+            border-width: 20px;
+            border-color: mediumblue;
+            text-align: center;
+        }
+
+        .foot {
+            width: 100%;
+            background-color: darkgreen;
+            bottom: 1px;
+
+        }
+
+        img {
+            margin-top: 5%;
+            margin-left: 10%;
+            width: 80%;
+        }
