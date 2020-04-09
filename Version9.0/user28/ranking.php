@@ -7,6 +7,11 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     header("location: login.php");
     exit;
 }
+
+curl_close($ch);
+$data = json_decode($response);
+$currentTime = time();
+
 ?>
 
 <!DOCTYPE html>
@@ -87,16 +92,23 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                     <a href="recipes.php" class="nav-item nav-link active" tabindex="-2">Recipes</a>
                     <a href="game.php" class="nav-item nav-link active" tabindex="-2">Facts</a>
                     <a href="faqs.php" class="nav-item nav-link active" tabindex="-2">FAQs</a>
+                    <a href="weather.php" class="nav-item nav-link active" tabindex="-2">Weather</a>
 
                     <!----------------------------------^ Edit These Items in your Menu ^ ------------->
-                 </div>
-                                <div class="navbar-nav ml-auto">
+                </div>
+                
+                
+                    
+                <div class="navbar-nav ml-auto">
+                   <div style="color:white"><?php echo '<time style="color:white" datetime="'.date('c').'">'.date('m/d/y').'</time>'; ?>
+                    <?php echo date("g:i a", $currentTime); ?></div> 
+                    
                     <a href="reset_password.php" class="nav-item nav-link active"><i class="fa fa-cog fa-lg" aria-hidden="true"></i><?php echo htmlspecialchars($_SESSION["username"]); ?></a>
 
                     <?php if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
                     echo "<a href='logout.php' class='nav-item nav-link btn-danger' onclick='return confirm(\"Are you sure?\");'> Logout </a>";
                     } else { echo "<a href='login.php' class='nav-item nav-link'> Login </a>";} ?>
-               
+
                 </div>
             </div>
         </nav>

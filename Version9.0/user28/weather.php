@@ -7,7 +7,29 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     header("location: login.php");
     exit;
 }
+$apiKey = "d5b48c294d75420b8b01a90d4d11c3d8"; //You will need to add in the 
+$cityId = "5046997"; //5046997 Shakopee City Id
+$units = "imperial";//metric-Celcius  imperial-Farhenheit
+if ($units == 'metric'){//Changes the $temp varaible to match 
+    $temp = "C";
+}
+else {
+    $temp = "F";
+}
 
+$googleApiUrl = "http://api.openweathermap.org/data/2.5/weather?id=" . $cityId . "&lang=en&units=" . $units . "&APPID=" . $apiKey;
+
+$ch = curl_init();
+
+curl_setopt($ch, CURLOPT_HEADER, 0);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_URL, $googleApiUrl);
+curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+curl_setopt($ch, CURLOPT_VERBOSE, 0);
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+$response = curl_exec($ch);
+
+$ch = curl_init();
 curl_close($ch);
 $data = json_decode($response);
 $currentTime = time();
@@ -29,7 +51,7 @@ $currentTime = time();
 
     <link rel="shortcut icon" href=images/applefavicon.png />
 
-    <title>Apple Types</title>
+    <title>Apples</title>
 
     <!-- Bootstrap core JS -->
     <!-- These are needed to get the responsive menu to work -->
@@ -41,9 +63,47 @@ $currentTime = time();
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="JS/SampleJS.js"></script>
-    <script src="JS/jquery-3.4.1.js"></script>
+    <script src="jquery-3.4.1%20copy.js"></script>
 
     <!-- Custom styles for this template -->
+    <script>
+        $(document).ready(function() {
+            $("#hc").mouseover(function() {
+                $("body").css({
+                    "background-color": "#B22222"
+                });
+            });
+        });
+        $(document).ready(function() {
+            $("#rd").mouseover(function() {
+                $("body").css({
+                    "background-color": "darkred"
+                });
+            });
+        });
+        $(document).ready(function() {
+            $("#fuji").mouseover(function() {
+                $("body").css({
+                    "background-color": "darksalmon"
+                });
+            });
+        });
+        $(document).ready(function() {
+            $("#abro").mouseover(function() {
+                $("body").css({
+                    "background-color": "#FF4500"
+                });
+            });
+        });
+        $(document).ready(function() {
+            $("#gala").mouseover(function() {
+                $("body").css({
+                    "background-color": "#800000"
+                });
+            });
+        });
+
+    </script>
 </head>
 
 <body>
@@ -68,13 +128,13 @@ $currentTime = time();
 
                     <!----------------------------------^ Edit These Items in your Menu ^ ------------->
                 </div>
-                
-                
-                    
+
+
+
                 <div class="navbar-nav ml-auto">
-                   <div style="color:white"><?php echo '<time style="color:white" datetime="'.date('c').'">'.date('m/d/y').'</time>'; ?>
-                    <?php echo date("g:i a", $currentTime); ?></div> 
-                    
+                    <div style="color:white"><?php echo '<time style="color:white" datetime="'.date('c').'">'.date('m/d/y').'</time>'; ?>
+                        <?php echo date("g:i a", $currentTime); ?></div>
+
                     <a href="reset_password.php" class="nav-item nav-link active"><i class="fa fa-cog fa-lg" aria-hidden="true"></i><?php echo htmlspecialchars($_SESSION["username"]); ?></a>
 
                     <?php if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
@@ -85,59 +145,37 @@ $currentTime = time();
             </div>
         </nav>
     </div>
-    <div>
-        <style>
-            img {
-                height:225px;
-                width:225px;
-            }
-        
-        </style>
-        <h1 style= "font-family: Courier New">Touch the Apples to Learn Apple Facts</h1>
-        <p style="margin-top: : 100px; margin-bottom: 100px"><img onmouseover="showText();bigImg(this)" onmouseout="hideText();normalImg(this)" id=img1 src="images/download.png" alt="Apples">
-            
-            
-            <center style= "display: none" id= "leftApple" >2,500 varieties of apples are grown in the United States.</center>
-            <center style= "display: none" id="rightApple">The science of apple growing is called pomology.</center> 
-            
-            
-            <img onmouseover="showText2();bigImg(this)" onmouseout="hideText2();normalImg(this)" id="img1"  style= "float: right" src="images/download.png" alt="Apples"/> </p>
-        
-        
-        <p style="margin-top: : 100px; margin-bottom: 100px"><img onmouseover="showTextb();bigImg(this)" onmouseout="hideTextb();normalImg(this)" id=img1b src="images/download.png" alt="Apples">
-            
-            
-            <center style= "display: none" id= "leftAppleb" >Apples are a member of the rose family.</center>
-            <center style= "display: none" id="rightAppleb">The largest apple picked weighed three pounds.</center> 
-            
-            
-            <img onmouseover="showText2b();bigImg(this)" onmouseout="hideText2b();normalImg(this)" id="img1b"  style= "float: right" src="images/download.png" alt="Apples"/> </p>
-        
-         
-        
-        <p style="margin-top: : 100px; margin-bottom: 100px"><img onmouseover="showTextc();bigImg(this)" onmouseout="hideTextc();normalImg(this)" id=img1c src="images/download.png" alt="Apples">
-            
-            
-            <center style= "display: none" id= "leftApplec" >Some apple trees will grow over 40 feet high and live over 100 years.</center>
-            <center style= "display: none" id="rightApplec">It takes the energy from 50 leaves to produce one apple.</center> 
-            
-            
-            <img onmouseover="showText2c();bigImg(this)" onmouseout="hideText2c();normalImg(this)" id="img1c"  style= "float: right" src="images/download.png" alt="Apples"/> </p>
-        
-        
-         <p style="margin-top: : 100px; margin-bottom: 100px"><img onmouseover="showTexd();bigImg(this)" onmouseout="hideTextd();normalImg(this)" id=img1d src="images/download.png" alt="Apples">
-            
-            
-            <center style= "display: none" id= "leftAppled" >It takes about 36 apples to create one gallon of apple cider.</center>
-            <center style= "display: none" id="rightAppled">Apples account for 50 percent of the world's deciduous fruit tree production.</center> 
-            
-            
-            <img onmouseover="showText2d();bigImg(this)" onmouseout="hideText2d();normalImg(this)" id="img1d"  style= "float: right" src="images/download.png" alt="Apples"/> </p>
-        
-        
-        
-    </div>
 
+    <div>
+        <center>
+            <h1 style="font-family: Courier New">Today's Weather</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th> </th>
+                        <th> </th>
+                        <th> </th>
+                    </tr>
+                </thead>
+                <tr>
+                    <div class="weather-forecast" style= "font-size: 3.5em">
+                        <td><img src="http://openweathermap.org/img/w/<?php echo $data->weather[0]->icon; ?>.png" class="weather-icon" height='120' width='120' /></td>
+                        <td style= "font-size: 3.5em"> <?php echo $data->main->temp_max; ?>&deg;<?php echo $temp; ?></td>
+                        <td style= "font-size: 3.5em"><span class="min-temperature"><?php echo $data->main->temp_min; ?>&deg;<?php echo $temp; ?></span></td>
+                    </div>
+
+                </tr>
+                <thead>
+                    <tr>
+                        <th> </th>
+                        <th> </th>
+                        <th> </th>
+                    </tr>
+                </thead>
+
+            </table>
+        </center>
+    </div>
 
     <link href="CSS/SampleCSS.css" rel="stylesheet" type="text/css">
 </body>

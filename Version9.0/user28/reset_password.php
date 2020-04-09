@@ -77,9 +77,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="SHS WebDev Login">
+    <meta name="description" content="SHS WebDev Menu Sample">
 
-    <title>Reset Password</title>
+    <link rel="shortcut icon" href=images/applefavicon.png />
+
+    <title>Login</title>
 
     <!-- Bootstrap core JS -->
     <!-- These are needed to get the responsive menu to work -->
@@ -90,23 +92,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style type="text/css">
-        body {
-            font: 14px sans-serif;
-        }
+    <script src="JS/SampleJS.js"></script>
 
-        .wrapper {
-            width: 350px;
-            padding: 20px;
-        }
-
-    </style>
+    <!-- Custom styles for this template -->
 </head>
 
 <body>
     <div class="menu">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <a href="http://shakonet.isd720.com/WebDev" class="navbar-brand">WebDev</a>
+            <a href="http://shakonet.isd720.com" class="navbar-brand">APPLES</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -114,25 +108,36 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!---------------------------------- Edit These Items in your Menu ------------->
-                    <a href="#" class="nav-item nav-link">Home</a>
-                    <a href="#" class="nav-item nav-link">About Me</a>
-                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Music</a>
-                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
-                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled" tabindex="-1">Contact</a>
+                    <a href="index.php" class="nav-item nav-link active">Home</a>
+
+                    <a href="types.php" class="nav-item nav-link active" tabindex="-1">Types</a>
+                    <a href="ranking.php" class="nav-item nav-link active" tabindex="-2">Ranking</a>
+                    <a href="recipes.php" class="nav-item nav-link active" tabindex="-2">Recipes</a>
+                    <a href="game.php" class="nav-item nav-link active" tabindex="-2">Facts</a>
+                    <a href="faqs.php" class="nav-item nav-link active" tabindex="-2">FAQs</a>
+                    <a href="weather.php" class="nav-item nav-link active" tabindex="-2">Weather</a>
+
                     <!----------------------------------^ Edit These Items in your Menu ^ ------------->
                 </div>
+                
+                
+                    
                 <div class="navbar-nav ml-auto">
+                   <div style="color:white"><?php echo '<time style="color:white" datetime="'.date('c').'">'.date('m/d/y').'</time>'; ?>
+                    <?php echo date("g:i a", $currentTime); ?></div> 
+                    
                     <a href="reset_password.php" class="nav-item nav-link active"><i class="fa fa-cog fa-lg" aria-hidden="true"></i><?php echo htmlspecialchars($_SESSION["username"]); ?></a>
 
                     <?php if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
                     echo "<a href='logout.php' class='nav-item nav-link btn-danger' onclick='return confirm(\"Are you sure?\");'> Logout </a>";
                     } else { echo "<a href='login.php' class='nav-item nav-link'> Login </a>";} ?>
+
                 </div>
             </div>
         </nav>
     </div>
     <div class="wrapper">
-        <h2>Reset Password</h2>
+        <h1 style="font-family:'Courier New' ">Rest Password</h1>
         <p>Please fill out this form to reset your password.</p>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="form-group <?php echo (!empty($new_password_err)) ? 'has-error' : ''; ?>">
@@ -151,6 +156,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             </div>
         </form>
     </div>
+    <link href="CSS/SampleCSS.css" rel="stylesheet" type="text/css">
 </body>
 
 </html>
