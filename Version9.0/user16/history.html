@@ -5,24 +5,6 @@
     -->
 
 <head>
-    
-    <script>
-$(document).ready(function(){
-    // Slide up displayed paragraphs
-    $(".up-btn").click(function(){
-        $("p").slideUp();
-    });
-    
-    // Slide down hidden paragraphs
-    $(".down-btn").click(function(){
-        $("p").slideDown();
-    });
-});
-</script>
-    
-    
-    
-    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -55,14 +37,40 @@ $(document).ready(function(){
             text-align: center;
         }
 
+
+        
+        
     </style>
+    
+     <meta charset="utf-8">
+<title>Example of jQuery Slide-Up and Slide-Down Effects</title>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<style>
+    p{
+        padding: 15px;
+        background: #B0C4DE;
+    }
+</style>
+<script>
+$(document).ready(function(){
+    // Slide up displayed paragraphs
+    $(".up-btn").click(function(){
+        $("p").slideUp();
+    });
+    
+    // Slide down hidden paragraphs
+    $(".down-btn").click(function(){
+        $("p").slideDown();
+    });
+});
+</script>
 </head>
 
 
 <body style="background-color:powderblue;">
     <div class="menu">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            
+
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -76,6 +84,7 @@ $(document).ready(function(){
                     <a href="nbachamps.html" class="nav-item nav-link" tabindex="-1">nba champs</a>
                     <a href="franchise%20copy.html" class="nav-item nav-link" tabindex="-2">best stats</a>
                     <a href="topshooters.html" class="nav-item nav-link">best shooters</a>
+                    <a href="bestthree.html" class="nav-item nav-link">best three</a>f
                     <!----------------------------------^ Edit These Items in your Menu ^ ------------->
                 </div>
                 <div class="navbar-nav ml-auto">
@@ -84,16 +93,29 @@ $(document).ready(function(){
             </div>
         </nav>
     </div>
+    <h1>nba facts</h1>
+    <div class='container-fluid'>
+        <div class='row'>
+            <div class="col-md-8">
+                <p>michael jordan was a very key person on mba history
+                    he changed the game for the better and brought lots of the
+                    publicity to the league.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="mjdraftpic.jpg">
 
-    <h1>best stats</h1>
-    <p>here is the top franchises in nba history
-    these have some of the most elite players to ever lace up</p>
-
-</body>
-<center></center>
-<img src="franchisepic.jpg">
+            </div>
+        </div>
+    </div>
+    
 
 
+
+            <center></center>
+<p>there are some who belive that he was not actullay this great</p>
+
+<button type="button" class="up-btn">Slide Up Paragraphs</button> 
+    <button type="button" class="down-btn">Slide Down Paragraphs</button>
 </body>
 
 </html>
