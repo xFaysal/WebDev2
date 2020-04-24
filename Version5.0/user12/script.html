@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Version 5.0
+        Name:Isiah Limo
+        Date Completed:2/11/2020
+    -->
+
+<head>
+    <title>JavaScript</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="SHS WebDev Menu Sample">
+
+
+
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        .menu {
+            margin: 0px;
+        }
+
+        .wideMargin {
+            margin: 15px;
+        }
+
+        #footer {
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .isiah {
+            font-size: 30px;
+            color: skyblue;
+            border-bottom: 3px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!---------------------------------- Begin the nav-bar ------------->
+    <div class="menu">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                    <a href="#" class="nav-item nav-link active">Home</a>
+                    <a href="#" class="nav-item nav-link">About Me</a>
+                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Music</a>
+                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
+                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
+                    <a href="script.html" class="nav-item nav-link" tabindex="-1">JaveScript</a>
+                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled" tabindex="-1">Contact</a>
+                    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <a href="#" class="nav-item nav-link disabled">Login</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!---------------------------------- End the nav-bar ------------->
+
+    <div class="wideMargin" id="content">
+
+        <h1 class="text-left my-3">My JavaScript Examples</h1><!-- Edit this line for the title of your page -->
+
+        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+        <center>
+            <p id="textChange"> My name is Isiah</p>
+        </center>
+        <button type="button" onclick="changeText()">Hello</button>
+
+
+
+        <button type="button" onclick="changeText()">My</button>
+        <button type="button" onclick="changeText()">Name</button>
+        <button type="button" onclick="changeText()">is</button>
+        <button type="button" onclick="changeText()">Isiah</button>
+        <button type="button" onclick="changeText()">!</button>
+
+
+        What's your favorite color: <input type="text" id="fname" onchange="myFunction()">
+        <p id="shift"></p>
+
+        <p onmousedown="isKeyPressed(event)">Click on this paragraph. An alert box will tell you if you pressed the shift key or not.</p>
+
+        <form onsubmit="confirmInput()" action="https://www.nba.com/">
+            Have a nice day!: <input id="tname" type="text" size="20">
+            <input type="submit">
+        </form>
+
+
+        <form>
+            Write a message:<br>
+            <input type="text" onkeydown="color('yellow')" onkeyup="color('white')" name="myInput">
+        </form>
+
+
+        <h1 onmouseover="style.color='red'" onmouseout="style.color='black'">Mouse over this text</h1>
+
+
+
+        <div onmousedown="WhichButton(event);">Click this text (with one of your mouse-buttons)
+<p>
+0 Specifies the left mouse-button<br>
+1 Specifies the middle mouse-button<br>
+2 Specifies the right mouse-button</p>
+<p><strong>Note:</strong> Internet Explorer 8, and earlier, returns another result:<br>
+1 Specifies the left mouse-button<br>
+4 Specifies the middle mouse-button<br>
+2 Specifies the right mouse-button</p>
+
+            
+            
+            <p onmousedown="show_coords(event)">
+Click this paragraph to display the x and y coordinates of the mouse pointer.</p>
+
+<p id="demo"></p>
+
+
+            <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+
+
+            <!---------------------------------- Begin the footer ------------->
+            <div class="wideMargin" id="footer">
+                <p>
+                    Webpage made by <a href="index.html" target="_blank">Isiah Limo</a>
+                </p>
+            </div>
+            <!---------------------------------- End the footer ------------->
+    <!-- Bootstrap core JS -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="JS/SampleJS.js"></script>
+
+    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Put your .js files here ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            </body>
+
+</html>
