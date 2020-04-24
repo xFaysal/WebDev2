@@ -31,3 +31,76 @@ th {
 	color: #ffffff;
 	background-color: #003366;
 }
+h3 {
+  padding: 50px;
+}
+	p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+	p {
+  padding: 20px 0 20px 10px;  /* Top  Right  Bottom  Left */
+}
+	h3 {
+  padding: 50px;
+  border: 1px solid #5D6063;
+}
+	border-bottom: 1px solid #5D6063;
+	p {
+  padding: 20px 0 20px 10px;
+  margin-bottom: 50px;          /* Add this */
+}
+	strong {
+  margin: 50px;
+}
+	p {
+  padding: 20px 0 20px 10px;
+
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+<div style='padding-top: 1px'></div>  <!-- Add this -->
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {
+  border-radius: 8px;
+}
+
+.button2 {
+  border-radius: 30%;
+}
+
+.red { 
+   background-color: #ff0000;
+}
+.demo-content{
+        padding: 15px;
+        font-size: 18px;
+        background: #dbdfe5;
+        margin-bottom: 15px;
+    }
+    .demo-content.bg-alt{
+        background: #abb1b8;
+    }
+    .bs-example {
+            margin: 20px;
+    }
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(255, 0, 0, 0.3);
+}
