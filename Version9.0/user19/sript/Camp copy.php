@@ -1,0 +1,303 @@
+<?php
+// Initialize the session
+session_start();
+ 
+// Check if the user is logged in, if not then redirect to login page
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: login.php");
+    exit;
+} 
+require_once "config.php";
+$curl_str = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=AAPL&apikey=B3GVO2Y1AV1L7HXV';
+?>
+
+<html lang="en">
+<!--Version 6.0 
+	Name:
+	Date Completed:
+    -->
+
+<head>
+    <meta charset=utf-8>
+    <link rel="stylesheet" href="../CSS/JQ-M.css">
+    <script src="../JS/JS-M.js"></script>
+    <script src="../JS/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="../images/ms-icon-310x310.png" />
+    <title>Camps</title>
+    <style>
+        .hide {
+
+            display: none;
+        }
+
+    </style>
+</head>
+
+<body onload="lo()">
+    <div class="menu" style=" width: 100%;">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="http://shakonet.isd720.com/WebDev" class="navbar-brand">WebDev</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <!---------------------------------- Edit These Items in your Menu ------------->
+                    <a href="index.php" class="nav-item nav-link active">Home</a>
+                    <a href="Camp%20copy.php" class="nav-item nav-link active">Camps</a>
+                    <a href="history%20copy.php" class="nav-item nav-link active" tabindex="-1">History</a>
+                    <a href="segwal%20copy.php" class="nav-item nav-link active" tabindex="-2">Events</a>
+                    <a href="Ticket%20copy.php" class="nav-item nav-link active" tabindex="-2">Tickets</a>
+                    <a href="Cool%20code%20copy.php" class="nav-item nav-link active" tabindex="-2">Code fun</a>
+                    <a href="stock.php" class="nav-item nav-link active" tabindex="-2">Stonks</a>
+                    <!----------------------------------^ Edit These Items in your Menu ^ ------------->
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <a href="reset_password.php" class="nav-item nav-link active"><i class="fa fa-cog fa-lg" aria-hidden="true"></i><?php echo htmlspecialchars($_SESSION["username"]); ?></a>
+
+                    <?php if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
+                    echo "<a href='logout.php' class='nav-item nav-link btn-danger' onclick='return confirm(\"Are you sure?\");'> Logout </a>";
+                    } else { echo "<a href='login.php' class='nav-item nav-link'> Login </a>";} ?>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+    <div class="row" id=events>
+        <div class="col-12">
+            <img src="../images/images-2.jpg" width="1000">
+        </div>
+        <div class="col-1"></div>
+        <div class="col-md-6 col-sm-12">
+            <b>Build a camp:
+            </b>
+            <p>
+                his is a flexible intrcushery camp just pay by the day. Building a camp allows you to choose from day activities and you can do as many days or as little as you want to. Camps included, One room school an experience that teaches historical information about education and about minnesota history complete with school yard games. Victorian tea party where participants bake cookies play croquet and have a tea party in a Victorian home on wednesday. The day on the farm is a camp of amamle lovers and people that like to get dirty as you tend to the fields and farm animals On Thursday. All build a camp days last from 9:30am to 2:00pm.
+
+            </p>
+        </div>
+        <div class="col-5">
+            <img src="../images/1-1.jpg" height="350" width="350">
+        </div>
+        <div class="col-1"></div>
+        <div class="col-md-6 col-sm-12">
+            <b>Civil war camp:
+            </b>
+            <p>This camp is a civil war themed camp where campers will learn civil war military drills for 10-15 year olds, learn more about life back home and participate in a military skirmish along the river, learn from pasheit reenactors while they guide you on your advencher. The days last from 9:30 to 3:30, Tuesday is the home front day where they learn about life at home on the farm and go to school. Wednesday campers are enlisted into the union army and learn military drills marching and war history. Thursday they do more military drills history and the skirmish along the river vs confederate reenactors capturing their flag as the enemy retreats.
+            </p>
+        </div>
+        <div class="col-md-5 col-sm-12">
+            <img src="../images/Camp%20Civil%20war%202.JPG" height="350" width="350">
+        </div>
+        <div class="col-1"></div>
+        <div class="col-md-6 col-sm-12">
+            <b>Wilderness survival and advanced camp:
+
+            </b>
+            <p>Wilderness survival camp teaches over three days essential survival skills, fire building shelter building, water treatment, wild edibles and atlatl throwing are some of the highlights. This camp runs from Tuesday to Thursday for 6-12year olds. The advanced skill survival camp is a more advanced camp for 10-15 year olds and takes place between Tuesday and Thursday.</p>
+
+        </div>
+        <div class="col-md-5 col-sm-12">
+            <img src="../images/Camp%20Kid%20v%20wild.JPG" width="350" height="350">
+        </div>
+        <div class="col-1"></div>
+        <div class="col-md-6 col-sm-12">
+            <b>Little house on the river and advanced Little house:
+
+            </b>
+            <p>a little house on the prairie themed camp that teaches about life in Minnesota, in a log cabin do chores and play games Tuesday to Thursday for 6-12year olds. And advanced where they learn more about the history of the area and do more advanced skills.</p>
+
+        </div>
+        <div class="col-md-5 col-sm-12">
+            <img src="../images/Camp%20Little%20House.JPG" width="350" height="350">
+        </div>
+        <div class="col-1"></div>
+        <div class="col-md-6 col-sm-12">
+            <b>Wilderness survival and advanced camp:
+
+            </b>
+            <p>Wilderness survival camp teaches over three days essential survival skills, fire building shelter building, water treatment, wild edibles and atlatl throwing are some of the highlights. This camp runs from Tuesday to Thursday for 6-12year olds. The advanced skill survival camp is a more advanced camp for 10-15 year olds and takes place between Tuesday and Thursday.</p>
+
+        </div>
+        <div class="col-md-5 col-sm-12">
+            <img src="../images/Camp%20Kid%20v%20wild.JPG" width="350" height="350">
+        </div>
+        <div class="col-1"></div>
+        <div class="col-md-6 col-sm-12">
+            <b>Little house on the river and advanced Little house:
+
+            </b>
+            <p>A little house on the prairie themed camp that teaches about life in Minnesota, in a log cabin do chores and play games Tuesday to Thursday for 6-12year olds. And advanced where they learn more about the history of the area and do more advanced skills.
+
+            </p>
+
+        </div>
+        <div class="col-md-5 col-sm-12">
+            <img src="../images/Camp%20Little%20House.JPG" width="350" height="350">
+        </div>
+        <div class="col-1"></div>
+        <div class="col-md-6 col-sm-12">
+            <b>Voyageurs camp:
+
+            </b>
+            <p> Paddle along the river and experience the life of a voyageur and a fur trader as you paddle and play games. This camp teaches about the furtrad and is for 8-15 year olds and will take place from Tuesday to Thursday.
+
+            </p>
+
+        </div>
+        <div class="col-md-5 col-sm-12">
+            <img src="../images/vo.JPG" width="350" height="350">
+        </div>
+        <div class="col-1"></div>
+        <div class="col-md-6 col-sm-12">
+            <b>Paul bunyan
+
+            </b>
+            <p>A camp that teaches the history of logging in Minnesota along with fun activities. Saw logs learn about tree specimens, romp around in the woods and try your hand at throwing hatchets. This camp is for 8-12 year olds and takes place from Tuesday to Thursday.</p>
+
+        </div>
+        <div class="col-5">
+            <img src="../images/paul.JPG" width="350" height="350">
+        </div>
+
+        <div class="col-1"></div>
+        <div class="col-md-6 col-sm-12">
+            <b>Circus camp.
+
+            </b>
+            <p>A camp for those that want to run off and join the circus compete with low slacklining and games. This camp is for 10-15 year olds and takes place from Tuesday to Thursday.
+
+            </p>
+
+        </div>
+        <div class="col-md-5 col-sm-12">
+            <img src="../images/2013%20076.JPG" width="350" height="350">
+        </div>
+        <div class="col-1"></div>
+        <div class="col-md-6 col-sm-12">
+            <b>Archery camp:
+
+            </b>
+            <p> learn range safety and how to shoot a compound bow and getpractus shooting.
+                This camp is for 9-13 year olds and takes place from Monday to Thursday.
+
+
+            </p>
+
+        </div>
+        <div class="col-md-5 col-sm-12">
+            <img src="../images/map.jpg" width="350" height="350">
+        </div>
+    </div>
+    <button data-file="blue" class="b3">blue</button>
+    <button data-file="green" class=b2>green</button>
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                var backgroundColor = $(this).data('file');
+                $("body").css("background-color", backgroundColor);
+
+            });
+        });
+        $(document).ready(function() {
+            $("#events").click(function() {
+                window.location.href = "../html/segwal.html";
+            });
+        });
+
+    </script>
+<style> table,
+        th,
+        td {
+            border: 5px solid forestgreen;
+            background-color: midnightblue;
+            color: ghostwhite;
+            text-align: center;
+            font-size: 30px;
+
+        }
+
+        table {
+            margin: 10%;
+            width: 80%;
+        }
+
+        .table_B {
+            font-size: 50px;
+        }
+
+        b {
+            margin-left: 10%;
+            font-size: 45px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 10%;
+            font-size: 25px;
+        }
+
+        button {
+            margin-left: 10%;
+            width: 80%;
+            background-color: forestgreen;
+            border-radius: 55px;
+            border-width: 20px;
+            border-color: mediumblue;
+            text-align: center;
+        }
+
+        .foot {
+            width: 100%;
+            background-color: darkgreen;
+            bottom: 1px;
+
+        }
+
+        img {
+            margin-top: 5%;
+            margin-left: 10%;
+            width: 80%;
+        }
+        </style>
+    <footer>
+        <div>
+        <table>
+        <tr>
+                    <th><a href="index.php" class="nav-item nav-link active">Home</a></th>
+                    <th><a href="Camp%20copy.php" class="nav-item nav-link active">Camps</a></th>
+                    <th><a href="history%20copy.php" class="nav-item nav-link active" tabindex="-1">History</a></th>
+                </tr>
+                <tr>
+                    <th><a href="segwal%20copy.php" class="nav-item nav-link active" tabindex="-2">Events</a></th>
+                    <th><a href="Ticket%20copy.php" class="nav-item nav-link active" tabindex="-2">Tickets</a></th>
+                    <th><a href="Cool%20code%20copy.php" class="nav-item nav-link active" tabindex="-2">Code fun</a></th>
+                </tr>
+                <tr>
+                    <th><a href="stock.php" class="nav-item nav-link active" tabindex="-2">Stonks</a></th>
+                    <th><a href="reset_password.php" class="nav-item nav-link active" tabindex="-2">Reset password</a></th>
+                    <th><a href="register.php" class="nav-item nav-link active" tabindex="-2">register</a></th>
+                </tr>
+                <tr>
+                    <th><a href="login.php" class="nav-item nav-link active" tabindex="-2">Log in</a></th>
+                    <th><a href="logout.php" class="nav-item nav-link active" tabindex="-2"><?php if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
+                    echo "<a href='logout.php' class='nav-item nav-link btn-danger' onclick='return confirm(\"Are you sure?\");'> Logout </a>";
+                    } else { echo "<a href='login.php' class='nav-item nav-link'> Login </a>";} ?></a></th>
+                    <th></th>
+                </tr>
+            </table>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+</body>
