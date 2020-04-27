@@ -1,7 +1,7 @@
 <html lang="en">
-<!--Version 7.0 
+<!--Version 3.0 
 	Name:Jackson Holmlund
-	Date Completed:4/3/20
+	Date Completed:4/21/20
     -->
 
 <head>
@@ -38,10 +38,39 @@
             font-size: 12px;
             text-align: center;
         }
+		padding: 50px;
+  border: 1px solid #5D6063;
+}
+		p {
+  padding: 20px 0 20px 10px;
+  margin-bottom: 50px;          /* Add this */
+}
+		strong {
+  margin: 50px;
+}
+		p {
+  padding: 20px 0 20px 10px;
 
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+h3 {
+ 
+}
     </style>
+	p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
 </head>
-
+	p {
+  padding: 20px 10px;  /* Vertical  Horizontal */
+}
+p {
+  padding: 20px 0 20px 10px;  /* Top  Right  Bottom  Left */
+}
 <body>
     <div class="menu">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
@@ -65,6 +94,19 @@
                 </div>
             </div>
         </nav>
+		h3 {
+  padding: 50px;
+}
+		<h3>CSS Box Model Demonstration</h3>
+<p>
+Paragraphs are blocks too. <em>However</em> things like &lt;em&gt; and &lt;strong&gt; elements are not.
+They are <strong>inline</strong> elements. 
+</p>
+<div style='padding-top: 1px'></div>  <!-- Add this -->
+
+<p>Block elements define the flow of the HTML document, while inline elements
+do not.
+</p>
     </div>
     <h3>Ordered list</h3>
     <ol>
@@ -85,5 +127,13 @@
         <li>Ninth numbered item</li>
         <li>Tenth numbered item</li>
 </body>
-
+<h3>CSS Box Model Demonstration</h3>
+<p>
+Paragraphs are blocks too. <em>However</em> things like &lt;em&gt; and &lt;strong&gt; elements are not.
+They are <strong>inline</strong> elements. 
+</p>
+<p>Block elements define the flow of the HTML document, while inline elements
+do not.
+</p>
+	border-bottom: 1px solid #5D6063;
 </html>
