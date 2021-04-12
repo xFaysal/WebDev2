@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--Version 7.0
-        Name:Emmet H
+<!--Version 4.0
+        Name:
         Date Completed:
     -->
 
 <head>
-    <link rel="shortcut icon" type="image/ico" href="images/FaviconE.ico">
-    <title>Emmet's Autobiography</title>
+    <title>Bootstrap Form</title>
 
     <!-- Bootstrap meta data -->
     <meta charset="utf-8">
@@ -24,7 +23,6 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="CSS/SampleCSS.css">
 
     <style>
         .bs-example {
@@ -36,58 +34,34 @@
 </head>
 
 <body>
-    <div class="menu">
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <a href="http://shakonet.isd720.com" class="navbar-brand">Emmet H</a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav">
-                    <!---------------------------------- Edit These Items in your Menu ------------->
-                    <a href="index.html" class="nav-item nav-link" tabindex="1">Who</a>
-                    <a href="what.html" class="nav-item nav-link">What</a>
-                    <a href="movies.html" class="nav-item nav-link" tabindex="-1">Movies</a>
-                    <a href="index_list.html" class="nav-item nav-link" tabindex="-2">Lists</a>
-                    <a href="talents.html" class="nav-item nav-link " tabindex="-2">Talents</a>
-                    <a href="javagames.html" class="nav-item nav-link " tabindex="-2">Java Games</a>
-                    <!----------------------------------^ Edit These Items in your Menu ^ ------------->
-                </div>
-                <div class="navbar-nav ml-auto">
-                    <a href="form.html" class="nav-item nav-link active">Login</a>
+    <div class="bs-example">
+        <form action="confirmation.html" method="post">
+            <div class="form-group row">
+                <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="text" readonly class="form-control-plaintext" id="inputEmail" value="example@example.com">
                 </div>
             </div>
-        </nav>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-10 offset-sm-2">
+                    <div class="checkbox">
+                        <label><input type="checkbox"> Remember me</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-10 offset-sm-2">
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                </div>
+            </div>
+        </form>
     </div>
-            <div class="bs-example">
-                <form action="confirmation.html" method="post">
-                    <div class="form-group row">
-                        <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="inputEmail" placeholder="example@example.com">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
-                        <div class="col-sm-10">
-                            <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-sm-10 offset-sm-2">
-                            <div class="checkbox">
-                                <label><input type="checkbox"> Remember me</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-sm-10 offset-sm-2">
-                            <button type="submit" class="btn btn-primary">Sign in</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
 </body>
 
 </html>

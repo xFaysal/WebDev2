@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 5.0
-        Name: Jessica
-        Date Completed: 2/11/2020
-    -->
+    Name:
+    Date Completed:
+-->
 
 <head>
     <title>JavaScript</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="SHS WebDev Menu Sample">
+    <meta name="description" content="SHS WebDev JavaScript Practice">
 
     <!-- Bootstrap core JS -->
     <!-- These are needed to get the responsive menu to work -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="JS/SampleJS.js"></script>
 
     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Put your .js files here ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
 
@@ -40,20 +39,14 @@
             text-align: center;
         }
 
-        .soccer {
-            font-size: 24px;
-            text-align: center;
-            color: darkblue;
-            font-family: fantasy;
-
     </style>
 </head>
 
-<body onmousedown="isKeyPressed(event)" >
+<body>
     <!---------------------------------- Begin the nav-bar ------------->
     <div class="menu">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+            <a href="http://shakonet.isd720.com/WebDev" class="navbar-brand">WebDev</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -61,12 +54,12 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-                    <a href="#" class="nav-item nav-link active">Home</a>
+                    <a href="index.html" class="nav-item nav-link">Home</a>
                     <a href="#" class="nav-item nav-link">About Me</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Music</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
-                    <a href="script.html" class="nav-item nav-link" tabindex="-1">JaveScript</a>
+                    <a href="script.html" class="nav-item nav-link active" tabindex="-1">JavaScript</a>
                     <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled" tabindex="-1">Contact</a>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </div>
@@ -79,74 +72,17 @@
     <!---------------------------------- End the nav-bar ------------->
 
     <div class="wideMargin" id="content">
-
         <h1 class="text-left my-3">My JavaScript Examples</h1><!-- Edit this line for the title of your page -->
-
-        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-        <center>
-            <p id="textChange"> My name is Jessica</p>
-        </center>
-        <button type="button" onclick="changeText()">Click if you like</button>
-    </div>
-
-    <div class="jumbotron">
-        ENTER YOUR NAME: <input type="text" id="fname" onblur="holaFunction()">
-        <div class="row">
-            <div class="col-md-8 col-sm-12 col-lg-6">
-                <p onmousedown="mouseFunction(this,'red')" onmouseup="mouseFunction(this,'green')">
-                    Click the text to change the color. A function, with parameters, is triggered when the mouse button is pressed down, and again, with other parameters, when the mouse button is released.
-                </p>
-
+        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR CODE HERE</div>
+                <div class="col-sm-4" style="background-color:orange;">PUT YOUR CODE HERE</div>
+                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR CODE HERE</div>
             </div>
-
-                <p id="demo"></p>
-
-        
         </div>
     </div>
-
-    <p onmousedown="mouseFunction(this,'red')" onmouseup="mouseFunction(this,'green')">
-        Click the text to change the color. A function, with parameters, is triggered when the mouse button is pressed down, and again, with other parameters, when the mouse button is released.
-    </p>
-
-
-        <p>Click on this paragraph. An alert box will tell you if you pressed the shift key or not.</p>
-
-        <p id="demo"></p>
-
-    <p>A function is triggered when the user is pressing a key in the input field.</p>
-
-    <input type="text" onkeypress="pressFunction()">
-
-    <div class="jumbotron">
-
-        <body onkeyup="whichButton(event)">
-
-            <p><b>Note:</b> Make sure the right frame has focus when trying this example!</p>
-
-            <p>Click on this page, and press a key on your keyboard.</p>
-
-            <p id="demo"></p>
-        </body>
-    </div>
-    <p onmousedown="coordinates(event)">
-        Click this paragraph, to display the x and y coordinates of the cursor, relative to the screen.
-    </p>
-
-    <p id="demo"></p>
-
-    <div class="jumbotron">
-
-        <body onmousedown="whichElement(event)">
-
-            <p>Click somewhere in the document. An alert box will alert the name of the element you clicked on.</p>
-            <h3>This is a heading</h3>
-            <img border="0" src="https://i.ytimg.com/vi/hmqFksNBnPA/maxresdefault.jpg" alt="Smiley" width="32" height="32">
-            <p>This is a paragraph.</p>
-        </body>
-    </div>
-
-    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+    <!--↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑-->
 
 
     <!---------------------------------- Begin the footer ------------->

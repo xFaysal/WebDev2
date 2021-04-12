@@ -1,95 +1,18 @@
 <html lang="en">
-<!--Version 6.0 
-	Name: Christian Lachica
+    <!--Version 6.0 
+	Name:
 	Date Completed:
     -->
-
-<head>
-    <title>Web Development User #11</title>
-
-    <link rel="stylesheet" href="day.css">
-
-    <style>
-        .nope {
-            color: red;
-            font-weight: bold;
-        }
-
-        .yes {
-            color: blue;
-        }
-
-        table,
-        th,
-        td {
-            border: 2px solid;
-            padding: 5px;
-            font-weight: Bolder;
-        }
-
-        table,
-        tr,
-        td {
-            font-family: fantasy;
-        }
-
-    </style>
-
-</head>
-
-<body>
-
-    <ul>
-        <li>Plane</li>
-        <li>Plane 2</li>
-        <li>Plane 3</li>
-    </ul>
-
-    <h1>This is my website</h1>
-
-    <table>
-        <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-        </tr>
-        <tr>
-            <td>Christian</td>
-            <td>Lachica</td>
-        </tr>
-        <tr>
-            <td>Seth</td>
-            <td>Bercich</td>
-        </tr>
-    </table>
-
-    <button data-file="day">Curious George</button>
-    <button data-file="night">Wild Kratts</button>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-
-    <script>
-        $('li:first-child').addClass('nope');
-        $('h1').addClass('yes');
-        $('body').addClass('background');
-        $('table tr td').addClass('');
-
-        (function() {
-            var link = $('link');
-            $('button').on('click', function() {
-                var $this = $(this),
-                    stylesheet = $this.data('file');
-                link.attr('href', stylesheet + '.css');
-
-                $this
-                    .siblings('button')
-                        .removeAttr('disabled')
-                        .end()
-                        .attr('disabled', 'disabled');
-            });
-        })();
-
-    </script>
-
-</body>
+    <head>
+        
+        <title>Web Development User #11</title>
+    
+    </head>
+    
+    <body>
+        
+        <center>My name is User #11</center>
+    
+    </body>
 
 </html>

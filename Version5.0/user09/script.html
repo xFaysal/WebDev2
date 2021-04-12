@@ -1,119 +1,97 @@
+<!DOCTYPE html>
 <html lang="en">
-<!--Version 7.0 
-	Name:Jackson Holmlund
-	Date Completed:4/3/20
-    -->
+<!--Version 5.0
+    Name:
+    Date Completed:
+-->
 
 <head>
+    <title>JavaScript</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="SHS WebDev JavaScript Practice">
 
-    <title>Web Development User #09</title>
+    <!-- Bootstrap core JS -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
+    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Put your .js files here ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        .menu {
+            margin: 0px;
+        }
+
+        .wideMargin {
+            margin: 15px;
+        }
+
+        #footer {
+            font-size: 12px;
+            text-align: center;
+        }
+
+    </style>
 </head>
 
 <body>
+    <!---------------------------------- Begin the nav-bar ------------->
+    <div class="menu">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="http://shakonet.isd720.com/WebDev" class="navbar-brand">WebDev</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <!DOCTYPE html>
-    <html lang="en">
-    <!--Version 5.0
-        Name: Jackson Holmlund
-        Date Completed:3/25/20
-    -->
-
-    <head>
-        <title>JavaScript</title>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="SHS WebDev JavaScript Practice">
-
-        <!-- Bootstrap core JS -->
-        <!-- These are needed to get the responsive menu to work -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-        <script src="JS/SampleJS.js"></script>
-        <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Put your .js files here ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
-
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-        <!-- Custom styles for this template -->
-        <style type="text/css">
-            .menu {
-                margin: 0px;
-            }
-
-            .wideMargin {
-                margin: 15px;
-            }
-
-            #footer {
-                font-size: 12px;
-                text-align: center;
-            }
-
-        </style>
-    </head>
-
-    <body>
-        <!---------------------------------- Begin the nav-bar ------------->
-        <div class="menu">
-            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-                <a href="http://shakonet.isd720.com/WebDev" class="navbar-brand">WebDev</a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav">
-                        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="#" class="nav-item nav-link">About Me</a>
-                        <a href="#" class="nav-item nav-link disabled" tabindex="-1">Music</a>
-                        <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
-                        <a href="games.html" class="nav-item nav-link" tabindex="-1">Games</a>
-                        <a href="script.html" class="nav-item nav-link active" tabindex="-1">JavaScript</a>
-                        <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled" tabindex="-1">Contact</a>
-                        <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
-                    </div>
-                    <div class="navbar-nav ml-auto">
-                        <a href="#" class="nav-item nav-link disabled">Login</a>
-                    </div>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="#" class="nav-item nav-link">About Me</a>
+                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Music</a>
+                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
+                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
+                    <a href="script.html" class="nav-item nav-link active" tabindex="-1">JavaScript</a>
+                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled" tabindex="-1">Contact</a>
+                    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </div>
-            </nav>
-        </div>
-        <!---------------------------------- End the nav-bar ------------->
-
-        <div class="wideMargin" id="content">
-            <h1 class="text-left my-3">My JavaScript Examples</h1><!-- Edit this line for the title of your page -->
-            <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-4" style="background-color:yellow;">Gta 5!!!</div>
-                    <div class="col-sm-4" style="background-color:orange;">Minecraft!!!</div>
-                    <div class="col-sm-4" style="background-color:yellow;">Call Of Duty!!!</div>
+                <div class="navbar-nav ml-auto">
+                    <a href="#" class="nav-item nav-link disabled">Login</a>
                 </div>
             </div>
+        </nav>
+    </div>
+    <!---------------------------------- End the nav-bar ------------->
+
+    <div class="wideMargin" id="content">
+        <h1 class="text-left my-3">My JavaScript Examples</h1><!-- Edit this line for the title of your page -->
+        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR CODE HERE</div>
+                <div class="col-sm-4" style="background-color:orange;">PUT YOUR CODE HERE</div>
+                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR CODE HERE</div>
+            </div>
         </div>
-        <!--↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑-->
+    </div>
+    <!--↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑-->
 
 
-        <!---------------------------------- Begin the footer ------------->
-        <div class="wideMargin" id="footer">
-            <p>
-                Webpage made by <a href="index.html" target="_blank">[Jackson Holmlund]</a>
-            </p>
-        </div>
-        <!---------------------------------- End the footer ------------->
-    </body>
-
-    </html>
-
+    <!---------------------------------- Begin the footer ------------->
+    <div class="wideMargin" id="footer">
+        <p>
+            Webpage made by <a href="index.html" target="_blank">[your name]</a>
+        </p>
+    </div>
+    <!---------------------------------- End the footer ------------->
 </body>
 
 </html>
-Images can be found here <a href="https://images.google.com"> Google.com </a>
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSdxqXBmn71btrd0i1fZvR-rp8vab56g_QeFi09FgPkASd2c9R3%3Ahttps%3A%2F%2Fwww.guinnessworldrecords.com%2FImages%2FGTA-V-main_tcm25-19095.jpg&usqp=CAU">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRWmXkIKzQGxjtzYQq6-NqWqXmUm3oaPEJaDh3temASCR9mxvpL%3Ahttps%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5d7d0330aea4d300086c798a%2F960x0.jpg%3Ffit%3Dscale&usqp=CAU">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRAa7YFSKI19josUycm9cpP66BZ5qy8UiDV-_-VbgM6Uxi37JxV%3Ahttps%3A%2F%2Fwww.callofduty.com%2Fcontent%2Fdam%2Fatvi%2Fcallofduty%2Fcod-touchui%2Fkronos%2Fcommon%2Fsocial-share%2Fsocial-share-image.jpg&usqp=CAU">

@@ -1,110 +1,18 @@
 <html lang="en">
-<!--Version 6.0 
-	Name: Jessica
-	Date Completed: 2/13/2020
+    <!--Version 6.0 
+	Name:
+	Date Completed:
     -->
-
-<head>
-    <title>Jessica Nigbur</title>
-    <script src="jquery-3.4.1.js"></script>
-    <link rel="stylesheet" href=Light.css>
-
-    <style>
-        .emphasis {
-            color: red;
-            font-weight: bold;
-        }
-
-        h1 {
-            color: red;
-        }
-
-        table {
-            font-family: Courier New, Lucida Console;
-            border-collapse: collapse;
-            width: 100%;
-        }
-
-        td,
-        th {
-            border: 1px solid blue;
-            text-align: left;
-            padding: 8px;
-        }
-
-        tr:nth-child(even) {
-            background-color: #dddddd;
-        }
-
-        .button {
-            background-color: blue;
-            /* Green */
-            border-style: double;
-            color: white;
-        }
-
-    </style>
-    <script>
-        $(document).ready(function() {
-            $('li:first-child').addClass('emphasis');
-        });
-
-    </script>
-</head>
-
-<body>
-
-    <button data-file="light">Light</button>
-    <button data-file="dark">Dark</button>
-
-    <script>
-        (function() {
-            var link = $('link');
-            $('button').on('click', function() {
-                var $this = $(this),
-                    stylesheet = $this.data('file');
-                link.attr('href', stylesheet + '.css');
-
-                $this
-                    .siblings('button')
-                    .removeAttr('disabled')
-                    .end()
-                    .attr('disabled', 'disabled');
-            });
-        })();
-
-    </script>
-
-    <ul>
-        <li>Soccer</li>
-        <li>Soccer 2</li>
-        <li>Soccer 3</li>
-    </ul>
-    <center>
-        <h1>My name is Jessica Nigbur</h1>
-    </center>
-    <table style="width: 35%">
-        <tr>
-            <th>MLS Team</th>
-            <th>State</th>
-            <th>Coach</th>
-        </tr>
-        <tr>
-            <td>United FC</td>
-            <td>Minnesota</td>
-            <td>Adrian Heath</td>
-        </tr>
-        <tr>
-            <td>Sporting KC</td>
-            <td>Kansas</td>
-            <td>Peter Vermes</td>
-        </tr>
-        <tr>
-            <td>Seattle Sounders</td>
-            <td>Washington</td>
-            <td>Brian Schmetzer</td>
-        </tr>
-    </table>
-</body>
+    <head>
+        
+        <title>Web Development User #22</title>
+    
+    </head>
+    
+    <body>
+        
+        <center>My name is User #22</center>
+    
+    </body>
 
 </html>

@@ -1,7 +1,7 @@
 <?php
-$apiKey = "259ab7adf19d39c60e324a58eae6bd53"; //You will need to add in the 
+$apiKey = "API KEY"; //You will need to add in the 
 $cityId = "5046997"; //5046997 Shakopee City Id
-$units = "imperial";//metric-Celcius  imperial-Farhenheit
+$units = "metric";//metric-Celcius  imperial-Farhenheit
 if ($units == 'metric'){//Changes the $temp varaible to match 
     $temp = "C";
 }
@@ -23,14 +23,6 @@ $response = curl_exec($ch);
 curl_close($ch);
 $data = json_decode($response);
 $currentTime = time();
-
-
-if($data->main->temp_min > 30){
-    $color='red';
-}
-else {
-    $color='blue';
-}
 ?>
 
 <!doctype html>
@@ -42,12 +34,11 @@ else {
 body {
     font-family: Arial;
     font-size: 0.95em;
-    color: pink;
-    background-color: slategray;
+    color: #929292;
 }
 
 .report-container {
-    border: white 3px solid;
+    border: #E0E0E0 1px solid;
     padding: 20px 40px 40px 40px;
     border-radius: 2px;
     width: 550px;
@@ -68,7 +59,7 @@ body {
 
 span.min-temperature {
     margin-left: 15px;
-    color: pink;
+    color: #929292;
 }
 
 .time {
@@ -90,7 +81,7 @@ span.min-temperature {
             <img
                 src="http://openweathermap.org/img/w/<?php echo $data->weather[0]->icon; ?>.png"
                 class="weather-icon" /> <?php echo $data->main->temp_max; ?>&deg;<?php echo $temp; ?><span
-                class="min-temperature" style="color: <?php echo $color ?>"><?php echo $data->main->temp_min; ?>&deg;<?php echo $temp; ?></span>
+                class="min-temperature"><?php echo $data->main->temp_min; ?>&deg;<?php echo $temp; ?></span>
         </div>
         <div class="time">
             <div>Humidity: <?php echo $data->main->humidity; ?> %</div>
