@@ -2,12 +2,12 @@
 <html lang="en">
 <!--Version 2.0
         Name: Dylan Newcomb
-        Date Completed: 4/21/2021
+        Date Completed: 4/23/2021
     -->
 
 <head>
 
-    <title>User ## Version 2.0 </title>
+    <title>User 16 Version 2.0 </title>
 
     <!-- Meta -->
     <meta charset="utf-8">
@@ -19,7 +19,63 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
+        #banner {
+            border: 5px outset red;
+            background-color: lightblue;
+            text-align: center;
+        }
 
+        div#face {
+            width: 40vw;
+            height: 40vw;
+            max-width: 800px;
+            max-height: 400px;
+            margin: 0 auto;
+            position: relative;
+            background: mediumpurple;
+            margin-top: 2rem;
+        }
+
+        div#face,
+        div#face * {
+            border-radius: 50%;
+        }
+
+        .eye {
+            width: 40%;
+            height: 25%;
+            background: #fff;
+            position: absolute;
+            top: 20%;
+        }
+
+        .left.eye {
+            left: 5%;
+        }
+
+        .right.eye {
+            right: 5%;
+        }
+
+        .pupil {
+            background: rgb(28, 139, 0);
+            width: 20%;
+            height: 90%;
+            position: relative;
+            left: 37%;
+            transform-origin: bottom;
+        }
+
+        #mouth {
+            position: relative;
+            width: 100%;
+            left: -2.5%;
+            height: 25%;
+            border: 1vw solid transparent;
+            border-radius: 50%;
+            top: 50%;
+            border-bottom-color: #000;
+        }
     </style>
 </head>
 
@@ -30,7 +86,8 @@
         <h1>About Me</h1>
         <div id="tags">
             <p>
-                This is my first webpage (unfortunately)! I was able to code all the HTML and CSS in order to make it (It's not very good).
+                This is my first webpage (unfortunately)! I was able to code all the HTML and CSS in order to make it
+                (It's not very good).
                 Watch out world of web design here I come (Seriously, watch your back, you are never truly safe!
             </p>
 
@@ -49,12 +106,14 @@
 
             <!-- Put your 8 examples of other elements ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
 
-            <ins>The Gulags</ins><sup>TM</sup> is <abbr title="Fatal, Undercover, and Not fun" > fun </abbr> program for whole family! Bring all your friends! Please! <sub>I'm so lonely :)</sub>
+            <ins>The Gulags</ins><sup>TM</sup> is <abbr title="Fatal, Undercover, and Not fun"> fun </abbr> program for
+            whole family! Bring all your friends! Please! <sub>I'm so lonely :)</sub>
             <p>
-                This is totally not Russian facility for extermination of American people... Wait, Ivan, how do I remove line of code from Visual Studio?
+                This is totally not Russian facility for extermination of American people... Wait, Ivan, how do I remove
+                line of code from Visual Studio?
             </p>
             <p>
-            <hr>
+                <hr>
                 Beep boop wee wah clank clank ding ding ding
             </p>
             <p>
@@ -71,11 +130,31 @@
             </p>
 
             <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
+            <h1>Carl's Lair! Do Not Enter!!</h1>
+            <section>
+                <h2>Seriously, don't scroll down anymore.</h2>
+                <p>Carl is a demon and he will eat your soul, why do you keep scrolling?</p>
+            </section>
+
+            <section>
+                <h2>Carl welcomes you to his dungeon</h2>
+                <p>Carl likes candy and playing in the rain and he likes typing random things because he doesn't know what to put here.</p>
+            </section>
         </div>
         <div id="banner">
+            This is Carl. He is always watching you. You have been placed under the curse of Carl. Unless I get full points on this assignment, he will be very angry >:(
         </div>
         <div id="face">
-
+            <div class="left eye">
+                <div class="pupil">
+                </div>
+            </div>
+            <div class="right eye">
+                <div class="pupil">
+                </div>
+            </div>
+            <div id="mouth">
+            </div>
         </div>
     </main>
 
