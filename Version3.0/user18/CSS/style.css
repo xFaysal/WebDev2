@@ -8,6 +8,13 @@ table {
 	border-spacing: 0px;
 }
 
+ul {
+	list-style-image: url('../images/apple-touch-icon.png');
+  }
+
+ol{
+	font-family: 'Times New Roman', Times, serif;
+}
 tr {
 	border: 10px solid rgb(255, 0, 255);
 	text-align: center;
@@ -20,5 +27,5 @@ th {
 	background-color: #003366;
 }
 body{
-	background-image: url("../CSS/networks.jpg");
+	background-image: url("../images/clear-blue-sky.jpeg");
 }
