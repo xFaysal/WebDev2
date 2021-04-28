@@ -1,7 +1,6 @@
 body {
 	background-image: url("https://www.fau.edu/publicaffairs/branding/images/backgrounds/fau-background-2.jpg");
-	background-color: #cccccc;
-	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 ol {
@@ -9,6 +8,8 @@ ol {
 	color: tomato;
 	text-shadow: 2px 2px yellow;
 	border-radius: 1cm;
+	border-style:dotted;
+	border-color:violet
 
 }
 
@@ -18,8 +19,8 @@ ul {
 	font-family: "Comic Sans MS";
 	color: aqua;
 	text-shadow: 2px 2px yellowgreen;
-	border-style: dotted;
-	border-color: black;
+	border-style: outset;
+	border-color: yellow;
 }
 
 table {
