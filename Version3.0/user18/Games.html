@@ -18,7 +18,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
 
     <!-- JavaScript -->
     <!-- These are needed to get the responsive menu to work -->
@@ -28,6 +28,10 @@
 
     <!-- Custom styles for this template -->
     <style type="text/css">
+        td {
+            color: #000000;
+        }
+
         menu {
             margin: 0;
             padding: 0;
@@ -58,8 +62,8 @@
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
                     <a href="#" class="nav-item nav-link">Home</a>
                     <a href="#" class="nav-item nav-link">About Me</a>
-                    <a href="#" class="nav-item nav-link active">Games</a>
-                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
+                    <a href="Games.html" class="nav-item nav-link active" tabindex="-1"">Games</a>
+                    <a href="list.html" class="nav-item nav-link active" tabindex="-1">Other Favorites</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
                     <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
                         tabindex="-1">Contact</a>
@@ -75,10 +79,10 @@
 
     <main class="wideMargin">
 
-        <h1 class="text-left my-3" tabindex="0">Games</h1><!-- Edit this line for the title of your page -->
+        <h1 class="text-left my-3" tabindex="0" style="color: rgb(255, 255, 255);">Games</h1><!-- Edit this line for the title of your page -->
 
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-        <h2>Top 5 Games Known to Man</h2>
+        <h2 style="color: rgb(255, 255, 255);">Top 5 Games Known to Man</h2>
         <table>
             <thead>
                 <tr>
@@ -89,15 +93,17 @@
                 </tr>
             </thead>
             <tr>
-                <td>1</td>
-                <td>Minecraft</td>
-                <td>Mojang</td>
-                <td><img src="images/minecraft cover.jpg" style="width:500px;height:600px;" alt="Minecraft Cover"></td>
+                <<td style="color:#00FF00; background-color:sienna;">1</td>
+                    <td>Minecraft</td>
+                    <td>Mojang</td>
+                    <td><img src="images/minecraft cover.jpg" style="width:500px;height:600px;" alt="Minecraft Cover">
+                    </td>
+
             </tr>
             <tr>
-                <td>2</td>
-                <td>Warzone</td>
-                <td>Infinity Ward</td>
+                <td style="color:rgb(255, 0, 0); background-color:black;">2</td>
+                <td style="color:rgb(255, 0, 0); background-color:black;">Warzone</td>
+                <td style="color:rgb(255, 0, 0); background-color:black;">Infinity Ward</td>
                 <td><img src="images/warzone cover.jpeg" style="width:500px;height:600px;" alt="Warzone Cover"></td>
             </tr>
             <tr>
@@ -110,13 +116,15 @@
                 <td>4</td>
                 <td>Chaos;Child</td>
                 <td>MAGES</td>
-                <td><img src="https://upload.wikimedia.org/wikipedia/en/7/7c/Chaos%3BChild_cover.png" style="width:500px;height:600x;" alt="Chaos;Child Cover"></td>
+                <td><img src="https://upload.wikimedia.org/wikipedia/en/7/7c/Chaos%3BChild_cover.png"
+                        style="width:500px;height:600x;" alt="Chaos;Child Cover"></td>
             </tr>
             <tr>
                 <td>5</td>
                 <td>TLOZ: Majora's Mask</td>
                 <td>Nintendo</td>
-                <td><img src="images/The_Legend_of_Zelda_-_Majora's_Mask_Box_Art.jpeg" style="width:700px;height:500px;" alt="Majora's Mask Cover"></td>
+                <td><img src="images/The_Legend_of_Zelda_-_Majora's_Mask_Box_Art.jpeg" style="width:700px;height:500px;"
+                        alt="Majora's Mask Cover"></td>
             </tr>
         </table>
     </main>
