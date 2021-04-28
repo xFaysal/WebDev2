@@ -6,9 +6,8 @@
     -->
 
 <head>
-
     <title>Music for Web Dev User ## </title>
-
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon.ico"/>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,7 +17,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
 
     <!-- JavaScript -->
     <!-- These are needed to get the responsive menu to work -->
@@ -28,6 +27,10 @@
 
     <!-- Custom styles for this template -->
     <style type="text/css">
+        td {
+            color: #FF0000;
+        }
+
         menu {
             margin: 0;
             padding: 0;
@@ -56,10 +59,10 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-                    <a href="#" class="nav-item nav-link">Home</a>
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
                     <a href="#" class="nav-item nav-link">About Me</a>
-                    <a href="#" class="nav-item nav-link active">Music</a>
-                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
+                    <a href="music.html" class="nav-item nav-link active">Music</a>
+                    <a href="lists.html" class="nav-item nav-link active" tabindex="-1">Lists</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
                     <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
                         tabindex="-1">Contact</a>
@@ -92,7 +95,8 @@
                 <td>1</td>
                 <td>Oingo Boingo</td>
                 <td>Dead Man's Party</td>
-                <td><img src="images/Dead_Mans_Party_album.jpeg" alt="Deadmans Party Album Cover" width=150 height=150> </td>
+                <td><img src="images/Dead_Mans_Party_album.jpeg" alt="Deadmans Party Album Cover" width=150 height=150>
+                </td>
             </tr>
             <tr>
                 <td>2</td>
@@ -106,17 +110,19 @@
                 <td>Hunger Strike</td>
                 <td><img src="images/TempleOfTheDog.jpeg" alt="Temple Of the Dog Album Cover" width=150 height=150></td>
             </tr>
-            <tr>
+            <tr style="color:#00FF00; background-color:black;">
                 <td>4</td>
                 <td>Soundgarden</td>
                 <td>Black Hole Sun</td>
-                <td><img src="https://upload.wikimedia.org/wikipedia/en/3/3a/Superunknown.jpg" alt="Black Hole Sun Album Cover" width=150 height=150></td>
+                <td><img src="https://upload.wikimedia.org/wikipedia/en/3/3a/Superunknown.jpg"
+                        alt="Black Hole Sun Album Cover" width=150 height=150></td>
             </tr>
             <tr>
                 <td>5</td>
                 <td>Iron Maiden</td>
                 <td>The Trooper</td>
-                <td><img src="images/The_Trooper_song_cover.jpeg" alt="The Trooper Album Cover" width=150 height=150></td>
+                <td><img src="images/The_Trooper_song_cover.jpeg" alt="The Trooper Album Cover" width=150 height=150>
+                </td>
             </tr>
         </table>
     </main>
