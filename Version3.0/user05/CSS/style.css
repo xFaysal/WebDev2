@@ -24,3 +24,25 @@ body{
 	background-image: url("../images/galaxy.jpeg");
 	background-size: cover;
 }
+
+ol{
+	font-family: "Courier New", "Comic Sans MS"
+}
+
+ul{
+	color: rgb(0, 252, 168);
+	font-size: xx-large;
+}
+
+h1{
+	color:aquamarine;
+}
+
+h2{
+	color:cadetblue;
+}
+
+h3{
+	color: peachpuff;
+}
+
