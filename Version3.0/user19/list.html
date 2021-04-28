@@ -1,0 +1,46 @@
+<body>
+        <!---------------------------------- Begin the nav-bar ------------->
+        <menu>
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="#" class="nav-item nav-link">About Me</a>
+                        <a href="games.html" class="nav-item nav-link active">games list</a>
+                        <a href="list.html" class="nav-item nav-link dactive" tabindex="-1">Lists</a>
+                        <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
+                        <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
+                            tabindex="-1">Contact</a>
+                        <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+                    </div>
+                    <div class="navbar-nav ml-auto">
+                        <a href="#" class="nav-item nav-link disabled">Login</a>
+                    </div>
+                </div>
+            </nav>
+        </menu>   
+
+<ol>
+    <style>
+        ul {
+          list-style-image: url('data:image/jpeg;base64,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');
+        }
+        </style>
+    <li>monkeys</li>
+    <li>orangitangs</li>
+    <li>baboons</li>
+    <li>gorrilas</li>
+</ol>
+<ul>
+    <li>ice cream</li>
+    <li>brownies</li>
+    <li>cake</li>
+    <li>cupcakes</li>
+</ul>
+</body>
