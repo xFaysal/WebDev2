@@ -5,17 +5,21 @@ table {
 	margin-right: auto;
 	text-align: left;
 	border-collapse: collapse;
-	cellspacing: 0px;
+	border-spacing: 0px;
 }
 
 tr {
-	border: 1px solid #ffffff;
+	border: 10px solid #0e0d0d;
 	text-align: center;
-	background-color:#9FB6CD; 
+	background-color:#1fe7e7; 
 }
-
+	
 th {
 	text-align: center;
 	color: #ffffff;
-	background-color: #003366;
+	background-color: #ce3292;
+}
+
+td {
+	 color:lime
 }
