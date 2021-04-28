@@ -1,3 +1,15 @@
+body {
+    background-image:url("https://i.pinimg.com/originals/0b/a8/df/0ba8dfceaa16c47b713cbed42c1e6b34.jpg") 
+}
+
+
+
+
+
+
+
+
+
 table {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
 	color: #003366;
@@ -9,14 +21,14 @@ table {
 }
 
 tr {
-	border: 10px solid #0e0d0d;
+	border: 20px solid #180add;
 	text-align: center;
 	background-color:#1fe7e7; 
 }
 	
 th {
 	text-align: center;
-	color: #ffffff;
+	color: #0f0f0f;
 	background-color: #ce3292;
 }
 
