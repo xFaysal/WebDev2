@@ -18,7 +18,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/musicicon.ico" />
+    <link rel="stylesheet" href="CSS/style.css">
 
     <!-- JavaScript -->
     <!-- These are needed to get the responsive menu to work -->
@@ -41,6 +42,12 @@
             font-size: 12px;
             text-align: center;
         }
+
+        
+        body {
+            background-image: url("images/aeroplanebackground.jpeg");
+            background-size: cover;
+        }   
     </style>
 </head>
 
@@ -56,10 +63,10 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-                    <a href="#" class="nav-item nav-link">Home</a>
+                    <a href="index.html" class="nav-item nav-link">Home</a>
                     <a href="#" class="nav-item nav-link">About Me</a>
-                    <a href="#" class="nav-item nav-link active">Music</a>
-                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
+                    <a href="music.html" class="nav-item nav-link active">Music</a>
+                    <a href="list.html" class="nav-item nav-link" tabindex="-1">Lists</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
                     <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
                         tabindex="-1">Contact</a>
@@ -88,35 +95,38 @@
                     <th>Album Art</th>
                 </tr>
             </thead>
-            <tr>
+            <tr style="background-color:rgb(104, 203, 144);">
                 <td>1</td>
-                <td>Neutral Milk Hotel</td>
-                <td>King of Carrot Flowers</td>
-                <td><img src="images/intheaeroplaneoverthesea.jpeg" height="150px" width="150px" alt="Album Cover for In the Aeroplane Over the Sea" /></td>
+                <td style="color:#ededb5;">Neutral Milk  </br> Hotel</td>
+                <td style="color:#ededb5;">King of Carrot </br> Flowers</td>
+                <td><img src="images/intheaeroplaneoverthesea.jpeg" height="150px" width="150px"
+                        alt="Album Cover for In the Aeroplane Over the Sea" /></td>
             </tr>
-            <tr>
+            <tr style="background-color:rgb(40, 40, 40);">
                 <td>2</td>
-                <td>Beach House</td>
-                <td>Myth</td>
+                <td style="color:#e5e5e5;">Beach House</td>
+                <td style="color:#e5e5e5;">Myth</td>
                 <td><img src="images/bloom.png" height="150px" width="150px" alt="Album Cover for Bloom" /></td>
             </tr>
-            <tr>
+            <tr style="background-color:rgb(229, 229, 229);">
                 <td>3</td>
-                <td>Jeff Rosenstock</td>
-                <td>Nausea</td>
-                <td><img src="https://f4.bcbits.com/img/a3653099069_16.jpg" height="150px" width="150px" alt="Album Cover for We Cool?" /></td>
+                <td style="color:#000000;">Jeff Rosenstock</td>
+                <td style="color:#000000;">Nausea</td>
+                <td><img src="https://f4.bcbits.com/img/a3653099069_16.jpg" height="150px" width="150px"
+                        alt="Album Cover for We Cool?" /></td>
             </tr>
-            <tr>
+            <tr style="background-color:rgb(215, 55, 55);">
                 <td>4</td>
                 <td>Phoebe Bridgers</td>
                 <td>ICU</td>
                 <td><img src="images/punisher.jpeg" height="150px" width="150px" alt="Album Cover for Punisher" /></td>
             </tr>
-            <tr>
+            <tr style="background-color:rgb(208, 208, 208);">
                 <td>5</td>
-                <td>LCD Soundsystem</td>
-                <td>Home</td>
-                <td><img src="images/thisishappening.jpeg" height="150px" width="150px" alt="Album Cover for This is Happening" /></td>
+                <td style="color:#5dd0d2;">LCD Soundsystem</td>
+                <td style="color:#5dd0d2;">Home</td>
+                <td><img src="images/thisishappening.jpeg" height="150px" width="150px"
+                        alt="Album Cover for This is Happening" /></td>
             </tr>
         </table>
     </main>
@@ -126,7 +136,8 @@
     <!---------------------------------- Begin the footer ------------->
     <footer class="wideMargin">
         <p>
-            Music can be found on <a href="https://music.amazon.com"> Amazon Music</a> or <a href="https://www.spotify.com/us/home/"> Spotify</a>
+            Music can be found on <a href="https://music.amazon.com"> Amazon Music</a> or <a
+                href="https://www.spotify.com/us/home/"> Spotify</a>
         </p>
     </footer>
     <!---------------------------------- End the footer ------------->
