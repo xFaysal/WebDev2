@@ -18,7 +18,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
 
     <!-- JavaScript -->
     <!-- These are needed to get the responsive menu to work -->
@@ -40,6 +40,14 @@
         footer {
             font-size: 12px;
             text-align: center;
+        }
+
+        td {
+            color: #FF0000;
+        }
+
+        #SpecialRow {
+            color: black;
         }
     </style>
 </head>
@@ -78,7 +86,7 @@
         <h1 class="text-left my-3" tabindex="0">Music</h1><!-- Edit this line for the title of your page -->
 
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-        <h2>My Top 5 Favorite Songs</h2>
+        <h2>The Best 5 songs in the known Universe</h2>
         <table>
             <thead>
                 <tr>
@@ -91,10 +99,10 @@
             <tr>
                 <td>1</td>
                 <td>Rush</td>
-                <td>Fly By Night</td>
+                <td style="color:#00FF00; background-color:sienna;">Fly By Night</td>
                 <td></td>
             </tr>
-            <tr>
+            <tr id="SpecialRow" style="color:black !important; background-color: #00FF00;">
                 <td>2</td>
                 <td>BNL</td>
                 <td>One Week</td>
@@ -110,7 +118,8 @@
                 <td>4</td>
                 <td>Modest Mouse</td>
                 <td>One Chance</td>
-                <td></td>
+                <td><img src="images/modestMouse.jpeg" style="height: 150px;"
+                        alt="All four memebers of Modest Mouse Posing for album"></td>
             </tr>
             <tr>
                 <td>5</td>
