@@ -20,7 +20,12 @@ th {
 	background-color: #8C271E;
 }
 
-body {
-	background-image: url("../music.png");
-	background-color: #ffffff;
+ul {
+	font-family: Arial, Helvetica, sans-serif;
+	color: blue;
+}
+
+ol {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	color: red;
 }
