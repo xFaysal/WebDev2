@@ -22,3 +22,10 @@ th {
 body {
 	background-image: url("https://wallpaperaccess.com/full/187161.jpg");
 }
+ul {
+	list-style-type: circle;
+}
+
+ol {
+	list-style-type: lower-greek;
+}
