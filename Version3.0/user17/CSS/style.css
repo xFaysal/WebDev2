@@ -1,3 +1,7 @@
+body{
+	background-image: url("");
+}
+
 table {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
 	color: #003366;
@@ -25,5 +29,5 @@ th {
 
 
 td {
-	color: #00b7ff;
+	color: #00c3ff;
    }
