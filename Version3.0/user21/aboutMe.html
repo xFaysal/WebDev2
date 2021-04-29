@@ -28,8 +28,9 @@
 
     <!-- Custom styles for this template -->
     <style type="text/css">
-        .menu {
-            margin: 0px;
+        menu {
+            margin: 0;
+            padding: 0;
         }
 
         .wideMargin {
@@ -40,98 +41,74 @@
             font-size: 12px;
             text-align: center;
         }
+
+        h3 {
+            padding: 50px;
+            background-color: lavender;
+            display: inline-block;
+        }
+
+        p {
+            padding-top: 5px;
+            padding-bottom: 50px;
+            padding-left: 30px;
+            padding-right: 5px;
+            background-color: lavender;
+        }
     </style>
 </head>
 
-<body style="background-image: url(https://ifthedevilhadmenopause.com/wp-content/uploads/2020/10/E8332501-82C5-4436-A553-E2D69D1E1A4F.gif); background-size: 100px;">
-   
-   
-    <!---------------------------------- Begin the nav-bar ------------->
-    <div class="menu">
+<body style="background-image: url(../user21/images/thinking-emoji-30.gif); background-size: 200px;">
+    <!---------------------------------- Begin the nav-bar ------------------------------------------>
+    <menu>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
-                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-                    <a href="index.html" class="nav-item nav-link">Home</a>
-                    <a href="#" class="nav-item nav-link">About Me</a>
-                    <a href="games.html" class="nav-item nav-link">Music</a>
-                    <a href="list.html" class="nav-item nav-link active">Lists</a>
+                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                    <a href="#" class="nav-item nav-link">Home</a>
+                    <a href="#" class="nav-item nav-link active">About Me</a>
+                    <a href="#" class="nav-item nav-link">Music</a>
+                    <a href="#" class="nav-item nav-link">Lists</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
                     <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
                         tabindex="-1">Contact</a>
-                    <!----------------------------------^ Edit These Items in your Menu ^ ------------->
+                    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </div>
                 <div class="navbar-nav ml-auto">
                     <a href="#" class="nav-item nav-link disabled">Login</a>
                 </div>
             </div>
         </nav>
-    </div>
-    <!---------------------------------- End the nav-bar ------------->
+        <!---------------------------------- End the nav-bar ------------------------------------->
+    </menu>
 
     <main class="wideMargin">
 
-        <h1 class="text-left my-3">My Lists</h1><!-- Edit this line for the title of your page -->
+        <h1 class="text-left my-3">About Me</h1><!-- Edit this line for the title of your page -->
 
-    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-<h2>My favorite letters of the alphabet</h2>
-   <ol>
-        <li>a</li>
-        <li>b</li>
-        <li>c</li>
-        <li>d</li>
-        <li>e</li>
-        <li>f</li>
-        <li>g</li>
-        <li>h</li>
-        <li>i</li>
-        <li>j</li>
-        <li>k</li>
-        <li>l</li>
-        <li>m</li>
-        <li>n</li>
-        <li>o</li>
-        <li>p</li>
-        <li>q</li>
-        <li>r</li>
-        <li>s</li>
-        <li>t</li>
-        <li>u</li>
-        <li>v</li>
-        <li>w</li>
-        <li>x</li>
-        <li>y</li>
-        <li>z</li>
-   </ol>
+        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+        <h3>Headings Are Block Elements</h3>
 
-<h3>my favorite numbers from 1-9</h3>
+        <p>paragraphs are blocks, too.<em>However</em>, &lt;em&gt; and &lt;strong&gt;
+            elements are not. They are <strong>inline</strong> elements.</p>
 
+        <p>Block elements define the flow of the HTML document, while inline elements
+            do not.</p>
 
-    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
+        <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
     </main>
 
     <!---------------------------------- Begin the footer ------------->
     <footer class="wideMargin">
-        <p>
+        <div>
             Webpage made by <a href="#" target="_blank">[your name]</a>
-        </p>
+        </div>
     </footer>
     <!---------------------------------- End the footer ------------->
 </body>
-    <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
-        <li>6</li>
-        <li>7</li>
-        <li>8</li>
-        <li>9</li>
-    </ul>
+
 </html>
