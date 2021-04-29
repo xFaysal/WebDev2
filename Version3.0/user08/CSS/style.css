@@ -9,7 +9,10 @@ ol {
 	text-shadow: 2px 2px yellow;
 	border-radius: 1cm;
 	border-style:dotted;
-	border-color:violet
+	border-color:violet;
+	list-style-type: square;
+	display: inline-block;
+	padding: 15px 20px;
 
 }
 
@@ -21,6 +24,8 @@ ul {
 	text-shadow: 2px 2px yellowgreen;
 	border-style: outset;
 	border-color: yellow;
+	display: inline-block;
+	padding: 5px 5px;
 }
 
 table {
