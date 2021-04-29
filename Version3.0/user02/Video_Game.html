@@ -18,16 +18,28 @@
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
 
     <!-- JavaScript -->
     <!-- These are needed to get the responsive menu to work -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <!-- Custom styles for this template -->
     <style type="text/css">
+        body {
+            background-image: url("http://thedailycougar.com/wp-content/uploads/2020/10/PRINT_NEWS_Among-Us_Juana-Garcia.png");
+            background-size: cover;
+        }
+
+        td {
+            color: #FF0000;
+        }
+
+
+
         menu {
             margin: 0;
             padding: 0;
@@ -56,11 +68,11 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-                    <a href="#" class="nav-item nav-link">Home</a>
-                    <a href="#" class="nav-item nav-link">About Me</a>
-                    <a href="#" class="nav-item nav-link active">Music</a>
-                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
-                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
+                    <a href="file:///Users/230289/Applications/mampstack/apache2/htdocs/WebDev2/Version3.0/user02/index.html" class="nav-item nav-link">Home</a>
+                    <a href="file:///Users/230289/Applications/mampstack/apache2/htdocs/WebDev2/Version3.0/user02/index.html" class="nav-item nav-link">About Me</a>
+                    <a href="file:///Users/230289/Applications/mampstack/apache2/htdocs/WebDev2/Version3.0/user02/Video_Game.html" class="nav-item nav-link active">Games</a>
+                    <a href="file:///Users/230289/Applications/mampstack/apache2/htdocs/WebDev2/Version3.0/user02/List.html" class="nav-item nav-link active" tabindex="-1">Lists</a>
+                    <a href="#" class="nav-item nav-link active" tabindex="-1">Video Games</a>
                     <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
                         tabindex="-1">Contact</a>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
@@ -90,29 +102,34 @@
             <tr>
                 <td>1</td>
                 <td>Minecraft</td>
-                <td><img src="images/minecraft.jpeg" alt="Picture of Minecraft" style="width:100px;height:100px;"/></td>
+                <td><img src="images/minecraft.jpeg" alt="Picture of Minecraft" style="width:100px;height:100px;" />
+                </td>
             </tr>
             <tr>
                 <td>2</td>
                 <td>Mario Kart</td>
-                <td><img src="images/mario kart.jpeg" alt="Picture of Mario Kart" style="width:100px;height:100px;"/></td>
+                <td><img src="images/mario kart.jpeg" alt="Picture of Mario Kart" style="width:100px;height:100px;" />
+                </td>
             </tr>
             <tr>
-                <td>3</td>
-                <td>Call of Duty</td>
-                <td><img src="images/call of duty.jpeg" alt="Picture of Call of Duty" style="width:100px;height:100px;"/></td>
+                <td style="color: darkkhaki;background-color:blueviolet;">3</td>
+                <td style="color: darkkhaki;background-color:blueviolet;">Call of Duty</td>
+                <td><img src="images/call of duty.jpeg" alt="Picture of Call of Duty"
+                        style="width:100px;height:100px;" /></td>
             </tr>
             <tr>
-                <td>4</td>
+                <td style="color:#00FF00; background-color:sienna;">4</td>
                 <td>Valorant</td>
-                <td><img src="images/valorant.jpeg" alt="Picture of Valorant" style="width:100px;height:100px;"/></td>
+                <td><img src="images/valorant.jpeg" alt="Picture of Valorant" style="width:100px;height:100px;" /></td>
             </tr>
             <tr>
                 <td>5</td>
                 <td>CS:GO (Counter Strike: Global Offensive)</td>
-                <td><img src="data:image/jpeg;base64,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" alt="Picture of CS:GO" style="width:100px;height:100px;"/></td>
+                <td><img src="data:image/jpeg;base64,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"
+                        alt="Picture of CS:GO" style="width:100px;height:100px;" /></td>
             </tr>
         </table>
+        
     </main>
     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
 
@@ -120,7 +137,7 @@
     <!---------------------------------- Begin the footer ------------->
     <footer class="wideMargin">
         <p>
-            Music can be found here <a href="https://music.amazon.com"> Amazon Music</a>
+            <a>Video Games</a>
         </p>
     </footer>
     <!---------------------------------- End the footer ------------->
