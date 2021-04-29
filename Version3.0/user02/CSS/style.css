@@ -20,5 +20,8 @@ th {
 }
 
 ul {
-	list-style-image: url('');
+	color: aquamarine;
   }
+ol {
+	color: chartreuse;
+}
