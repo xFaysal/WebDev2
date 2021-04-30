@@ -6,7 +6,7 @@
     -->
 
 <head>
-
+    <link rel="icon" type="image/x-icon" href="../user21/images/favicon.ico" />
     <title>Web Dev User ## </title>
 
     <!-- Meta -->
@@ -43,9 +43,14 @@
         }
 
         h3 {
-            padding: 50px;
+            padding: 100px;
             background-color: lavender;
             display: inline-block;
+            border-bottom: 100px solid #fd00be;
+            border-right: 1000px groove #51ff00;
+            border-top: 500px outset #752f00;
+            border-left: 15px dashed #d5ff1c;
+            border-radius: 1000px;
         }
 
         p {
@@ -54,6 +59,29 @@
             padding-left: 30px;
             padding-right: 5px;
             background-color: lavender;
+            margin-bottom: 50px;
+            background-image: url(../user21/images/JermaSus.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+
+        }
+
+
+        strong {
+            padding: 50px;
+            background-color: lightblue;
+        }
+
+        .button {
+            color: #FFF;
+            background-color: #ff0000;
+            font-weight: bold;
+            padding: 20px;
+            text-align: center;
+            border: 10px outset #ff4d4d;
+            border-radius: 5px;
+            width: 200px;
         }
     </style>
 </head>
@@ -69,10 +97,10 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-                    <a href="#" class="nav-item nav-link">Home</a>
-                    <a href="#" class="nav-item nav-link active">About Me</a>
-                    <a href="#" class="nav-item nav-link">Music</a>
-                    <a href="#" class="nav-item nav-link">Lists</a>
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="aboutMe.html" class="nav-item nav-link active">About Me</a>
+                    <a href="games.html" class="nav-item nav-link">Music</a>
+                    <a href="list.html" class="nav-item nav-link">Lists</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
                     <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
                         tabindex="-1">Contact</a>
@@ -95,9 +123,10 @@
 
         <p>paragraphs are blocks, too.<em>However</em>, &lt;em&gt; and &lt;strong&gt;
             elements are not. They are <strong>inline</strong> elements.</p>
-
+        <div style='padding-top: 1px'></div>
         <p>Block elements define the flow of the HTML document, while inline elements
             do not.</p>
+        <div class="button">Do Not Press</div>
 
         <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
     </main>
