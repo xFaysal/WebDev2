@@ -45,19 +45,49 @@
         h3 {
 
             background-color: lavender;
-            display: inline-block;
-            padding: 50px;
-            border: 1px solid #5D6063;
-            border-bottom: 1px solid #5D6063;
-            border-right: 3px dotted #0000ff;
-            border-top: 5px inset;
-            border-left: 3px dashed #e9e9e9;
+            color: black;
+            max-width: 270px;
+            padding:1rem;
+            border-width: 50px;
+            border-style: solid;
+            text-shadow: 3px 3px black;
+            border-image:
+                linear-gradient(to right,
+                    yellow,
+                    magenta,
+                    green) 1 100%;
+            font-family: "comic sans ms";
+            font-size: 30px;
+            background: -webkit-linear-gradient(green,magenta, yellow);
+            background-clip: content-box;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
+
 
         p {
             padding: 5px 50px 30px 5px;
+            margin-bottom: 50px;
+            margin-top: 25px;
             /* Top  Right  Bottom  Left */
             background-color: lavender;
+        }
+
+        strong {
+            margin: 50px;
+            background-color: lightblue;
+        }
+
+        .button {
+            color: #FFF;
+            background-color: #5995DA;
+            font-weight: bold;
+            padding: 20px;
+            text-align: center;
+            border: 2px solid #5D6063;
+            border-radius: 5px;
+            width: 200px;
+            box-sizing: border-box;
         }
     </style>
 </head>
@@ -95,13 +125,14 @@
         <h1 class="text-left my-3">About Me</h1><!-- Edit this line for the title of your page -->
 
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-        <h3>Headings Are Block Elements</h3>
+        <h3 style=>I enjoy working with computers</h3>
 
         <p>paragraphs are blocks, too.<em>However</em>, &lt;em&gt; and &lt;strong&gt;
             elements are not. They are <strong>inline</strong> elements.</p>
-
+        <div style='padding-top: 1px'></div>
         <p>Block elements define the flow of the HTML document, while inline elements
             do not.</p>
+        <div class="button">Button</div>
         <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
     </main>
 
