@@ -20,11 +20,6 @@ th {
 	background-color: #3a67a1;
 }
 
-body{
-	background-image: url("../images/galaxy.jpeg");
-	background-size: cover;
-}
-
 ol{
 	font-family: "Courier New", "Comic Sans MS"
 }
@@ -46,3 +41,7 @@ h3{
 	color: peachpuff;
 }
 
+body{
+	background-image: url("../images/galaxy.jpeg");
+	background-size: cover;
+}
