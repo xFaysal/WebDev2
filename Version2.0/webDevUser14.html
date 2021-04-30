@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 2.0
-        Name:
-        Date Completed:
+        Name:Luke Matuza
+        Date Completed: 4/20/21
     -->
 
 <head>
 
-    <title>User ## Version 2.0 </title>
+    <title>User #14 Version 2.0 </title>
 
     <!-- Meta -->
     <meta charset="utf-8">
@@ -19,7 +19,63 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
+        #banner {
+            border: 5px outset rgb(255, 204, 51);
+            background-color: lightblue;
+            text-align: center;
+        }
 
+        div#face {
+            width: 40vw;
+            height: 40vw;
+            max-width: 400px;
+            max-height: 400px;
+            margin: 0 auto;
+            position: relative;
+            background: rgb(87, 188, 239);
+            margin-top: 2rem;
+        }
+
+        div#face,
+        div#face * {
+            border-radius: 50%;
+        }
+
+        .eye {
+            width: 25%;
+            height: 25%;
+            background: #fff;
+            position: absolute;
+            top: 20%;
+        }
+
+        .left.eye {
+            left: 20%;
+        }
+
+        .right.eye {
+            right: 20%;
+        }
+
+        .pupil {
+            background: #000;
+            width: 50%;
+            height: 50%;
+            position: relative;
+            left: 25%;
+            transform-origin: bottom;
+        }
+
+        #mouth {
+            position: relative;
+            width: 55%;
+            left: 20%;
+            height: 25%;
+            border: 1vw solid transparent;
+            border-radius: 50%;
+            top: 50%;
+            border-bottom-color: #000;
+        }
     </style>
 </head>
 
@@ -37,19 +93,56 @@
             <h2>Heading Examples</h2>
 
             <!-- Put your Headings ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-
+            <h1>This is Heading 1!!</h1>
+            <h2>This is Heading 2!!</h2>
+            <h3>This is Heading 3!!!</h3>
+            <h4>This is Heading 4!!</h4>
+            <h5>This is Heading 5!!!</h5>
+            <h6>This is Heading 6!!!</h6>
             <!-- Put your Headings ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
 
             <h2>Examples of "Other" HTML elements</h2>
 
             <!-- Put your 8 examples of other elements ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-
+            This is how to put a <del>strike</del> through words.
+            <ins>This is underlined text!</ins>
+            log<sub>10</sub>100 = 2
+            4<sup>2</sup> = 16
+            <small>This text is small..</small>
+            75% Complete <progress value="75" max="100"></progress>
+            I attend Web Development at <abbr title="Shakopee High School">SHS</abbr>.
+            <hr>
             <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
+            <h1>Pizz Recipe</h1>
+            <section>
+                <h2>Pepperonis</h2>
+                <p>One bag of Pepperonis for the pizza</p>
+            </section>
+
+            <section>
+                <h2>Cheese</h2>
+                <p>A bag of mozzarella cheese for the pizza</p>
+            </section>
+
+            <section>
+                <h2>Sauce</h2>
+                <p>A jar of pizza sauce for the pizze</p>
+            </section>
         </div>
         <div id="banner">
+            This is part of a banner!
         </div>
         <div id="face">
-
+            <div class="left eye">
+                <div class="pupil">
+                </div>
+            </div>
+            <div class="right eye">
+                <div class="pupil">
+                </div>
+            </div>
+            <div id="mouth">
+            </div>
         </div>
     </main>
 
@@ -57,7 +150,7 @@
     <footer>
 
         <p>
-            <center> Webpage made by <a href="#" target="_blank">[your name]</a></center>
+            <center> Webpage made by <a href="#" target="_blank">Luke Matuza</a></center>
         </p>
 
     </footer>
