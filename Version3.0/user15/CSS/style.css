@@ -5,17 +5,29 @@ table {
 	margin-right: auto;
 	text-align: left;
 	border-collapse: collapse;
-	cellspacing: 0px;
+	border-spacing: 0px;
 }
 
 tr {
-	border: 1px solid #ffffff;
+	border: 20px solid #1b0cec;
 	text-align: center;
-	background-color:#9FB6CD; 
+	background-color: #1fe7e7;
 }
 
 th {
 	text-align: center;
-	color: #ffffff;
-	background-color: #003366;
+	color: #0f0f0f;
+	background-color: #ce3292;
 }
+
+td {
+	color: lime
+}
+
+ol {color: maroon; background-color: orchid;}
+
+ul{color: mediumspringgreen; background-color: olivedrab;}
+
+h2{ color:orchid}
+
+
