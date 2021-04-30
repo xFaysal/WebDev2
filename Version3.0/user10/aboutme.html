@@ -7,13 +7,13 @@
 
 <head>
 
-    <title>Music for Web Dev User ## </title>
+    <title>Web Dev User ## </title>
 
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="My Favorite Music">
+    <meta name="description" content="SHS WebDev Version 3.0">
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -27,14 +27,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <!-- Custom styles for this template -->
-    <link rel="icon" type="image/x-icon" href="images/cookiefavicon.png-=" />
     <style type="text/css">
-    body{
-        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCHgWzdp42iGryC5Wkt6iFK5JC_mL8CXcyUA&usqp=CAU");
-    }
-    td {
-     color: #FF0000;
-    }
         menu {
             margin: 0;
             padding: 0;
@@ -48,18 +41,63 @@
             font-size: 12px;
             text-align: center;
         }
+
+        h3 {
+            padding: 50px;
+            background-color: rgb(60, 65, 22);
+            display: inline-block;
+            border-bottom: 1px solid #5D6063;
+            border-right: 3px dotted #828a0f;
+            border-top: 5px inset;
+            border-left: 3px dashed #75aa2f;
+        }
+
+        p {
+            padding: 5px 50px 30px 5px;
+            margin-bottom: 50px;
+            /* Add this */
+        }
+
+        p {
+            padding: 5px 50px 30px 5px;
+            background-color: lavender;
+            margin-top: 25px;
+            margin-bottom: 50px;
+        }
+
+        strong {
+            padding: 50px;
+            background-color: lightblue;
+        }
+
+        p {
+            padding-top: 5px;
+            padding-bottom: 50px;
+            padding-left: 30px;
+            padding-right: 5px;
+            background-color: rgb(250, 250, 230);
+        }
+
+        .button {
+            color: #FFF;
+            background-color: #5995DA;
+            font-weight: bold;
+            padding: 20px;
+            text-align: center;
+            border: 2px solid #5D6063;
+            border-radius: 5px;
+        }
     </style>
 </head>
 
 <body>
-    <!---------------------------------- Begin the nav-bar ------------->
+    <!---------------------------------- Begin the nav-bar ------------------------------------------>
     <menu>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
@@ -77,65 +115,39 @@
                 </div>
             </div>
         </nav>
+        <!---------------------------------- End the nav-bar ------------------------------------->
     </menu>
-    <!---------------------------------- End the nav-bar ------------------------------------->
 
     <main class="wideMargin">
 
-        <h1 style="color:#FF0000"text-left my-3 tabindex="0">Music</h1><!-- Edit this line for the title of your page -->
+        <h1 class="text-left my-3">About Me</h1><!-- Edit this line for the title of your page -->
 
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-        <h2 style="color:#FF0000">Top 5 Favorite Songs</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Rank</th>
-                    <th>Artist</th>
-                    <th>Song</th>
-                    <th>Album Art</th>
-                </tr>
-            </thead>
-            <tr style="color:#ff0000; background-color:rgb(255, 255, 255);">
-                <td>1</td>
-                <td >Polo G</td>
-                <td>RAPSTAR</td>
-                <td><img src="images/rapstar.jpeg" alt="RAPSTAR Song Cover"width="128" height="128"></td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Giveon</td>
-                <td>Like I Want You</td>
-                <td><img src="https://m.media-amazon.com/images/I/71SxO4mS4wL._SS500_.jpg" alt="Giveon Album Cover"width="128" height="128"></td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Giveon</td>
-                <td>Favorite Mistake</td>
-                <td><img src="images/giveon_album_cover.jpg" alt="Giveon Album Cover" width="128 height="128"></td></td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>Aries</td>
-                <td>DITTO</td>
-                <td><img src="images/Aries Ditto.jpeg" alt="Aries Ditto Song Cover"width="128" height="128"></td></td>
-            </tr>
-                <td>5</td>
-                <td>Khalid</td>
-                <td>Coaster</td>
-                <td><img src="images/coaster khalid.jpeg" alt="Coaster Khalid Song Cover"width="128" height="128"></td></td>
-            </tr>
-        </table>
-    </main>
-    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+        <h3>CSS Box Model Demonstration</h3>
+        <p>
+            Paragraphs are blocks too. <em>However</em> things like &lt;em&gt; and &lt;strong&gt; elements are not.
+            They are <strong>inline</strong> elements.
+        </p>
 
+        <div style='padding-top: 1px'></div> <!-- Add this -->
+
+        <p>Block elements define the flow of the HTML document, while inline elements
+            do not.
+
+        <div class="button">Button</div>
+
+        </p>
+        <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+    </main>
 
     <!---------------------------------- Begin the footer ------------->
     <footer class="wideMargin">
-        <p>
-            Music can be found here <a href="https://music.amazon.com"> Amazon Music</a>
-        </p>
+        <div>
+            Webpage made by <a href="#" target="_blank">[your name]</a>
+        </div>
     </footer>
     <!---------------------------------- End the footer ------------->
 </body>
+<div class="button">Button</div>
 
 </html>
