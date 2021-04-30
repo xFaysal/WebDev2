@@ -9,7 +9,7 @@ table {
 }
 
 tr {
-	border: 20px solid #180add;
+	border: 20px solid #1b0cec;
 	text-align: center;
 	background-color: #1fe7e7;
 }
@@ -29,3 +29,5 @@ ol {color: maroon; background-color: orchid;}
 ul{color: mediumspringgreen; background-color: olivedrab;}
 
 h2{ color:orchid}
+
+
