@@ -19,6 +19,7 @@ th {
 	background-color: #003366;
 }
 
+
 .button {
 	background-color: #4CAF50;
 	border: none;
@@ -135,12 +136,12 @@ h1, h2, h3, h4, h5, h6 {
 	background-color: yellow;
 }
 
-.hireButtons {
+#hireButtons {
 	font-size: 10px;
 	font-family: fantasy;
 }
 
-.footerTable {
+#footerTable {
 	background-color: rgb(187, 255, 0);
 }
 
