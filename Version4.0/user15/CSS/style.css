@@ -23,6 +23,7 @@ th {
 }
 
 
+
 .vikings2 {
 
 width: 100px;
@@ -80,4 +81,11 @@ border-radius: 10px;
   
   .title-small {
 	font-size: .5rem;
+  }
+  #hireButtons {
+	background-color: yellow;
+
+
+
+	
   }
