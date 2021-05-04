@@ -11,11 +11,94 @@ table {
 tr {
 	border: 1px solid #ffffff;
 	text-align: center;
-	background-color:#9FB6CD; 
+	background-color: #9FB6CD;
 }
 
 th {
 	text-align: center;
 	color: #ffffff;
 	background-color: #003366;
+}
+
+.button {
+	background-color: #4CAF50;
+	border: none;
+	color: black;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.button-smooth {
+	border-radius: 8px;
+}
+
+.button-smoother {
+	border-radius: 30%;
+}
+
+#morecontent {
+	background-color: yellow;
+}
+
+* {
+	text-align: center;
+	
+}
+
+.red {
+	background-color: #ff0000;
+}
+
+.font {
+	font-size: 60px;
+	color: blue
+}
+
+.flip {
+	transform: scale(-1, 1);
+	-moz-transform: scale(-1, 1);
+	-webkit-transform: scale(-1, 1);
+	-o-transform: scale(-1, 1);
+	-ms-transform: scale(-1, 1);
+	transform: scale(-1, 1);
+}
+
+
+.gradient {
+	background: -webkit-linear-gradient(red, orange);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+td {
+	padding: 20px;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-align: center;
+}
+
+.title {
+	color: red;
+	font-family: 'Trebuchet MS', sans-serif;
+}
+
+.title-large {
+	color: red;
+	font-size: 2rem;
+}
+
+.title-small {
+	color: red;
+	font-size: .5rem;
 }
