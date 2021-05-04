@@ -5,17 +5,118 @@ table {
 	margin-right: auto;
 	text-align: left;
 	border-collapse: collapse;
-	cellspacing: 0px;
 }
 
 tr {
 	border: 1px solid #ffffff;
 	text-align: center;
-	background-color:#9FB6CD; 
+	background-color: #9FB6CD;
 }
 
 th {
 	text-align: center;
 	color: #ffffff;
 	background-color: #003366;
+}
+
+.button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.button_largeRadius {
+	border-radius: 8px;
+}
+
+.button_smallRadius {
+	border-radius: 30%;
+}
+
+.red {
+	background-color: #ff0000;
+}
+
+td {
+	padding: 20px;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-align: center;
+}
+
+.roundButton {
+	box-shadow: 3px 4px 0px 0px #899599;
+	background: linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color: #ededed;
+	border-radius: 15px;
+	border: 1px solid #d6bcd6;
+	display: inline-block;
+	cursor: pointer;
+	color: #3a8a9e;
+	font-family: Arial;
+	font-size: 17px;
+	padding: 7px 25px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #e1e2ed;
+}
+
+.pinkButton {
+	width: 100px;
+	height: 50px;
+	background-color: pink;
+	color: red;
+	border: 3px solid coral;
+}
+
+.blueButton {
+	width: 100px;
+	height: 50px;
+	border: double;
+	border-radius: 12px;
+	color: cornflowerblue;
+	background-color: darkcyan;
+}
+
+.title {
+	color: red;
+	font-family: 'Trebuchet MS', sans-serif;
+}
+
+.title-large {
+	font-size: 2rem;
+}
+
+.title-small {
+	font-size: .5rem;
+}
+
+#footerTable {
+	color: red;
+}
+
+#hireButtons {
+	border-radius: 50px;
+	color: blueviolet;
+}
+
+#textRed {
+	text-align: center;
+	color: red;
+  }
+
+* {
+	font-size: 30px;
 }
