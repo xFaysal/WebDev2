@@ -127,10 +127,6 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: .5rem;
   }
 
-  #morecontent {
-	background-color: rgb(174, 255, 237);
-  }
-
 #hirebuttons {
 	background-color:rosybrown;
 }
@@ -141,6 +137,5 @@ h1, h2, h3, h4, h5, h6 {
 
 *{
     text-align:center;
-    background-color:rgb(212, 212, 212);
 }
 
