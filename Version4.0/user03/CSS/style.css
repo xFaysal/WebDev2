@@ -1,3 +1,4 @@
+@import url(rainbow.css);
 .button {
 	background-color: #eeff00;
 	border: none;
@@ -52,3 +53,15 @@ h1, h2, h3, h4, h5, h6 {
 #morecontent {
 	background-color: rgb(250, 0, 0);
 }
+#knowledge > * {
+	border: 3px red solid;
+  }
+  p + * {
+	background-color: #FFFF00;
+  }
+  div li::marker{
+	color: red;
+  }
+  div > li::marker{
+	content:"🇯🇵🔰 ";
+  }
