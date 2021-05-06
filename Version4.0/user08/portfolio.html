@@ -16,7 +16,7 @@
     <meta name="description" content="WebDev Version 4.0">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="CSS/style.css">
 
@@ -37,13 +37,40 @@
             margin: 15px;
         }
 
+        #rainbow tr td:hover {
+            background-color: black;
+        }
+        #knowledge ul:first-child {
+            background-color: blue;
+        }
+
         footer {
             font-size: 12px;
             text-align: center;
         }
 
+        div li::marker {
+            color: rgb(111, 167, 0);
+        }
+
+        div>li::marker {
+            content: "∆";
+        }
+
+        input:focus {
+            background-color: black;
+            color: chartreuse;
+        }
+
+        input:checked {
+            margin-left: 25px;
+            border: 1px solid blue
+        }
+
+      
+
         #knowledge>* {
-            border: 3px red solid;
+            border: 3px black dashed;
         }
 
         p+* {
@@ -110,6 +137,13 @@
         <p>
             I will use my knowledge to create an amazing website for you and your needs.
         </p>
+        <aside>yellow</aside>
+        <div>
+            <input type="text" id=text>
+            <input type="checkbox">
+           
+        </div>
+
         <div>
             <table id="rainbow">
                 <tr>
