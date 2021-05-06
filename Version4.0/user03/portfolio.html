@@ -45,6 +45,31 @@
         #rainbow {
             width: 100%;
         }
+
+        #rainbow tr td:hover {
+            background-color: black;
+        }
+
+        input:checked {
+            height: 50px;
+            width: 50px;
+        }
+
+        input:read-only {
+            background-color: rgb(0, 195, 255);
+        }
+
+        a:visited {
+            color: rgb(0, 174, 243);
+        }
+
+        p {
+            color: #000000;
+        }
+
+        :not(p) {
+            color: #0cfaab;
+        }
     </style>
 </head>
 
@@ -143,6 +168,34 @@
         </table>
     </footer>
     <!---------------------------------- End the footer ------------->
+
+    <h1>This is a heading</h1>
+
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+
+    <div>This is some text in a div element.</div>
+
+    <a href="https://www.w3schools.com" target="_blank">Link to W3Schools!</a>
+    <form action="">
+        <input type="radio" checked="checked" value="male" name="gender"> Male<br>
+        <input type="radio" value="female" name="gender"> Female<br>
+        <input type="checkbox" checked="checked" value="Bike"> I have a bike<br>
+        <input type="checkbox" value="Car"> I have a car
+    </form>
+
+    <h3>A demonstration of the :read-only selector.</h3>
+
+    <p>A normal input element:<br><input value="hello"></p>
+
+    <p>A readonly input element:<br><input readonly value="hello"></p>
+
+    <p>The :read-only selector selects form elements with a "readonly" attribute.</p>
+    <a href="https://www.w3schools.com">W3Schools Home</a><br>
+    <a href="https://www.w3schools.com/html/">W3Schools HTML Tutorial</a><br>
+    <a href="https://www.w3schools.com/css/">W3Schools CSS Tutorial</a>
+
+    <p><b>Note:</b> The :visited selector style links to pages you have already visited.</p>
 </body>
 
 </html>
