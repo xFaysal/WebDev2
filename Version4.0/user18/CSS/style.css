@@ -1,3 +1,4 @@
+@import url(rainbow.css);
 .button {
 	background-color: #4CAF50;
 	border: none;
@@ -92,4 +93,17 @@ h1, h2, h3, h4, h5, h6 {
   }
 #footerTable {
 	background-color: #634b30;
+}
+#rainbow td:hover {
+	background-color: black;
+  }
+#knowledge input:read-write {
+	background-color: yellow;
+}
+#knowledge input:read-only {
+	background-color: black;
+}
+#knowledge input:required {
+	font-family: cursive;
+	background-color: blue;
 }
