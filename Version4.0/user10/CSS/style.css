@@ -1,3 +1,4 @@
+@import url(rainbow.css);
 .button {
 	background-color: #4CAF50;
 	border: none;
@@ -53,7 +54,34 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: .5rem;
 }
 
-* {
-	text-transform: capitalize;
-	border: 2px solid green;
+#knowledge>* {
+	border: 3px red solid;
+}
+
+p+* {
+	background-color: #FFFF00;
+}
+
+div li::marker {
+	color: red;
+}
+
+div li::marker {
+	content: "😜 ";
+}
+
+#rainbow tr td:hover {
+	background-color: black;
+}
+
+div:hover {
+	background-color: blue;
+}
+
+p::after {
+	content: "-This is CSS";
+}
+
+p::before {
+	content: "IMPORTANT:";
 }
