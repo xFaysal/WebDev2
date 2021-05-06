@@ -1,3 +1,6 @@
+@import url(rainbow.css);
+@import url(https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 .button {
 	background-color: #4CAF50;
 	border: none;
@@ -63,79 +66,87 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .Hello {
-	background-color:salmon;
-	border:none;
-	color:rgb(255, 255, 255);
+	background-color: salmon;
+	border: none;
+	color: rgb(255, 255, 255);
 	padding: 15px 32px;
-	text-align:center;
-	-webkit-transition-duration:0.4s;
-	transition-duration:0.4s;
-	text-decoration:none;
-	font-size:15px;
-	cursor:pointer;
-	opacity:0.3;
-}
-.Hello:hover {
-	opacity:1;
+	text-align: center;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	text-decoration: none;
+	font-size: 15px;
+	cursor: pointer;
+	opacity: 0.3;
 }
 
-.Hai{
-	background-color:purple;
-	border:none;
-	color:#ffffff;
-	padding:25px;
-	text-align:center;
-	-webkit-transition-duration:0.4s;
-	transition-duration:0.4s;
-	text-decoration:none;
-	font-size:15px;
-	cursor:pointer;
-	position:relative;
-	overflow:hidden;
+.Hello:hover {
+	opacity: 1;
+}
+
+.Hai {
+	background-color: purple;
+	border: none;
+	color: #ffffff;
+	padding: 25px;
+	text-align: center;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	text-decoration: none;
+	font-size: 15px;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
 }
 
 .Hai:after {
-	content:"";
+	content: "";
 	background: plum;
-	display:block;
-	position:absolute;
-	padding-top:290%;
-	padding-left:340%;
-	margin-left:-25px;
-	margin-top:-130%;
-	opacity:0;
-	transition:all 0.9s;
+	display: block;
+	position: absolute;
+	padding-top: 290%;
+	padding-left: 340%;
+	margin-left: -25px;
+	margin-top: -130%;
+	opacity: 0;
+	transition: all 0.9s;
 }
 
 .Hai:active:after {
-	padding:0;
-	margin:0;
-	opacity:1;
-	transition:0s;
+	padding: 0;
+	margin: 0;
+	opacity: 1;
+	transition: 0s;
 }
 
-.title{
+.title {
 	color: rgb(100, 100, 100);
-	font-family: 'Brush Script MT', cursive; 
-  }
-  
-  .title-large {
+	font-family: 'Brush Script MT', cursive;
+}
+
+.title-large {
 	font-size: 2rem;
-  }
-  
-  .title-small {
+}
+
+.title-small {
 	font-size: .5rem;
-  }
+}
 
 #hirebuttons {
-	background-color:rosybrown;
+	background-color: rosybrown;
 }
 
 #hirefooterTable {
-	font-style:initial;
+	font-style: initial;
 }
 
-*{
-    text-align:center;
+#knowledge>* {
+	border: 3px rgb(196, 180, 255) solid;
 }
 
+p+* {
+	background-color: #c8fff3;
+}
+
+div li::marker {
+	content: "🐥";
+}
