@@ -5,7 +5,7 @@ table {
 	margin-right: auto;
 	text-align: left;
 	border-collapse: collapse;
-	cellspacing: 0px;
+	border-spacing: 0px;
 }
 
 tr {
@@ -75,4 +75,19 @@ h1, h2, h3, h4, h5, h6{
     text-align:right;
     border: 2px solid rgb(4, 224, 240);
 }
+#knowledge > *
+ order: 3px red solid;
+
+
+  
+  div li::marker{
+	color: red;
+  }
+  p + * {
+	background-color: #FFFF00;
+  }
+  
+  div li::marker{
+	content:"🌠 ";
+  }
 
