@@ -1,17 +1,37 @@
+@import url(rainbow.css);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url(https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js);
+
+a:active{
+	background-color: blue;
+}
+
+p:visited{
+	color:pink
+
+
+}
+p:empty {
+  width: 100px;
+  height: 20px;
+  background:plum
+
+}
+
 table {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
+	color: #0e89ee;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: left;
 	border-collapse: collapse;
-	cellspacing: 0px;
+	cellspacing: 1px;
 }
 
 tr {
-	border: 1px solid #ffffff;
+	border: 1px solid #dfdada;
 	text-align: center;
-	background-color:#9FB6CD; 
+	background-color: #abacdd;
 }
 
 th {
@@ -19,3 +39,78 @@ th {
 	color: #ffffff;
 	background-color: #003366;
 }
+
+.vikings2 {
+	width: 100px;
+	height: 50px;
+	background-color: magenta;
+	border: none;
+	border-radius: 10px;
+}
+
+.card img {
+	width: 100%;
+}
+
+.vikings1 {
+	background-color: #151816;
+	border-radius: 28px;
+	border: 1px solid #141414;
+	display: inline-block;
+	cursor: pointer;
+	color: #f1eaf1;
+	font-family: Arial;
+	font-size: 17px;
+	padding: 16px 31px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #2f6627;
+}
+
+.myButton:hover {
+	background-color: #5cbf2a;
+}
+
+.myButton:active {
+	position: relative;
+	top: 1px;
+}
+
+.dog {
+	width: 100px;
+	height: 50px;
+	background-color: pink;
+	color: red;
+	border: 3px solid coral;
+}
+
+.title {
+	color: red;
+	font-family: 'Trebuchet MS', sans-serif;
+}
+
+.title-large {
+	font-size: 2rem;
+}
+
+.title-small {
+	font-size: .5rem;
+}
+
+#hireButtons {
+	background-color: yellow;
+}
+
+#knowledge>* {
+	border: 3px red solid;
+}
+
+p+* {
+	background-color: #FFFF00;
+}
+div li::marker{
+	color: red;
+  }
+
+  div > li::marker{
+	content:"😜 ";
+  }
