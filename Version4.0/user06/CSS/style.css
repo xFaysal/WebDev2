@@ -1,3 +1,61 @@
+.button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+
+.button1 {
+	border-radius: 8px;
+}
+
+.button2 {
+	border-radius: 30%;
+}
+
+.red {
+	background-color: #001aff;
+}
+
+td {
+	padding: 20px;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-align: center;
+}
+
+.title {
+	color: red;
+	font-family: 'Trebuchet MS', sans-serif;
+}
+
+.title-large {
+	font-size: 2rem;
+}
+
+.title-small {
+	font-size: .5rem;
+}
+
+
+#morecontent {
+	background-color: yellow;
+  }
+
+
 table {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
 	color: #003366;
@@ -11,7 +69,7 @@ table {
 tr {
 	border: 1px solid #ffffff;
 	text-align: center;
-	background-color:#9FB6CD; 
+	background-color: #9FB6CD;
 }
 
 th {
@@ -19,3 +77,15 @@ th {
 	color: #ffffff;
 	background-color: #003366;
 }
+
+*{
+    text-align:left 
+	style=color= rgb(238, 255, 0);
+	background-image: url(https://i.ytimg.com/vi/GHo-a12mY9c/maxresdefault.jpg);
+    color: lawngreen;
+	border-color: #096fe4;
+
+} 
+<table id="hireButtons">
+
+<table id="footerTable">
