@@ -1,3 +1,4 @@
+@import url(rainbow.css);
 table {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
 	color: #003366;
@@ -148,4 +149,87 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 900;
 	font-family: fantasy;
 	font-variant: small-caps;
+}
+
+#knowledge>* {
+	border: 3px rgb(81, 103, 175) solid;
+}
+
+p+* {
+	background-color: #FFFF00;
+}
+
+div li::marker {
+	color: red;
+}
+
+div>li::marker {
+	content: "🔊";
+}
+
+.button {
+	padding: 5px;
+	background-color: rgb(81, 103, 175)
+}
+
+#rainbow td:hover {
+	background-color: black;
+}
+
+#footerTable td:not(p) {
+	background-color: thistle;
+}
+
+:checked:active {
+	background-color: seagreen;
+}
+
+input:hover {
+	background-color: seagreen;
+}
+
+a:visited {
+	color: springgreen;
+}
+
+a {
+	color: violet;
+}
+input[type="checkbox"]{
+	
+	
+	background-color: #d5d5d5;
+}
+
+input[type="checkbox"]:after {
+	color: white;
+	display: none;
+}
+
+input[type="checkbox"]:hover {
+	background-color: #a5a5a5;
+}
+
+input[type="checkbox"]:checked{
+	background-color: chartreuse;
+}
+
+input[type=text] {
+	background-color: orange;
+}
+
+input[type=text]::empty {
+	background-color: yellow;
+}
+
+p:first-child {
+	color: blue;
+}
+
+input:focus {
+	background-color: firebrick
+}
+
+input:read-only {
+	background-color: gray;
 }
