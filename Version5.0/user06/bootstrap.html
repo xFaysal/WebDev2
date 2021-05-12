@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-    <a href="form.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Form Page</a>
+
 
     <!-- JavaScript -->
     <!-- These are needed to get the responsive menu to work -->
@@ -46,6 +46,16 @@
         .table-striped tbody tr:nth-of-type(odd) {
             background-color: rgba(12, 230, 238, 0.05);
         }
+
+        #Top {
+            color: rgb(5, 50, 255);
+        }
+
+        .button {
+            margin: auto;
+            padding: auto;
+
+        }
     </style>
 </head>
 
@@ -54,38 +64,6 @@
         <h4> Bootstrap Examples</h4>
         <p class="lead"> Let's look at the man different examples of how we can use bootstrap and what bootstrap can do!
         </p>
-    </div>
-    <div class="bs-example">
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>Row</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Email</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Clark</td>
-                    <td>Kent</td>
-                    <td>clarkkent@mail.com</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>John</td>
-                    <td>Carter</td>
-                    <td>johncarter@mail.com</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Peter</td>
-                    <td>Parker</td>
-                    <td>peterparker@mail.com</td>
-                </tr>
-            </tbody>
-        </table>
     </div>
 
     <div class="container mt-3">
@@ -158,6 +136,44 @@
                 <div class="demo-content">.col-md-12 .col-lg-3</div>
             </div>
         </div>
+    </div>
+
+    <div class="text-center">
+        <a href="form.html" class="btn-danger btn-lg active" class="button" aria-pressed="true" id=donate>Donate
+            plz</a>
+    </div>
+
+    <div class="bs-example">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th id=Top>Top donars</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Clark</td>
+                    <td>Kent</td>
+                    <td>clarkkent@mail.com</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>John</td>
+                    <td>Carter</td>
+                    <td>johncarter@mail.com</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Peter</td>
+                    <td>Parker</td>
+                    <td>peterparker@mail.com</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
 </body>
