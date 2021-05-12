@@ -44,7 +44,7 @@
                                 <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
                                 <li>Aliquam tincidunt mauris eu risus.
                                     <ol>
-                                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                        <li id = "specificLine">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                                             <ol>
                                                 <li>Lorem ipsum dolor sit amet, consectetuer.</li>
                                             </ol>
@@ -88,7 +88,11 @@
 
             <script id="lists">
                 function firstSelector() {
-                    document.querySelector("li").style.backgroundColor = "red";
+                    var y = document.querySelectorAll("li");
+                    var i;
+                    for (i = 0; i < y.length; i++) {
+                        y[i].style.backgroundColor="#900000";
+                    }
                 }
                 function secondSelector() {
                     var x = document.querySelectorAll("li");
@@ -98,7 +102,7 @@
                     }
                 }
                 function thirdSelector() {
-                    document.querySelector("ol ol li").style.backgroundColor = "#a2a2a2";
+                    document.querySelector("#specificLine").style.backgroundColor = "#a2a2a2";
                 }
             </script>
             <script id="shopping">
