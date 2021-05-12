@@ -34,6 +34,20 @@
             margin-bottom: 15px;
         }
 
+        .text-uppercase {
+            text-transform: uppercase !important;
+            text-align: center;
+            color: darkgrey;
+            text-shadow: 2px 2px black;
+        }
+
+        .pt-4,
+        .py-4 {
+            padding-top: 1.5rem !important;
+            color: black;
+            background-image: linear-gradient(to bottom right, rgb(194, 193, 193), rgb(71, 71, 71));
+        }
+
         .list-group-item-primary.list-group-item-action:hover,
         .list-group-item-primary.list-group-item-action:focus {
             color: #129b00;
@@ -66,7 +80,13 @@
             border-color: #ff0000;
         }
 
-        
+        .list-unstyled {
+            padding-left: 0;
+            list-style: none;
+            text-align: center;
+        }
+
+
         .table-striped tbody tr:nth-of-type(odd) {
             background-image: linear-gradient(to bottom right, magenta, green)
         }
@@ -198,5 +218,99 @@
     </div>
 
 </body>
+
+<!-- Footer -->
+<footer class="page-footer font-small blue pt-4">
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+
+        <!-- Grid row -->
+        <div class="row">
+
+            <!-- Grid column -->
+            <div class="col-md-4 mt-md-2 mt-3">
+
+                <!-- Content -->
+                <h5 class="text-uppercase">
+                    <marquee direction=left scrollamount=15>Footer Content</marquee>
+                </h5>
+                <p>Here you can use rows and columns to organize your footer content.</p>
+
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none pb-3">
+
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+
+                <!-- Links -->
+                <h5 class="text-uppercase">Useful Links</h5>
+
+                <ul class="list-unstyled">
+                    <li>
+                        <i class="fa fa-google"></i>
+                        <a href="https://www.google.com/?safe=active&ssui=on">Google</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-large fa-css3" aria-hidden="true"></i>
+                        <a href="https://www.w3schools.com/cssref">Css Elements</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <a href="https://mail.google.com/mail/u/0/">Gmail</a>
+                    </li>
+                    <li>
+                        <i style="color:yellowgreen" class="fa fa-spotify" aria-hidden="true"></i>
+                        <a href="https://open.spotify.com/playlist/6nFSdf0FQ2nJFv9EhimkgY">Spotify</a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+
+                <!-- Links -->
+                <h5 class="text-uppercase">School Links</h5>
+
+                <ul class="list-unstyled">
+                    <li>
+                        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                        <a href="https://shakopee.instructure.com/">Canvas</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-university" aria-hidden="true"></i>
+                        <a href="https://shakopeemn.infinitecampus.org/campus/portal/shakopee.jsp">Campus</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                        <a href="https://github.com/Aconnell1/WebDev2/pulls">Github</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-hdd-o" aria-hidden="true"></i>
+                        <a href="https://drive.google.com/drive/">Google Drive</a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 
 </html>
