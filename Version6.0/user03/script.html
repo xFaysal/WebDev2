@@ -47,9 +47,19 @@
     </script>
     <script>
         function myFunction() {
-          document.getElementById("demo").innerHTML = "Hello World";
+            document.getElementById("demo").innerHTML = "Hello World";
         }
-        </script>
+    </script>
+    <script>
+        function ondblClick() {
+            document.getElementById("demo").innerHTML = "Hello World";
+        }
+    </script>
+    <script>
+        function myFunction() {
+            alert("Page is loaded");
+        }
+    </script>
     </script>
     <!-- Custom styles for this template -->
     <style type="text/css">
@@ -148,18 +158,31 @@
             </div>
 
             <div class="row">
-                <div class="col-sm-6" style="background-color:yellow;">PUT YOUR HTML CODE HERE</div>
-                <div class="col-sm-6" style="background-color:rgb(255, 153, 0);">PUT YOUR HTML CODE HERE</div>
+                <div class="col-sm-6" style="background-color:yellow;">Click the button to trigger a function.</div>
+                <div class="col-sm-6" style="background-color:rgb(255, 153, 0);"><button onclick="myFunction()">Click
+                        me</button>
+
+                    <p id="demo"></p>
+                </div>
             </div>
 
             <div class="row">
-                <div class="col-sm-6" style="background-color:yellow;">PUT YOUR HTML CODE HERE</div>
-                <div class="col-sm-6" style="background-color:rgb(255, 153, 0);">PUT YOUR HTML CODE HERE</div>
+                <div class="col-sm-6" style="background-color:yellow;">
+                    <p ondblclick="ondblClick()">Doubleclick this paragraph to trigger a function.</p>
+                </div>
+                <div class="col-sm-6" style="background-color:rgb(255, 153, 0);">
+                    <p id="demo"></p>
+                </div>
             </div>
 
             <div class="row">
-                <div class="col-sm-6" style="background-color:yellow;">PUT YOUR HTML CODE HERE</div>
-                <div class="col-sm-6" style="background-color:rgb(255, 153, 0);">PUT YOUR HTML CODE HERE</div>
+                <div class="col-sm-6" style="background-color:yellow;">
+
+                    <body onload="myFunction()">
+                </div>
+                <div class="col-sm-6" style="background-color:rgb(255, 153, 0);">
+                    <h2>Hello World!</h2>
+                </div>
             </div>
         </div>
     </div>
