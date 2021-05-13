@@ -7,6 +7,7 @@ table {
 	margin-right: auto;
 	text-align: left;
 	border-collapse: collapse;
+	cellspacing: 0px;
 }
 
 tr {
@@ -34,11 +35,11 @@ th {
 	cursor: pointer;
 }
 
-.button_largeRadius {
+.button1 {
 	border-radius: 8px;
 }
 
-.button_smallRadius {
+.button2 {
 	border-radius: 30%;
 }
 
@@ -59,37 +60,16 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 }
 
-.roundButton {
-	box-shadow: 3px 4px 0px 0px #899599;
-	background: linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
-	background-color: #ededed;
-	border-radius: 15px;
-	border: 1px solid #d6bcd6;
-	display: inline-block;
-	cursor: pointer;
-	color: #3a8a9e;
-	font-family: Arial;
-	font-size: 17px;
-	padding: 7px 25px;
-	text-decoration: none;
-	text-shadow: 0px 1px 0px #e1e2ed;
+.green {
+	background-color: #4CAF50;
 }
 
-.pinkButton {
-	width: 100px;
-	height: 50px;
-	background-color: pink;
-	color: red;
-	border: 3px solid coral;
+.button4 {
+	border-style: dotted;
 }
 
-.blueButton {
-	width: 100px;
-	height: 50px;
-	border: double;
-	border-radius: 12px;
-	color: cornflowerblue;
-	background-color: darkcyan;
+.botton5 {
+	border-width: 7px;
 }
 
 .title {
@@ -105,19 +85,19 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: .5rem;
 }
 
-#footerTable {
-	color: red;
+#morecontent {
+	background-color: yellow;
 }
 
 #hireButtons {
-	color: blueviolet;
+	border-style: dotted;
 }
 
-#textRed {
-	text-align: center;
-	color: red;
-  }
+#footerTable {
+	border: 20px solid red;
+}
 
 * {
-	background-color: hotpink;
+	font-family: 'Courier New', Courier, monospace;
+	color: crimson;
 }
