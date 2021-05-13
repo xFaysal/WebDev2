@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Version 6.0
+    Name:
+    Date Completed:
+-->
+
+<head>
+    <title>JavaScript</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="SHS WebDev JavaScript Practice">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="JS/script.js"></script>
+
+
+    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Put your .js files here ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        .menu {
+            margin: 0px;
+        }
+
+        .wideMargin {
+            margin: 15px;
+        }
+
+        #footer {
+            font-size: 12px;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function openWin() {
+            window.open("https://www.youtube.com/");
+        }
+        function myFunction() {
+            alert("Page has loaded successfully");
+        }
+        function displayDate() {
+            document.getElementById("demo").innerHTML = Date();
+        }
+        function bigImg(x) {
+            x.style.height = "75px";
+            x.style.width = "75px";
+        }
+
+        function normalImg(x) {
+            x.style.height = "50px";
+            x.style.width = "50px";
+        }
+    </script>
+</head>
+
+<body onload="myFunction()">
+
+    <body>
+        <!---------------------------------- Begin the nav-bar ------------->
+        <div class="menu">
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                <a href="http://shakonet.isd720.com/WebDev" class="navbar-brand">WebDev</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="#" class="nav-item nav-link">About Me</a>
+                        <a href="#" class="nav-item nav-link disabled" tabindex="-1">Music</a>
+                        <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
+                        <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
+                        <a href="script.html" class="nav-item nav-link active">JavaScript</a>
+                        <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
+                            tabindex="-1">Contact</a>
+                        <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+                    </div>
+                    <div class="navbar-nav ml-auto">
+                        <a href="#" class="nav-item nav-link disabled">Login</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!---------------------------------- End the nav-bar ------------->
+
+        <div class="wideMargin" id="content">
+            <h1 class="text-left my-3">My JavaScript Examples</h1><!-- Edit this line for the title of your page -->
+            <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-4" style="background-color:rgb(232,218,255);">
+                        <center>
+                            <p id="textChange"> My name is Christina</p>
+                        </center>
+                    </div>
+                    <div class="col-sm-4" style="background-color:rgb(232,218,255);">
+                        <center><button type="button" onclick="changeText()">Click to like</button></center>
+                    </div>
+                    <div class="col-sm-4" style="background-color:rgb(232,218,255);">
+                        <center>
+                            <form>
+                                <input type="button" value="Open YouTube" onclick="openWin()">
+                            </form>
+                        </center>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6" style="background-color:rgb(232, 218, 255);">
+                        <form onreset="message()">
+                            Type whatever: <input type="text" size="20">
+                            <input type="reset">
+                        </form>
+                    </div>
+                    <div class="col-sm-6" style="background-color:rgb(232,218,255);">
+                        <p id="demo">The current date</p>
+                        <button type="button" onclick="displayDate()">Display Date</button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-3" style="background-color:rgb(232,218,255);"><img onmouseover="bigImg(this)"
+                            onmouseout="normalImg(this)"
+                            src="data:image/jpeg;base64,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"
+                            alt="Smiley" width="32" height="32"></div>
+                    <div class="col-sm-3" style="background-color:rgb(232,218,255);">PUT YOUR HTML CODE HERE</div>
+                    <div class="col-sm-3" style="background-color:rgb(232,218,255);">PUT YOUR HTML CODE HERE</div>
+                    <div class="col-sm-3" style="background-color:rgb(232,218,255);">PUT YOUR HTML CODE HERE</div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12" style="background-color:rgb(232,218,255);">PUT YOUR HTML CODE HERE</div>
+                </div>
+
+            </div>
+
+            <!--↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑-->
+
+
+            <!---------------------------------- Begin the footer ------------->
+            <div class="wideMargin" id="footer">
+                <p>
+                    Webpage made by <a href="index.html" target="_blank">[your name]</a>
+                </p>
+            </div>
+            <!---------------------------------- End the footer ------------->
+    </body>
+
+</html>
