@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Version 3.0
+        Name:
+        Date Completed:
+    -->
+
+<head>
+    <link rel="shortcut icon" type="image/ico" href="images/bunger.ico"/>
+    <style>
+        body {
+           background-image: url("data:image/jpeg;base64,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");
+        }
+     </style>
+
+    <title>Music for Web Dev User ## </title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="My Favorite Music">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- JavaScript -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        menu {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wideMargin {
+            margin: 15px;
+        }
+
+        footer {
+            font-size: 12px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!---------------------------------- Begin the nav-bar ------------->
+    <menu>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="#" class="nav-item nav-link">About Me</a>
+                    <a href="games.html" class="nav-item nav-link active">games list</a>
+                    <a href="list.html" class="nav-item nav-link dactive" tabindex="-1">Lists</a>
+                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
+                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
+                        tabindex="-1">Contact</a>
+                    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <a href="#" class="nav-item nav-link disabled">Login</a>
+                </div>
+            </div>
+        </nav>
+    </menu>
+    <!---------------------------------- End the nav-bar ------------------------------------->
+
+    <main class="wideMargin">
+
+        <h1 style="color: ghostwhite;" class="text-left my-3" tabindex="0">favorite games</h1><!-- Edit this line for the title of your page -->
+
+        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+        <h2 style="color: ghostwhite;">My Top 5 video games</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th> name</th>
+                    <th>studio</th>
+                    <th>title cover</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>1</td>
+                <td>minecraft</td>
+                <td>mojang</td>
+                <td><img src="https://assets.hardwarezone.com/img/2020/07/Minecraft_Cover.jpg" alt="minecraft image" style=height:200px;></td>
+            </tr>
+            <tr>
+                <td style="color: fuchsia;">2</td>
+                <td style="color: fuchsia;">doom eternal</td>
+                <td style="color: fuchsia;">bethesda</td>
+                <td><img src="https://upload.wikimedia.org/wikipedia/en/9/9d/Cover_Art_of_Doom_Eternal.png" alt="doom eternal image" style=height:200px;></td>
+            </tr>
+            <tr>
+                <td style="color:#0d65ca; background-color:rgb(46, 109, 228);">3</td>
+                <td>ultrakill</td>
+                <td>newblood studios</td>
+                <td><img src="https://www.theindianwire.com/wp-content/uploads/2020/10/ultrakill-game-e1602115191268.jpg" alt="untrakill game image" style=height:200px;></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>team fortress 2</td>
+                <td>valve</td>
+                <td><img src="https://static.wikia.nocookie.net/p__/images/5/57/TF2_Mercs.png/revision/latest?cb=20200110144933&path-prefix=protagonist" alt="team fortress 2 promotional art" style=height:200px;></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>enter the gungeon</td>
+                <td>devolver digital</td>
+                <td><img src="https://cdn.akamai.steamstatic.com/steam/apps/311690/header.jpg?t=1616716328" alt="enter the gungeon image" style=height:200px;></td>
+            </tr>
+        </table>
+    </main>
+    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+
+
+    <!---------------------------------- Begin the footer ------------->
+    <footer class="wideMargin">
+        <p>
+            Music can be found here <a href="https://music.amazon.com"> Amazon Music</a>
+        </p>
+    </footer>
+    <!---------------------------------- End the footer ------------->
+</body>
+
+</html>

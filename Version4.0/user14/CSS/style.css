@@ -1,21 +1,204 @@
-table {
-	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
+@import url(rainbow.css);
+
+.button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.button1 {
+	border-radius: 8px;
+}
+
+.button2 {
+	border-radius: 30%;
+}
+
+.red {
+	background-color: #ff0000;
+}
+
+td{
+	padding:20px;
+}
+
+table{
 	margin-left: auto;
 	margin-right: auto;
-	text-align: left;
-	border-collapse: collapse;
-	cellspacing: 0px;
 }
 
-tr {
-	border: 1px solid #ffffff;
-	text-align: center;
-	background-color:#9FB6CD; 
+h1, h2, h3, h4, h5, h6{
+	text-align:center;
 }
 
-th {
-	text-align: center;
-	color: #ffffff;
-	background-color: #003366;
+.btn-1b:after {
+	width: 100%;
+	height: 0;
+	top: 0;
+	left: 0;
+	background: rgb(134, 178, 255);
+}
+
+.btn-1b:hover,
+.btn-1b:active {
+	color: #1b4e6e;
+}
+
+.btn-1b:hover:after,
+.btn-1b:active:after {
+	height: 100%;
+}
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon/icomoon.eot');
+	src:url('../fonts/icomoon/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon/icomoon.woff') format('woff'),
+		url('../fonts/icomoon/icomoon.ttf') format('truetype'),
+		url('../fonts/icomoon/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* General button style (reset) */
+.btn {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 25px 80px;
+	display: inline-block;
+	margin: 15px 30px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.myButton {
+	box-shadow: 3px 4px 0px 0px #233554;
+	background:linear-gradient(to bottom, #00d4ff 5%, #17162b 100%);
+	background-color:rgb(23,22,43) ;
+	border-radius:5px;
+	border:1px solid #337bc4;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	font-weight:bold;
+	padding:12px 44px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
+}
+
+.myButtonInherit {
+	text-transform: uppercase;
+	font-family: inherit;
+	font-size: inherit;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #00d4ff 15%, #17162b 100%);
+	background-color:#378de5;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.nullButton {
+	background: none;
+	background-color: #ffffff;
+	border:1px solid rgb(0, 0, 0);
+	font-family: inherit;
+	font-size: inherit;
+	padding: 15px 45px;
+	display: inline-block;
+	margin: 15px 30px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+}
+
+.nullButtonBlue {
+	background-color: #8dbff1;
+	border:1px solid rgb(27, 67, 123);
+}
+
+.nullButtonBlue:hover {
+	background-color:rgb(216, 232, 255);
+	border: 2px solid rgb(27, 67, 123);
+}
+
+.title{
+	color: red;
+	font-family: 'Trebuchet MS', sans-serif; 
+}
+
+.title-large {
+	font-size: 2rem;
+}
+
+.title-small {
+	font-size: .5rem;
+}
+
+#morecontent {
+	background-color: yellow;
+}
+
+#hireButtons {
+	background-color: rgb(194, 215, 255);
+	border:1px solid #17162b;
+	margin: 35px 50px;
+	margin-left: auto;
+    margin-right: auto;
+	padding:15px 45px;
+	position: relative;
+}
+
+#footerTable {
+	background-color: lightcoral;
+	border:2.5px solid darkgoldenrod;
+	margin: 10px 20px;
+	margin-left: auto;
+    margin-right: auto;
+	padding: 5px 20px;
+	position: relative;
+}
+
+*{
+	letter-spacing: 2px;
+}
+
+#knowledge > * {
+	border: 3px red solid;
+}
+
+p + * {
+	background-color: #FFFF00;
 }
