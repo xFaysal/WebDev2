@@ -86,7 +86,12 @@
                 <div class="col-sm-4" style="background-color:orange;">
                     <center><button type="button" onclick="changeText()">Click if you like human</button></center>
                 </div>
-                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR HTML CODE HERE</div>
+                <div class="col-sm-4" style="background-color:yellow;" ondblclick=doubleclick()>Doubleclick this
+                    paragraph to trigger a function.</p>
+                    <p id="hi"></p>
+                </div>
+
+
             </div>
 
             <div class="row">
@@ -108,20 +113,42 @@
                         <div id="coordiv" style="width:199px;height:99px;border:1px solid" onmousemove="max(event)"
                             onmouseout="clearCoor()"></div>
 
-                        <p>Mouse over the rectangle above, and get the coordinates of your mouse pointer.</p>
+                        <p>
+                            Mouse over the rectangle above, and get the coordinates of your mouse pointer.</p>
 
-                        <p id="demo"></p>
+                        <p id="cordinates"></p>
                 </div>
                 <div class="col-sm-3" style="background-color: rgb(24, 90, 233);" onmouseover="style.color='red'"
                     onmouseout="style.color='black'">Put your mouse over me
                     </h1>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-12" style="background-color:rgb(255, 81, 0);">
+            <div class="col-sm-12" style="background-color: rgb(182, 224, 30); height:120px ;">
 
-                    <div onmousedown="whichElement(event)">
+                <body onresize="resize()"></body>
+                resize your browser
+                <p id="resize"> </p>
+            </div>
+        </div>
+        
+        <div class="col-sm-12" style="background-color:blueviolet; height:200px  ;">
+            <p onmousedown="colorchange(this,'red')" onmouseup="colorchange(this,'green')">click the text to change the color. If you are cool i wll get 100 percent in every class</body>
+            
+        
+            
+        </div>
+        
+        <div class="col-sm-12" style="background-color:rgb(255, 81, 0);">
+
+                <div onmousedown="whichElement(event)">
+
+
+
+
+
 </body>
+
+
 <p>Click somewhere in the document. An alert box will alert the name of the element you clicked on.
 </p>
 <h3>This is a heading</h3>
