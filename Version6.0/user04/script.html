@@ -86,27 +86,60 @@
                 <div class="col-sm-4" style="background-color:orange;">
                     <center><button type="button" onclick="changeText(id=textChange)">Click here</button></center>
                 </div>
-                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR HTML CODE HERE</div>
+                <div class="col-sm-4" style="background-color:yellow;">
+                    <form onreset="message()">
+                        Enter your name: <input type="text" size="20">
+                        <input type="reset">
+                </div>
             </div>
 
             <div class="row">
-                <div class="col-sm-3" style="background-color:yellow;">PUT YOUR HTML CODE HERE</div>
-                <div class="col-sm-3" style="background-color:orange;">PUT YOUR HTML CODE HERE</div>
-                <div class="col-sm-3" style="background-color:yellow;">PUT YOUR HTML CODE HERE</div>
-                <div class="col-sm-3" style="background-color:orange;">PUT YOUR HTML CODE HERE</div>
+                <div class="col-sm-3" style="background-color:yellow;">
+                    <p onmousedown="color(this,'red')" onmouseup="color(this,'green')">
+                        Click on the text to change its color!
+                    </p>
+                </div>
+                <div class="col-sm-3" style="background-color:orange;">
+                    <div id="coordiv" style="width:199px;height:99px;border:1px solid" onmousemove="myFunction(event)"
+                        onmouseout="clearCoor()"></div>
+
+                    <p>Move your mouse around the rectangle and get its coordinates.</p>
+
+                    <p id="demo"></p>
+                </div>
+                <div class="col-sm-3" style="background-color:yellow;">
+                    <p ondblclick="clickhere()">Doubleclick this sentence for a surprise.</p>
+                    <p id="surprise"></p>
+                </div>
+                <div class="col-sm-3" style="background-color:orange;">
+                    Enter your name: <input type="text" id="fname" onblur="capitalize()">
+
+                    <p>When you are done typing, click outside of the input field.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6" style="background-color:yellow;">This text: <input type="text" value="Select Me!"
+                        onselect="selecttext()">
+
+                    <p id="select"></p>
+                </div>
+                <div class="col-sm-6" style="background-color:orange;"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVFi8XR-c_u7RFUB-OnDFFLS4oOy8SNfKVMg&usqp=CAU"
+                        onload="loadImage()" width="250" height="150">
+                </div>
             </div>
         </div>
-    </div>
-    <!--↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑-->
+        <!--↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑-->
 
 
-    <!---------------------------------- Begin the footer ------------->
-    <div class="wideMargin" id="footer">
-        <p>
-            Webpage made by <a href="index.html" target="_blank">[your name]</a>
-        </p>
-    </div>
-    <!---------------------------------- End the footer ------------->
+        <!---------------------------------- Begin the footer ------------->
+        <div class="wideMargin" id="footer">
+            <p>
+                Webpage made by <a href="index.html" target="_blank">[your name]</a>
+            </p>
+        </div>
+        <!---------------------------------- End the footer ------------->
 </body>
 
 </html>
