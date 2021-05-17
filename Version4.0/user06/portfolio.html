@@ -1,27 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--Version 3.0
+<!--Version 4.0
         Name:
         Date Completed:
     -->
 
 <head>
 
-    <title>Music for Web Dev User ## </title>
+    <title>My Work as a Web Developer</title>
 
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="My Favorite Music">
+    <meta name="description" content="WebDev Version 4.0">
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="CSS/style.css">
-
-
-
 
     <!-- JavaScript -->
     <!-- These are needed to get the responsive menu to work -->
@@ -36,10 +33,6 @@
             padding: 0;
         }
 
-    
-
-
-
         .wideMargin {
             margin: 15px;
         }
@@ -49,25 +42,28 @@
             text-align: center;
         }
 
-        body {
-
-            background-image: url(https://impacttourism.ca/wp-content/uploads/2019/07/background-music-means-sound-track-and-melody.jpg) 
-
+        #rainbow {
+            width: 100%;
         }
 
-        #Title {
-            color: hotpink;
+        #knowledge>* {
+            border: 3px red solid;
         }
 
-        #BigTitle{
-            color: hotpink;
+        div>li::marker {
+            content: "😜 ";
         }
 
 
-        
+        p+* {
+            background-color: #FFFF00;
+        }
 
-           
-    
+        #rainbow tr td:hover {
+            background-color: black;
+        }
+
+
     </style>
 </head>
 
@@ -84,12 +80,8 @@
                 <div class="navbar-nav">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
                     <a href="index.html" class="nav-item nav-link">Home</a>
-                    <a href="AboutMe.html" class="nav-item nav-link">About Me</a>
-                    <a href="Music.html" class="nav-item nav-link">Music</a>
-                    <a href="list.html" class="nav-item nav-link" tabindex="-1">Lists</a>
-                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
-                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
-                        tabindex="-1">Contact</a>
+                    <a href="display.html" class="nav-item nav-link">Display</a>
+                    <a href="portfolio.html" class="nav-item nav-link active">Portfolio</a>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </div>
                 <div class="navbar-nav ml-auto">
@@ -102,67 +94,78 @@
 
     <main class="wideMargin">
 
-        <h1 class="text-left my-3" tabindex="0" id="BigTitle">Music</h1><!-- Edit this line for the title of your page -->
+        <h1 class="text-left my-3 title" tabindex="0">Check out my work!</h1>
+        <!-- Edit this line for the title of your page -->
 
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+        <h3 id="topHeading">I'm a Web Developer</h3>
+        <div id="knowledge">
+            <li>CSS
+                <ul>
+                    <li>Classes</li>
+                    <li>Selectors</li>
+                    <li>ID's</li>
+                </ul>
+            </li>
+            <li>HTML
+                <ul>
+                    <li>Tables</li>
+                    <li>DIV's</li>
+                    <li>Nav Bar</li>
+                </ul>
+            </li>
 
+        </div>
 
-
-        <h2 id="Title">The best 5 songs</h2>
-    
-        <table>
-            <thead>
+        <p>
+            These are the things I know in the <strong>WEB DEVELOPMENT</strong> <u>world</u>.
+        </p>
+        <p>
+            I will use my knowledge to create an amazing website for you and your needs.
+        </p>
+        <div>
+            <table id="rainbow">
                 <tr>
-                    <th>Rank</th>
-                    <th>Artist</th>
-                    <th>Song</th>
-                    <th>Album Art</th>
+                    <td class="background-red">
+                    </td>
+                    <td class="background-orange">
+                    </td>
+                    <td class="background-yellow">
+                    </td>
+                    <td class="background-green">
+                    </td>
+                    <td class="background-blue">
+                    </td>
+                    <td class="background-indigo">
+                    </td>
+                    <td class="background-violet">
+                    </td>
                 </tr>
-            </thead>
-            <tr>
-                <td>1</td>
-                <td>Love God,Love People</td>
-                <td> Danny Gokey</td>
-                <td><img src='images/Music.jpeg' style='height:150px;' alt="Danny's face"></td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td> Amazing grace</td>
-                <td> Hillsong worship</td>
-                <td>
-                    <img src='images/hillsong.jpeg' style='height:150px;' alt="Hillsong worship band">
-                </td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>King of my heart</td>
-                <td>Sarah McMillan</td>
-                <td><img src='images/King.jpeg' style='height: 150px;' alt="king"></td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>Oceans</td>
-                <td>Hillsong United</td>
-                <td>
-                    <img src='images/hillsong.jpeg' style='height:150px;' alt="Hillsong worship band">
-                </td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>FireFlies</td>
-                <td>Owl city</td>
-                <td><img src='images/Owlcity.png' style='height:150px;'></td>
-            </tr>
-        </table>
-    </main>
-    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+            </table>
+        </div>
 
+
+        <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
+    </main>
 
     <!---------------------------------- Begin the footer ------------->
-    <footer class="wideMargin">
-        <p>
-            Music can be found here <a href="https://music.amazon.com"> Amazon Music</a>
-        </p>
+    <footer>
+        <span class="title">Example of a Footer Title</span>
+        <table id="footerTable">
+            <tr>
+                <td>
+                    <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
+                </td>
+                <td>
+                    <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
+                </td>
+                <td>
+                    <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+                </td>
+            </tr>
+        </table>
     </footer>
     <!---------------------------------- End the footer ------------->
 </body>
+
+</html>

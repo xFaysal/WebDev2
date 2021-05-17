@@ -1,3 +1,5 @@
+@import url(rainbow.css);
+
 .button {
 	background-color: #4CAF50;
 	border: none;
@@ -81,11 +83,14 @@ th {
 *{
     text-align:left 
 	style=color= rgb(238, 255, 0);
-	background-image: url(https://i.ytimg.com/vi/GHo-a12mY9c/maxresdefault.jpg);
     color: lawngreen;
 	border-color: #096fe4;
 
 } 
-<table id="hireButtons">
+#hireButtons{
 
-<table id="footerTable">
+}
+
+#footerTable{
+
+}
