@@ -13,6 +13,30 @@ function onBlur() {
     x.value = x.value.toUpperCase();
 }
 function onFocus() {
-    document.getElementById("name") = ""
-    )
+    document.getElementById("name")
+    var x = document.getElementById("name")
+    x.value = x.value.value
+    
+}
+function scrollWindow() {
+    window.scrollTo(0,3000)
+}
+
+function redirect() {
+    window.location.replace("https://youtube.com");
+}
+function Sussy() {
+    alert("you are sus");
+}
+function secretHover() {
+    alert("you have found the secret")
+}
+function offHover() {
+    document.getElementById("changedImage").innerHTML="<p>Very Cool</p>"
+}
+function copyProtection() {
+    alert("you just copied")
+}
+function keyboardHold() {
+    document.getElementById("keypressDown").innerHTML=Date()
 }
