@@ -95,12 +95,14 @@
 
             </div>
             <div class="row">
-                <div class="col-sm-3" style="background-color:rgb(255, 255, 0);"><input type="number" id="num1"></div>
-                <div class="col-sm-3" style="background-color:rgb(255, 111, 0);"><input type="number" id="num2"></div>
-                <div class="col-sm-3" style="background-color:rgb(255, 255, 0);"><button
-                        onclick="numberAdder()">Add</button></div>
-                <div class="col-sm-3" style="background-color:rgb(255, 111, 0);">
-                    <p id="change">?</p>
+                <div class="col-sm-4" style="background-color:lightgreen;">
+                    <input type="text" value="Select me!" onselect="textSelect()">
+                </div>
+                <div class="col-sm-4" style="background-color:yellow;">
+                    <p>Select the text!</p>
+                </div>
+                <div class="col-sm-4" style="background-color:navajowhite;">
+                    <p id="addText"></p>
                 </div>
             </div>
             <div class="row">
@@ -113,7 +115,7 @@
             </div>
             <div class="row">
                 <div class="col-sm-5" style="background-color:rgb(0, 255, 0);">
-                    <p id="textChange3" onmouseover="changeText3()">Touch the text!</p>
+                    <p id="textChange3" onmouseover="changeText4()">Touch the text!</p>
                 </div>
             </div>
             <div class="row">
