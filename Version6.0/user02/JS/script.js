@@ -1,16 +1,32 @@
 function changeText() {
-    document.getElementById("textChange").innerHTML="Thanks for liking my Webpage";
+    document.getElementById("textChange").innerHTML = "Thanks for liking my Webpage";
 }
 
-var space = " ";
-var pos = 0;
-var msg = "User 19";
-
-function Scroll(){
-document.title = msg.substring(pos, msg.length) + space +msg.substring(0,pos);
-
-pos++;
-if (pos > msg.length) pos = 0;
-window.setTimeout("Scroll()", 0);
+function changeText2() {
+    document.getElementById("doubleClickChange").innerHTML = "Here's your cookie🍪";
 }
-Scroll();
+
+function textSelect() {
+    document.getElementById("addText").innerHTML = "You selected some text";
+}
+
+function textChange3() {
+    alert("You pressed a key!");
+}
+
+function changeText4() {
+    document.getElementById("textChange3").innerHTML = "Your cursor touched the text!";
+}
+
+function upperCase() {
+    var x = document.getElementById("inputText");
+    x.value = x.value.toUpperCase();
+  }
+
+function focusFunction(x) {
+    x.style.background = "yellow";
+}
+
+function loadFunction() {
+    alert("Page is loaded");
+}
