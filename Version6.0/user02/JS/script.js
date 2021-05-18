@@ -25,3 +25,11 @@ function upperCase() {
     var x = document.getElementById("inputText");
     x.value = x.value.toUpperCase();
   }
+
+function focusFunction(x) {
+    x.style.background = "yellow";
+}
+
+function loadFunction() {
+    alert("Page is loaded");
+}
