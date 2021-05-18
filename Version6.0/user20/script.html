@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Version 6.0
+    Name:
+    Date Completed:
+-->
+
+<head>
+    <title>JavaScript</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="SHS WebDev JavaScript Practice">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- JavaScript -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="JS/script.js"></script>
+
+
+    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Put your .js files here ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+
+    <!-- Custom styles for this template -->
+
+    <style type="text/css">
+        .menu {
+            margin: 0px;
+        }
+
+        .wideMargin {
+            margin: 15px;
+        }
+
+        #footer {
+            font-size: 12px;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function openWin() {
+            window.open("https://www.youtube.com/");
+        }
+        function myFunction() {
+            alert("Page has loaded successfully");
+        }
+        function displayDate() {
+            document.getElementById("demo").innerHTML = Date();
+        }
+        function bigImg(x) {
+            x.style.height = "140px";
+            x.style.width = "180px";
+        }
+
+        function normalImg(x) {
+            x.style.height = "100px";
+            x.style.width = "125px";
+        }
+        function confirmInput() {
+            fname = document.forms[0].fname.value;
+
+        }
+        function imageFunction() {
+            document.body.style.backgroundImage = "url('https://i.pinimg.com/originals/7a/cd/aa/7acdaa6e6010a8f63ffb085962e246ed.jpg')";
+        }
+        function clickFunction() {
+            document.getElementById("demo").innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+        }
+    </script>
+</head>
+
+<body onload="imageFunction()">
+
+    <body>
+        <!---------------------------------- Begin the nav-bar ------------->
+        <div class="menu">
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                <a href="http://shakonet.isd720.com/WebDev" class="navbar-brand">WebDev</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="#" class="nav-item nav-link">About Me</a>
+                        <a href="#" class="nav-item nav-link disabled" tabindex="-1">Music</a>
+                        <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
+                        <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
+                        <a href="script.html" class="nav-item nav-link active">JavaScript</a>
+                        <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
+                            tabindex="-1">Contact</a>
+                        <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+                    </div>
+                    <div class="navbar-nav ml-auto">
+                        <a href="#" class="nav-item nav-link disabled">Login</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!---------------------------------- End the nav-bar ------------->
+
+        <div class="wideMargin" id="content">
+            <h1 class="text-left my-3">My JavaScript Examples</h1>
+            <p id="demo">The current date</p>
+            <button type="button" onclick="displayDate()">Display Date</button>
+            <!-- Edit this line for the title of your page -->
+            <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <center>
+                            <p id="textChange"> My name is Christina</p>
+                        </center>
+
+                    </div>
+                    <div class="col-sm-4">
+                        <center><button type="button" onclick="changeText()">Click to like</button></center>
+                    </div>
+                    <div class="col-sm-4">
+                        <center>
+                            <form>
+                                <input type="button" value="Open YouTube" onclick="openWin()">
+                            </form>
+                        </center>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <form onreset="message()">
+                            Type whatever: <input type="text" size="20">
+                            <input type="reset">
+                        </form>
+                        <div class="col-lg-3">
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)"
+                                    src="https://i.dlpng.com/static/png/6617037_preview.png" alt="Smiley" width="125"
+                                    height="100"></div>
+                            <div class="col-md-9">
+                                <form onsubmit="confirmInput()"
+                                    action="https://i.ytimg.com/vi/z26t6fYH7mc/hqdefault.jpg">
+                                    Enter an Animal : <input id="fname" type="text" size="30">
+                                    <input type="submit">
+                                </form>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p ondblclick="clickFunction()">Click here to learn more</p>
+                                </div>
+                            </div>
+                            <!--↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑-->
+
+
+                            <!---------------------------------- Begin the footer ------------->
+                            <div class="wideMargin" id="footer">
+                                <p>
+                                    Webpage made by Christina Tu</a>
+                                </p>
+                            </div>
+                            <!---------------------------------- End the footer ------------->
+    </body>
+
+
+</html>
