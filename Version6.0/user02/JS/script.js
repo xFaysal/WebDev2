@@ -6,18 +6,15 @@ function changeText2() {
     document.getElementById("doubleClickChange").innerHTML = "Here's your cookie🍪";
 }
 
-var x = document.getElementById("num1");
-var y = document.getElementById("num2");
-var value = x + y
-function numberAdder() {
-    document.getElementById("change").innerHTML = value;
+function textSelect() {
+    document.getElementById("addText").innerHTML = "You selected some text";
 }
 
 function textChange3() {
     alert("You pressed a key!");
 }
 
-function changeText3() {
+function changeText4() {
     document.getElementById("textChange3").innerHTML = "Your cursor touched the text!";
 }
 
