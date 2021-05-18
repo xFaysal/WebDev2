@@ -1,17 +1,31 @@
+
+body{
+	background-image: url("https://i.ytimg.com/vi/Wd7_-LpnHnw/maxresdefault.jpg");
+	background-color: #cccccc;
+	background-size: 500px;
+	
+}
+
+
+
+
+
 table {
+
+	background-image: url('');
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
 	color: #003366;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: left;
 	border-collapse: collapse;
-	cellspacing: 0px;
+	border-spacing: 0px;
 }
 
 tr {
-	border: 1px solid #ffffff;
+	border: 3px solid #9ab6d6;
 	text-align: center;
-	background-color:#9FB6CD; 
+	background-color:#dfeaff; 
 }
 
 th {
@@ -19,3 +33,8 @@ th {
 	color: #ffffff;
 	background-color: #003366;
 }
+
+ul {
+	list-style-image: url('../images/favicon.ico');
+}
+
