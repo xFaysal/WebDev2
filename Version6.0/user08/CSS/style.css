@@ -1,0 +1,44 @@
+html, body {
+  height: 100%;
+  cursor: url("http://www.rw-designer.com/cursor-view/40779.png"), auto;
+}
+
+* {
+  cursor: url("http://www.rw-designer.com/cursor-view/40779.png"), auto;
+}
+
+body {
+  margin: 50px;
+  font-size: 100%;
+  line-height: 1.5;
+  font-family: Roboto;
+}
+
+div {
+  cursor: url("http://www.rw-designer.com/cursor-view/40779.png"), auto;
+}
+
+button {
+  padding: 5px;
+}
+
+ol {
+  list-style-type: decimal-leading-zero;
+}
+
+ol ol {
+  margin-left: 0.9em;
+}
+
+ol li {
+  line-height: 1.5;
+}
+
+h1 {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: 400;
+  border-bottom: 1px solid black;
+  margin-bottom: 1em;
+}
