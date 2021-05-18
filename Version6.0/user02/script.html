@@ -43,7 +43,7 @@
     </style>
 </head>
 
-<body>
+<body onload="loadFunction()">
     <!---------------------------------- Begin the nav-bar ------------->
     <div class="menu">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
@@ -122,6 +122,21 @@
                 </div>
                 <div class="col-sm-7" style="background-color:yellow;">
                     <p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-5" style="background-color:rgb(0, 195, 255);">
+                    <input type="text" onfocus="focusFunction(this)">
+                </div>
+                <div class="col-sm-7" style="background-color:yellow;">
+                    <p>When the input field gets focus, a function is triggered which changes the background-color.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-5" style="background-color:rgb(0, 195, 255);">
+                    <p>When the page loads, an alert pops on the screen</p>
                 </div>
             </div>
         </div>
