@@ -1,28 +1,15 @@
-html, body {
-  height: 100%;
-  cursor: url("http://www.rw-designer.com/cursor-view/40779.png"), auto;
-}
-
-* {
-  cursor: url("http://www.rw-designer.com/cursor-view/40779.png"), auto;
-}
-
-body {
+.body-wideMargin {
   margin: 50px;
   font-size: 100%;
   line-height: 1.5;
   font-family: Roboto;
 }
-
-div {
-  cursor: url("http://www.rw-designer.com/cursor-view/40779.png"), auto;
-}
-
-button {
-  padding: 5px;
+button{
+  padding:5px;
 }
 
 ol {
+
   list-style-type: decimal-leading-zero;
 }
 
@@ -31,8 +18,10 @@ ol ol {
 }
 
 ol li {
+
   line-height: 1.5;
 }
+
 
 h1 {
   font-family: "Fjalla One", sans-serif;

@@ -5,6 +5,7 @@ table {
 	margin-right: auto;
 	text-align: left;
 	border-collapse: collapse;
+	cellspacing: 0px;
 }
 
 tr {
@@ -17,12 +18,4 @@ th {
 	text-align: center;
 	color: #ffffff;
 	background-color: #003366;
-}
-
-ul {
-	color: aquamarine;
-  }
-ol {
-	color: chartreuse;
-	background-color: crimson;
 }

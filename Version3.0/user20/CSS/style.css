@@ -1,31 +1,21 @@
 table {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #ffffff;
+	color: #003366;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: left;
 	border-collapse: collapse;
-	border-spacing: 0px;
+	cellspacing: 0px;
 }
 
 tr {
-	border: 2px solid #9f89ff;
+	border: 1px solid #ffffff;
 	text-align: center;
-	background-color:#c7bdff; 
+	background-color:#9FB6CD; 
 }
 
 th {
 	text-align: center;
-	color: #000000;
-	background-color: #9f89ff;
-}
-body {
-	background-image: url("https://wallpaperaccess.com/full/187161.jpg");
-}
-ul {
-	list-style-type: circle;
-}
-
-ol {
-	list-style-type: lower-greek;
+	color: #ffffff;
+	background-color: #003366;
 }

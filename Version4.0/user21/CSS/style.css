@@ -1,98 +1,21 @@
-
-@import url(https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css);
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
-@import url(rainbow.css);
-
-.button {
-	background-color: #4CAF50;
-	border: none;
-	color: white;
-	padding: 20px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	margin: 4px 2px;
-	cursor: pointer;
-}
-
-.button1 {
-	border-radius: 8px;
-}
-
-.button2 {
-	border-radius: 30%;
-}
-
-.red {
-	background-color: #ff0000;
-}
-
-td {
-	padding: 20px;
-}
-
 table {
+	font-family: "Marker Felt", "Comic Sans MS", fantasy;
+	color: #003366;
 	margin-left: auto;
 	margin-right: auto;
+	text-align: left;
+	border-collapse: collapse;
+	cellspacing: 0px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+tr {
+	border: 1px solid #ffffff;
 	text-align: center;
+	background-color:#9FB6CD; 
 }
 
-.button3 {
-	background-color: #44c767;
-	border-radius: 28px;
-	border: 1px solid #18ab29;
-	display: inline-block;
-	cursor: pointer;
+th {
+	text-align: center;
 	color: #ffffff;
-	font-family: Arial;
-	font-size: 17px;
-	padding: 16px 31px;
-	text-decoration: none;
-	text-shadow: 0px 1px 0px #2f6627;
-}
-
-.myButton:hover {
-	background-color: #5cbf2a;
-}
-
-.myButton:active {
-	position: relative;
-	top: 1px;
-}
-
-.title {
-	color: red;
-	font-family: 'Trebuchet MS', sans-serif;
-}
-
-.title-large {
-	font-size: 2rem;
-}
-
-.title-small {
-	font-size: .5rem;
-}
-
-#morecontent {
-	background-color: yellow;
-}
-
-#knowledge>* {
-	border: 3px red solid;
-}
-
-p+* {
-	background-color: #FFFF00;
-}
-
-div li::marker {
-	color: red;
-}
-
-div li::marker {
-	content: "æ̶̨̨̨̧̨̧̨͚͓͉͚̯͔̺̞̜̪̙̝̻̲̞̯͈̖̤̜̪̣̹͇̰̟̺͓͕̲͔͉̈́̏̋͋͋̔̐͌͗̒͐͑͆̓͗͗̔̎̏̊̉̒̀̌̅̒͛̓́̎̋̈̈́̈́̏̓̐̐̊͆͋͆̌̈́̚̕͝͠͝͝͝ͅ§̷̧̢̧̡̨̛͙̤̳̞̦͍̱̩̲̜̰̪̲̻̣͍̪̜͓͈̹̙̟͓̯͈̭̯̙̣̝̭̫͉̬̳̙̪͖̗̝̫̬̰̹̣͇̲͖͖̞̜͚̦̇̈́̈́̌̄͌͛͆̄͋͛̊̇́́̎̈̕͜͜¶̵̡̧̧̨̨̨̡̛̱̼͙͓͈̫̦̺̜̥͓̼̝̼̭̳̣̹̟̩̼͍̼̝̝̙͚͚̭̙͚̦̠͇̗͍̥̹̤̪͔̏̍̈̅̇̈͆̽̋̓̒̀́̉̏̌̎̌̕͘͘͜͝ª̶̧̢̡̧̢̪͍̖̱͇̗͈̲̺̣̬̱̭̭̣͔͙̺͇͎̘͕͖̟̦̥͉͔̱͉̲͇͙̪̤̠̱̪̦̞̲͙̗̫̰̺̰̲͓͎̬͔̻̩̣̣͓̪̮̬͈͙͍̂̑̋̎̋̈̽͊̎̂̾͛́͒̿̀̈́̀̈́̊͋̑̀͛́̋̄͒̒̈́̽̆̆̓͌͊̑̀̎͑̽̎̄̅̔̅͌̓͌̊̈̂́͂̿͊͛͐̄̈́̑̃̔̿͘̕̚͜͜͝͠͝ͅͅº̶̖͎̝̹̳̼̔̽̇͊͗̇̉͐̀͗̅͒̑́̊͋͛͑̔͑͊͊͗̈́͊̿͒̇͋͆͛̚͘̕å̴̧̢̧̢̢̡̧̙̖͖̥̪̩̗̤͚̼̮̰̰̗͓̘̟̖̠̙̜͎̥̗̗̼̯͉̘͓̖̠̲͇̥̥͖͉̟͈̰̺͇̬̮͎̯̮̩̱̝͎̠̖͎̊̃͌̐̆̍̊͋̍͌̈́͋̽̿́͂̌̔͛̒̃͐́̽̅̃̿̽͗̒̈͒͊̀̕̕̚̚̚͝ͅͅß̶̡̧̢̨̛̛̣̱̹̱̣̫͔̺̼̮͔̳͇͉̳̯̱̙̯̜̬͇̱̞̞̙̯̘̘͈̩̥̮̠̙̪̘̹̱͖̹̹̰͇̲̜̫͚̭̞̓́͌̾̑͒́̊̏͆̍̃͐̂̔̈́̓̓́̑͌͊̇͋̑͐̈̍̓́̇̐̔͂̄̒̌̄͐͊̃̾͊̑͂̏̇̆́̒̐̈̈̈́͊̀̽̇̑̀̑́̾̇͑͆̾̂̓̊̕̕͘̚͘̚͜͝͝͠͠͝ͅͅ∂̴̢̛̛̛̛̮̠̹̯͚̣̙̪̙̺̬̤̳͎̖̩̝̙̭̲͚̝͔͙̟̞̜̼̞̦̟͚̘̩̬̊͋̆̏̈́͒̅͑̎̉̓̆͑̉̾͊͋̓̅͋͐̇̇̀̾̈́͛͊̓͂̓̋̈́̌̃̉͗̃̈́́̋͌̀̿̑̿̊̀̓̋̕̚͠͝͠ç̴̨̧̨̨̧̧̢̡̨̰̹̜͕̮̝̭̳̞̟͖͓̗͚̼͇̫̬̰͖͈̳͔̮̤͕̰̟͓̩͇͚̣̩̟̲̯̯͍͚̠̼̺̥͙̼̹̠͙͔̖͕͈̙͕̦̱̱̘̣̻̰̞̘̬͉͚̱̗̊̅̽͗̎̑͗̂͛̋͐̓͋̎̈́̌̀͆̒́͌̅̾̚̕̕͘͜͝ͅͅ∫̵̧̢̡̨̨̛̛̛̳͉͉͈̺̘̘̟̠̣̺͕͖͙̖̘̠̙̻̤͖̖̭͕̮͕̼͖͖̹̝̱̳͍͉̤͖͚͉͚̺̮͈̭͕̬̓̓̀́͒̈̎͂̓́͐͊́̇̾̉͆̍̅̂̉̐͋̌͌̏͛́̍̅̊͛̋̀̽̌̀̇́͒̏̈͑̈́͗̐͊̂̇̀́̋͗̓̑̾͒̄̋̒̑̋̋́́̚̚͘͘̚͘̕͘͜͜͜͝͝͠͝͝͠͝ͅͅ÷̴̡̢̡̢̡̧̛̛̳̩̫̱͍̳̘̜̪̼̹̗̳̖̜͇̥͚͙̻̺͔̦̬̟̹͇̟̖͎̦͚̯͍̘̮̦̠͓̺̭̦̜̮̣̘̥͖̣̦̲͚͈̜͓̪͕̜̮͕͖͕̝̤͖̘͉̔̂̇̀̔͐̉̓͆̅̒̂̾̀͗́̃͘͘ͅͅͅå̸̛̫̫̯̹̹̠͔͕͓̲̥̠̙̪͈̭͍̪̻͕̟͔̞̭̖̜͆̈́͑̈́͊̎͛̂͋̐̈́͆̆̇̀́̒̄̇́̓̅͂̉͛͛̍̿͑̀̇̍̀̈͐͆͗͆̿̈́̏̉͐̀̑̎̋̍̌͌̀̔̒͆͌͋̈́́̍͑̄̍̀̆̔͂̇̌̋͊̾̚̚͘̕̕͘̕̕̚͜͜͝͠͠͝͝∑̶̡̢̨̨̨̛̛̝̦̮̖̭̱͇͖̪͚̖̖̯̫̘̟̰͉̰̙̜͕͈̟͍͇̜̱̯̏͑̔͋̂̊͗̉̆̓̓̒̐̍̅̀̂́̈́̊̐̔̏̍̉̓͋̾̍̍̈́̆̓͒̿̄̋̀͑̋̌͑̇̋̀̎͒̅̄̒̑̔́͋́̂̽́̊̕̕͝͝͝͠͝͠≉̧̢̡̢̢̨̛̛̘͖̥͔̦̰̱̣̫͙̻̼̖͕͖̟̥̲͖̖̣̝̜͍̘͎̤͈̻̯̤̤͉̜̭̲̥̞̲̩̜͍̞̱̥̱͎͈̭̼̹̥̘̣̤͙̲̮̈̏̇̿́́̓͋̂̌̈͒̌͊͊͛͂̿́̾̿̈̃̿̆̅̑̈́̓̌̽͘͜ͅç̷̡̛̩̼̪̣͚̒̾̋̊͒̾̈́̕̚͘√̵̨̡̨̢̧͓̭̜̯̞̥͖̹̹̦̼͉͔͓͈̰̤͓̮̦̭̳̼̤̦̥͉̞͖̤̦̠̝̯̫̟̤̮̪̘̻͈̹̦̗̰̰̘͓̘̙̲͕̇̋̋̔̾́̽͂̀̓̑̏̾̌͆͑͆̇͆́͗͊̎̃͒͊͛͒̚̕͘̕͜͜͝͝͝ͅͅ ̵̢̧̨̨̭̻̳̦͔̲͕̳̙̳͉̰̟̤̪̥̳̩͈̪̪̳̟̺̥̗̬̪̤̮̼̠̞̪̻͖̱̠̼̘̣͔͍̦͉̻͎̹̖̙̲̫̈́̅̏̀̇̆̓̅͘͜ͅͅͅͅ ";
+	background-color: #003366;
 }

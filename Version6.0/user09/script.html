@@ -42,108 +42,6 @@
         }
     </style>
 </head>
-<script src="JS/script.js"></script>
-<!DOCTYPE html>
-<html>
-<head>
-<script>
-function myFunction() {
-  alert("You pressed a key inside the input field");
-}
-</script>
-</head>
-<body>
-
-<p>A function is triggered when the user is pressing a key in the input field.</p>
-
-<input type="text" onkeydown="myFunction()">
-
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
-<script>
-function writeText(txt) {
-  document.getElementById("desc").innerHTML = txt;
-}
-</script>
-</head>
-
-<body>
-<img src ="planets.gif" width ="145" height ="126" alt="Planets" usemap="#planetmap" />
-
-<map name="planetmap">
-<area shape ="rect" coords ="0,0,82,126"
-onmouseover="writeText('The Sun and the gas giant planets like Jupiter are by far the largest objects in our Solar System.')"
-href ="sun.htm" target ="_blank" alt="Sun" />
-
-<area shape ="circle" coords ="90,58,3"
-onmouseover="writeText('The planet Mercury is very difficult to study from the Earth because it is always so close to the Sun.')"
-href ="mercur.htm" target ="_blank" alt="Mercury" />
-
-<area shape ="circle" coords ="124,58,8"
-onmouseover="writeText('Until the 1960s, Venus was often considered a twin sister to the Earth because Venus is the nearest planet to us, and because the two planets seem to share many characteristics.')"
-href ="venus.htm" target ="_blank" alt="Venus" />
-</map> 
-
-<p id="desc">Mouse over the sun and the planets and see the different descriptions.</p>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
-<script>
-function whichElement(e) {
-  var targ;
-  if (!e) {
-    var e = window.event;
-  }
-  if (e.target) {
-    targ=e.target;
-  } else if (e.srcElement) {
-    targ=e.srcElement;
-  }
-  var tname;
-  tname = targ.tagName;
-  alert("You clicked on a " + tname + " element.");
-}
-</script>
-</head>
-<body onmousedown="whichElement(event)">
-
-<p>Click somewhere in the document. An alert box will alert the name of the element you clicked on.</p>
-<h3>This is a heading</h3>
-<img border="0" src="smiley.gif" alt="Smiley" width="32" height="32">
-<p>This is a paragraph.</p>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
-<script>
-function WhichButton(event) {
-  alert("You pressed button: " + event.button)
-}
-</script>
-</head>
-<body>
-
-<div onmousedown="WhichButton(event);">Click this text (with one of your mouse-buttons)
-<p>
-0 Specifies the left mouse-button<br>
-1 Specifies the middle mouse-button<br>
-2 Specifies the right mouse-button</p>
-<p><strong>Note:</strong> Internet Explorer 8, and earlier, returns another result:<br>
-1 Specifies the left mouse-button<br>
-4 Specifies the middle mouse-button<br>
-2 Specifies the right mouse-button</p>
-
-</div>
-</body>
-</html>
 
 <body>
     <!---------------------------------- Begin the nav-bar ------------->
@@ -180,21 +78,9 @@ function WhichButton(event) {
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-4" style="background-color:yellow;"><center><p id="textChange"> My name is Emad</p></center>
-                    <center><button type="button" onclick="changeText()">Click if you like</button></center></div>
-                <div class="col-sm-4" style="background-color:orange;"><center><p id="textChange"> My name is Emad</p></center>
-                    <center><button type="button" onclick="changeText()">Click if you like</button></center></div>
-                <div class="col-sm-4" style="background-color:yellow;"><center><p id="textChange"> My name is Emad</p></center>
-                    <center><button type="button" onclick="changeText()">Click if you like</button></center></div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm-4" style="background-color:yellow;"><center><p id="textChange"> My name is Emad</p></center>
-                    <center><button type="button" onclick="changeText()">Click if you like</button></center></div>
-                <div class="col-sm-4" style="background-color:orange;"><center><p id="textChange"> My name is Emad</p></center>
-                    <center><button type="button" onclick="changeText()">Click if you like</button></center></div>
-                <div class="col-sm-4" style="background-color:yellow;"><center><p id="textChange"> My name is Emad</p></center>
-                    <center><button type="button" onclick="changeText()">Click if you like</button></center></div>
+                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR HTML CODE HERE</div>
+                <div class="col-sm-4" style="background-color:orange;">PUT YOUR HTML CODE HERE</div>
+                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR HTML CODE HERE</div>
             </div>
         </div>
     </div>

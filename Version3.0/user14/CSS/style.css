@@ -1,32 +1,21 @@
 table {
-	font-family: "Monaco", "Comic Sans MS", fantasy;
+	font-family: "Marker Felt", "Comic Sans MS", fantasy;
 	color: #003366;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: left;
 	border-collapse: collapse;
-	border-spacing: 0px;
+	cellspacing: 0px;
 }
 
 tr {
-	border: 2.5px solid #082d76;
+	border: 1px solid #ffffff;
 	text-align: center;
-	background-color:#c0edef; 
+	background-color:#9FB6CD; 
 }
 
 th {
 	text-align: center;
 	color: #ffffff;
 	background-color: #003366;
-}
-
-td {
-	color: #18698c;
-}
-
-ul {
-	list-style-type: square;
-  }
-ol {
-	list-style-type: upper-roman;
 }
