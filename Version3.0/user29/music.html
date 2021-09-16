@@ -18,7 +18,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
 
     <!-- JavaScript -->
     <!-- These are needed to get the responsive menu to work -->
@@ -28,6 +28,14 @@
 
     <!-- Custom styles for this template -->
     <style type="text/css">
+        td {
+            color: #220d4b;
+        }
+
+        td {
+            color: #942694;
+        }
+
         menu {
             margin: 0;
             padding: 0;
@@ -40,6 +48,53 @@
         footer {
             font-size: 12px;
             text-align: center;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+        }
+
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: 1.5s ease;
+            background-color: #ffccff;
+        }
+
+        .container:hover .overlay {
+            opacity: .5;
+        }
+
+        .text {
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+
+            {
+            border-color: red;
+            border-style: dotted;
+            border-width: 2px2;
         }
     </style>
 </head>
@@ -90,41 +145,77 @@
             </thead>
             <tr>
                 <td>1.</td>
-                <td>Cigarettes After Sex</td>
+                <td>Cigarettes After Sex </td>
                 <td><b><i>Kiss it off me</i></b></td>
-                <td><img src="images/cas.jpeg" height="150px" width="150p" alt="Picture of album cover for 'Cry' album - Stormy weather over a vast ocean"</td>
+                <td class="container"><img src="images/cas.jpeg" height="150px" width="150p"
+                        alt="Picture of album cover for 'Cry' album - Stormy weather over a vast ocean">
+                    <div class="overlay">
+                        <div class="text">Kiss it off me</div>
+                    </div>
+                </td>
             </tr>
             <tr>
                 <td>2.</td>
                 <td>Troye Sivan</td>
                 <td><b><i>could cry just thinkin about you</i></b></td>
-                <td><img src="images/troye.png" height="150px" width="150p" alt="Picture of song cover for 'could cry just thinkin about you' - Troye sitting on a poolside looking meloncholy" </td>
+                <td class="container"><img src="images/troye.png" height="150px" width="150p"
+                        alt="Picture of song cover for 'could cry just thinkin about you' - Troye sitting on a poolside looking meloncholy">
+                    <div class="overlay">
+                        <div class="text">could cry just thinkin about you</div>
+                    </div>
+                </td>
             </tr>
             <tr>
                 <td>3.</td>
                 <td>Bongi</td>
                 <td><b><i>Hollywood</i></b></td>
-                <td><img src="images/BONGI9.png" height="150px" width="150p" alt="Picture of song cover for 'Hollywood' - Bongi holding a cake decorated with an instagram heart"</td>
+                <td class="container"><img src="images/BONGI9.png" height="150px" width="150p"
+                        alt="Picture of song cover for 'Hollywood' - Bongi holding a cake decorated with an instagram heart">
+                    <div class="overlay">
+                        <div class="text">Hollywood</div>
+                    </div>
+                </td>
             </tr>
             <tr>
                 <td>4.</td>
                 <td>LOUD HOUND</td>
                 <td><b><i>I Hate California</i></b></td>
-                <td><img src="images/hound.jpeg" height="150px" width="150p" alt="Picture of song cover for 'I Hate California' - LOUD HOUND casually looking down at the photographer"</td>
+                <td class="container"><img src="images/hound.jpeg" height="150px" width="150p"
+                        alt="Picture of song cover for 'I Hate California' - LOUD HOUND casually looking down at the photographer">
+                    <div class="overlay">
+                        <div class="text">I Hate California</div>
+                    </div>
+                </td>
             </tr>
             <tr>
                 <td>5.</td>
                 <td>glaive</td>
                 <td><b><i>hey hi hyd</i></b></td>
-                <td><img src="images/glaive.jpg" height="150px" width="150p" alt="Picture of album cover for 'Cypress Grove' album - Glaive standing under a street sign labeled 'Cypress Grove'"</td>
+                <td class="container"><img src="images/glaive.jpg" height="150px" width="150p"
+                        alt="Picture of album cover for 'Cypress Grove' album - Glaive standing under a street sign labeled 'Cypress Grove'">
+                    <div class="overlay">
+                        <div class="text">hey hi hyd</div>
+                    </div>
+                </td>
             </tr>
             <tr>
                 <td>6.</td>
                 <td>Oscar Anton</td>
                 <td><b><i>Bye Bye</i></b>
                 </td>
-                <td><img src="https://m.media-amazon.com/images/I/61mQNXudODL._SS500_.jpg" height="150px" width="150p" alt="Picture of song cover for 'Bye Bye' - Oscar stalling in water looking off into the horizon"</td>
+                <td class="container"><img src="https://m.media-amazon.com/images/I/61mQNXudODL._SS500_.jpg"
+                        height="150px" width="150p"
+                        alt="Picture of song cover for 'Bye Bye' - Oscar stalling in water looking off into the horizon">
+                    <div class="overlay">
+                        <div class="text">Bye Bye</div>
+                    </div>
+                </td>
             </tr>
+            <tr>
+                <td>Summary Test.
+                <td style="color:#000000; background-color:#ffccff;"></td>
+
+
         </table>
     </main>
     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
