@@ -1,21 +1,21 @@
 table {
 	font-family: "Corsiva", "Economica", fantasy;
-	color: #000000;
+	color: #ffffff;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: left;
 	border-collapse: collapse;
-	cellspacing: 20px;
 }
 
 tr {
-	border: 1.8px solid #121242;
+	border: 1.8px solid #ffffff;
 	text-align: center;
-	background-color:#ffffff; 
+	background-color:#ffffff00; 
+	color: white;
 }
 
 th {
 	text-align: center;
 	color: #ffffff;
-	background-color: #77295d;
+	background-color: #000000;
 }
