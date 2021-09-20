@@ -27,3 +27,7 @@ td{
 body {
 	background-image: url("https://www.pictureframesexpress.co.uk/blog/wp-content/uploads/2020/05/7-Tips-to-Finding-Art-Inspiration-Header-1024x649.jpg");
 }
+
+ul.b {list-style-type: disc;}
+
+ol.d {list-style-type: armenian;}
