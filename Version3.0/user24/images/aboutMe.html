@@ -7,7 +7,7 @@
 
 <head>
 
-    <title>It's...a list?!?!</title>
+    <title>Knowing more now</title>
 
     <!-- Meta -->
     <meta charset="utf-8">
@@ -28,8 +28,9 @@
 
     <!-- Custom styles for this template -->
     <style type="text/css">
-        .menu {
-            margin: 0px;
+        menu {
+            margin: 0;
+            padding: 0;
         }
 
         .wideMargin {
@@ -40,62 +41,71 @@
             font-size: 12px;
             text-align: center;
         }
-        .list{
-            background-color: gold;
-            color: gray;
-        }
-        .body{
-            background-image: "Img.Mountain of plenty.jpeg"
-        }
+        h3 {
+  padding: 50px;
+  background-color: rgb(165, 165, 231);
+  display: inline-block;
+}
+p {   
+padding: 20px 10px;  /* Vertical  Horizontal */
+}
+h3 {
+  padding:50px;
+  background-color: rgb(48, 184, 184);
+  display: inline-block;
+  border: 1px solid #8b6d2b;
+}
+strong {
+  margin: 50px;
+  background-color: lightblue;
+}strong {
+  padding: 50px;
+  background-color: lightblue;
+}
+
     </style>
 </head>
 
 <body>
-    <!---------------------------------- Begin the nav-bar ------------->
-    <div class="menu">
+    <!---------------------------------- Begin the nav-bar ------------------------------------------>
+    <menu>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
-                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
                     <a href="#" class="nav-item nav-link">Home</a>
-                    <a href="#" class="nav-item nav-link">About Me</a>
+                    <a href="#" class="nav-item nav-link active">About Me</a>
                     <a href="#" class="nav-item nav-link">Music</a>
-                    <a href="#" class="nav-item nav-link active">Lists</a>
+                    <a href="#" class="nav-item nav-link">Lists</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
                     <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
                         tabindex="-1">Contact</a>
-                    <!----------------------------------^ Edit These Items in your Menu ^ ------------->
+                    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </div>
                 <div class="navbar-nav ml-auto">
-                    <a href="#" class="nav-item nav-link disabled">Login</a>
+                    <a href="#" class="nav-item nav-link active">Login</a>
                 </div>
             </div>
         </nav>
-    </div>
-    <!---------------------------------- End the nav-bar ------------->
+        <!---------------------------------- End the nav-bar ------------------------------------->
+    </menu>
 
     <main class="wideMargin">
 
-        <h1 class="text-left my-3">My Lists</h1><!-- Edit this line for the title of your page -->
+        <h1 class="text-left my-3">Knowledge</h1><!-- Edit this line for the title of your page -->
 
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-        </div>
-        <div class="list">
-            <p>1. Open the bag</p>
-        <div class="list">
-            <p>2. Grab the food</p>
-            <div class="list">
-                <p>3. Lick the seasoning<p>
-            </div>
-            <div class="list">4. Then eat the food</div>
+        <h3>Headings Are Block Elements</h3>
 
-        </div>
-        <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
+        <p>Win you bring peach rings with you.<em>But...</em>, &lt;em&gt; and &lt;strong&gt;
+        you forget the watermelons. They are <strong>inline</strong> not as good but pretty good too.</p>
+        
+        <p>When you forgot to bring a fork to lunch.</p>
+        <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
     </main>
 
     <!---------------------------------- Begin the footer ------------->
