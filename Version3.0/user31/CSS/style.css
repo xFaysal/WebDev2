@@ -24,3 +24,11 @@ th {
 
 
 }
+
+p {
+	padding-top: 5px;
+	padding-bottom: 50px;
+	padding-left: 30px;
+	padding-right: 5px;
+	background-color: lavender;
+  }
