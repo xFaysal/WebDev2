@@ -19,3 +19,8 @@ th {
 	color: #ffffff;
 	background-color: #003366;
 }
+
+body {
+background-image: url("../images/greyandwhite.jpg");
+background-color: #cccccc;
+}
