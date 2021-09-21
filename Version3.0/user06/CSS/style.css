@@ -5,7 +5,8 @@ table {
 	margin-right: auto;
 	text-align: left;
 	border-collapse: collapse;
-	cellspacing: 0px;
+	border-spacing: 0px;
+
 }
 
 tr {
@@ -19,3 +20,10 @@ th {
 	color: #ffffff;
 	background-color: #585858;
 }
+
+body {
+	
+	background-image: url("https://mykeyboard.eu/media/cache/a5/51/a551134d08cbe9d502edd2e9e7d51b5f.jpg");
+
+}
+  
