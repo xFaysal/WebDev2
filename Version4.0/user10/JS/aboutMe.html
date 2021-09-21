@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 3.0
-        Name: dat
-        Date Completed: 9/15/2021
+        Name:
+        Date Completed:
     -->
 
 <head>
 
-    <title>Music for Web Dev User ## </title>
+    <title>Web Dev User ## </title>
 
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="My Favorite Music">
+    <meta name="description" content="SHS WebDev Version 3.0">
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -42,26 +42,49 @@
             text-align: center;
         }
 
+        h3 {
+            padding: 50px;
+            background-color: lavender;
+            display: inline-block;
+            border: 1px solid #5D6063;
+            margin-bottom: 50px;
+            /* Add this */
+        }
+
+        p {
+            padding-top: 5px;
+            padding-bottom: 50px;
+            padding-left: 30px;
+            padding-right: 5px;
+            background-color: lavender;
+        }
+        strong {
+  margin: 50px;
+  background-color: lightblue;
+}
+strong {
+  padding: 50px;
+  background-color: lightblue;
+}
 
     </style>
 </head>
 
 <body>
-    <!---------------------------------- Begin the nav-bar ------------->
+    <!---------------------------------- Begin the nav-bar ------------------------------------------>
     <menu>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
                     <a href="#" class="nav-item nav-link">Home</a>
-                    <a href="#" class="nav-item nav-link">About Me</a>
-                    <a href="#" class="nav-item nav-link active">Music</a>
-                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
+                    <a href="#" class="nav-item nav-link active">About Me</a>
+                    <a href="#" class="nav-item nav-link">Music</a>
+                    <a href="#" class="nav-item nav-link">Lists</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
                     <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
                         tabindex="-1">Contact</a>
@@ -71,66 +94,33 @@
                     <a href="#" class="nav-item nav-link disabled">Login</a>
                 </div>
             </div>
+        
         </nav>
+        <!---------------------------------- End the nav-bar ------------------------------------->
     </menu>
-    <!---------------------------------- End the nav-bar ------------------------------------->
 
     <main class="wideMargin">
 
-        <h1 class="text-left my-3" tabindex="0">Music</h1><!-- Edit this line for the title of your page -->
+        <h1 class="text-left my-3">About Me</h1><!-- Edit this line for the title of your page -->
 
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-        <h2>My Top 5 Favorite Songs</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Rank</th>
-                    <th>Artist</th>
-                    <th>Song</th>
-                    <th>Album Art</th>
-                </tr>
-            </thead>
-            <tr>
-                <td>1</td>
-                <td>Rud-a </td>
-                <td>LIFE</td>
-                <td><img src="images/Rud-a LIFE .jpeg" width="100" height="100"></td>
-            </tr>
-            <tr style="font-size: 25px;">
-                <td>2</td>
-                <td>Burnout Syndrones</td>
-                <td>Good Morning World!</td>
-                <td><img src="images/Good Morning World!.jpeg" width="100" height="100"></td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>PELICAN FANCLUB</td>
-                <td>Sangenshoku</td>
-                <td><img src="images/Sangenshoku.jpeg" alt="Sangenshoku by PELICAN FANCLUB, infront of a bridge made of wood nine people, two women, one small child, an old carpenter, And five men" width="100" height="100"></td>
-            </tr>
-            
-                <td>4</td>
-                <td>Hatena</td>
-                <td>Voice?</tr>
-                <td></td><img src="https://i1.sndcdn.com/artworks-lOZlZ9dEYo3D-0-t500x500.jpg" width="100" height="100">
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>Saeki Yusuke</td>
-                <td>Yume no Yō na</td>
-                <td><img src="images/Yume no Yō na by Yusuke Saeki.png" width="100" height="100"></td>
-            </tr>
-        </table>
-    </main>
-    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+        <h3>Headings Are Block Elements</h3>
 
+        <p>paragraphs are blocks, too.<em>However</em>, &lt;em&gt; and &lt;strong&gt;
+            elements are not. They are <strong>inline</strong> elements.</p>
+
+        <p>Block elements define the flow of the HTML document, while inline elements
+            do not.</p>
+            <div style='padding-top: 1px'></div>  <!-- Add this -->
+        <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+    </main>
 
     <!---------------------------------- Begin the footer ------------->
     <footer class="wideMargin">
         <div>
-            Music can be found here <a href="https://music.amazon.com"> Amazon Music</a>
+            Webpage made by <a href="#" target="_blank">[your name]</a>
         </div>
-    </footer><img src="https://i1.sndcdn.com/artworks-lOZlZ9dEYo3D-0-t500x500.jpg" width="100" height="100">
+    </footer>
     <!---------------------------------- End the footer ------------->
 </body>
 
