@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 
-.button1 {
+.greenButton {
 	background-color:#44c767;
 	border-radius:28px;
 	border:1px solid #18ab29;
@@ -50,10 +50,10 @@ h1, h2, h3, h4, h5, h6{
 	text-decoration:none;
 	text-shadow:0px 1px 0px #2f6627;
 }
-.button1:hover {
+.greenButton:hover {
 	background-color:#5cbf2a;
 }
-.button1:active {
+.greenButton:active {
 	position:relative;
 	top:1px;
 }
@@ -188,3 +188,24 @@ h1, h2, h3, h4, h5, h6{
 	position:relative;
 	top:1px;
 }
+
+.title{
+	color: red;
+	font-family: 'Trebuchet MS', sans-serif; 
+  }
+  
+  .title-large {
+	font-size: 2rem;
+  }
+  
+  .title-small {
+	font-size: .5rem;
+  }
+
+  #morecontent {
+	background-color: yellow;
+  }
+
+  *{
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
+  }
