@@ -48,3 +48,20 @@ h1, h2, h3, h4, h5, h6{
   .title-small {
 	font-size: .5rem;
   }
+
+  #morecontent {
+	background-color: yellow;
+  }
+
+  #hireButtons {
+	background-color: rgba(16, 225, 248, 0.441);
+}
+
+  #footerTable {
+	background-color: rgba(248, 16, 16, 0.441);
+}
+
+*{
+	text-align: right;
+	border: 2px solid black;
+}
