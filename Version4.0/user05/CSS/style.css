@@ -1,59 +1,84 @@
-button {
-	background-color: #4CAF50;
-	border: none;
-	color: white;
-	padding: 20px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	margin: 4px 2px;
-	cursor: pointer;
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 
 .button1 {
-	border-radius: 8px;
+    border-radius: 8px;
 }
 
 .button2 {
-	border-radius: 30%;
+    border-radius: 30%;
 }
 
 .red {
-	background-color: #ff0000;
+    background-color: #ff0000;
 }
 
-td{
-	padding:20px;
+td {
+    padding: 20px;
 }
 
-table{
-	margin-left: auto;
-	margin-right: auto;
+table {
+    margin-left: auto;
+    margin-right: auto;
 }
 
-h1, h2, h3, h4, h5, h6{
-	text-align:center;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
 }
 
-.button1{
-	color: red;
-	font-family: 'Trebuchet MS', sans-serif; 
+.seven {
+    width: 100px;
+    height: 50px;
+    background-color: #008CBA;
+    border: none;
+    border-radius: 3px;
 }
-  
-  .title-large {
-	font-size: 2rem;
-  }
-  
-  .title-small {
-	font-size: .5rem;
-  }
-  .one{
-	property: value;
-  }
-  .two{
-	property: value;
-  }
-  .three{
-	property: value;
-  }
+
+.six {
+    width: 100px;
+    height: 60px;
+    background-color: blueviolet;
+    border: forestgreen;
+    border-radius: 3px;
+}
+
+.eight {
+    width: 150px;
+    height: 30px;
+    background-color: blueviolet;
+    border: black;
+    border-radius: 7px;
+}
+
+.title {
+    color: red;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.title-large {
+    font-size: 2rem;
+}
+
+.title-small {
+    font-size: .5rem;
+}
+
+* {
+    text-align: right;
+    border: 2px solid black;
+}
