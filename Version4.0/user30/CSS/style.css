@@ -1,3 +1,4 @@
+@import url(rainbow.css);
 table {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
 	color: #003366;
@@ -98,10 +99,4 @@ color: gold;
 
 #hireButtons {
 background-color: gold;
-}
-
-*{
-    font: size 3px;
-    border: 2px solid blue;
-	background-image: url(https://www.freecodecamp.org/news/content/images/2021/06/w-qjCHPZbeXCQ-unsplash.jpg);
 }
