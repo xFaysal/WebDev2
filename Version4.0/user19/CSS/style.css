@@ -1,3 +1,4 @@
+@import url(rainbow.css);
 .button {
 	background-color: #4CAF50;
 	border: none;
@@ -209,3 +210,38 @@ h1, h2, h3, h4, h5, h6{
   *{
 	font-family: "Comic Sans MS", "Comic Sans", cursive;
   }
+
+  #knowledge > * {
+	border: 3px red solid;
+  }
+
+  p + * {
+	background-color: #FFFF00;
+  }
+
+  div li::marker{
+	color: red;
+  }
+
+  div li ul li::marker {
+	content: "😜 ";
+}
+
+div table tr td:hover {
+	background-color: black;
+  }
+
+  div li ul li:hover {
+	color: red;
+  }
+
+ div li:hover {
+	font-weight: bold;
+
+ }
+
+ h1:hover {
+	 color: hotpink;
+	 font-weight: bold;
+	 font-size: 150px;
+ }
