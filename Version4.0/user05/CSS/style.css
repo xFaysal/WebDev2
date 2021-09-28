@@ -1,3 +1,4 @@
+@import url(rainbow.css);
 .button {
     background-color: #4CAF50;
     border: none;
@@ -89,4 +90,48 @@ p+* {
 
 #knowledge>* {
     border: 3px red solid;
+}
+
+div li::marker {
+    color: red;
+}
+
+.background-red:hover {
+    background-color: blue;
+}
+
+.background-orange:hover {
+    background-color: yellow;
+}
+
+.background-yellow:hover {
+    background-color: red;
+}
+
+.background-green:hover {
+    background-color: indigo;
+}
+
+.background-blue:hover {
+    background-color: green;
+}
+
+.background-indigo:hover {
+    background-color: violet;
+}
+
+.background-violet:hover {
+    background-color: orange;
+}
+
+p:first-child {
+    color: blue;
+}
+
+p:first-child i {
+    color: blue;
+}
+
+td:hover {
+    background-color: palegreen;
 }
