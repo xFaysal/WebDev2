@@ -1,3 +1,5 @@
+@import url(rainbow.css);
+
 .button {
 	background-color: #4CAF50;
 	border: none;
@@ -68,3 +70,23 @@ table {
     text-align:right;
     border: 2px solid black;
 }
+
+#knowledge > * {
+	border: 3px red solid;
+  }
+
+  p + * {
+	background-color: #FFFF00;
+  }
+
+  div li::marker{
+	color: red;
+  }
+
+  div li::marker{
+	content:"😜 ";
+  }
+  
+  td:hover {
+	background-color: black;
+  }
