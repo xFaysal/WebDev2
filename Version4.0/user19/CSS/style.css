@@ -215,10 +215,6 @@ h1, h2, h3, h4, h5, h6{
 	border: 3px red solid;
   }
 
-  p + * {
-	background-color: #FFFF00;
-  }
-
   div li::marker{
 	color: red;
   }
@@ -240,7 +236,7 @@ div table tr td:hover {
 
  }
 
- h1:hover {
+ h4:hover {
 	 color: hotpink;
 	 font-weight: bold;
 	 font-size: 150px;
