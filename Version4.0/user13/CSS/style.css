@@ -70,3 +70,39 @@ h1, h2, h3, h4, h5, h6{
     text-align:center;  
 }
 
+#knowledge > * {
+	border: 3px red solid;
+  }
+  p + * {
+	background-color: #FFFF00;
+  }
+
+  div li::marker{
+	color: red;
+  }
+  
+  div li::marker{
+	content:"😜 ";
+  }
+  td:hover {
+	background-color: black;
+  }
+  
+a:link {
+	color: #FF0000;
+  }
+  
+  
+  a:visited {
+	color: #00FF00;
+  }
+  
+  
+  a:hover {
+	color: #FF00FF;
+  }
+  
+  
+  a:active {
+	color: #0000FF;
+  }
