@@ -47,3 +47,17 @@ img {
     transform: rotateY(180deg);
 }
 
+a {
+    color: rgb(255, 0, 0);
+}
+
+p.caption {
+    position: absolute;
+    bottom: 1vh;
+}
+ 
+.description {
+    font-size: 0.9em;
+    padding: 0 20px 20px 20px;
+    text-align: left;
+}
