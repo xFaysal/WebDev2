@@ -1,3 +1,4 @@
+@import url(rainbow.css);
 table {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
 	color: #003366;
@@ -11,7 +12,7 @@ table {
 
     text-align:right
 tr {
-	border: 1px solid #ffffff;
+	border: 1px solid #ca4e4e;
 	text-align: center;
 	background-color:#ebd832; 
 }
@@ -33,7 +34,6 @@ th {
 	margin: 4px 2px;
 	cursor: pointer;
 }
-
 .button1 {
 	border-radius: 8px;
 }
@@ -41,7 +41,9 @@ th {
 .button2 {
 	border-radius: 30%;
 }
-
+td:hover {
+    background-color: black;
+  }
 .red {
 	background-color: #b66464;
 }
