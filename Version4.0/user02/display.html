@@ -42,12 +42,14 @@
             margin: 15px;
         }
 
-        footer {display: inline;
+        footer {
+            display: inline;
             font-size: 12px;
             text-align: center;
         }
 
-        .card { display: inline-block;
+        .card {
+            display: inline-block;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             transition: 0.3s;
             width: 32%;
@@ -57,10 +59,12 @@
         .card:hover {
             box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
         }
+
         .paragraph {
-          font-family: Arial, Helvetica, sans-serif;
-          display: inline;
-}
+            font-family: Arial, Helvetica, sans-serif;
+            display: inline;
+        }
+
         .nameplate {
             padding: 2px 16px;
         }
@@ -71,6 +75,22 @@
 
         .orange {
             color: orange;
+        }
+
+        #knowledge>* {
+            border: 3px red solid;
+        }
+
+        p+* {
+            background-color: #FFFF00;
+        }
+
+        div li::marker {
+            color: red;
+        }
+
+        div li::marker {
+            content: "😜 ";
         }
     </style>
 </head>
@@ -111,10 +131,11 @@
             <p>We at HireMe.com have one true belief. We believe in people. Since 1964, we have connected the best
                 people,
                 their talents, skills, career goals, and aspirations with the best companies. We are
-            <p class="orange">"Career Gurus."</p> We are <span class="orange">"People-People."</span> Let us introduce you!
+            <p class="orange">"Career Gurus."</p> We are <span class="orange">"People-People."</span> Let us introduce
+            you!
             </p>
         </div>
-
+        }
         <h2>People</h2>
 
         <div class="card">
@@ -127,7 +148,7 @@
         </div>
         <div class="card">
             <img src="https://github.com/rmainhar/SHS_WebDevelopment/blob/master/Version4.0/user00/images/img_avatar2.png?raw=true"
-                alt="Avatar Jane"style="width:100%">
+                alt="Avatar Jane" style="width:100%">
             <div class="font-size: 2vw; nameplate">
                 <h4><b>Jane Doe</b></h4>
                 <p>Computer Scientist</p>
@@ -142,6 +163,7 @@
             </div>
         </div>
         </div>
+
         <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
     </main>
 
@@ -162,6 +184,7 @@
             </tr>
         </table>
     </footer>
+
     <!---------------------------------- End the footer ------------->
 </body>
 
